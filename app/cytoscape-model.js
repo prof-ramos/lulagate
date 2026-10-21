@@ -1,4 +1,8 @@
+import cytoscape from 'cytoscape';
+import fcose from 'cytoscape-fcose';
 import {compactLabel,parallelSlots,proximityBand,STATUS_CONFIG} from './graph-model.js';
+
+cytoscape.use(fcose);
 
 export const BAND_STEP=160;
 export function proximityPositions(people){
@@ -26,16 +30,16 @@ export function applySelection(cy,selected,matches=new Set(),focused=null){
   cy.elements().removeClass('selected neighbor context search-match focused');
   const current=selected?cy.getElementById(selected):cy.collection();
   if(current.length){const local=current.closedNeighborhood();cy.elements().difference(local).addClass('context');local.difference(current).addClass('neighbor');current.addClass('selected')}
-  cy.nodes().forEach(n=>{if(matches.has(n.id()))n.addClass('search-match');if(n.id()===focused)n.addClass('focused');n.data('label',n.id()===selected||n.id()===focused?n.data('nome'):n.data('compact'))});
+  cy.nodes().forEach(n=>{if(matches.has(n.id()))n.addClass('search-match');if(n.id()===focused)n.addClass('focused');n.data('label',n.data('compact'))});
  });
 }
 export function layoutGraph(cy,view,positions){
- const options=view==='proximidade'?{name:'preset',positions}:{name:'cose',randomize:true,nodeDimensionsIncludeLabels:true,nodeRepulsion:()=>18000,idealEdgeLength:()=>150,edgeElasticity:()=>100,componentSpacing:110,numIter:1000};
+ const options=view==='proximidade'?{name:'preset',positions}:{name:'fcose',quality:'proof',randomize:true,nodeDimensionsIncludeLabels:false,nodeSeparation:80,nodeRepulsion:()=>100000,idealEdgeLength:()=>140,edgeElasticity:()=>.1,numIter:5000,tile:true,tilingPaddingVertical:36,tilingPaddingHorizontal:48,packComponents:false};
  const layout=cy.layout({...options,animate:false,fit:false});layout.run();return layout;
 }
 export function graphStyles(t){
  return [
-  {selector:'node',style:{shape:'round-rectangle',width:'label',height:'label',padding:8,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'wrap','text-max-width':185,'text-valign':'center','text-halign':'center','background-color':t.paper,'border-color':t.node,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
+  {selector:'node',style:{shape:'round-rectangle',width:118,height:36,padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'wrap','text-max-width':108,'text-valign':'center','text-halign':'center','background-color':t.paper,'border-color':t.node,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
   {selector:'node.central',style:{'background-color':t.ink,color:t.paper,'border-color':t.accent,'border-width':2,'font-weight':'bold'}},
   {selector:'edge',style:{width:1.5,'curve-style':'unbundled-bezier','control-point-distances':'data(curve)','control-point-weights':.5,'line-color':t.node,'overlay-opacity':0}},
   ...Object.entries(STATUS_CONFIG).map(([status,{dash}])=>({selector:`edge.status-${status}`,style:{'line-color':t.statuses[status],'line-style':dash?'dashed':'solid',...(dash?{'line-dash-pattern':dash.split(' ').map(Number)}:{})}})),

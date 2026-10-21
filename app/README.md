@@ -19,7 +19,7 @@ Parâmetros de URL: `visualizacao=rede|proximidade`, `personagem=<id>`, `escanda
 
 `src.jsx` mantém controles, navegação e conteúdo documental; `Graph.jsx` integra o Cytoscape.js ao ciclo de vida do React; `cytoscape-model.js` adapta os elementos, layouts, seleção e estilos; `graph-model.js` concentra recortes, padrões de status, nomes de exibição e faixas editoriais.
 
-Em Rede, o layout CoSE do Cytoscape.js organiza os personagens pelas conexões. A distância entre pontos nessa visualização não mede proximidade editorial nem responsabilidade jurídica. Proximidade usa posições predefinidas em sete faixas da metodologia, com anéis decorativos e legenda recolhível externa ao desenho.
+Em Rede, a extensão fCoSE do Cytoscape.js organiza os personagens pelas conexões. A distância entre pontos nessa visualização não mede proximidade editorial nem responsabilidade jurídica. Proximidade usa posições predefinidas em sete faixas da metodologia, com anéis decorativos e legenda recolhível externa ao desenho.
 
 Filtros removem elementos fora do recorte, atualizam contadores e reenquadram o mapa. O painel mostra as conexões do recorte e conserva acesso às fontes do personagem. Trocar o personagem com painel já aberto preserva a câmera; abrir ou fechar o painel pode reenquadrar a área útil. Use as setas com foco no mapa para deslocá-lo e os botões para zoom e restauração.
 
@@ -29,4 +29,4 @@ Os testes em `tests/` verificam filtros e recorte vazio, separação estável de
 
 ## Dependência de visualização
 
-Cytoscape.js 3.34.4 substitui as dependências diretas de D3. O pacote fica incorporado ao HTML produzido pelo Vite, sem carregar CDN em execução. A versão está fixada no manifesto e no lockfile. Licença MIT em `licenses/cytoscape-LICENSE.txt`, também incluída como comentário no HTML de entrada para acompanhar a distribuição.
+Cytoscape.js 3.34.4 e cytoscape-fcose 2.2.0 substituem as dependências diretas de D3. Os pacotes ficam incorporados ao HTML produzido pelo Vite, sem carregar CDN em execução. As versões estão fixadas no manifesto e no lockfile. Licenças em `licenses/`, também incluídas como comentários no HTML de entrada para acompanhar a distribuição.

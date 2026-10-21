@@ -20,15 +20,8 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    const css=getComputedStyle(element),token=name=>css.getPropertyValue(`--${name}`).trim();
    const statuses=Object.fromEntries(Object.keys(STATUS_CONFIG).map(status=>[status,getComputedStyle(element.parentElement.querySelector(`.graph-theme-probe.status-${status}`)).getPropertyValue('--status-color').trim()]));
    cy.style(graphStyles({ink:token('ink'),paper:token('paper'),bg:token('bg'),muted:token('muted'),node:token('node'),accent:token('accent'),statuses}));
-   readableLabels(true);
   };
-  let labelZoom=null;
-  const readableLabels=(force=false)=>{
-   // Canvas text follows native zoom, with a floor for context names in the overview.
-   const zoom=cy.zoom();if(!force&&labelZoom===zoom)return;labelZoom=zoom;
-   cy.nodes().style({'font-size':Math.max(12,10.5/zoom),'text-max-width':Math.max(185,135/zoom),padding:Math.max(8,5/zoom)});
-  };
-  const cameraChanged=()=>{readableLabels();setCamera({zoom:cy.zoom(),pan:{...cy.pan()}})};
+  const cameraChanged=()=>setCamera({zoom:cy.zoom(),pan:{...cy.pan()}});
   cy.on('viewport',cameraChanged);
   cy.on('tap','node',e=>onSelectRef.current(e.target.id()));
   cy.on('mouseover','node',e=>setFocused(e.target.id()));
@@ -67,7 +60,6 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
  useEffect(()=>{
   const cy=cyRef.current;if(!cy)return;
   syncSlice(cy,visibleNodes,visibleEdges,slots);
-  const zoom=cy.zoom();cy.nodes().style({'font-size':Math.max(12,10.5/zoom),'text-max-width':Math.max(185,135/zoom),padding:Math.max(8,5/zoom)});
   if(view==='proximidade')cy.nodes().ungrabify();else cy.nodes().grabify();
   layoutGraph(cy,view,positions);
   const state=stateRef.current;applySelection(cy,state.selected,state.matches,state.focused);
