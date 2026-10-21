@@ -1,7 +1,7 @@
 """Conservative display categories, derived exclusively from a person's own status."""
 import re
 from urllib.parse import urlsplit
-CATEGORIES = {'condenado': 'Condenado', 'condenacao_anulada': 'Condenação anulada', 'investigado': 'Investigado', 'absolvido_arquivado': 'Absolvido / arquivado', 'sem_informacao': 'Sem informação'}
+CATEGORIES = {'pena_extinta_indulto': 'Pena extinta (indulto)', 'condenado': 'Condenado', 'condenacao_anulada': 'Condenação anulada', 'investigado': 'Investigado', 'absolvido_arquivado': 'Absolvido / arquivado', 'sem_informacao': 'Sem informação'}
 def valid_source(source):
     try:
         url = urlsplit(source.get('url', ''))

@@ -28,13 +28,14 @@
     },
     "leitura_conexoes": "Cada conexão vai de 'origem' para 'destino'; o 'rotulo' descreve o que a origem é em relação ao destino.",
     "categorias_juridicas": {
+      "pena_extinta_indulto": "Pena extinta (indulto)",
       "condenado": "Condenado",
       "condenacao_anulada": "Condenação anulada",
       "investigado": "Investigado",
       "absolvido_arquivado": "Absolvido / arquivado",
       "sem_informacao": "Sem informação"
     },
-    "metodologia": "# Metodologia\n\nTodas as informações deste mapa vêm de reportagens já publicadas por veículos de imprensa estabelecidos ou de documentos oficiais (STF, STJ, TRF4, PF, CGU, TCU, Câmara, Senado, Presidência, TSE). Nomes, datas, valores, conexões e situações jurídicas são os que essas fontes noticiaram até a data de corte. O mapa não traz apuração própria nem informação inédita.\n\n## Avisos importantes\n\n- **Uma conexão neste mapa não indica culpa.** Vínculos familiares, funcionais, políticos, sociais ou de negócios são registrados porque foram documentados, não porque provem crime.\n- Cada caso e cada conexão traz um campo `status`: `condenacao_anulada`, `arquivado` (inclui ações trancadas e prescritas), `absolvido`, `investigacao_em_curso`, `fato_documentado`, `associacao_indireta` e `alegacao_nao_comprovada`.\n- Lula nega as acusações. Sua versão está no campo `versao_de_lula` de cada caso; quando não foi localizada manifestação dele nas fontes, isso é dito explicitamente.\n- **Até a data de corte, Lula não tem condenação vigente.** As condenações do triplex do Guarujá (2017/2018) e do sítio de Atibaia (2019) foram anuladas pelo STF em 2021: em 08/03/2021 o ministro Edson Fachin declarou a incompetência da 13ª Vara Federal de Curitiba (HC 193.726), e em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Os casos foram depois encerrados por prescrição na Justiça Federal do DF. As ações do Instituto Lula e do caso Gripen foram trancadas pelo STF em 2023. Lula foi absolvido nos casos quadrilhão do PT (2019), obstrução de Justiça (2018) e Zelotes/MP 471 (2021).\n- Anulação, arquivamento e trancamento não equivalem a absolvição de mérito; o mapa registra exatamente o desfecho processual noticiado.\n- Relatórios de CPI/CPMI não indiciam nem condenam: registram sugestões às autoridades. Alegações de testemunhas citadas nesses relatórios aparecem como `alegacao_nao_comprovada`.\n- Investigações sobre parentes (Lulinha, Frei Chico) não envolvem Lula como investigado.\n\n## Critérios\n\n- Cada caso e cada conexão tem pelo menos uma fonte com URL, veículo e data.\n- Proximidade (`proximidade_lula`, de 0 a 1) em sete faixas: 0,90 a 1,00 família imediata ou convívio íntimo; 0,70 a 0,89 círculo próximo; 0,50 a 0,69 vínculo direto, forte e repetido; 0,30 a 0,49 vínculo direto pontual ou apenas alegado; 0,10 a 0,29 vínculo fraco ou indireto; 0,01 a 0,09 apenas contexto; 0 nenhum vínculo. Os valores são atribuição editorial a partir dos vínculos documentados, não cálculo automático nem medida de culpa.\n- `nivel_juridico` (0 a 4) é escala separada sobre a situação jurídica da própria pessoa.\n- Valores são nominais, na moeda noticiada.\n- Alegações sem fonte verificável ficaram de fora.\n\n## Data de corte\n\n20/10/2026.\n\n## Veículos de imprensa (19)\n\n- Agência Brasil\n- BBC News Brasil\n- CNN Brasil\n- Consultor Jurídico (ConJur)\n- DW Brasil\n- Estadão\n- Estadão (Blog do Fausto Macedo)\n- Folha de S.Paulo\n- Folha de S.Paulo (Mônica Bergamo)\n- G1\n- G1 (Jornal Nacional)\n- Gazeta do Povo\n- Metrópoles\n- O Globo\n- O Globo (Lauro Jardim)\n- Poder360\n- R7\n- UOL\n- Valor Econômico\n\n## Documentos e órgãos oficiais (12)\n\n- Agência Câmara de Notícias\n- Agência Senado\n- Consultor Jurídico (ConJur)\n- Controladoria-Geral da União\n- Polícia Federal\n- Presidência da República\n- STF (LexML)\n- Superior Tribunal de Justiça\n- Supremo Tribunal Federal\n- Supremo Tribunal Federal (via G1)\n- TRF4\n- Tribunal Superior Eleitoral (via Poder360)\n\n## Categorias jurídicas dos nós\n\nO build deriva `categoria_juridica` apenas de `situacao_juridica` da própria pessoa e exige pelo menos uma referência em `fontes` que exista em `sources.json` (a coleção de fontes deste projeto) com URL HTTP(S) e host. A validação é estrutural e não verifica disponibilidade remota. Status de conexões, casos, ocupações e nível jurídico não atribuem categoria à pessoa.\n\nA regra, em ordem: menção explícita a condenação ou condenações anuladas; investigado ou investigada (exceto “não investigado”); condenado ou condenada; absolvido, arquivado, trancado ou ação penal encerrada. Os dois últimos desfechos compartilham a categoria “Absolvido / arquivado” apenas para navegação, sem equivalência jurídica. As demais situações e pessoas sem fonte válida recebem “Sem informação”, que significa ausência de classificação nestas categorias, não ausência de antecedentes. O texto original continua em destaque no painel. Anulação de processo, sem menção explícita a condenação anulada, não basta para essa categoria. A ordem resolve textos com múltiplos desfechos e não representa uma conclusão jurídica atualizada além do dataset.\n\nAs cores identificam essas cinco categorias, acompanhadas de nomes e contagens nos filtros. O tamanho dos nós representa o número de casos associados, com destaque adicional para Lula; não representa culpa ou gravidade. A seleção destaca as conexões imediatas e esmaece o restante.\n\nRetratos locais são miniaturas WebP de até 96 px, incorporadas em base64 ao dataset pelo build, com créditos preservados. A imagem social é criada localmente por `scripts/build_og.py`.\n"
+    "metodologia": "# Metodologia\n\nTodas as informações deste mapa vêm de reportagens já publicadas por veículos de imprensa estabelecidos ou de documentos oficiais (STF, STJ, TRF4, PF, CGU, TCU, Câmara, Senado, Presidência, TSE). Nomes, datas, valores, conexões e situações jurídicas são os que essas fontes noticiaram até a data de corte. O mapa não traz apuração própria nem informação inédita.\n\n## Avisos importantes\n\n- **Uma conexão neste mapa não indica culpa.** Vínculos familiares, funcionais, políticos, sociais ou de negócios são registrados porque foram documentados, não porque provem crime.\n- Cada caso e cada conexão traz um campo `status`: `condenacao_anulada`, `arquivado` (inclui ações trancadas e prescritas), `absolvido`, `investigacao_em_curso`, `fato_documentado`, `associacao_indireta` e `alegacao_nao_comprovada`.\n- Lula nega as acusações. Sua versão está no campo `versao_de_lula` de cada caso; quando não foi localizada manifestação dele nas fontes, isso é dito explicitamente.\n- **Até a data de corte, Lula não tem condenação vigente.** As condenações do triplex do Guarujá (2017/2018) e do sítio de Atibaia (2019) foram anuladas pelo STF em 2021: em 08/03/2021 o ministro Edson Fachin declarou a incompetência da 13ª Vara Federal de Curitiba (HC 193.726), e em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Os casos foram depois encerrados por prescrição na Justiça Federal do DF. As ações do Instituto Lula e do caso Gripen foram trancadas pelo STF em 2023. Lula foi absolvido nos casos quadrilhão do PT (2019), obstrução de Justiça (2018) e Zelotes/MP 471 (2021).\n- Anulação, arquivamento e trancamento não equivalem a absolvição de mérito; o mapa registra exatamente o desfecho processual noticiado.\n- Relatórios de CPI/CPMI não indiciam nem condenam: registram sugestões às autoridades. Alegações de testemunhas citadas nesses relatórios aparecem como `alegacao_nao_comprovada`.\n- Investigações sobre parentes (Lulinha, Frei Chico) não envolvem Lula como investigado.\n\n## Critérios\n\n- Cada caso e cada conexão tem pelo menos uma fonte com URL, veículo e data.\n- Proximidade (`proximidade_lula`, de 0 a 1) em sete faixas: 0,90 a 1,00 família imediata ou convívio íntimo; 0,70 a 0,89 círculo próximo; 0,50 a 0,69 vínculo direto, forte e repetido; 0,30 a 0,49 vínculo direto pontual ou apenas alegado; 0,10 a 0,29 vínculo fraco ou indireto; 0,01 a 0,09 apenas contexto; 0 nenhum vínculo. Os valores são atribuição editorial a partir dos vínculos documentados, não cálculo automático nem medida de culpa.\n- `nivel_juridico` (0 a 4) é escala separada sobre a situação jurídica da própria pessoa.\n- Valores são nominais, na moeda noticiada.\n- Alegações sem fonte verificável ficaram de fora.\n\n## Data de corte\n\n20/10/2026.\n\n## Veículos de imprensa (19)\n\n- Agência Brasil\n- BBC News Brasil\n- CNN Brasil\n- Consultor Jurídico (ConJur)\n- DW Brasil\n- Estadão\n- Estadão (Blog do Fausto Macedo)\n- Folha de S.Paulo\n- Folha de S.Paulo (Mônica Bergamo)\n- G1\n- G1 (Jornal Nacional)\n- Gazeta do Povo\n- Metrópoles\n- O Globo\n- O Globo (Lauro Jardim)\n- Poder360\n- R7\n- UOL\n- Valor Econômico\n\n## Documentos e órgãos oficiais (12)\n\n- Agência Câmara de Notícias\n- Agência Senado\n- Consultor Jurídico (ConJur)\n- Controladoria-Geral da União\n- Polícia Federal\n- Presidência da República\n- STF (LexML)\n- Superior Tribunal de Justiça\n- Supremo Tribunal Federal\n- Supremo Tribunal Federal (via G1)\n- TRF4\n- Tribunal Superior Eleitoral (via Poder360)\n\n## Categorias jurídicas dos nós\n\nO build deriva `categoria_juridica` apenas de `situacao_juridica` da própria pessoa e exige pelo menos uma referência em `fontes` que exista em `sources.json` (a coleção de fontes deste projeto) com URL HTTP(S) e host. A validação é estrutural e não verifica disponibilidade remota. Status de conexões, casos, ocupações e nível jurídico não atribuem categoria à pessoa.\n\nCategorias declaradas explicitamente na pesquisa, com fontes próprias, têm precedência sobre a inferência textual. “Pena extinta (indulto)” registra a extinção da pena da AP 470 de José Dirceu; o painel também informa as anulações e a prescrição na Lava Jato. Indulto não equivale a absolvição.\n\nA regra de inferência, em ordem: menção explícita a condenação ou condenações anuladas; investigado ou investigada (exceto “não investigado”); condenado ou condenada; absolvido, arquivado, trancado ou ação penal encerrada. Os dois últimos desfechos compartilham a categoria “Absolvido / arquivado” apenas para navegação, sem equivalência jurídica. As demais situações e pessoas sem fonte válida recebem “Sem informação”, que significa ausência de classificação nestas categorias, não ausência de antecedentes. O texto original continua em destaque no painel. Anulação de processo, sem menção explícita a condenação anulada, não basta para essa categoria. A ordem resolve textos com múltiplos desfechos e não representa uma conclusão jurídica atualizada além do dataset.\n\nAs cores identificam essas seis categorias, acompanhadas de nomes e contagens nos filtros. O tamanho dos nós representa o número de casos associados, com destaque adicional para Lula; não representa culpa ou gravidade. A seleção destaca as conexões imediatas e esmaece o restante.\n\nRetratos locais são miniaturas WebP de até 96 px, incorporadas em base64 ao dataset pelo build, com créditos preservados. A imagem social é criada localmente por `scripts/build_og.py`.\n"
   },
   "personagens": [
     {
@@ -324,16 +325,16 @@
         }
       ],
       "relacao_com_lula": "ministro da Casa Civil",
-      "resumo": "Pena da AP 470 extinta por indulto em 2016; pena no caso Apolo Tubulars extinta por prescrição em maio de 2024. Atos de Moro em duas ações penais anulados pelo STF na Pet 12229 em outubro de 2024. Ex-ministro da Casa Civil de Lula, condenado pelo STF em 2012 por corrupção ativa no mensalão (AP 470).",
-      "situacao_juridica": "Pena da AP 470 extinta por indulto em 2016; pena no caso Apolo Tubulars extinta por prescrição em maio de 2024. Atos de Moro em duas ações penais anulados pelo STF na Pet 12229 em outubro de 2024.",
+      "resumo": "Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição. Ex-ministro da Casa Civil de Lula.",
+      "situacao_juridica": "Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição.",
       "fontes": [
         "pr-a-factcheck-01",
         "pr-a-factcheck-02",
         "pr-a-factcheck-03",
         "g1-2012-10-dirceu"
       ],
-      "categoria_juridica_declarada": "condenacao_anulada",
-      "categoria_juridica": "condenacao_anulada",
+      "categoria_juridica_declarada": "pena_extinta_indulto",
+      "categoria_juridica": "pena_extinta_indulto",
       "retrato": {
         "arquivo": "retratos/jose-dirceu.webp",
         "autor": "José CRuz/ABr",
@@ -368,7 +369,7 @@
       ],
       "relacao_com_lula": "tesoureiro do partido",
       "resumo": "Tesoureiro do PT na época do mensalão. Segundo a Folha (2005), o presidente do PT afirmou que ele era o \"traidor\" mencionado por Lula no Roda Viva.",
-      "situacao_juridica": "Réu da AP 470.",
+      "situacao_juridica": "Situação jurídica atual não confirmada nas fontes deste levantamento.",
       "fontes": [
         "folha-2005-11-09-delubio"
       ],
@@ -988,7 +989,7 @@
       "fontes": [
         "pr-a-factcheck-06",
         "trf4-2019-11-27-atibaia",
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
       "categoria_juridica_declarada": "condenacao_anulada",
       "categoria_juridica": "condenacao_anulada",
@@ -1020,10 +1021,10 @@
         }
       ],
       "relacao_com_lula": "sócio do filho",
-      "resumo": "Citado pela PF entre os controladores das empresas do grupo Gamecorp/Gol investigadas na Mapa da Mina.",
-      "situacao_juridica": "Investigação arquivada (2022).",
+      "resumo": "Ligado ao grupo Gamecorp/Gol, investigado na Mapa da Mina; inquérito arquivado em janeiro de 2022.",
+      "situacao_juridica": "Inquérito da Mapa da Mina arquivado em janeiro de 2022, sem denúncia, após nulidade das provas.",
       "fontes": [
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
       "categoria_juridica": "absolvido_arquivado",
       "retrato": null,
@@ -1052,10 +1053,10 @@
         }
       ],
       "relacao_com_lula": "sócio do filho",
-      "resumo": "Citado pela PF entre os controladores das empresas investigadas na Mapa da Mina.",
-      "situacao_juridica": "Investigação arquivada (2022).",
+      "resumo": "Ligado ao grupo Gamecorp/Gol, investigado na Mapa da Mina; inquérito arquivado em janeiro de 2022.",
+      "situacao_juridica": "Inquérito da Mapa da Mina arquivado em janeiro de 2022, sem denúncia, após nulidade das provas.",
       "fontes": [
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
       "categoria_juridica": "absolvido_arquivado",
       "retrato": null,
@@ -1913,10 +1914,10 @@
         }
       ],
       "relacao_com_lula": "contexto",
-      "resumo": "Disse que a mesada a Lulinha era sustentada apenas por uma testemunha, sem confirmação.",
+      "resumo": "Presidente da CPMI do INSS.",
       "situacao_juridica": "",
       "fontes": [
-        "cnn-2026-03-27-cpmi"
+        "g1-2026-03-27-cpmi"
       ],
       "categoria_juridica": "sem_informacao",
       "retrato": null,
@@ -2960,10 +2961,10 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01"
     },
     {
       "id": "con-031",
@@ -2981,10 +2982,10 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01"
     },
     {
       "id": "con-032",
@@ -3002,9 +3003,9 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01"
     },
     {
       "id": "con-033",
@@ -3022,10 +3023,10 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01"
     },
     {
       "id": "con-034",
@@ -3435,8 +3436,7 @@
         "esc-cpmi-lulinha"
       ],
       "fontes": [
-        "g1-2026-07-31-inquerito",
-        "cnn-2026-03-27-cpmi"
+        "g1-2026-07-31-inquerito"
       ],
       "data_referencia": "2026-07-31"
     },
@@ -3456,8 +3456,7 @@
         "esc-cpmi-lulinha"
       ],
       "fontes": [
-        "g1-2026-03-27-cpmi",
-        "oglobo-2026-03-27-cpmi"
+        "g1-2026-03-27-cpmi"
       ],
       "data_referencia": "2026-03-27"
     },
@@ -3477,7 +3476,7 @@
         "esc-cpmi-lulinha"
       ],
       "fontes": [
-        "cnn-2026-03-27-cpmi"
+        "g1-2026-03-27-cpmi"
       ],
       "data_referencia": "2026-03-27"
     },
@@ -4336,10 +4335,9 @@
       "fontes": [
         "folha-2005-07-09-telemar",
         "folha-2005-08-08-telemar",
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "g1-2019-12-10-mapa",
-        "folha-2022-01-17-mapa",
-        "poder360-2022-01-mapa"
+        "folha-2022-01-17-mapa"
       ],
       "conexoes": [
         "con-002",
@@ -4437,8 +4435,8 @@
         "fim": null
       },
       "status": "investigacao_em_curso",
-      "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS. A alegação de mesada de R$ 300 mil vem de uma única testemunha, sem confirmação.",
-      "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, por meio de Roberta Luchsinger, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
+      "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS.",
+      "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
       "papel_de_lula": "Pai do investigado; não investigado.",
       "versao_de_lula": "Lula disse em 30/07/2026 que, se o filho for julgado, não terá privilégios, não vai se esconder e terá de provar inocência (G1).",
       "personagens": [
@@ -4451,31 +4449,16 @@
         "marco-aurelio-carvalho",
         "lula"
       ],
-      "valores": [
-        {
-          "descricao": "Mesada alegada por testemunha (não comprovada)",
-          "valor": 300000,
-          "moeda": "BRL"
-        },
-        {
-          "descricao": "Consultoria recebida por Roberta Luchsinger, segundo o relator",
-          "valor": 1400000,
-          "moeda": "BRL"
-        }
-      ],
+      "valores": [],
       "escandalos_relacionados": [
         "esc-inss-sindnapi"
       ],
       "fontes": [
         "senado-2025-08-28-careca",
         "g1-2026-03-27-cpmi",
-        "oglobo-2026-03-27-cpmi",
-        "poder360-2026-03-27-cpmi",
-        "cnn-2026-03-27-cpmi",
         "g1-2026-07-31-inquerito",
         "g1-2026-07-30-lula",
-        "estadao-2026-defesa-lulinha",
-        "cnn-2026-advogado-lulinha"
+        "estadao-2026-defesa-lulinha"
       ],
       "conexoes": [
         "con-002",
@@ -5232,15 +5215,6 @@
       "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0808200518.htm"
     },
     {
-      "id": "pf-2019-12-10-mapa",
-      "tipo": "documento_oficial",
-      "veiculo": "Polícia Federal",
-      "tipo_veiculo": "documento_oficial",
-      "titulo": "PF deflagra a 69ª Fase da Operação Lava Jato: Operação Mapa da Mina",
-      "data": "2019-12-10",
-      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/12/pf-deflagra-a-69a-fase-da-operacao-lava-jato-operacao-mapa-da-mina"
-    },
-    {
       "id": "g1-2019-12-10-mapa",
       "tipo": "reportagem",
       "veiculo": "G1",
@@ -5394,33 +5368,6 @@
       "url": "https://g1.globo.com/politica/noticia/2026/03/27/cpmi-do-inss-relatorio.ghtml"
     },
     {
-      "id": "oglobo-2026-03-27-cpmi",
-      "tipo": "reportagem",
-      "veiculo": "O Globo",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Relatório da CPI diz que testemunha citou pagamentos de R$ 300 mil de Careca do INSS a Lulinha e sugere prisão de filho do presidente",
-      "data": "2026-03-27",
-      "url": "https://oglobo.globo.com/politica/noticia/2026/03/27/relatorio-da-cpi-afirma-que-testemunha-citou-pagamentos-de-r-300-mil-mensais-de-careca-do-inss-a-lulinha.ghtml"
-    },
-    {
-      "id": "poder360-2026-03-27-cpmi",
-      "tipo": "reportagem",
-      "veiculo": "Poder360",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Relatório cita mesada do Careca do INSS para Lulinha",
-      "data": "2026-03-27",
-      "url": "https://www.poder360.com.br/poder-congresso/relatorio-cita-mesada-do-careca-do-inss-para-lulinha/"
-    },
-    {
-      "id": "cnn-2026-03-27-cpmi",
-      "tipo": "reportagem",
-      "veiculo": "CNN Brasil",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Relator de CPMI detalha supostos pagamentos de Careca do INSS a Lulinha",
-      "data": "2026-03-27",
-      "url": "https://www.cnnbrasil.com.br/politica/relator-de-cpmi-detalha-pagamentos-de-careca-do-inss-a-lulinha/"
-    },
-    {
       "id": "g1-2026-07-31-inquerito",
       "tipo": "reportagem",
       "veiculo": "G1",
@@ -5446,15 +5393,6 @@
       "titulo": "Defesa de Lulinha nega relação com esquema no INSS e diz que provará inocência",
       "data": "2026",
       "url": "https://www.estadao.com.br/politica/defesa-de-lulinha-nega-relacao-com-esquema-no-inss-e-diz-que-provara-inocencia-bala-de-festim/"
-    },
-    {
-      "id": "cnn-2026-advogado-lulinha",
-      "tipo": "reportagem",
-      "veiculo": "CNN Brasil",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Advogado de Lulinha nega que ele tenha recebido mesada do Careca do INSS",
-      "data": "2026-03",
-      "url": "https://www.cnnbrasil.com.br/politica/advogado-de-lulinha-nega-que-ele-tenha-recebido-mesada-de-careca-do-inss/"
     },
     {
       "id": "pr-a-factcheck-01",
@@ -5707,15 +5645,6 @@
       "titulo": "Lula relata conversa com Vorcaro no Planalto: não haveria posição política pró ou contra o Master",
       "data": "2026-02-05",
       "url": "https://oglobo.globo.com/economia/noticia/2026/02/05/lula-disse-que-vorcaro-afirmou-a-ele-em-reuniao-fora-da-agenda-no-planalto-que-sofria-perseguicao.ghtml"
-    },
-    {
-      "id": "oglobo-2025-08-mantega-lobby",
-      "tipo": "reportagem",
-      "veiculo": "O Globo (Lauro Jardim)",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Mantega faz lobby no BC por operação do Banco Master",
-      "data": "2025-08",
-      "url": "https://oglobo.globo.com/blogs/lauro-jardim/post/2025/08/mantega-faz-lobby-no-bc-por-operacao-do-banco-master.ghtml"
     },
     {
       "id": "oglobo-2026-04-08-master-pagamentos",

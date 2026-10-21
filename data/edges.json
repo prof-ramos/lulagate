@@ -615,10 +615,10 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-031",
@@ -636,10 +636,10 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-032",
@@ -657,9 +657,9 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-033",
@@ -677,10 +677,10 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-034",
@@ -1090,8 +1090,7 @@
       "esc-cpmi-lulinha"
     ],
     "fontes": [
-      "g1-2026-07-31-inquerito",
-      "cnn-2026-03-27-cpmi"
+      "g1-2026-07-31-inquerito"
     ],
     "data_referencia": "2026-07-31"
   },
@@ -1111,8 +1110,7 @@
       "esc-cpmi-lulinha"
     ],
     "fontes": [
-      "g1-2026-03-27-cpmi",
-      "oglobo-2026-03-27-cpmi"
+      "g1-2026-03-27-cpmi"
     ],
     "data_referencia": "2026-03-27"
   },
@@ -1132,7 +1130,7 @@
       "esc-cpmi-lulinha"
     ],
     "fontes": [
-      "cnn-2026-03-27-cpmi"
+      "g1-2026-03-27-cpmi"
     ],
     "data_referencia": "2026-03-27"
   },

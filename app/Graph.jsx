@@ -34,15 +34,18 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
     (b.id()===stateRef.current.selected?3:b.id()==='lula'?2:priorities.has(b.id())?1:0)-
     (a.id()===stateRef.current.selected?3:a.id()==='lula'?2:priorities.has(a.id())?1:0)||b.degree()-a.degree()||a.id().localeCompare(b.id()));
    const boxes=[],pan=cy.pan();
+   const rect=element.getBoundingClientRect(),panel=document.querySelector('.person-panel')?.getBoundingClientRect();
+   const visibleBottom=panel&&panel.width>rect.width*.75?Math.min(cy.height(),panel.top-rect.top):cy.height();
    {
-    cy.nodes().forEach(n=>n.style({'font-size':12/zoom,'text-max-width':140/zoom,'text-margin-y':6/zoom,'text-opacity':0,width:Math.max(n.data('size'),44/zoom),height:Math.max(n.data('size'),44/zoom)}));
+    cy.nodes().forEach(n=>n.style({'font-size':12/zoom,'text-max-width':1000/zoom,'text-margin-y':6/zoom,'text-opacity':0,width:Math.max(n.data('size'),44/zoom),height:Math.max(n.data('size'),44/zoom)}));
+    const bodies=cy.nodes().map(n=>({id:n.id(),...n.renderedBoundingBox({includeLabels:false,includeOverlays:false,useCache:false})}));
     ordered.forEach(n=>{
      if(!priorities.has(n.id())&&n.id()!=='lula'&&n.id()!==stateRef.current.selected&&zoom<.85)return;
      n.style('text-opacity',1);
      n.recalculateRenderedStyle(false);
      const raw=n.boundingBox({includeLabels:true,includeOverlays:false,useCache:false});
      const box={x1:raw.x1*zoom+pan.x-3,y1:raw.y1*zoom+pan.y-3,x2:raw.x2*zoom+pan.x+3,y2:raw.y2*zoom+pan.y+3};
-     if(n.id()!=='lula'&&(box.x1<8||box.y1<8||box.x2>cy.width()-8||box.y2>cy.height()-8||boxes.some(b=>box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)))n.style('text-opacity',0);
+     if(n.id()!=='lula'&&(box.x1<8||box.y1<8||box.x2>cy.width()-8||box.y2>visibleBottom-8||bodies.some(b=>b.id!==n.id()&&box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)||boxes.some(b=>box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)))n.style('text-opacity',0);
      else boxes.push(box);
     });
     cy.edges().forEach(e=>e.style('width',Math.max(e.hasClass('neighbor')?3:1.5,1.5/zoom)));
@@ -76,6 +79,13 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    }
    element.parentElement.style.setProperty('--graph-right-inset',`${rightInset}px`);
    element.parentElement.style.setProperty('--graph-bottom-inset',`${bottomInset}px`);
+   // The controls move above the sheet via the insets set above. Measure them
+   // there before framing: reserving only the sheet leaves tappable nodes
+   // behind the zoom buttons (especially after collision-driven enlargement).
+   const controls=element.parentElement.querySelector('.zoom-controls')?.getBoundingClientRect();
+   if(controls&&controls.left<rect.right&&controls.right>rect.left&&controls.top<rect.bottom&&controls.bottom>rect.top){
+    bottom=Math.min(bottom,controls.top-rect.top-16);
+   }
    const band=element.parentElement.querySelector('.band-legend')?.getBoundingClientRect();
    if(band){if(rect.width>700)right=Math.min(right,band.left-rect.left-16);else top=Math.max(top,band.bottom-rect.top+14)}
    const listElement=element.parentElement.querySelector('.graph-people');
@@ -91,10 +101,32 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    const box={x1:Math.min(...xs),x2:Math.max(...xs),y1:Math.min(...ys),y2:Math.max(...ys)};box.w=box.x2-box.x1;box.h=box.y2-box.y1;
    if(stateRef.current.view==='proximidade'){const radius=PROXIMITY_BANDS.length*BAND_STEP;box.x1=Math.min(box.x1,-radius);box.y1=Math.min(box.y1,-radius);box.x2=Math.max(box.x2,radius);box.y2=Math.max(box.y2,radius);box.w=box.x2-box.x1;box.h=box.y2-box.y1}
    // Reserve screen-space room for a 160 px label and the fixed-size tap targets.
-   const zoom=Math.max(cy.minZoom(),Math.min(1.35,Math.max(20,width-170)/Math.max(1,box.w),Math.max(20,height-90)/Math.max(1,box.h)));
+   let zoom=Math.max(cy.minZoom(),Math.min(1.35,Math.max(20,width-170)/Math.max(1,box.w),Math.max(20,height-90)/Math.max(1,box.h)));
    const selectedNode=cy.getElementById(stateRef.current.selected||'');
    const point=selectedNode.length?selectedNode.position():{x:(box.x1+box.x2)/2,y:(box.y1+box.y2)/2};
-   cy.viewport({zoom,pan:{x:center.x-point.x*zoom,y:center.y-point.y*zoom}});cameraChanged();
+   const frame=()=>{cy.viewport({zoom,pan:{x:center.x-point.x*zoom,y:center.y-point.y*zoom}});cameraChanged()};
+   frame();
+   if(rect.width<=640&&panel&&selectedNode.length&&stateRef.current.view==='rede'){
+    // Keep network positions intact; enlarge until every visible target clears
+    // its neighbours, checking again as the set of visible nodes changes.
+    for(let attempt=0;attempt<60&&zoom<cy.maxZoom();attempt++){
+     const bodies=cy.nodes().map(n=>({id:n.id(),...n.renderedBoundingBox({includeLabels:false,includeOverlays:false,useCache:false})}))
+      .filter(b=>b.x2>0&&b.x1<rect.width&&b.y2>0&&b.y1<panel.top-rect.top);
+     const selectedBox=selectedNode.renderedBoundingBox({includeLabels:true,includeOverlays:false,useCache:false});
+     const intersects=(a,b)=>a.x1<b.x2+4&&a.x2>b.x1-4&&a.y1<b.y2+4&&a.y2>b.y1-4;
+     let required=zoom;
+     for(let i=0;i<bodies.length;i++)for(let j=i+1;j<bodies.length;j++){
+      const a=bodies[i],b=bodies[j];
+      if(!intersects(a,b))continue;
+      const dx=Math.abs((a.x1+a.x2-b.x1-b.x2)/2),dy=Math.abs((a.y1+a.y2-b.y1-b.y2)/2);
+      const factor=Math.min(((a.w+b.w)/2+6)/(dx||.001),((a.h+b.h)/2+6)/(dy||.001));
+      required=Math.max(required,zoom*Math.max(1.05,factor));
+     }
+     if(bodies.some(b=>b.id!==selectedNode.id()&&intersects(selectedBox,b)))required=Math.max(required,zoom*1.1);
+     if(required===zoom)break;
+     zoom=Math.min(cy.maxZoom(),required);frame();
+    }
+   }
   };
   fitRef.current=()=>{cancelAnimationFrame(fitFrame.current);fitFrame.current=requestAnimationFrame(fit)};
   graphRef.current={exportPNG:()=>{const a=document.createElement('a');a.href=cy.png({full:true,scale:2,bg:getComputedStyle(element).getPropertyValue('--bg').trim()});a.download='lula-gate.png';a.click()},reset:fit,zoomBy:factor=>{const rect=element.getBoundingClientRect();cy.zoom({level:Math.max(cy.minZoom(),Math.min(cy.maxZoom(),cy.zoom()*factor)),renderedPosition:{x:rect.width/2,y:rect.height/2}})}};

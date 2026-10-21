@@ -32,6 +32,10 @@ try{
   const cy=window.__cy,z=cy.zoom(),pan=cy.pan();
   const boxes=cy.nodes().filter(n=>Number(n.style('text-opacity'))>0&&n.visible()).map(n=>{const b=n.boundingBox({includeLabels:true,includeOverlays:false});return {id:n.id(),font:parseFloat(n.style('font-size'))*z,x1:b.x1*z+pan.x,y1:b.y1*z+pan.y,x2:b.x2*z+pan.x,y2:b.y2*z+pan.y};});
   const failures=[];
+  for(const n of cy.nodes()){
+   const text=n.data('label')||'';
+   if(/…|\.\.\./.test(text)||n.style('text-wrap')==='ellipsis'||text.split('\n').length>2)failures.push({id:n.id(),reason:'Rótulo truncado ou com mais de duas linhas'});
+  }
   for(const b of boxes){if(b.font<11.999||b.x1<0||b.y1<0||b.x2>cy.width()||b.y2>cy.height())failures.push(b);}
   for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++){const a=boxes[i],b=boxes[j];if(a.x1<b.x2&&a.x2>b.x1&&a.y1<b.y2&&a.y2>b.y1)failures.push([a.id,b.id]);}
   return {visible:boxes.length,lulaVisible:boxes.some(b=>b.id==='lula'),failures};
@@ -59,7 +63,28 @@ try{
  await check('AC-03',async()=>{await load();await page.locator('#search').fill('Lula');await page.locator('#search').press('Enter');await page.keyboard.press('Escape');await page.getByRole('button',{name:'Filtros',exact:true}).click();await page.locator('fieldset input').first().uncheck();await page.keyboard.press('Escape');await page.getByRole('button',{name:'Metodologia',exact:true}).click();await page.getByRole('dialog').waitFor();await page.keyboard.press('Escape');assert.deepEqual(external,[]);});
  const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:3,reducedMotion:'reduce'});
  await load(mobile);
- await check('AC-05',()=>labelCheck(mobile));
+ await check('AC-05',async()=>{
+  const initial=await labelCheck(mobile);
+  await load(mobile,'p=lula');
+  const result=await mobile.evaluate(()=>{
+   const cy=window.__cy,lula=cy.getElementById('lula');
+   const box=lula.renderedBoundingBox({includeLabels:true,includeOverlays:false,useCache:false});
+   const overlaps=cy.nodes().filter(n=>n.id()!=='lula').filter(n=>{
+    const b=n.renderedBoundingBox({includeLabels:Number(n.style('text-opacity'))>0,includeOverlays:false,useCache:false});
+    return box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1;
+   }).map(n=>n.id());
+   const graph=document.querySelector('.graph').getBoundingClientRect(),panel=document.querySelector('.person-panel').getBoundingClientRect();
+   const bodies=cy.nodes().filter(n=>n.visible()).map(n=>({id:n.id(),...n.renderedBoundingBox({includeLabels:false,includeOverlays:false,useCache:false})}))
+    .filter(b=>b.x2>0&&b.x1<cy.width()&&b.y2>0&&b.y1<panel.top-graph.top);
+   const nodeOverlaps=[];
+   for(let i=0;i<bodies.length;i++)for(let j=i+1;j<bodies.length;j++){
+    const a=bodies[i],b=bodies[j];
+    if(a.x1<b.x2&&a.x2>b.x1&&a.y1<b.y2&&a.y2>b.y1)nodeOverlaps.push([a.id,b.id]);
+   }
+   return {nodeOverlaps,visibleNodes:bodies.map(b=>b.id),overlaps,visible:Number(lula.style('text-opacity'))>0,inside:box.x1>=0&&box.x2<=cy.width()&&box.y1>=0&&box.y2<=panel.top-graph.top};
+  });
+  assert.ok(result.visibleNodes.length>1,'Sem vizinhos visíveis acima do painel');assert.ok(result.visible,'Rótulo de Lula oculto em ?p=lula');assert.ok(result.inside,'Lula fora da área livre');assert.deepEqual(result.overlaps,[],'Lula intersecta outros nós');assert.deepEqual(result.nodeOverlaps,[],'Nós sobrepostos acima do painel');return {initial,deepLink:result};
+ });
  await check('AC-06',async()=>{
   await load(mobile,'p=lula');const graph=await mobile.locator('.graph').boundingBox(),panel=await mobile.locator('.person-panel').boundingBox();assert.ok(Math.min(graph.y+graph.height,panel.y)-graph.y>=180);
   const node=await mobile.evaluate(()=>{const cy=window.__cy;const n=cy.nodes().filter(n=>n.id()!=='lula'&&n.renderedPosition().x>25&&n.renderedPosition().x<cy.width()-25&&n.renderedPosition().y>25&&n.renderedPosition().y<Math.min(cy.height(),document.querySelector('.person-panel').getBoundingClientRect().top-document.querySelector('.graph').getBoundingClientRect().top)-25)[0];return n?{id:n.id(),...n.renderedPosition()}:null;});assert.ok(node,'Sem nó clicável');await mobile.mouse.click(graph.x+node.x,graph.y+node.y);await mobile.waitForFunction(id=>new URLSearchParams(location.search).get('p')===id,node.id);

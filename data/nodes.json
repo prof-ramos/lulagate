@@ -286,16 +286,16 @@
       }
     ],
     "relacao_com_lula": "ministro da Casa Civil",
-    "resumo": "Pena da AP 470 extinta por indulto em 2016; pena no caso Apolo Tubulars extinta por prescrição em maio de 2024. Atos de Moro em duas ações penais anulados pelo STF na Pet 12229 em outubro de 2024. Ex-ministro da Casa Civil de Lula, condenado pelo STF em 2012 por corrupção ativa no mensalão (AP 470).",
-    "situacao_juridica": "Pena da AP 470 extinta por indulto em 2016; pena no caso Apolo Tubulars extinta por prescrição em maio de 2024. Atos de Moro em duas ações penais anulados pelo STF na Pet 12229 em outubro de 2024.",
+    "resumo": "Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição. Ex-ministro da Casa Civil de Lula.",
+    "situacao_juridica": "Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição.",
     "fontes": [
       "pr-a-factcheck-01",
       "pr-a-factcheck-02",
       "pr-a-factcheck-03",
       "g1-2012-10-dirceu"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
-    "categoria_juridica": "condenacao_anulada",
+    "categoria_juridica_declarada": "pena_extinta_indulto",
+    "categoria_juridica": "pena_extinta_indulto",
     "retrato": {
       "arquivo": "retratos/jose-dirceu.webp",
       "autor": "José CRuz/ABr",
@@ -330,7 +330,7 @@
     ],
     "relacao_com_lula": "tesoureiro do partido",
     "resumo": "Tesoureiro do PT na época do mensalão. Segundo a Folha (2005), o presidente do PT afirmou que ele era o \"traidor\" mencionado por Lula no Roda Viva.",
-    "situacao_juridica": "Réu da AP 470.",
+    "situacao_juridica": "Situação jurídica atual não confirmada nas fontes deste levantamento.",
     "fontes": [
       "folha-2005-11-09-delubio"
     ],
@@ -950,7 +950,7 @@
     "fontes": [
       "pr-a-factcheck-06",
       "trf4-2019-11-27-atibaia",
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
     "categoria_juridica_declarada": "condenacao_anulada",
     "categoria_juridica": "condenacao_anulada",
@@ -982,10 +982,10 @@
       }
     ],
     "relacao_com_lula": "sócio do filho",
-    "resumo": "Citado pela PF entre os controladores das empresas do grupo Gamecorp/Gol investigadas na Mapa da Mina.",
-    "situacao_juridica": "Investigação arquivada (2022).",
+    "resumo": "Ligado ao grupo Gamecorp/Gol, investigado na Mapa da Mina; inquérito arquivado em janeiro de 2022.",
+    "situacao_juridica": "Inquérito da Mapa da Mina arquivado em janeiro de 2022, sem denúncia, após nulidade das provas.",
     "fontes": [
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
     "categoria_juridica": "absolvido_arquivado",
     "retrato": null,
@@ -1014,10 +1014,10 @@
       }
     ],
     "relacao_com_lula": "sócio do filho",
-    "resumo": "Citado pela PF entre os controladores das empresas investigadas na Mapa da Mina.",
-    "situacao_juridica": "Investigação arquivada (2022).",
+    "resumo": "Ligado ao grupo Gamecorp/Gol, investigado na Mapa da Mina; inquérito arquivado em janeiro de 2022.",
+    "situacao_juridica": "Inquérito da Mapa da Mina arquivado em janeiro de 2022, sem denúncia, após nulidade das provas.",
     "fontes": [
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
     "categoria_juridica": "absolvido_arquivado",
     "retrato": null,
@@ -1875,10 +1875,10 @@
       }
     ],
     "relacao_com_lula": "contexto",
-    "resumo": "Disse que a mesada a Lulinha era sustentada apenas por uma testemunha, sem confirmação.",
+    "resumo": "Presidente da CPMI do INSS.",
     "situacao_juridica": "",
     "fontes": [
-      "cnn-2026-03-27-cpmi"
+      "g1-2026-03-27-cpmi"
     ],
     "categoria_juridica": "sem_informacao",
     "retrato": null,

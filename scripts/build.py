@@ -16,6 +16,10 @@ ids_visiveis = {n['id'] for n in N}
 E = [e for e in E if e['id'] not in ids_ocultos and {e['origem'], e['destino']} <= ids_visiveis]
 for caso in C:
     caso['personagens'] = [ident for ident in caso['personagens'] if ident in ids_visiveis]
+fontes_retiradas = {'pf-2019-12-10-mapa', 'poder360-2026-03-27-cpmi', 'cnn-2026-03-27-cpmi', 'cnn-2026-advogado-lulinha', 'oglobo-2026-03-27-cpmi', 'oglobo-2025-08-mantega-lobby'}
+for registro in N + E + C:
+    registro['fontes'] = list(dict.fromkeys(f for f in registro['fontes'] if f not in fontes_retiradas))
+S = {ident: fonte for ident, fonte in S.items() if ident not in fontes_retiradas}
 D = str(ROOT / 'data')
 creditos = json.loads((ROOT / 'data/creditos-imagens.json').read_text(encoding='utf-8'))
 por_pessoa = {c['pessoa_id']: c for c in creditos}

@@ -5,6 +5,11 @@ import {compactLabel,parallelSlots,proximityBand,STATUS_CONFIG,LEGAL_COLORS,node
 cytoscape.use(fcose);
 
 export const BAND_STEP=160;
+export function wrapLabel(label){
+ const words=label.split(/\s+/);if(label.length<19||words.length<2)return label;
+ let split=1;for(let i=2;i<words.length;i++)if(Math.abs(words.slice(0,i).join(' ').length-words.slice(i).join(' ').length)<Math.abs(words.slice(0,split).join(' ').length-words.slice(split).join(' ').length))split=i;
+ return words.slice(0,split).join(' ')+'\n'+words.slice(split).join(' ');
+}
 export function proximityPositions(people){
  const positions={},placed=[];
  // Capsules remain on their editorial radius; search nearby angles for label clearance.
@@ -29,7 +34,7 @@ export function proximityPositions(people){
  return positions;
 }
 export function graphElements(people,edges,slots=parallelSlots(edges)){
- return [...people.map(p=>({group:'nodes',data:{...p,label:compactLabel(p),compact:compactLabel(p),size:nodeSize(p),legalColor:LEGAL_COLORS[p.categoria_juridica]||LEGAL_COLORS.sem_informacao,legalShape:({condenado:'diamond',condenacao_anulada:'hexagon',investigado:'triangle',absolvido_arquivado:'round-rectangle'})[p.categoria_juridica]||'ellipse'},classes:p.id==='lula'?'central':''})),...edges.map(e=>({group:'edges',data:{...e,source:e.origem,target:e.destino,slot:slots.get(e.id)||0,curve:(slots.get(e.id)||0)*65*(e.origem<e.destino?1:-1)},classes:`status-${e.status}`}))];
+ return [...people.map(p=>({group:'nodes',data:{...p,label:wrapLabel(compactLabel(p)),compact:wrapLabel(compactLabel(p)),size:nodeSize(p),legalColor:LEGAL_COLORS[p.categoria_juridica]||LEGAL_COLORS.sem_informacao,legalShape:({pena_extinta_indulto:'rectangle',condenado:'diamond',condenacao_anulada:'hexagon',investigado:'triangle',absolvido_arquivado:'round-rectangle'})[p.categoria_juridica]||'ellipse'},classes:p.id==='lula'?'central':''})),...edges.map(e=>({group:'edges',data:{...e,source:e.origem,target:e.destino,slot:slots.get(e.id)||0,curve:(slots.get(e.id)||0)*65*(e.origem<e.destino?1:-1)},classes:`status-${e.status}`}))];
 }
 // Reconcile the actual graph; retained nodes keep their identity and dragged positions.
 export function syncSlice(cy,people,edges,slots){
@@ -60,8 +65,8 @@ export function applyFocus(cy,focused){
 }
 export function graphStyles(t){
  return [
-  {selector:'node',style:{shape:'data(legalShape)',width:'data(size)',height:'data(size)',padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'ellipsis','text-max-width':100,'text-overflow-wrap':'whitespace','min-zoomed-font-size':11,'text-valign':'bottom','text-margin-y':6,'text-background-color':t.paper,'text-background-opacity':.9,'text-background-padding':2,'text-halign':'center','background-color':'data(legalColor)','border-color':t.paper,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
-  {selector:'node.central',style:{'min-zoomed-font-size':0,'font-size':17,color:t.ink,'border-color':t.accent,'border-width':2,'font-weight':'bold'}},
+  {selector:'node',style:{shape:'data(legalShape)',width:'data(size)',height:'data(size)',padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'wrap','text-max-width':100,'text-overflow-wrap':'whitespace','min-zoomed-font-size':11,'text-valign':'bottom','text-margin-y':6,'text-background-color':t.paper,'text-background-opacity':.9,'text-background-padding':2,'text-halign':'center','background-color':'data(legalColor)','border-color':t.paper,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
+  {selector:'node.central',style:{'z-index-compare':'manual','z-index':20,'min-zoomed-font-size':0,'font-size':17,color:t.ink,'border-color':t.accent,'border-width':2,'font-weight':'bold'}},
   {selector:'node[size >= 50]',style:{'min-zoomed-font-size':0,'font-size':14}},
   {selector:'edge',style:{width:1.5,'curve-style':'unbundled-bezier','control-point-distances':'data(curve)','control-point-weights':.5,'line-color':t.node,'overlay-opacity':0}},
   ...Object.entries(STATUS_CONFIG).map(([status,{dash}])=>({selector:`edge.status-${status}`,style:{'line-color':t.statuses[status],'line-style':dash?'dashed':'solid',...(dash?{'line-dash-pattern':dash.split(' ').map(Number)}:{})}})),
@@ -69,6 +74,6 @@ export function graphStyles(t){
   {selector:'edge.neighbor',style:{width:3}},
   {selector:'node.neighbor',style:{'border-color':t.accent,'border-width':2}},
   {selector:'node.search-match',style:{'min-zoomed-font-size':0,'border-color':t.accent,'border-width':3,'font-weight':'bold',opacity:1}},
-  {selector:'node.selected, node.focused',style:{'min-zoomed-font-size':0,color:t.ink,'border-color':t.ink,'border-width':3,'font-weight':'bold','z-index':10,opacity:1}},
+  {selector:'node.selected, node.focused',style:{'min-zoomed-font-size':0,color:t.ink,'border-color':t.ink,'border-width':3,'font-weight':'bold','z-index-compare':'manual','z-index':30,opacity:1}},
  ];
 }

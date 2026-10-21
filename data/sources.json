@@ -513,15 +513,6 @@
     "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0808200518.htm"
   },
   {
-    "id": "pf-2019-12-10-mapa",
-    "tipo": "documento_oficial",
-    "veiculo": "Polícia Federal",
-    "tipo_veiculo": "documento_oficial",
-    "titulo": "PF deflagra a 69ª Fase da Operação Lava Jato: Operação Mapa da Mina",
-    "data": "2019-12-10",
-    "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/12/pf-deflagra-a-69a-fase-da-operacao-lava-jato-operacao-mapa-da-mina"
-  },
-  {
     "id": "g1-2019-12-10-mapa",
     "tipo": "reportagem",
     "veiculo": "G1",
@@ -675,33 +666,6 @@
     "url": "https://g1.globo.com/politica/noticia/2026/03/27/cpmi-do-inss-relatorio.ghtml"
   },
   {
-    "id": "oglobo-2026-03-27-cpmi",
-    "tipo": "reportagem",
-    "veiculo": "O Globo",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Relatório da CPI diz que testemunha citou pagamentos de R$ 300 mil de Careca do INSS a Lulinha e sugere prisão de filho do presidente",
-    "data": "2026-03-27",
-    "url": "https://oglobo.globo.com/politica/noticia/2026/03/27/relatorio-da-cpi-afirma-que-testemunha-citou-pagamentos-de-r-300-mil-mensais-de-careca-do-inss-a-lulinha.ghtml"
-  },
-  {
-    "id": "poder360-2026-03-27-cpmi",
-    "tipo": "reportagem",
-    "veiculo": "Poder360",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Relatório cita mesada do Careca do INSS para Lulinha",
-    "data": "2026-03-27",
-    "url": "https://www.poder360.com.br/poder-congresso/relatorio-cita-mesada-do-careca-do-inss-para-lulinha/"
-  },
-  {
-    "id": "cnn-2026-03-27-cpmi",
-    "tipo": "reportagem",
-    "veiculo": "CNN Brasil",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Relator de CPMI detalha supostos pagamentos de Careca do INSS a Lulinha",
-    "data": "2026-03-27",
-    "url": "https://www.cnnbrasil.com.br/politica/relator-de-cpmi-detalha-pagamentos-de-careca-do-inss-a-lulinha/"
-  },
-  {
     "id": "g1-2026-07-31-inquerito",
     "tipo": "reportagem",
     "veiculo": "G1",
@@ -727,15 +691,6 @@
     "titulo": "Defesa de Lulinha nega relação com esquema no INSS e diz que provará inocência",
     "data": "2026",
     "url": "https://www.estadao.com.br/politica/defesa-de-lulinha-nega-relacao-com-esquema-no-inss-e-diz-que-provara-inocencia-bala-de-festim/"
-  },
-  {
-    "id": "cnn-2026-advogado-lulinha",
-    "tipo": "reportagem",
-    "veiculo": "CNN Brasil",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Advogado de Lulinha nega que ele tenha recebido mesada do Careca do INSS",
-    "data": "2026-03",
-    "url": "https://www.cnnbrasil.com.br/politica/advogado-de-lulinha-nega-que-ele-tenha-recebido-mesada-de-careca-do-inss/"
   },
   {
     "id": "pr-a-factcheck-01",
@@ -988,15 +943,6 @@
     "titulo": "Lula relata conversa com Vorcaro no Planalto: não haveria posição política pró ou contra o Master",
     "data": "2026-02-05",
     "url": "https://oglobo.globo.com/economia/noticia/2026/02/05/lula-disse-que-vorcaro-afirmou-a-ele-em-reuniao-fora-da-agenda-no-planalto-que-sofria-perseguicao.ghtml"
-  },
-  {
-    "id": "oglobo-2025-08-mantega-lobby",
-    "tipo": "reportagem",
-    "veiculo": "O Globo (Lauro Jardim)",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Mantega faz lobby no BC por operação do Banco Master",
-    "data": "2025-08",
-    "url": "https://oglobo.globo.com/blogs/lauro-jardim/post/2025/08/mantega-faz-lobby-no-bc-por-operacao-do-banco-master.ghtml"
   },
   {
     "id": "oglobo-2026-04-08-master-pagamentos",

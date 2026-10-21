@@ -48,3 +48,29 @@ AC-01 permanece inalterado: expectativa histórica 63 pessoas / 78 conexões / 1
 - `git diff --check`: PASS.
 - Sem revisão visual no navegador nesta entrega; alterações limitadas a dados, créditos, geração e validação. Sem mudanças no código da interface.
 - Sem commit.
+
+## Correções após QA de 21/10/2026 (2a11d62)
+
+Estas correções substituem os estados e contagens descritos acima quando divergirem. Branch `hotfix/a-risco-juridico`; sem commit.
+
+| Item | Antes | Depois | Fonte / fundamento |
+|---|---|---|---|
+| Publicação da pessoa oculta | Nome no resumo da CPMI e consultoria de R$ 1,4 mi nos valores; ID no mapa de QIDs | Nome, item de consultoria e ID removidos dos JSON publicados e HTML; ID preservado apenas em `data/ocultos.json`. Pesquisa original permanece nos geradores. | QA AC-19 e instrução de retirada; nenhuma nova afirmação factual |
+| Alegações ocultadas | Menção à mesada no caso, valores e personagem de contexto; fontes dessas alegações na metodologia | Menções e valores retirados; seis fontes removidas da publicação (incluindo PF restrita e coluna de lobby). Fontes compartilhadas são preservadas quando ainda sustentam conteúdo visível. Carlos Viana descrito como presidente da CPMI, com fonte G1 do relatório. | QA AC-19/20; fontes mantidas: `g1-2026-03-27-cpmi`, `g1-2026-07-31-inquerito` |
+| José Dirceu | Categoria de condenação anulada; resumo ainda trazia condenação de 2012 | Desfecho primeiro: “Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição.” Categoria `pena_extinta_indulto`, rótulo “Pena extinta (indulto)”, retângulo e cor própria `#8c3267`, legenda textual e metodologia atualizadas | `pr-a-factcheck-01/02/03`, links STF na tabela anterior |
+| Kalil Bittar e Jonas Suassuna | Arquivamento atribuído a página restrita da PF de 2019 | Inquérito arquivado em janeiro de 2022, sem denúncia, após nulidade das provas; categoria de arquivamento preservada. Todos os usos visíveis da referência PF substituídos pela reportagem pública, incluindo Fernando e conexões do grupo | [`poder360-2022-01-mapa`, 18/01/2022](https://www.poder360.com.br/lava-jato/juiza-arquiva-investigacao-da-lava-jato-contra-filho-de-lula/). Texto público consultado: cita os três empresários, as quebras de sigilo de Kalil/Jonas e o arquivamento do inquérito e procedimentos dependentes a pedido do MPF |
+| Delúbio Soares | “Réu da AP 470.” com categoria sem informação | “Situação jurídica atual não confirmada nas fontes deste levantamento.”; categoria `sem_informacao` | Fact-check, linha Delúbio: Folha de 2005 não sustenta desfecho atual; relatório não verificou nova fonte STF |
+| Rótulos e mobile | Mauro truncado; Lula coberto em link direto | Quebra em espaços em até duas linhas, preservada após seleção; sem modo ellipsis. Lula/selecionado com prioridade de desenho manual. Enquadramento mobile da Rede reserva 110 px ao redor do selecionado, afastando nós que cobriam seu corpo/rótulo | QA AC-04/05; AC-04/05 agora rejeitam reticências e AC-05 testa `?p=lula` em 390×844 DPR3, interseções com todos os outros nós e área livre acima do painel |
+| Integridade de docs | Sincronização manual sem CI | `scripts/check_docs_build.sh` executa npm ci + build e compara index.html e og.png por cmp. Workflow em push/pull_request, Ubuntu, Node 20, Python 3: validação, npm test e check de docs | Pedido desta rodada; sem publicação remota |
+
+Contagens publicadas após correções: **61 pessoas / 73 conexões / 18 casos / 108 fontes / 16 grupos**. Seis fontes retiradas, nenhuma pessoa ou conexão visível removida nesta rodada. AC-01 mantém a expectativa histórica do pack, conforme pedido anterior; não foi recalibrado para estas contagens.
+
+Verificação desta rodada:
+
+- `python3 scripts/build.py` e `python3 scripts/validate.py`: PASS, zero erros.
+- `python3 scripts/test_legal_category.py`: PASS.
+- `cd app && timeout 300 npm test`: PASS, seis arquivos de testes, incluindo regressões de publicação e rótulos após seleção.
+- `npm ci` e `npm run build`: PASS; artefatos copiados de `dist/` para `docs/`.
+- `scripts/check_docs_build.sh`: PASS, HTML e OG idênticos ao rebuild.
+- Busca case-insensitive por `luchsinger`: zero em docs/index.html e em todos os data/*.json exceto ocultos.json. Também zero para `mesada` e `mantega-lobby` no dataset publicado.
+- Revisão estática com as skills locais frontend-design e web-design-guidelines e regras remotas consultadas: cores, forma distinta, nomes textuais da legenda, preservação de foco/teclado/URLs e ausência de novas animações. Chromium, capturas desktop/mobile e execução de AC-04/05 **não executados nesta rodada**, conforme usuário assumiu o Chromium. O afastamento mobile precisa dessa confirmação visual; não se declara aprovação visual ou conformidade integral.

@@ -485,10 +485,9 @@
     "fontes": [
       "folha-2005-07-09-telemar",
       "folha-2005-08-08-telemar",
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "g1-2019-12-10-mapa",
-      "folha-2022-01-17-mapa",
-      "poder360-2022-01-mapa"
+      "folha-2022-01-17-mapa"
     ],
     "conexoes": [
       "con-002",
@@ -586,8 +585,8 @@
       "fim": null
     },
     "status": "investigacao_em_curso",
-    "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS. A alegação de mesada de R$ 300 mil vem de uma única testemunha, sem confirmação.",
-    "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, por meio de Roberta Luchsinger, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
+    "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS.",
+    "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
     "papel_de_lula": "Pai do investigado; não investigado.",
     "versao_de_lula": "Lula disse em 30/07/2026 que, se o filho for julgado, não terá privilégios, não vai se esconder e terá de provar inocência (G1).",
     "personagens": [
@@ -600,31 +599,16 @@
       "marco-aurelio-carvalho",
       "lula"
     ],
-    "valores": [
-      {
-        "descricao": "Mesada alegada por testemunha (não comprovada)",
-        "valor": 300000,
-        "moeda": "BRL"
-      },
-      {
-        "descricao": "Consultoria recebida por Roberta Luchsinger, segundo o relator",
-        "valor": 1400000,
-        "moeda": "BRL"
-      }
-    ],
+    "valores": [],
     "escandalos_relacionados": [
       "esc-inss-sindnapi"
     ],
     "fontes": [
       "senado-2025-08-28-careca",
       "g1-2026-03-27-cpmi",
-      "oglobo-2026-03-27-cpmi",
-      "poder360-2026-03-27-cpmi",
-      "cnn-2026-03-27-cpmi",
       "g1-2026-07-31-inquerito",
       "g1-2026-07-30-lula",
-      "estadao-2026-defesa-lulinha",
-      "cnn-2026-advogado-lulinha"
+      "estadao-2026-defesa-lulinha"
     ],
     "conexoes": [
       "con-002",
