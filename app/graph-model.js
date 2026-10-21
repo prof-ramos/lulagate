@@ -35,3 +35,20 @@ export function edgePath(edge,positions,slots){
  const dx=b.x-a.x,dy=b.y-a.y,length=Math.hypot(dx,dy)||1,offset=(slots.get(edge.id)||0)*48;
  return `M ${a.x} ${a.y} Q ${(a.x+b.x)/2-dy/length*offset} ${(a.y+b.y)/2+dx/length*offset} ${b.x} ${b.y}`;
 }
+// Context names shorten only existing words; details always retain the full name.
+export function compactLabel(person){
+ const alias=person.nome.match(/\(([^)]+)\)/)?.[1];if(alias)return alias;
+ if(person.id==='lula')return 'Lula';
+ const words=person.nome.trim().split(/\s+/);return words.length>3?`${words[0]} ${words.at(-1)}`:person.nome;
+}
+export function wrapLabel(text,maxWidth,measure){
+ const lines=[];let line='';
+ for(const word of text.trim().split(/\s+/)){
+  if(line&&measure(`${line} ${word}`)<=maxWidth){line+=` ${word}`;continue}
+  if(line){lines.push(line);line=''}
+  let part='';
+  for(const char of word){if(part&&measure(part+char)>maxWidth){lines.push(part);part=''}part+=char}
+  line=part;
+ }
+ if(line)lines.push(line);return lines;
+}

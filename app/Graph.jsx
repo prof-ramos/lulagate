@@ -1,8 +1,8 @@
 import React,{useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react';
-import {forceSimulation,forceManyBody,forceCollide,forceLink,forceCenter} from 'd3-force';
+import {forceSimulation,forceManyBody,forceCollide,forceLink,forceCenter,forceX,forceY} from 'd3-force';
 import {select} from 'd3-selection';
 import {zoom,zoomIdentity} from 'd3-zoom';
-import {edgePath,parallelSlots,proximityBand,PROXIMITY_BANDS,STATUS_CONFIG} from './graph-model.js';
+import {edgePath,parallelSlots,proximityBand,PROXIMITY_BANDS,STATUS_CONFIG,compactLabel,wrapLabel} from './graph-model.js';
 
 export default function Graph({data,view,selected,onSelect,visibleNodes,visibleEdges,graphRef,matches}){
  const svg=useRef(),layer=useRef(),zoomRef=useRef();
@@ -22,7 +22,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    // Equal initial spacing avoids using editorial proximity as a network force.
    ns.forEach((p,i)=>{const angle=i*Math.PI*(3-Math.sqrt(5)),r=75*Math.sqrt(i);p.x=Math.cos(angle)*r;p.y=Math.sin(angle)*r});
    const links=data.conexoes.map(e=>({source:e.origem,target:e.destino}));
-   const sim=forceSimulation(ns).force('links',forceLink(links).id(p=>p.id).distance(145).strength(.22)).force('charge',forceManyBody().strength(-350)).force('collide',forceCollide(48).iterations(3)).force('center',forceCenter(0,0)).stop();
+   const sim=forceSimulation(ns).force('links',forceLink(links).id(p=>p.id).distance(135).strength(.65)).force('charge',forceManyBody().strength(-160)).force('collide',forceCollide(62).iterations(3)).force('center',forceCenter(0,0)).force('x',forceX(0).strength(.035)).force('y',forceY(0).strength(.035)).stop();
    for(let i=0;i<360;i++)sim.tick();
   }
   return ns;
@@ -64,17 +64,24 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
   const priority=p=>selected===p.id?5:hovered===p.id?4:matches.has(p.id)?3:neighbors.has(p.id)?2:1;
   const labels=new Map([...svg.current.querySelectorAll('.node')].map(el=>[el.dataset.id,el.querySelector('text')]));
   // Reset together before measuring; priority names stay within the usable viewport.
-  for(const el of labels.values()){el.style.display='';el.removeAttribute('dx');el.removeAttribute('dy')}
+  for(const el of labels.values()){el.style.display='';el.removeAttribute('transform')}
   const viewport=svg.current.getBoundingClientRect();let right=viewport.right,bottom=viewport.bottom;
   const panel=document.querySelector('.person-panel')?.getBoundingClientRect();
   if(panel&&panel.left<viewport.right&&panel.right>viewport.left&&panel.top<viewport.bottom){if(matchMedia('(max-width:640px)').matches)bottom=Math.max(viewport.top,panel.top);else right=Math.max(viewport.left,panel.left)}
+  const context=document.createElement('canvas').getContext('2d');
+  for(const p of shown){
+   const el=labels.get(p.id),full=selected===p.id||hovered===p.id;
+   const font=getComputedStyle(el);context.font=`${font.fontStyle} ${font.fontWeight} ${selected===p.id?14:13}px ${font.fontFamily}`;
+   const lines=full?wrapLabel(p.nome,Math.max(30,right-viewport.left-24),text=>context.measureText(text).width):[compactLabel(p)];
+   el.replaceChildren(...lines.map((line,i)=>{const span=document.createElementNS('http://www.w3.org/2000/svg','tspan');span.setAttribute('x','0');span.setAttribute('dy',i?`${17/scale}`:'0');span.textContent=line;return span}));
+  }
   const measured=new Map([...labels].map(([id,el])=>[id,el.getBoundingClientRect()]));
   [...shown].sort((a,b)=>priority(b)-priority(a)||a.nome.localeCompare(b.nome,'pt-BR')).forEach(p=>{
    const el=labels.get(p.id),r=measured.get(p.id);let dx=0,dy=0;
    if(selected===p.id||hovered===p.id){
     dx=Math.max(viewport.left+8-r.left,Math.min(0,right-8-r.right));
     dy=Math.max(viewport.top+64-r.top,Math.min(0,bottom-28-r.bottom));
-    el.setAttribute('dx',dx/scale);el.setAttribute('dy',dy/scale);
+    el.setAttribute('transform',`translate(${dx/scale},${dy/scale})`);
    }
    const box={left:r.left+dx-4,right:r.right+dx+4,top:r.top+dy-3,bottom:r.bottom+dy+3};
    if(selected!==p.id&&hovered!==p.id&&occupied.some(other=>overlaps(box,other)))el.style.display='none';else occupied.push(box);
@@ -89,9 +96,9 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
   {view==='proximidade'&&shown.length>0&&PROXIMITY_BANDS.map((b,i)=><g key={b.min} className="ring"><circle r={(i+1)*108}/><title>{b.range}: {b.label}</title></g>)}
   <g className="edges">{visibleEdges.map(e=>{const relevant=!selected||e.origem===selected||e.destino===selected;return <path key={e.id} className={`edge status-${e.status} ${relevant?'neighbor':'context'}`} d={edgePath(e,byId,slots)} fill="none" vectorEffect="non-scaling-stroke" strokeWidth={selected&&relevant?2.8:1.5} strokeDasharray={STATUS_CONFIG[e.status]?.dash} opacity={relevant?1:.18}><title>{byId[e.origem]?.nome} → {byId[e.destino]?.nome}: {e.rotulo} · {data.meta.legenda_status[e.status]}</title></path>})}</g>
   {[...shown].sort((a,b)=>Number(a.id===selected)-Number(b.id===selected)).map(p=>{
-   const radius=p.id==='lula'?25:12,context=selected&&p.id!==selected&&!neighbors.has(p.id);
+   const radius=(p.id==='lula'?13:selected===p.id?9:6.5)/scale,context=selected&&p.id!==selected&&!neighbors.has(p.id)&&hovered!==p.id;
    return <g key={p.id} data-id={p.id} className={`node ${selected===p.id?'selected':''} ${neighbors.has(p.id)?'neighbor':''} ${context?'context':''} ${p.id==='lula'?'central':''}`} transform={`translate(${p.x},${p.y})`} opacity={context?.22:1} onMouseEnter={()=>setHovered(p.id)} onMouseLeave={()=>setHovered(null)} onFocus={()=>setHovered(p.id)} onBlur={()=>setHovered(null)} role="button" tabIndex={0} aria-label={`${p.nome}${selected===p.id?', selecionado':''}`} aria-pressed={selected===p.id} onClick={()=>onSelect(p.id)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onSelect(p.id)}}}>
-    <circle className="node-hit" r={Math.max(radius,22/scale)} fill="transparent" style={{pointerEvents:'all',stroke:'none'}}/><circle r={radius}/><text y={radius+17/scale} textAnchor="middle" style={{fontSize:(selected===p.id?14:13)/scale,strokeWidth:3/scale,pointerEvents:'all'}}>{p.id==='lula'&&selected!==p.id?'Lula':p.nome}</text><title>{p.nome} · {p.faixa_proximidade}</title>
+    <circle className="node-hit" r={Math.max(radius,22/scale)} fill="transparent" style={{pointerEvents:'all',stroke:'none'}}/><circle r={radius}/><text y={radius+17/scale} textAnchor="middle" style={{fontSize:(selected===p.id?14:13)/scale,strokeWidth:3/scale,pointerEvents:'all'}}></text><title>{p.nome} · {p.faixa_proximidade}</title>
    </g>
   })}
  </g></svg><span id="graph-keyboard-help" className="sr-only">Use as setas com foco no mapa ou em um personagem para mover o mapa. Tab percorre os personagens; Enter ou espaço abre seus detalhes. Os botões de zoom ampliam, reduzem e restauram o enquadramento.</span>{view==='proximidade'&&<details className="band-legend" open={bandsOpen} onToggle={e=>setBandsOpen(e.currentTarget.open)}><summary>Faixas de proximidade editorial</summary><ol>{PROXIMITY_BANDS.map((b,i)=><li key={b.min}><span className="band-number">{i+1}</span><strong>{b.range}</strong><span>{b.label}</span></li>)}</ol><p>Do anel interno ao externo. Atribuição editorial, não medida de culpa.</p></details>}</>;
