@@ -3,3 +3,6 @@ dist/
 .env*
 .DS_Store
 __pycache__/
+
+# Presentation-only grayscale build cache
+app/.generated/

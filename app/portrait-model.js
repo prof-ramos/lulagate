@@ -12,3 +12,15 @@ export function portraitSource(person,base='./'){
  const file=person.retrato?.arquivo;
  return typeof file==='string'&&/^retratos\/[a-z0-9-]+\.webp$/.test(file)?`${base.replace(/\/?$/,'/')}${file}`:null;
 }
+
+const initialImages=new Map();
+// Called after document.fonts.ready: canvas uses the same local Inter as the UI.
+export function initialsImage(person){
+ const letters=initials(person);
+ if(initialImages.has(letters))return initialImages.get(letters);
+ const canvas=document.createElement('canvas');canvas.width=canvas.height=96;
+ const context=canvas.getContext('2d');
+ context.fillStyle='#E7E3DA';context.fillRect(0,0,96,96);
+ context.font='600 30px Inter';context.fillStyle='#1C1B19';context.textAlign='center';context.textBaseline='middle';context.fillText(letters,48,48);
+ const image=canvas.toDataURL('image/png');initialImages.set(letters,image);return image;
+}

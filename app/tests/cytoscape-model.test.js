@@ -30,10 +30,10 @@ test('selection changes classes and names on same instance without changing came
  assert.equal(lula.data('label'),lula.data('compact'));assert.ok(cy.$id('p6').hasClass('context'));
  applySelection(cy,'p0',new Set());assert.equal(cy.$id('lula')[0],lula);assert.equal(cy.zoom(),before.zoom);assert.deepEqual(cy.pan(),before.pan);assert.deepEqual(lula.position(),before.position);cy.destroy();
 });
-test('all seven legend patterns map to distinct native edge styles',()=>{
+test('all source statuses map to the three requested native edge patterns',()=>{
  const styles=graphStyles({ink:'#111',paper:'#fff',node:'#888',accent:'#f00',muted:'#777',bg:'#fff',statuses:Object.fromEntries(Object.keys(STATUS_CONFIG).map(k=>[k,'#888']))});
  const statuses=styles.filter(s=>s.selector.startsWith('edge.status-'));assert.equal(statuses.length,7);
- assert.equal(new Set(statuses.map(s=>JSON.stringify([s.style['line-style'],s.style['line-dash-pattern']]))).size,7);
+ assert.equal(new Set(statuses.map(s=>JSON.stringify([s.style['line-style'],s.style['line-dash-pattern']]))).size,3);
 });
 
 test('real dataset layout has case-based dimensions, finite positions and no overlapping node boxes',async()=>{

@@ -20,8 +20,8 @@ test('all editorial proximity boundaries retain exact methodology semantics',()=
 });
 test('status legend and paths can share one explicit pattern configuration',()=>{
  assert.equal(Object.keys(STATUS_CONFIG).length,7);
- assert.equal(new Set(Object.values(STATUS_CONFIG).map(status=>status.dash||'solid')).size,7);
- assert.equal(STATUS_CONFIG.alegacao_nao_comprovada.dash,'3 6');
+ assert.equal(new Set(Object.values(STATUS_CONFIG).map(status=>status.dash||'solid')).size,3);
+ assert.equal(STATUS_CONFIG.alegacao_nao_comprovada.dash,'1 3');
  assert.notEqual(STATUS_CONFIG.arquivado.dash,STATUS_CONFIG.condenacao_anulada.dash);
 });
 

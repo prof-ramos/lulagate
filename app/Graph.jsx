@@ -1,3 +1,4 @@
+import {initialsImage} from './portrait-model.js';
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import cytoscape from 'cytoscape';
 import {createPortal} from 'react-dom';
@@ -27,7 +28,9 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    const statuses=Object.fromEntries(Object.keys(STATUS_CONFIG).map(status=>[status,getComputedStyle(element.parentElement.querySelector(`.graph-theme-probe.status-${status}`)).getPropertyValue('--status-color').trim()]));
    cy.style(graphStyles({ink:token('ink'),paper:token('paper'),bg:token('bg'),muted:token('muted'),node:token('node'),accent:token('accent'),statuses}));
   };
+  let fontsReady=false;
   const cameraChanged=()=>{
+   if(fontsReady)cy.nodes().filter(n=>!n.data('retrato')?.base64).forEach(n=>n.style('background-image',initialsImage(n.data())));
    const zoom=cy.zoom();setCamera({zoom,pan:{...cy.pan()}});
    const priorities=stateRef.current.opening||new Set();
    const ordered=cy.nodes().sort((a,b)=>
@@ -35,7 +38,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
     (a.id()===stateRef.current.selected?3:a.id()==='lula'?2:priorities.has(a.id())?1:0)||b.degree()-a.degree()||a.id().localeCompare(b.id()));
    const boxes=[],pan=cy.pan();
    {
-    cy.nodes().forEach(n=>n.style({'font-size':12/zoom,'text-max-width':140/zoom,'text-margin-y':6/zoom,'text-opacity':0,width:Math.max(n.data('size'),44/zoom),height:Math.max(n.data('size'),44/zoom)}));
+    cy.nodes().forEach(n=>n.style({'font-size':12/zoom,'text-max-width':140/zoom,'text-margin-y':6/zoom,'text-opacity':0,width:n.data('size'),height:n.data('size'),'border-width':n.data('ringWidth')/zoom,'text-outline-width':2/zoom}));
     ordered.forEach(n=>{
      if(!priorities.has(n.id())&&n.id()!=='lula'&&n.id()!==stateRef.current.selected&&zoom<.85)return;
      n.style('text-opacity',1);
@@ -45,7 +48,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
      if(n.id()!=='lula'&&(box.x1<8||box.y1<8||box.x2>cy.width()-8||box.y2>cy.height()-8||boxes.some(b=>box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)))n.style('text-opacity',0);
      else boxes.push(box);
     });
-    cy.edges().forEach(e=>e.style('width',Math.max(e.hasClass('neighbor')?3:1.5,1.5/zoom)));
+    cy.edges().forEach(e=>e.style('width',1/zoom));
    }
   };
   cy.on('viewport',cameraChanged);
@@ -53,21 +56,21 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
   const refreshLabels=()=>{cancelAnimationFrame(labelFrame);labelFrame=requestAnimationFrame(()=>{if(!cy.destroyed())cameraChanged()})};
   labelsRef.current=refreshLabels;
   cy.on('position layoutstop',refreshLabels);
-  document.fonts.ready.then(()=>{if(!cy.destroyed())refreshLabels()});
+  document.fonts.ready.then(()=>{fontsReady=true;if(!cy.destroyed())refreshLabels()});
   // Fixed 44 px targets can overlap when zoomed out. Prefer the nearest centre
   // instead of whichever overlapping target Cytoscape happens to paint last.
-  cy.on('tap','node',e=>{
+  cy.on('tap',e=>{
    const point=e.renderedPosition;
-   const nearest=cy.nodes().filter(n=>n.visible()&&Math.abs(n.renderedPosition().x-point.x)<=n.renderedWidth()/2&&Math.abs(n.renderedPosition().y-point.y)<=n.renderedHeight()/2)
+   const nearest=cy.nodes().filter(n=>n.visible()&&Math.abs(n.renderedPosition().x-point.x)<=Math.max(22,n.renderedWidth()/2)&&Math.abs(n.renderedPosition().y-point.y)<=Math.max(22,n.renderedHeight()/2))
     .sort((a,b)=>{const distance=n=>{const p=n.renderedPosition();return (p.x-point.x)**2+(p.y-point.y)**2};return distance(a)-distance(b)})[0];
-   onSelectRef.current((nearest||e.target).id());
+   if(nearest)onSelectRef.current(nearest.id());
   });
   cy.on('mouseover','node',e=>setFocused(e.target.id()));
   cy.on('mouseout','node',()=>setFocused(null));
   const fit=()=>{
    if(cy.destroyed())return;
    cy.resize();const rect=element.getBoundingClientRect();if(!rect.width||!rect.height)return;
-   let left=18,top=20,right=rect.width-18,bottom=rect.height-66;
+   let left=18,top=80,right=rect.width-18,bottom=rect.height-66;
    let rightInset=0,bottomInset=0;
    const panel=document.querySelector('.person-panel')?.getBoundingClientRect();
    if(panel&&panel.left<rect.right&&panel.right>rect.left&&panel.top<rect.bottom&&panel.bottom>rect.top){

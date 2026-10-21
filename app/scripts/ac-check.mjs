@@ -40,8 +40,9 @@ try{
  await check('AC-04',()=>labelCheck(page));
  await check('AC-10',async()=>{for(const name of ['title','description','image','url']){const content=await page.locator(`meta[property="og:${name}"]`).getAttribute('content');assert.ok(content?.trim());if(['image','url'].includes(name))assert.match(content,/^https?:\/\//);}});
  await check('AC-07',async()=>{
-  await page.getByRole('button',{name:'Filtros',exact:true}).click();
-  const colors=await page.locator('.legal-legend i').evaluateAll(els=>els.map(e=>getComputedStyle(e).backgroundColor));
+  await page.locator('.floating-legend summary').click();
+  const colors=await page.locator('.floating-legend .legal-legend i').evaluateAll(els=>els.map(e=>getComputedStyle(e).borderTopColor));
+  await page.locator('.floating-legend summary').click();
   assert.equal(colors.length,Object.keys(data.meta.categorias_juridicas).length);assert.equal(new Set(colors).size,colors.length);
   for(const p of data.personagens.filter(p=>p.categoria_juridica!=='sem_informacao'))assert.ok(p.fontes.some(id=>data.fontes.some(s=>s.id===id&&/^https?:\/\//.test(s.url))),p.id);
   await page.keyboard.press('Escape');
@@ -56,7 +57,7 @@ try{
   await page.getByRole('button',{name:'Filtros',exact:true}).focus();await page.keyboard.press('Enter');await page.locator('fieldset input').first().focus();await page.keyboard.press('Space');await page.keyboard.press('Escape');
   await page.locator('#search').fill('Lula');await page.locator('#search').press('Enter');await page.locator('.person-panel').waitFor();await page.keyboard.press('Escape');assert.equal(await page.locator('.person-panel').count(),0);
  });
- await check('AC-03',async()=>{await load();await page.locator('#search').fill('Lula');await page.locator('#search').press('Enter');await page.keyboard.press('Escape');await page.getByRole('button',{name:'Filtros',exact:true}).click();await page.locator('fieldset input').first().uncheck();await page.keyboard.press('Escape');await page.getByRole('button',{name:'Metodologia',exact:true}).click();await page.getByRole('dialog').waitFor();await page.keyboard.press('Escape');assert.deepEqual(external,[]);});
+ await check('AC-03',async()=>{await load();await page.locator('#search').fill('Lula');await page.locator('#search').press('Enter');await page.keyboard.press('Escape');await page.getByRole('button',{name:'Filtros',exact:true}).click();await page.locator('fieldset input').first().uncheck();await page.keyboard.press('Escape');await page.getByRole('button',{name:'Abrir navegação',exact:true}).click();await page.getByRole('button',{name:'Metodologia',exact:true}).click();await page.getByRole('dialog').waitFor();await page.keyboard.press('Escape');assert.deepEqual(external,[]);});
  const mobile=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:3,reducedMotion:'reduce'});
  await load(mobile);
  await check('AC-05',()=>labelCheck(mobile));

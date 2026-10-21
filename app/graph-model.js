@@ -1,12 +1,9 @@
 // One pattern per source status: legends and rendered edges use the same values.
 export const STATUS_CONFIG={
- condenacao_anulada:{dash:'10 3 2 3'},
- arquivado:{dash:'5 4'},
- absolvido:{dash:'1 3'},
- investigacao_em_curso:{dash:'12 3'},
- fato_documentado:{dash:undefined},
- associacao_indireta:{dash:'9 5'},
- alegacao_nao_comprovada:{dash:'3 6'},
+ condenacao_anulada:{dash:'5 4'}, arquivado:{dash:'1 3'},
+ absolvido:{dash:'5 4'}, investigacao_em_curso:{dash:'5 4'},
+ fato_documentado:{dash:undefined}, associacao_indireta:{dash:'1 3'},
+ alegacao_nao_comprovada:{dash:'1 3'},
 };
 export const PROXIMITY_BANDS=[
  {min:.9,range:'0,90–1,00',label:'família imediata ou convívio íntimo'},
@@ -36,5 +33,15 @@ export function compactLabel(person){
  const words=person.nome.trim().split(/\s+/);return words.length>3?`${words[0]} ${words.at(-1)}`:person.nome;
 }
 
-export const LEGAL_COLORS={condenado:'#994500',condenacao_anulada:'#6551a3',investigado:'#006d8f',absolvido_arquivado:'#24704e',sem_informacao:'#626c77'};
-export const nodeSize=p=>p.id==='lula'?82:28+Math.min(32,Math.sqrt(p.escandalos?.length||0)*10);
+// Unused styles are available without assigning new categories to the dataset.
+export const LEGAL_RINGS={
+ condenado:{color:'#7A2E0E',width:3,style:'solid'},
+ reu:{color:'#C2610C',width:3,style:'solid'},
+ investigado:{color:'#3D5A80',width:2,style:'solid'},
+ condenacao_anulada:{color:'#6E6A63',width:2,style:'dashed'},
+ absolvido_arquivado:{color:'#6E6A63',width:2,style:'dashed'},
+ arquivado:{color:'#A8A29E',width:2,style:'dotted'},
+ sem_informacao:{color:'#D6D3CE',width:1,style:'solid'},
+};
+export const LEGAL_COLORS=Object.fromEntries(Object.entries(LEGAL_RINGS).map(([key,ring])=>[key,ring.color]));
+export const nodeSize=(p,maxCases=3)=>p.id==='lula'?88:32+32*Math.sqrt(Math.min(maxCases,p.escandalos?.length||0)/Math.max(1,maxCases));
