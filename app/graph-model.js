@@ -36,5 +36,5 @@ export function compactLabel(person){
  const words=person.nome.trim().split(/\s+/);return words.length>3?`${words[0]} ${words.at(-1)}`:person.nome;
 }
 
-export const LEGAL_COLORS={condenado:'#994500',condenacao_anulada:'#6551a3',investigado:'#006d8f',absolvido_arquivado:'#24704e',sem_informacao:'#626c77'};
+export const LEGAL_COLORS={pena_extinta_indulto:'#8c3267',condenado:'#994500',condenacao_anulada:'#6551a3',investigado:'#006d8f',absolvido_arquivado:'#24704e',sem_informacao:'#626c77'};
 export const nodeSize=p=>p.id==='lula'?82:28+Math.min(32,Math.sqrt(p.escandalos?.length||0)*10);

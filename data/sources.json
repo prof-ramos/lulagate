@@ -513,15 +513,6 @@
     "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0808200518.htm"
   },
   {
-    "id": "pf-2019-12-10-mapa",
-    "tipo": "documento_oficial",
-    "veiculo": "Polícia Federal",
-    "tipo_veiculo": "documento_oficial",
-    "titulo": "PF deflagra a 69ª Fase da Operação Lava Jato: Operação Mapa da Mina",
-    "data": "2019-12-10",
-    "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/12/pf-deflagra-a-69a-fase-da-operacao-lava-jato-operacao-mapa-da-mina"
-  },
-  {
     "id": "g1-2019-12-10-mapa",
     "tipo": "reportagem",
     "veiculo": "G1",
@@ -545,7 +536,7 @@
     "veiculo": "Poder360",
     "tipo_veiculo": "grande_imprensa",
     "titulo": "Juíza arquiva investigação da Lava Jato contra Lulinha",
-    "data": "2022-01",
+    "data": "2022-01-18",
     "url": "https://www.poder360.com.br/lava-jato/juiza-arquiva-investigacao-da-lava-jato-contra-filho-de-lula/"
   },
   {
@@ -675,33 +666,6 @@
     "url": "https://g1.globo.com/politica/noticia/2026/03/27/cpmi-do-inss-relatorio.ghtml"
   },
   {
-    "id": "oglobo-2026-03-27-cpmi",
-    "tipo": "reportagem",
-    "veiculo": "O Globo",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Relatório da CPI diz que testemunha citou pagamentos de R$ 300 mil de Careca do INSS a Lulinha e sugere prisão de filho do presidente",
-    "data": "2026-03-27",
-    "url": "https://oglobo.globo.com/politica/noticia/2026/03/27/relatorio-da-cpi-afirma-que-testemunha-citou-pagamentos-de-r-300-mil-mensais-de-careca-do-inss-a-lulinha.ghtml"
-  },
-  {
-    "id": "poder360-2026-03-27-cpmi",
-    "tipo": "reportagem",
-    "veiculo": "Poder360",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Relatório cita mesada do Careca do INSS para Lulinha",
-    "data": "2026-03-27",
-    "url": "https://www.poder360.com.br/poder-congresso/relatorio-cita-mesada-do-careca-do-inss-para-lulinha/"
-  },
-  {
-    "id": "cnn-2026-03-27-cpmi",
-    "tipo": "reportagem",
-    "veiculo": "CNN Brasil",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Relator de CPMI detalha supostos pagamentos de Careca do INSS a Lulinha",
-    "data": "2026-03-27",
-    "url": "https://www.cnnbrasil.com.br/politica/relator-de-cpmi-detalha-pagamentos-de-careca-do-inss-a-lulinha/"
-  },
-  {
     "id": "g1-2026-07-31-inquerito",
     "tipo": "reportagem",
     "veiculo": "G1",
@@ -729,13 +693,103 @@
     "url": "https://www.estadao.com.br/politica/defesa-de-lulinha-nega-relacao-com-esquema-no-inss-e-diz-que-provara-inocencia-bala-de-festim/"
   },
   {
-    "id": "cnn-2026-advogado-lulinha",
+    "id": "pr-a-factcheck-01",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Indulto extingue a punibilidade de José Dirceu na AP 470",
+    "data": "2016-10-17",
+    "url": "https://noticias.stf.jus.br/postsnoticias/indulto-extingue-a-punibilidade-de-jose-dirceu-na-ap-470/"
+  },
+  {
+    "id": "pr-a-factcheck-02",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF anula atos processuais de duas ações penais contra José Dirceu",
+    "data": "2024-10",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-anula-atos-processuais-de-duas-acoes-penais-contra-jose-dirceu/"
+  },
+  {
+    "id": "pr-a-factcheck-03",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Supremo extingue pena do ex-ministro José Dirceu por corrupção passiva",
+    "data": "2024-05-21",
+    "url": "https://noticias.stf.jus.br/postsnoticias/supremo-extingue-pena-do-ex-ministro-jose-dirceu-por-corrupcao-passiva/"
+  },
+  {
+    "id": "pr-a-factcheck-04",
     "tipo": "reportagem",
-    "veiculo": "CNN Brasil",
+    "veiculo": "G1",
     "tipo_veiculo": "grande_imprensa",
-    "titulo": "Advogado de Lulinha nega que ele tenha recebido mesada do Careca do INSS",
-    "data": "2026-03",
-    "url": "https://www.cnnbrasil.com.br/politica/advogado-de-lulinha-nega-que-ele-tenha-recebido-mesada-de-careca-do-inss/"
+    "titulo": "Toffoli anula condenações na Lava Jato de Léo Pinheiro, um dos principais delatores",
+    "data": "2024-09-27",
+    "url": "https://g1.globo.com/politica/noticia/2024/09/27/toffoli-anula-condenacoes-na-lava-jato-de-leo-pinheiro-um-dos-principais-delatores.ghtml"
+  },
+  {
+    "id": "pr-a-factcheck-05",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STF mantém por 3 a 2 decisão de Toffoli que anulou condenações de Léo Pinheiro na Lava Jato",
+    "data": "2025-02-04",
+    "url": "https://oglobo.globo.com/politica/noticia/2025/02/04/stf-mantem-por-3-a-2-decisao-de-toffoli-que-anulou-condenacoes-de-leo-pinheiro-na-lava-jato.ghtml"
+  },
+  {
+    "id": "pr-a-factcheck-06",
+    "tipo": "reportagem",
+    "veiculo": "DW",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça rejeita denúncia contra Lula sobre sítio em Atibaia",
+    "data": "2021-08-22",
+    "url": "https://www.dw.com/pt-br/justi%C3%A7a-federal-rejeita-nova-den%C3%BAncia-contra-lula-sobre-s%C3%ADtio-em-atibaia/a-58952329"
+  },
+  {
+    "id": "pr-a-factcheck-07",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF anula processos contra Antonio Palocci na Lava Jato",
+    "data": "2025-02",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-anula-processos-contra-antonio-palocci-na-lava-jato/"
+  },
+  {
+    "id": "pr-a-factcheck-08",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STF mantém decisão que anulou processo contra Palocci na Lava Jato",
+    "data": "2025-08-15",
+    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2025-08/stf-mantem-decisao-que-anulou-processo-contra-palocci-na-lava-jato"
+  },
+  {
+    "id": "pr-a-factcheck-09",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "PF indicia Careca do INSS e mais 47 por esquema de descontos ilegais",
+    "data": "2026-07",
+    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-07/pf-indicia-careca-do-inss-e-mais-47-por-esquema-de-descontos-ilegais"
+  },
+  {
+    "id": "pr-a-factcheck-10",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Toffoli anula todos os atos da Lava Jato contra o ex-tesoureiro do PT João Vaccari Netto",
+    "data": "2025-08-15",
+    "url": "https://g1.globo.com/politica/noticia/2025/08/15/toffoli-anula-todos-os-atos-da-lava-jato-contra-o-ex-tesoureiro-do-pt-joao-vaccari-netto.ghtml"
+  },
+  {
+    "id": "pr-a-factcheck-11",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF mantém nulidade de atos da Lava Jato contra Marcelo Odebrecht",
+    "data": "2024-09-06",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-nulidade-de-atos-da-lava-jato-contra-marcelo-odebrecht/"
   },
   {
     "id": "stf-2023-12-04-janones",
@@ -889,15 +943,6 @@
     "titulo": "Lula relata conversa com Vorcaro no Planalto: não haveria posição política pró ou contra o Master",
     "data": "2026-02-05",
     "url": "https://oglobo.globo.com/economia/noticia/2026/02/05/lula-disse-que-vorcaro-afirmou-a-ele-em-reuniao-fora-da-agenda-no-planalto-que-sofria-perseguicao.ghtml"
-  },
-  {
-    "id": "oglobo-2025-08-mantega-lobby",
-    "tipo": "reportagem",
-    "veiculo": "O Globo (Lauro Jardim)",
-    "tipo_veiculo": "grande_imprensa",
-    "titulo": "Mantega faz lobby no BC por operação do Banco Master",
-    "data": "2025-08",
-    "url": "https://oglobo.globo.com/blogs/lauro-jardim/post/2025/08/mantega-faz-lobby-no-bc-por-operacao-do-banco-master.ghtml"
   },
   {
     "id": "oglobo-2026-04-08-master-pagamentos",

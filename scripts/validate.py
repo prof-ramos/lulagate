@@ -2,6 +2,7 @@
 """Validate the published data using only the Python standard library."""
 
 from legal_category import legal_category, CATEGORIES
+from research import load_research
 import base64
 import csv
 import re
@@ -59,6 +60,24 @@ def main():
         except (OSError, UnicodeError, ValueError) as exc:
             check("File structure", False, f"{path.name}: {exc}")
             loaded[name] = {} if name == "dataset" else []
+
+    research = load_research()
+    research_ids = {r['id'] for key in ('N', 'E') for r in research[key]}
+    try:
+        hidden = json.loads((DATA / 'ocultos.json').read_text(encoding='utf-8'))
+        check("Hidden records", isinstance(hidden, list), "ocultos.json must be a list")
+        hidden_ids = set()
+        for entry in hidden:
+            valid = isinstance(entry, dict)
+            ident = entry.get('id') if valid else None
+            check("Hidden records", valid and ident in research_ids and ident not in hidden_ids,
+                  f"unknown or duplicate hidden id {ident!r}")
+            check("Hidden records", valid and nonempty(entry.get('motivo')), f"{ident}: empty reason")
+            check("Hidden records", valid and nonempty(entry.get('referencia')) and nonempty(entry.get('data')), f"{ident}: missing audit metadata")
+            hidden_ids.add(ident)
+        check("Hidden records", not hidden_ids.intersection(r['id'] for key in ('nodes', 'edges') for r in loaded[key]), "hidden record published")
+    except (OSError, ValueError, TypeError) as exc:
+        check("Hidden records", False, str(exc))
 
     indexes = {}
     seen_ids = set()
@@ -160,7 +179,7 @@ def main():
     check("Wikidata", isinstance(qids, dict), "QID mapping must be an object")
     qids = qids if isinstance(qids, dict) else {}
     for ident, qid in qids.items():
-        check("Wikidata", ident in indexes["nodes"] and isinstance(qid, str) and bool(re.fullmatch(r"Q\d+", qid)),
+        check("Wikidata", ident in research_ids and isinstance(qid, str) and bool(re.fullmatch(r"Q\d+", qid)),
               f"invalid mapping {ident!r}: {qid!r}")
     check("Wikidata", len(set(qids.values())) == len(qids), "duplicate people in QID mapping")
     credit_index, image_files = {}, set()

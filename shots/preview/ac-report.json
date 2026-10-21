@@ -5,7 +5,8 @@
     {
       "id": "AC-01",
       "level": "BLOCK",
-      "status": "PASS"
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   61,\n+   73,\n-   63,\n-   78,\n    18,\n+   108\n-   103\n  ]"
     },
     {
       "id": "AC-02",
@@ -32,9 +33,27 @@
       "level": "BLOCK",
       "status": "PASS",
       "detail": {
-        "visible": 10,
-        "lulaVisible": true,
-        "failures": []
+        "initial": {
+          "visible": 9,
+          "lulaVisible": true,
+          "failures": []
+        },
+        "deepLink": {
+          "nodeOverlaps": [],
+          "visibleNodes": [
+            "lula",
+            "guido-mantega",
+            "marcelo-odebrecht",
+            "fernando-bittar",
+            "andre-mendonca",
+            "mauro-marcondes",
+            "alfredo-gaspar",
+            "daniel-vorcaro"
+          ],
+          "overlaps": [],
+          "visible": true,
+          "inside": true
+        }
       }
     },
     {
@@ -72,7 +91,7 @@
       "level": "BLOCK",
       "status": "PASS",
       "detail": {
-        "bytes": 342136
+        "bytes": 341949
       }
     }
   ]

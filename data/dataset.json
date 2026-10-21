@@ -28,13 +28,14 @@
     },
     "leitura_conexoes": "Cada conexão vai de 'origem' para 'destino'; o 'rotulo' descreve o que a origem é em relação ao destino.",
     "categorias_juridicas": {
+      "pena_extinta_indulto": "Pena extinta (indulto)",
       "condenado": "Condenado",
       "condenacao_anulada": "Condenação anulada",
       "investigado": "Investigado",
       "absolvido_arquivado": "Absolvido / arquivado",
       "sem_informacao": "Sem informação"
     },
-    "metodologia": "# Metodologia\n\nTodas as informações deste mapa vêm de reportagens já publicadas por veículos de imprensa estabelecidos ou de documentos oficiais (STF, STJ, TRF4, PF, CGU, TCU, Câmara, Senado, Presidência, TSE). Nomes, datas, valores, conexões e situações jurídicas são os que essas fontes noticiaram até a data de corte. O mapa não traz apuração própria nem informação inédita.\n\n## Avisos importantes\n\n- **Uma conexão neste mapa não indica culpa.** Vínculos familiares, funcionais, políticos, sociais ou de negócios são registrados porque foram documentados, não porque provem crime.\n- Cada caso e cada conexão traz um campo `status`: `condenacao_anulada`, `arquivado` (inclui ações trancadas e prescritas), `absolvido`, `investigacao_em_curso`, `fato_documentado`, `associacao_indireta` e `alegacao_nao_comprovada`.\n- Lula nega as acusações. Sua versão está no campo `versao_de_lula` de cada caso; quando não foi localizada manifestação dele nas fontes, isso é dito explicitamente.\n- **Até a data de corte, Lula não tem condenação vigente.** As condenações do triplex do Guarujá (2017/2018) e do sítio de Atibaia (2019) foram anuladas pelo STF em 2021: em 08/03/2021 o ministro Edson Fachin declarou a incompetência da 13ª Vara Federal de Curitiba (HC 193.726), e em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Os casos foram depois encerrados por prescrição na Justiça Federal do DF. As ações do Instituto Lula e do caso Gripen foram trancadas pelo STF em 2023. Lula foi absolvido nos casos quadrilhão do PT (2019), obstrução de Justiça (2018) e Zelotes/MP 471 (2021).\n- Anulação, arquivamento e trancamento não equivalem a absolvição de mérito; o mapa registra exatamente o desfecho processual noticiado.\n- Relatórios de CPI/CPMI não indiciam nem condenam: registram sugestões às autoridades. Alegações de testemunhas citadas nesses relatórios aparecem como `alegacao_nao_comprovada`.\n- Investigações sobre parentes (Lulinha, Frei Chico) não envolvem Lula como investigado.\n\n## Critérios\n\n- Cada caso e cada conexão tem pelo menos uma fonte com URL, veículo e data.\n- Proximidade (`proximidade_lula`, de 0 a 1) em sete faixas: 0,90 a 1,00 família imediata ou convívio íntimo; 0,70 a 0,89 círculo próximo; 0,50 a 0,69 vínculo direto, forte e repetido; 0,30 a 0,49 vínculo direto pontual ou apenas alegado; 0,10 a 0,29 vínculo fraco ou indireto; 0,01 a 0,09 apenas contexto; 0 nenhum vínculo. Os valores são atribuição editorial a partir dos vínculos documentados, não cálculo automático nem medida de culpa.\n- `nivel_juridico` (0 a 4) é escala separada sobre a situação jurídica da própria pessoa.\n- Valores são nominais, na moeda noticiada.\n- Alegações sem fonte verificável ficaram de fora.\n\n## Data de corte\n\n20/10/2026.\n\n## Veículos de imprensa (19)\n\n- Agência Brasil\n- BBC News Brasil\n- CNN Brasil\n- Consultor Jurídico (ConJur)\n- DW Brasil\n- Estadão\n- Estadão (Blog do Fausto Macedo)\n- Folha de S.Paulo\n- Folha de S.Paulo (Mônica Bergamo)\n- G1\n- G1 (Jornal Nacional)\n- Gazeta do Povo\n- Metrópoles\n- O Globo\n- O Globo (Lauro Jardim)\n- Poder360\n- R7\n- UOL\n- Valor Econômico\n\n## Documentos e órgãos oficiais (12)\n\n- Agência Câmara de Notícias\n- Agência Senado\n- Consultor Jurídico (ConJur)\n- Controladoria-Geral da União\n- Polícia Federal\n- Presidência da República\n- STF (LexML)\n- Superior Tribunal de Justiça\n- Supremo Tribunal Federal\n- Supremo Tribunal Federal (via G1)\n- TRF4\n- Tribunal Superior Eleitoral (via Poder360)\n\n## Categorias jurídicas dos nós\n\nO build deriva `categoria_juridica` apenas de `situacao_juridica` da própria pessoa e exige pelo menos uma referência em `fontes` que exista em `sources.json` (a coleção de fontes deste projeto) com URL HTTP(S) e host. A validação é estrutural e não verifica disponibilidade remota. Status de conexões, casos, ocupações e nível jurídico não atribuem categoria à pessoa.\n\nA regra, em ordem: menção explícita a condenação ou condenações anuladas; investigado ou investigada (exceto “não investigado”); condenado ou condenada; absolvido, arquivado, trancado ou ação penal encerrada. Os dois últimos desfechos compartilham a categoria “Absolvido / arquivado” apenas para navegação, sem equivalência jurídica. As demais situações e pessoas sem fonte válida recebem “Sem informação”, que significa ausência de classificação nestas categorias, não ausência de antecedentes. O texto original continua em destaque no painel. Anulação de processo, sem menção explícita a condenação anulada, não basta para essa categoria. A ordem resolve textos com múltiplos desfechos e não representa uma conclusão jurídica atualizada além do dataset.\n\nAs cores identificam essas cinco categorias, acompanhadas de nomes e contagens nos filtros. O tamanho dos nós representa o número de casos associados, com destaque adicional para Lula; não representa culpa ou gravidade. A seleção destaca as conexões imediatas e esmaece o restante.\n\nRetratos locais são miniaturas WebP de até 96 px, incorporadas em base64 ao dataset pelo build, com créditos preservados. A imagem social é criada localmente por `scripts/build_og.py`.\n"
+    "metodologia": "# Metodologia\n\nTodas as informações deste mapa vêm de reportagens já publicadas por veículos de imprensa estabelecidos ou de documentos oficiais (STF, STJ, TRF4, PF, CGU, TCU, Câmara, Senado, Presidência, TSE). Nomes, datas, valores, conexões e situações jurídicas são os que essas fontes noticiaram até a data de corte. O mapa não traz apuração própria nem informação inédita.\n\n## Avisos importantes\n\n- **Uma conexão neste mapa não indica culpa.** Vínculos familiares, funcionais, políticos, sociais ou de negócios são registrados porque foram documentados, não porque provem crime.\n- Cada caso e cada conexão traz um campo `status`: `condenacao_anulada`, `arquivado` (inclui ações trancadas e prescritas), `absolvido`, `investigacao_em_curso`, `fato_documentado`, `associacao_indireta` e `alegacao_nao_comprovada`.\n- Lula nega as acusações. Sua versão está no campo `versao_de_lula` de cada caso; quando não foi localizada manifestação dele nas fontes, isso é dito explicitamente.\n- **Até a data de corte, Lula não tem condenação vigente.** As condenações do triplex do Guarujá (2017/2018) e do sítio de Atibaia (2019) foram anuladas pelo STF em 2021: em 08/03/2021 o ministro Edson Fachin declarou a incompetência da 13ª Vara Federal de Curitiba (HC 193.726), e em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Os casos foram depois encerrados por prescrição na Justiça Federal do DF. As ações do Instituto Lula e do caso Gripen foram trancadas pelo STF em 2023. Lula foi absolvido nos casos quadrilhão do PT (2019), obstrução de Justiça (2018) e Zelotes/MP 471 (2021).\n- Anulação, arquivamento e trancamento não equivalem a absolvição de mérito; o mapa registra exatamente o desfecho processual noticiado.\n- Relatórios de CPI/CPMI não indiciam nem condenam: registram sugestões às autoridades. Alegações de testemunhas citadas nesses relatórios aparecem como `alegacao_nao_comprovada`.\n- Investigações sobre parentes (Lulinha, Frei Chico) não envolvem Lula como investigado.\n\n## Critérios\n\n- Cada caso e cada conexão tem pelo menos uma fonte com URL, veículo e data.\n- Proximidade (`proximidade_lula`, de 0 a 1) em sete faixas: 0,90 a 1,00 família imediata ou convívio íntimo; 0,70 a 0,89 círculo próximo; 0,50 a 0,69 vínculo direto, forte e repetido; 0,30 a 0,49 vínculo direto pontual ou apenas alegado; 0,10 a 0,29 vínculo fraco ou indireto; 0,01 a 0,09 apenas contexto; 0 nenhum vínculo. Os valores são atribuição editorial a partir dos vínculos documentados, não cálculo automático nem medida de culpa.\n- `nivel_juridico` (0 a 4) é escala separada sobre a situação jurídica da própria pessoa.\n- Valores são nominais, na moeda noticiada.\n- Alegações sem fonte verificável ficaram de fora.\n\n## Data de corte\n\n20/10/2026.\n\n## Veículos de imprensa (19)\n\n- Agência Brasil\n- BBC News Brasil\n- CNN Brasil\n- Consultor Jurídico (ConJur)\n- DW Brasil\n- Estadão\n- Estadão (Blog do Fausto Macedo)\n- Folha de S.Paulo\n- Folha de S.Paulo (Mônica Bergamo)\n- G1\n- G1 (Jornal Nacional)\n- Gazeta do Povo\n- Metrópoles\n- O Globo\n- O Globo (Lauro Jardim)\n- Poder360\n- R7\n- UOL\n- Valor Econômico\n\n## Documentos e órgãos oficiais (12)\n\n- Agência Câmara de Notícias\n- Agência Senado\n- Consultor Jurídico (ConJur)\n- Controladoria-Geral da União\n- Polícia Federal\n- Presidência da República\n- STF (LexML)\n- Superior Tribunal de Justiça\n- Supremo Tribunal Federal\n- Supremo Tribunal Federal (via G1)\n- TRF4\n- Tribunal Superior Eleitoral (via Poder360)\n\n## Categorias jurídicas dos nós\n\nO build deriva `categoria_juridica` apenas de `situacao_juridica` da própria pessoa e exige pelo menos uma referência em `fontes` que exista em `sources.json` (a coleção de fontes deste projeto) com URL HTTP(S) e host. A validação é estrutural e não verifica disponibilidade remota. Status de conexões, casos, ocupações e nível jurídico não atribuem categoria à pessoa.\n\nCategorias declaradas explicitamente na pesquisa, com fontes próprias, têm precedência sobre a inferência textual. “Pena extinta (indulto)” registra a extinção da pena da AP 470 de José Dirceu; o painel também informa as anulações e a prescrição na Lava Jato. Indulto não equivale a absolvição.\n\nA regra de inferência, em ordem: menção explícita a condenação ou condenações anuladas; investigado ou investigada (exceto “não investigado”); condenado ou condenada; absolvido, arquivado, trancado ou ação penal encerrada. Os dois últimos desfechos compartilham a categoria “Absolvido / arquivado” apenas para navegação, sem equivalência jurídica. As demais situações e pessoas sem fonte válida recebem “Sem informação”, que significa ausência de classificação nestas categorias, não ausência de antecedentes. O texto original continua em destaque no painel. Anulação de processo, sem menção explícita a condenação anulada, não basta para essa categoria. A ordem resolve textos com múltiplos desfechos e não representa uma conclusão jurídica atualizada além do dataset.\n\nAs cores identificam essas seis categorias, acompanhadas de nomes e contagens nos filtros. O tamanho dos nós representa o número de casos associados, com destaque adicional para Lula; não representa culpa ou gravidade. A seleção destaca as conexões imediatas e esmaece o restante.\n\nRetratos locais são miniaturas WebP de até 96 px, incorporadas em base64 ao dataset pelo build, com créditos preservados. A imagem social é criada localmente por `scripts/build_og.py`.\n"
   },
   "personagens": [
     {
@@ -61,7 +62,7 @@
         }
       ],
       "relacao_com_lula": "personagem central",
-      "resumo": "Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
+      "resumo": "Condenações anuladas pelo STF em 2021; casos depois arquivados por prescrição ou trancados. Historicamente, condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
       "situacao_juridica": "Sem condenação vigente até 20/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição.",
       "fontes": [
         "stf-2021-03-08-fachin",
@@ -227,8 +228,6 @@
         "con-033",
         "con-043",
         "con-053",
-        "con-054",
-        "con-055",
         "con-058",
         "con-063"
       ],
@@ -326,12 +325,16 @@
         }
       ],
       "relacao_com_lula": "ministro da Casa Civil",
-      "resumo": "Ex-ministro da Casa Civil de Lula, condenado pelo STF em 2012 por corrupção ativa no mensalão (AP 470).",
-      "situacao_juridica": "Condenado na AP 470 (2012).",
+      "resumo": "Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição. Ex-ministro da Casa Civil de Lula.",
+      "situacao_juridica": "Pena da AP 470 extinta por indulto (2016); condenações da Lava Jato anuladas pelo STF (Pet 12229, 2024) ou extintas por prescrição.",
       "fontes": [
+        "pr-a-factcheck-01",
+        "pr-a-factcheck-02",
+        "pr-a-factcheck-03",
         "g1-2012-10-dirceu"
       ],
-      "categoria_juridica": "condenado",
+      "categoria_juridica_declarada": "pena_extinta_indulto",
+      "categoria_juridica": "pena_extinta_indulto",
       "retrato": {
         "arquivo": "retratos/jose-dirceu.webp",
         "autor": "José CRuz/ABr",
@@ -366,7 +369,7 @@
       ],
       "relacao_com_lula": "tesoureiro do partido",
       "resumo": "Tesoureiro do PT na época do mensalão. Segundo a Folha (2005), o presidente do PT afirmou que ele era o \"traidor\" mencionado por Lula no Roda Viva.",
-      "situacao_juridica": "Réu da AP 470.",
+      "situacao_juridica": "Situação jurídica atual não confirmada nas fontes deste levantamento.",
       "fontes": [
         "folha-2005-11-09-delubio"
       ],
@@ -434,14 +437,17 @@
         }
       ],
       "relacao_com_lula": "ministro",
-      "resumo": "Ex-ministro de Lula. Em 2017 disse a Moro que Lula tinha um \"pacto de sangue\" com a Odebrecht. Sua delação foi excluída de ação contra Lula pela 2ª Turma do STF em 2020. Absolvido no quadrilhão do PT (2019).",
-      "situacao_juridica": "Delator; delação excluída da ação contra Lula (STF, 2020).",
+      "resumo": "Atos dos processos da Lava Jato anulados pelo STF em 2025; decisão mantida pela Segunda Turma em agosto de 2025. Delação mantida. Ex-ministro de Lula. Em 2017 disse a Moro que Lula tinha um \"pacto de sangue\" com a Odebrecht. Sua delação foi excluída de ação contra Lula pela 2ª Turma do STF em 2020. Absolvido no quadrilhão do PT (2019).",
+      "situacao_juridica": "Atos dos processos da Lava Jato anulados pelo STF em 2025; decisão mantida pela Segunda Turma em agosto de 2025. Delação mantida.",
       "fontes": [
+        "pr-a-factcheck-07",
+        "pr-a-factcheck-08",
         "bbc-2017-09-palocci",
         "conjur-2020-12-14-palocci",
         "g1-2019-12-04-quadrilhao"
       ],
-      "categoria_juridica": "sem_informacao",
+      "categoria_juridica_declarada": "condenacao_anulada",
+      "categoria_juridica": "condenacao_anulada",
       "retrato": {
         "arquivo": "retratos/antonio-palocci.webp",
         "autor": "the International Monetary Fund",
@@ -502,7 +508,6 @@
         "con-012",
         "con-069",
         "con-070",
-        "con-071",
         "con-076"
       ],
       "faixa_proximidade": "Vínculo direto, forte e repetido"
@@ -568,13 +573,15 @@
         }
       ],
       "relacao_com_lula": "tesoureiro do partido",
-      "resumo": "Absolvido no quadrilhão do PT (2019); condenado com Bumlai no caso Schahin, processo anulado pelo STJ em 2021.",
-      "situacao_juridica": "Processo Schahin anulado (STJ, 2021).",
+      "resumo": "Atos da Lava Jato anulados pelo STF em agosto de 2025. Processo Schahin anulado pelo STJ em 2021; absolvido no quadrilhão do PT em 2019.",
+      "situacao_juridica": "Atos da Lava Jato anulados pelo STF em agosto de 2025. Processo Schahin anulado pelo STJ em 2021; absolvido no quadrilhão do PT em 2019.",
       "fontes": [
+        "pr-a-factcheck-10",
         "g1-2019-12-04-quadrilhao",
         "oglobo-2021-stj-schahin"
       ],
-      "categoria_juridica": "sem_informacao",
+      "categoria_juridica_declarada": "condenacao_anulada",
+      "categoria_juridica": "condenacao_anulada",
       "retrato": {
         "arquivo": "retratos/joao-vaccari.webp",
         "autor": "Roosewelt Pinheiro/Abr",
@@ -718,7 +725,7 @@
       "nivel_juridico": 2,
       "grupos": [],
       "relacao_com_lula": "amigo",
-      "resumo": "Descrito pelo TRF4 como amigo próximo de Lula. Condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
+      "resumo": "Condenação do caso Schahin anulada pelo STJ em 2021. Descrito pelo TRF4 como amigo próximo de Lula. Historicamente, condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
       "situacao_juridica": "Condenação do caso Schahin anulada (STJ, 2021); absolvido no TRF4 (Atibaia, 2019).",
       "fontes": [
         "oglobo-2016-bumlai",
@@ -761,13 +768,17 @@
         }
       ],
       "relacao_com_lula": "empreiteiro",
-      "resumo": "Em 2017 disse a Moro que o triplex pertencia à família de Lula e que Lula o orientou a destruir provas. Condenado no caso Atibaia; pena reduzida no TRF4 em 2019.",
-      "situacao_juridica": "Condenado em ações de Curitiba.",
+      "resumo": "Condenações da Lava Jato anuladas pelo STF em setembro de 2024, com decisão mantida pela Segunda Turma em fevereiro de 2025; delação mantida. Prescrição reconhecida no caso Atibaia no DF em 2021. Em 2017, prestou depoimento a Moro sobre o triplex e suposta destruição de provas; as condenações posteriores foram anuladas.",
+      "situacao_juridica": "Condenações da Lava Jato anuladas pelo STF em setembro de 2024, com decisão mantida pela Segunda Turma em fevereiro de 2025; delação mantida. Prescrição reconhecida no caso Atibaia no DF em 2021.",
       "fontes": [
+        "pr-a-factcheck-04",
+        "pr-a-factcheck-05",
+        "pr-a-factcheck-06",
         "g1-2017-leo-pinheiro",
         "trf4-2019-11-27-atibaia"
       ],
-      "categoria_juridica": "condenado",
+      "categoria_juridica_declarada": "condenacao_anulada",
+      "categoria_juridica": "condenacao_anulada",
       "retrato": null,
       "escandalos": [
         "esc-atibaia",
@@ -795,13 +806,15 @@
         }
       ],
       "relacao_com_lula": "empresário",
-      "resumo": "Segundo o TRF4, manteve relacionamento pessoal com Lula; pena no caso Atibaia nos termos de sua colaboração. Palocci afirmou que ele fez um \"pacto de sangue\" com Lula.",
-      "situacao_juridica": "Colaborador.",
+      "resumo": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021. O acórdão histórico do TRF4 registrava relacionamento pessoal com Lula e pena nos termos da colaboração.",
+      "situacao_juridica": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021.",
       "fontes": [
+        "pr-a-factcheck-06",
         "trf4-2019-11-27-atibaia",
         "bbc-2017-09-palocci"
       ],
-      "categoria_juridica": "sem_informacao",
+      "categoria_juridica_declarada": "absolvido_arquivado",
+      "categoria_juridica": "absolvido_arquivado",
       "retrato": null,
       "escandalos": [
         "esc-atibaia",
@@ -830,13 +843,15 @@
         }
       ],
       "relacao_com_lula": "empresário",
-      "resumo": "Denunciado com Lula em 2016 no caso Angola (Operação Janus); réu no caso Atibaia, com processo suspenso por sua colaboração.",
-      "situacao_juridica": "Colaborador.",
+      "resumo": "Atos da 13ª Vara Federal de Curitiba na Lava Jato anulados pelo STF em 2024; nulidade mantida pela Segunda Turma, sem trancamento automático dos processos. Foi denunciado com Lula no caso Angola em 2016 e figurou como réu no caso Atibaia, com processo então suspenso por sua colaboração.",
+      "situacao_juridica": "Atos da 13ª Vara Federal de Curitiba na Lava Jato anulados pelo STF em 2024; nulidade mantida pela Segunda Turma, sem trancamento automático dos processos.",
       "fontes": [
+        "pr-a-factcheck-11",
         "agbr-2016-10-angola",
         "trf4-2019-11-27-atibaia"
       ],
-      "categoria_juridica": "sem_informacao",
+      "categoria_juridica_declarada": "condenacao_anulada",
+      "categoria_juridica": "condenacao_anulada",
       "retrato": {
         "arquivo": "retratos/marcelo-odebrecht.webp",
         "autor": "World Economic Forum from Cologny, Switzerland",
@@ -874,12 +889,14 @@
         }
       ],
       "relacao_com_lula": "executivo",
-      "resumo": "Condenado a 4 anos no caso Atibaia, segundo o TRF4, conforme acordo de colaboração.",
-      "situacao_juridica": "Colaborador.",
+      "resumo": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021. A condenação histórica no TRF4 previa quatro anos, conforme acordo de colaboração.",
+      "situacao_juridica": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021.",
       "fontes": [
+        "pr-a-factcheck-06",
         "trf4-2019-11-27-atibaia"
       ],
-      "categoria_juridica": "sem_informacao",
+      "categoria_juridica_declarada": "absolvido_arquivado",
+      "categoria_juridica": "absolvido_arquivado",
       "retrato": null,
       "escandalos": [
         "esc-atibaia"
@@ -967,13 +984,15 @@
         }
       ],
       "relacao_com_lula": "sócio do filho; dono formal do sítio",
-      "resumo": "Proprietário formal do sítio de Atibaia; teve pena elevada pelo TRF4 em 2019 em ação de Curitiba. Sócio das empresas investigadas na Mapa da Mina.",
-      "situacao_juridica": "Condenado no TRF4 (2019) em ação de Curitiba.",
+      "resumo": "Condenação de Atibaia anulada; nova denúncia rejeitada pela Justiça Federal do DF em agosto de 2021. Proprietário formal do sítio de Atibaia e sócio das empresas investigadas na Mapa da Mina.",
+      "situacao_juridica": "Condenação de Atibaia anulada; nova denúncia rejeitada pela Justiça Federal do DF em agosto de 2021.",
       "fontes": [
+        "pr-a-factcheck-06",
         "trf4-2019-11-27-atibaia",
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
-      "categoria_juridica": "condenado",
+      "categoria_juridica_declarada": "condenacao_anulada",
+      "categoria_juridica": "condenacao_anulada",
       "retrato": null,
       "escandalos": [
         "esc-atibaia",
@@ -1002,10 +1021,10 @@
         }
       ],
       "relacao_com_lula": "sócio do filho",
-      "resumo": "Citado pela PF entre os controladores das empresas do grupo Gamecorp/Gol investigadas na Mapa da Mina.",
-      "situacao_juridica": "Investigação arquivada (2022).",
+      "resumo": "Ligado ao grupo Gamecorp/Gol, investigado na Mapa da Mina; inquérito arquivado em janeiro de 2022.",
+      "situacao_juridica": "Inquérito da Mapa da Mina arquivado em janeiro de 2022, sem denúncia, após nulidade das provas.",
       "fontes": [
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
       "categoria_juridica": "absolvido_arquivado",
       "retrato": null,
@@ -1034,10 +1053,10 @@
         }
       ],
       "relacao_com_lula": "sócio do filho",
-      "resumo": "Citado pela PF entre os controladores das empresas investigadas na Mapa da Mina.",
-      "situacao_juridica": "Investigação arquivada (2022).",
+      "resumo": "Ligado ao grupo Gamecorp/Gol, investigado na Mapa da Mina; inquérito arquivado em janeiro de 2022.",
+      "situacao_juridica": "Inquérito da Mapa da Mina arquivado em janeiro de 2022, sem denúncia, após nulidade das provas.",
       "fontes": [
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
       "categoria_juridica": "absolvido_arquivado",
       "retrato": null,
@@ -1741,12 +1760,14 @@
       "nivel_juridico": 3,
       "grupos": [],
       "relacao_com_lula": "contato do filho",
-      "resumo": "Apontado pela PF como um dos principais operadores das fraudes do INSS; preso desde setembro de 2025. Viajou a Portugal com Lulinha em 2024, segundo a defesa deste.",
-      "situacao_juridica": "Preso; investigado na Operação Sem Desconto.",
+      "resumo": "Indiciado pela PF em julho de 2026 na investigação sobre descontos ilegais no INSS; relatório enviado ao STF/PGR, aguardando manifestação da PGR. Preso desde setembro de 2025. Viajou a Portugal com Lulinha em 2024, segundo a defesa deste.",
+      "situacao_juridica": "Indiciado pela PF em julho de 2026 na investigação sobre descontos ilegais no INSS; relatório enviado ao STF/PGR, aguardando manifestação da PGR. Preso desde setembro de 2025.",
       "fontes": [
+        "pr-a-factcheck-09",
         "g1-2026-07-31-inquerito",
         "senado-2025-08-28-careca"
       ],
+      "categoria_juridica_declarada": "investigado",
       "categoria_juridica": "investigado",
       "retrato": {
         "arquivo": "retratos/careca-do-inss.webp",
@@ -1762,75 +1783,9 @@
       ],
       "conexoes": [
         "con-053",
-        "con-054",
-        "con-056",
-        "con-057",
         "con-060"
       ],
       "faixa_proximidade": "Vínculo direto pontual ou apenas alegado"
-    },
-    {
-      "id": "roberta-luchsinger",
-      "wikidata_qid": "Q141793366",
-      "nome": "Roberta Luchsinger",
-      "tipo": "pessoa",
-      "ocupacao": "Empresária e lobista",
-      "proximidade_lula": 0.2,
-      "classificacao": "secundario",
-      "nivel_juridico": 2,
-      "grupos": [],
-      "relacao_com_lula": "amiga do filho",
-      "resumo": "Amiga de Lulinha; apontada pelo relator da CPMI como elo entre ele e o Careca do INSS. Nega irregularidades e repasses ao filho do presidente.",
-      "situacao_juridica": "Indiciamento sugerido no relatório do relator da CPMI.",
-      "fontes": [
-        "g1-2026-03-27-cpmi",
-        "g1-2026-07-31-inquerito"
-      ],
-      "categoria_juridica": "sem_informacao",
-      "retrato": {
-        "arquivo": "retratos/roberta-luchsinger.webp",
-        "autor": "Unknown authorUnknown author",
-        "licenca": "CC BY 4.0",
-        "licenca_url": "https://creativecommons.org/licenses/by/4.0",
-        "url_origem": "https://commons.wikimedia.org/wiki/File:2018_ROBERTA_LUCHSINGER_CANDIDATA_DEPUTADO_ESTADUAL_SP_(250000624055).jpg",
-        "arquivo_commons": "File:2018 ROBERTA LUCHSINGER CANDIDATA DEPUTADO ESTADUAL SP (250000624055).jpg",
-        "base64": "data:image/webp;base64,UklGRuYCAABXRUJQVlA4INoCAACwFACdASpFAGAAPpU8mkklo6KhOJkLaLASiWkAEhA61TKDT6/Jls5qP9/xeFVXc54ZbE9/BVPrvixPI1H+kmW6MRqAvD2W0rLT3r0NZY/scIKE7kX+OZDzqHv0zlY5+gxrcUpwfz2YaRZ5yyAQRQcyDUO0TCFhkeky8id1XZDjQKCTCHPoQM7IPJwX+EQxr/WUz6Lb92fyEJmvstT+tBvhJPQjl3zhY/VNAZhrWgAA/vr+FIt0DOrEsdV7rHzc8+5RgVsQnIfPvDqth51EmRBDqhAqg8/9u8lxjAaRPH5Afr4FPfhR0zaTOMl4Bv+mDNxXsZC/NZHIr59+SaCy3SODHw7LtbrHnbvn78EOrQ45+vOx2uvQVlaH9PQ0tBS2Horj/YQ48Xv4xNRPIUnLFezBz7CaFyfRSrIZCJcK1ZjaEe/QVUyXfXbYPogTjLeVfBDBTm9oSr/ap/arWqpJJSSVO6Dw7j7N1tj/IJfmB5puALYIpYbx6Jd3QHQ7OK7zKTQCoXirP95faRWS/PvquRCrR5F6yJO8qx2xvwKWdc84lWQLyxRb+jhxX/0foWCNJnvR/YLP5cekZsc4w+LLhTdV05ys318GNDcEjL+sJfr8lOf9VWbx115lcYwh2rWH9eobizwwmToLRJed9AcRBLj92dNMUvgJUzzxUf9tGERNDK93KWDPRd7RJQefpH2lie60df12HQYmgVirYbyYxy5p+PnYarq2nHcn6zn3fuR3DYB899nkBX6I/XV0cfUu43D/F4+qzGSBFe9emQ+nGGqPUjWGJSXcfU0b40CB6rVFwjZP+eGTQTiW9BybmJT17R8Mvd3dOWXkFJ2ZlypARCpZiYD8vR53e+l6KkaJfMP3XxjsHrelIZLV/WVnSJ5CixMVn5Pl50RH/MAg8hd/lg1nQVADykvZgaIVkf+93P2aPuJ0kuxFLCCDJ0qjk1hAvrJlX0TCixgAAAAA"
-      },
-      "escandalos": [
-        "esc-cpmi-lulinha"
-      ],
-      "conexoes": [
-        "con-055",
-        "con-056"
-      ],
-      "faixa_proximidade": "Vínculo fraco ou indireto"
-    },
-    {
-      "id": "edson-claro",
-      "wikidata_qid": null,
-      "nome": "Edson Claro",
-      "tipo": "pessoa",
-      "ocupacao": "Ex-funcionário do Careca do INSS",
-      "proximidade_lula": 0.03,
-      "classificacao": "periferico",
-      "nivel_juridico": 0,
-      "grupos": [],
-      "relacao_com_lula": "testemunha",
-      "resumo": "Testemunha cujo depoimento à PF, citado pela CPMI, menciona mesada de R$ 300 mil a Lulinha; o presidente da CPMI disse não haver confirmação.",
-      "situacao_juridica": "",
-      "fontes": [
-        "oglobo-2026-03-27-cpmi",
-        "cnn-2026-03-27-cpmi"
-      ],
-      "categoria_juridica": "sem_informacao",
-      "retrato": null,
-      "escandalos": [
-        "esc-cpmi-lulinha"
-      ],
-      "conexoes": [
-        "con-057"
-      ],
-      "faixa_proximidade": "Apenas contexto"
     },
     {
       "id": "milton-cavalo",
@@ -1959,10 +1914,10 @@
         }
       ],
       "relacao_com_lula": "contexto",
-      "resumo": "Disse que a mesada a Lulinha era sustentada apenas por uma testemunha, sem confirmação.",
+      "resumo": "Presidente da CPMI do INSS.",
       "situacao_juridica": "",
       "fontes": [
-        "cnn-2026-03-27-cpmi"
+        "g1-2026-03-27-cpmi"
       ],
       "categoria_juridica": "sem_informacao",
       "retrato": null,
@@ -2237,7 +2192,6 @@
         "esc-banco-master"
       ],
       "conexoes": [
-        "con-071",
         "con-072"
       ],
       "faixa_proximidade": "Vínculo direto, forte e repetido"
@@ -2358,9 +2312,9 @@
       "faixa_proximidade": "Vínculo fraco ou indireto"
     },
     {
-      "id": "marcola",
+      "id": "marco-aurelio-santana-ribeiro",
       "wikidata_qid": null,
-      "nome": "Marco Aurélio Santana Ribeiro (Marcola)",
+      "nome": "Marco Aurélio Santana Ribeiro",
       "tipo": "pessoa",
       "ocupacao": "Chefe do Gabinete Pessoal da Presidência",
       "proximidade_lula": 0.8,
@@ -2499,22 +2453,23 @@
       "id": "con-006",
       "origem": "jose-dirceu",
       "destino": "lula",
-      "rotulo": "ministro da Casa Civil; condenado no mensalão",
+      "rotulo": "ministro da Casa Civil; pena da AP 470 extinta por indulto; Lula não foi denunciado",
       "tipo": "politico",
       "status": "associacao_indireta",
       "periodo": {
         "inicio": "2003",
         "fim": "2005"
       },
-      "descricao": "Dirceu condenado na AP 470; Lula não foi denunciado.",
+      "descricao": "Ministro da Casa Civil; pena da AP 470 extinta por indulto; Lula não foi denunciado.",
       "escandalos": [
         "esc-mensalao"
       ],
       "fontes": [
+        "pr-a-factcheck-01",
         "g1-2012-10-dirceu",
         "gazeta-stf-lula-mensalao"
       ],
-      "data_referencia": "2012-10-09"
+      "data_referencia": "2016-10-17"
     },
     {
       "id": "con-007",
@@ -3007,10 +2962,10 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-031",
@@ -3028,10 +2983,10 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-032",
@@ -3049,9 +3004,9 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa"
+        "poder360-2022-01-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-033",
@@ -3069,10 +3024,10 @@
         "esc-gamecorp"
       ],
       "fontes": [
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2019-12-10"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-034",
@@ -3482,93 +3437,9 @@
         "esc-cpmi-lulinha"
       ],
       "fontes": [
-        "g1-2026-07-31-inquerito",
-        "cnn-2026-03-27-cpmi"
-      ],
-      "data_referencia": "2026-07-31"
-    },
-    {
-      "id": "con-054",
-      "origem": "careca-do-inss",
-      "destino": "lulinha",
-      "rotulo": "teria pago mesada de R$ 300 mil (relato de uma testemunha)",
-      "tipo": "financeiro",
-      "status": "alegacao_nao_comprovada",
-      "periodo": {
-        "inicio": "2026-03-27",
-        "fim": null
-      },
-      "descricao": "Relato de Edson Claro citado pela CPMI; sem confirmação, segundo o presidente da comissão; defesa nega.",
-      "escandalos": [
-        "esc-cpmi-lulinha"
-      ],
-      "fontes": [
-        "oglobo-2026-03-27-cpmi",
-        "cnn-2026-03-27-cpmi",
-        "cnn-2026-advogado-lulinha"
-      ],
-      "data_referencia": "2026-03-27"
-    },
-    {
-      "id": "con-055",
-      "origem": "roberta-luchsinger",
-      "destino": "lulinha",
-      "rotulo": "amiga; apresentou o Careca do INSS",
-      "tipo": "pessoal",
-      "status": "investigacao_em_curso",
-      "periodo": {
-        "inicio": "2024",
-        "fim": null
-      },
-      "descricao": "",
-      "escandalos": [
-        "esc-cpmi-lulinha"
-      ],
-      "fontes": [
         "g1-2026-07-31-inquerito"
       ],
       "data_referencia": "2026-07-31"
-    },
-    {
-      "id": "con-056",
-      "origem": "roberta-luchsinger",
-      "destino": "careca-do-inss",
-      "rotulo": "contratada para prospectar negócios por",
-      "tipo": "negocios",
-      "status": "investigacao_em_curso",
-      "periodo": {
-        "inicio": "2024",
-        "fim": "2025"
-      },
-      "descricao": "Recebeu R$ 1,4 milhão, segundo o relator da CPMI; defesa nega irregularidades.",
-      "escandalos": [
-        "esc-cpmi-lulinha"
-      ],
-      "fontes": [
-        "poder360-2026-03-27-cpmi",
-        "g1-2026-07-31-inquerito"
-      ],
-      "data_referencia": "2026-03-27"
-    },
-    {
-      "id": "con-057",
-      "origem": "edson-claro",
-      "destino": "careca-do-inss",
-      "rotulo": "ex-funcionário; testemunha",
-      "tipo": "profissional",
-      "status": "fato_documentado",
-      "periodo": {
-        "inicio": "2026-03-27",
-        "fim": null
-      },
-      "descricao": "",
-      "escandalos": [
-        "esc-cpmi-lulinha"
-      ],
-      "fontes": [
-        "oglobo-2026-03-27-cpmi"
-      ],
-      "data_referencia": "2026-03-27"
     },
     {
       "id": "con-058",
@@ -3586,8 +3457,7 @@
         "esc-cpmi-lulinha"
       ],
       "fontes": [
-        "g1-2026-03-27-cpmi",
-        "oglobo-2026-03-27-cpmi"
+        "g1-2026-03-27-cpmi"
       ],
       "data_referencia": "2026-03-27"
     },
@@ -3607,7 +3477,7 @@
         "esc-cpmi-lulinha"
       ],
       "fontes": [
-        "cnn-2026-03-27-cpmi"
+        "g1-2026-03-27-cpmi"
       ],
       "data_referencia": "2026-03-27"
     },
@@ -3838,26 +3708,6 @@
       "data_referencia": "2026-01"
     },
     {
-      "id": "con-071",
-      "origem": "guido-mantega",
-      "destino": "gabriel-galipolo",
-      "rotulo": "fez lobby no BC pela venda do Master ao BRB, segundo Lauro Jardim",
-      "tipo": "negocios",
-      "status": "alegacao_nao_comprovada",
-      "periodo": {
-        "inicio": "2025-08",
-        "fim": null
-      },
-      "descricao": "Relato de coluna; sem confirmação oficial.",
-      "escandalos": [
-        "esc-banco-master"
-      ],
-      "fontes": [
-        "oglobo-2025-08-mantega-lobby"
-      ],
-      "data_referencia": "2025-08"
-    },
-    {
       "id": "con-072",
       "origem": "gabriel-galipolo",
       "destino": "daniel-vorcaro",
@@ -3940,7 +3790,7 @@
     },
     {
       "id": "con-076",
-      "origem": "marcola",
+      "origem": "marco-aurelio-santana-ribeiro",
       "destino": "guido-mantega",
       "rotulo": "recebeu em audiência no Planalto",
       "tipo": "profissional",
@@ -3960,7 +3810,7 @@
     },
     {
       "id": "con-077",
-      "origem": "marcola",
+      "origem": "marco-aurelio-santana-ribeiro",
       "destino": "lula",
       "rotulo": "chefe do gabinete pessoal",
       "tipo": "profissional",
@@ -4008,8 +3858,8 @@
         "fim": "2012-12"
       },
       "status": "associacao_indireta",
-      "status_detalhe": "Lula nunca foi denunciado. O STF rejeitou pedidos de Roberto Jefferson para incluí-lo como réu. José Dirceu foi condenado em 2012 por corrupção ativa.",
-      "resumo": "Esquema de compra de apoio parlamentar no primeiro governo Lula, julgado pelo STF na AP 470. O ex-ministro da Casa Civil José Dirceu foi condenado. Lula não figurou como réu.",
+      "status_detalhe": "Pena da AP 470 de José Dirceu extinta por indulto em 2016; Lula nunca foi denunciado. O STF rejeitou pedidos de Roberto Jefferson para incluí-lo como réu. Dirceu havia sido condenado em 2012 por corrupção ativa.",
+      "resumo": "Pena da AP 470 de José Dirceu extinta por indulto em 2016; Lula não figurou como réu. A AP 470 julgou o esquema de compra de apoio parlamentar no primeiro governo Lula.",
       "papel_de_lula": "Presidente da República à época; não denunciado.",
       "versao_de_lula": "No Roda Viva (07/11/2005), disse sentir-se traído por petistas que \"terceirizaram\" a arrecadação de campanha e admitiu responsabilidade política na crise (Folha, 08/11/2005).",
       "personagens": [
@@ -4021,6 +3871,7 @@
       "valores": [],
       "escandalos_relacionados": [],
       "fontes": [
+        "pr-a-factcheck-01",
         "g1-2012-10-dirceu",
         "gazeta-stf-lula-mensalao",
         "planalto-2005-11-07-rodaviva",
@@ -4042,8 +3893,8 @@
       },
       "status": "condenacao_anulada",
       "status_detalhe": "Condenação anulada pelo STF: em 08/03/2021 Fachin declarou a incompetência da 13ª Vara de Curitiba (HC 193.726); em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Em 27/01/2022 a 12ª Vara Federal do DF arquivou a ação por prescrição, a pedido do MPF.",
-      "resumo": "Lula foi condenado por Sergio Moro em 12/07/2017 a 9 anos e 6 meses por corrupção passiva e lavagem, sob acusação de receber da OAS o apartamento 164-A do Solaris e reformas. O TRF4 elevou a pena para 12 anos e 1 mês em 24/01/2018. Preso em 07/04/2018, foi solto em 08/11/2019 após 580 dias. A condenação foi anulada em 2021 e o caso, arquivado em 2022. Na mesma sentença, Lula e Okamotto foram absolvidos da acusação ligada ao armazenamento do acervo presidencial.",
-      "papel_de_lula": "Réu; condenado em 1ª e 2ª instâncias, condenação anulada.",
+      "resumo": "Condenação anulada em 2021; caso arquivado por prescrição em 2022. Historicamente, Lula foi condenado por Sergio Moro em 12/07/2017 a 9 anos e 6 meses por corrupção passiva e lavagem, sob acusação de receber da OAS o apartamento 164-A do Solaris e reformas. O TRF4 elevou a pena para 12 anos e 1 mês em 24/01/2018. Preso em 07/04/2018, foi solto em 08/11/2019 após 580 dias. A condenação foi anulada em 2021 e o caso, arquivado em 2022. Na mesma sentença, Lula e Okamotto foram absolvidos da acusação ligada ao armazenamento do acervo presidencial.",
+      "papel_de_lula": "Condenação anulada; foi réu e condenado em 1ª e 2ª instâncias.",
       "versao_de_lula": "Em depoimento a Moro (10/05/2017), negou ser dono do triplex e disse nunca ter tido intenção de comprá-lo. Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
       "personagens": [
         "lula",
@@ -4102,8 +3953,8 @@
       },
       "status": "condenacao_anulada",
       "status_detalhe": "Condenação anulada pelo STF: em 08/03/2021 Fachin declarou a incompetência da 13ª Vara de Curitiba (HC 193.726); em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Em 21/08/2021 a Justiça Federal do DF rejeitou a nova denúncia e declarou extinta a punibilidade por prescrição.",
-      "resumo": "Gabriela Hardt condenou Lula em 06/02/2019 a 12 anos e 11 meses por corrupção e lavagem, por reformas no sítio (proprietário formal: Fernando Bittar) custeadas por Odebrecht, OAS e Bumlai, segundo a acusação. O TRF4 elevou a pena para 17 anos, 1 mês e 10 dias em 27/11/2019 e absolveu Bumlai, Roberto Teixeira, Emyr Costa e Paulo Gordilho. A condenação de Lula foi anulada em 2021.",
-      "papel_de_lula": "Réu; condenado em 1ª e 2ª instâncias, condenação anulada.",
+      "resumo": "Condenação de Lula anulada em 2021; nova denúncia rejeitada e punibilidade extinta por prescrição no DF em agosto de 2021. Historicamente, Gabriela Hardt condenou Lula em 06/02/2019 a 12 anos e 11 meses por corrupção e lavagem, por reformas no sítio (proprietário formal: Fernando Bittar) custeadas por Odebrecht, OAS e Bumlai, segundo a acusação. O TRF4 elevou a pena para 17 anos, 1 mês e 10 dias em 27/11/2019 e absolveu Bumlai, Roberto Teixeira, Emyr Costa e Paulo Gordilho. A condenação de Lula foi anulada em 2021.",
+      "papel_de_lula": "Condenação anulada; foi réu e condenado em 1ª e 2ª instâncias.",
       "versao_de_lula": "A defesa (Cristiano Zanin) alegou no TRF4 parcialidade de Moro e Hardt e ausência de prova de vantagem indevida. Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
       "personagens": [
         "lula",
@@ -4486,10 +4337,9 @@
       "fontes": [
         "folha-2005-07-09-telemar",
         "folha-2005-08-08-telemar",
-        "pf-2019-12-10-mapa",
+        "poder360-2022-01-mapa",
         "g1-2019-12-10-mapa",
-        "folha-2022-01-17-mapa",
-        "poder360-2022-01-mapa"
+        "folha-2022-01-17-mapa"
       ],
       "conexoes": [
         "con-002",
@@ -4531,7 +4381,7 @@
     },
     {
       "id": "esc-inss-sindnapi",
-      "titulo": "Fraude dos descontos no INSS: Sindnapi e Frei Chico",
+      "titulo": "Fraude dos descontos no INSS: Sindnapi",
       "periodo": {
         "inicio": "2025-04-23",
         "fim": null
@@ -4587,15 +4437,13 @@
         "fim": null
       },
       "status": "investigacao_em_curso",
-      "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS. A alegação de mesada de R$ 300 mil vem de uma única testemunha, sem confirmação.",
-      "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, por meio de Roberta Luchsinger, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
+      "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS.",
+      "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
       "papel_de_lula": "Pai do investigado; não investigado.",
       "versao_de_lula": "Lula disse em 30/07/2026 que, se o filho for julgado, não terá privilégios, não vai se esconder e terá de provar inocência (G1).",
       "personagens": [
         "lulinha",
         "careca-do-inss",
-        "roberta-luchsinger",
-        "edson-claro",
         "alfredo-gaspar",
         "carlos-viana",
         "andre-mendonca",
@@ -4603,40 +4451,21 @@
         "marco-aurelio-carvalho",
         "lula"
       ],
-      "valores": [
-        {
-          "descricao": "Mesada alegada por testemunha (não comprovada)",
-          "valor": 300000,
-          "moeda": "BRL"
-        },
-        {
-          "descricao": "Consultoria recebida por Roberta Luchsinger, segundo o relator",
-          "valor": 1400000,
-          "moeda": "BRL"
-        }
-      ],
+      "valores": [],
       "escandalos_relacionados": [
         "esc-inss-sindnapi"
       ],
       "fontes": [
         "senado-2025-08-28-careca",
         "g1-2026-03-27-cpmi",
-        "oglobo-2026-03-27-cpmi",
-        "poder360-2026-03-27-cpmi",
-        "cnn-2026-03-27-cpmi",
         "g1-2026-07-31-inquerito",
         "g1-2026-07-30-lula",
-        "estadao-2026-defesa-lulinha",
-        "cnn-2026-advogado-lulinha"
+        "estadao-2026-defesa-lulinha"
       ],
       "conexoes": [
         "con-002",
         "con-043",
         "con-053",
-        "con-054",
-        "con-055",
-        "con-056",
-        "con-057",
         "con-058",
         "con-059",
         "con-060",
@@ -4735,7 +4564,7 @@
         "rui-costa",
         "alexandre-silveira",
         "augusto-lima",
-        "marcola",
+        "marco-aurelio-santana-ribeiro",
         "ricardo-lewandowski",
         "lula"
       ],
@@ -4765,7 +4594,6 @@
         "con-068",
         "con-069",
         "con-070",
-        "con-071",
         "con-072",
         "con-073",
         "con-074",
@@ -5389,15 +5217,6 @@
       "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0808200518.htm"
     },
     {
-      "id": "pf-2019-12-10-mapa",
-      "tipo": "documento_oficial",
-      "veiculo": "Polícia Federal",
-      "tipo_veiculo": "documento_oficial",
-      "titulo": "PF deflagra a 69ª Fase da Operação Lava Jato: Operação Mapa da Mina",
-      "data": "2019-12-10",
-      "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/12/pf-deflagra-a-69a-fase-da-operacao-lava-jato-operacao-mapa-da-mina"
-    },
-    {
       "id": "g1-2019-12-10-mapa",
       "tipo": "reportagem",
       "veiculo": "G1",
@@ -5421,7 +5240,7 @@
       "veiculo": "Poder360",
       "tipo_veiculo": "grande_imprensa",
       "titulo": "Juíza arquiva investigação da Lava Jato contra Lulinha",
-      "data": "2022-01",
+      "data": "2022-01-18",
       "url": "https://www.poder360.com.br/lava-jato/juiza-arquiva-investigacao-da-lava-jato-contra-filho-de-lula/"
     },
     {
@@ -5551,33 +5370,6 @@
       "url": "https://g1.globo.com/politica/noticia/2026/03/27/cpmi-do-inss-relatorio.ghtml"
     },
     {
-      "id": "oglobo-2026-03-27-cpmi",
-      "tipo": "reportagem",
-      "veiculo": "O Globo",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Relatório da CPI diz que testemunha citou pagamentos de R$ 300 mil de Careca do INSS a Lulinha e sugere prisão de filho do presidente",
-      "data": "2026-03-27",
-      "url": "https://oglobo.globo.com/politica/noticia/2026/03/27/relatorio-da-cpi-afirma-que-testemunha-citou-pagamentos-de-r-300-mil-mensais-de-careca-do-inss-a-lulinha.ghtml"
-    },
-    {
-      "id": "poder360-2026-03-27-cpmi",
-      "tipo": "reportagem",
-      "veiculo": "Poder360",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Relatório cita mesada do Careca do INSS para Lulinha",
-      "data": "2026-03-27",
-      "url": "https://www.poder360.com.br/poder-congresso/relatorio-cita-mesada-do-careca-do-inss-para-lulinha/"
-    },
-    {
-      "id": "cnn-2026-03-27-cpmi",
-      "tipo": "reportagem",
-      "veiculo": "CNN Brasil",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Relator de CPMI detalha supostos pagamentos de Careca do INSS a Lulinha",
-      "data": "2026-03-27",
-      "url": "https://www.cnnbrasil.com.br/politica/relator-de-cpmi-detalha-pagamentos-de-careca-do-inss-a-lulinha/"
-    },
-    {
       "id": "g1-2026-07-31-inquerito",
       "tipo": "reportagem",
       "veiculo": "G1",
@@ -5605,13 +5397,103 @@
       "url": "https://www.estadao.com.br/politica/defesa-de-lulinha-nega-relacao-com-esquema-no-inss-e-diz-que-provara-inocencia-bala-de-festim/"
     },
     {
-      "id": "cnn-2026-advogado-lulinha",
+      "id": "pr-a-factcheck-01",
+      "tipo": "documento_oficial",
+      "veiculo": "Supremo Tribunal Federal",
+      "tipo_veiculo": "documento_oficial",
+      "titulo": "Indulto extingue a punibilidade de José Dirceu na AP 470",
+      "data": "2016-10-17",
+      "url": "https://noticias.stf.jus.br/postsnoticias/indulto-extingue-a-punibilidade-de-jose-dirceu-na-ap-470/"
+    },
+    {
+      "id": "pr-a-factcheck-02",
+      "tipo": "documento_oficial",
+      "veiculo": "Supremo Tribunal Federal",
+      "tipo_veiculo": "documento_oficial",
+      "titulo": "STF anula atos processuais de duas ações penais contra José Dirceu",
+      "data": "2024-10",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-anula-atos-processuais-de-duas-acoes-penais-contra-jose-dirceu/"
+    },
+    {
+      "id": "pr-a-factcheck-03",
+      "tipo": "documento_oficial",
+      "veiculo": "Supremo Tribunal Federal",
+      "tipo_veiculo": "documento_oficial",
+      "titulo": "Supremo extingue pena do ex-ministro José Dirceu por corrupção passiva",
+      "data": "2024-05-21",
+      "url": "https://noticias.stf.jus.br/postsnoticias/supremo-extingue-pena-do-ex-ministro-jose-dirceu-por-corrupcao-passiva/"
+    },
+    {
+      "id": "pr-a-factcheck-04",
       "tipo": "reportagem",
-      "veiculo": "CNN Brasil",
+      "veiculo": "G1",
       "tipo_veiculo": "grande_imprensa",
-      "titulo": "Advogado de Lulinha nega que ele tenha recebido mesada do Careca do INSS",
-      "data": "2026-03",
-      "url": "https://www.cnnbrasil.com.br/politica/advogado-de-lulinha-nega-que-ele-tenha-recebido-mesada-de-careca-do-inss/"
+      "titulo": "Toffoli anula condenações na Lava Jato de Léo Pinheiro, um dos principais delatores",
+      "data": "2024-09-27",
+      "url": "https://g1.globo.com/politica/noticia/2024/09/27/toffoli-anula-condenacoes-na-lava-jato-de-leo-pinheiro-um-dos-principais-delatores.ghtml"
+    },
+    {
+      "id": "pr-a-factcheck-05",
+      "tipo": "reportagem",
+      "veiculo": "O Globo",
+      "tipo_veiculo": "grande_imprensa",
+      "titulo": "STF mantém por 3 a 2 decisão de Toffoli que anulou condenações de Léo Pinheiro na Lava Jato",
+      "data": "2025-02-04",
+      "url": "https://oglobo.globo.com/politica/noticia/2025/02/04/stf-mantem-por-3-a-2-decisao-de-toffoli-que-anulou-condenacoes-de-leo-pinheiro-na-lava-jato.ghtml"
+    },
+    {
+      "id": "pr-a-factcheck-06",
+      "tipo": "reportagem",
+      "veiculo": "DW",
+      "tipo_veiculo": "grande_imprensa",
+      "titulo": "Justiça rejeita denúncia contra Lula sobre sítio em Atibaia",
+      "data": "2021-08-22",
+      "url": "https://www.dw.com/pt-br/justi%C3%A7a-federal-rejeita-nova-den%C3%BAncia-contra-lula-sobre-s%C3%ADtio-em-atibaia/a-58952329"
+    },
+    {
+      "id": "pr-a-factcheck-07",
+      "tipo": "documento_oficial",
+      "veiculo": "Supremo Tribunal Federal",
+      "tipo_veiculo": "documento_oficial",
+      "titulo": "STF anula processos contra Antonio Palocci na Lava Jato",
+      "data": "2025-02",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-anula-processos-contra-antonio-palocci-na-lava-jato/"
+    },
+    {
+      "id": "pr-a-factcheck-08",
+      "tipo": "reportagem",
+      "veiculo": "Agência Brasil",
+      "tipo_veiculo": "grande_imprensa",
+      "titulo": "STF mantém decisão que anulou processo contra Palocci na Lava Jato",
+      "data": "2025-08-15",
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2025-08/stf-mantem-decisao-que-anulou-processo-contra-palocci-na-lava-jato"
+    },
+    {
+      "id": "pr-a-factcheck-09",
+      "tipo": "reportagem",
+      "veiculo": "Agência Brasil",
+      "tipo_veiculo": "grande_imprensa",
+      "titulo": "PF indicia Careca do INSS e mais 47 por esquema de descontos ilegais",
+      "data": "2026-07",
+      "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-07/pf-indicia-careca-do-inss-e-mais-47-por-esquema-de-descontos-ilegais"
+    },
+    {
+      "id": "pr-a-factcheck-10",
+      "tipo": "reportagem",
+      "veiculo": "G1",
+      "tipo_veiculo": "grande_imprensa",
+      "titulo": "Toffoli anula todos os atos da Lava Jato contra o ex-tesoureiro do PT João Vaccari Netto",
+      "data": "2025-08-15",
+      "url": "https://g1.globo.com/politica/noticia/2025/08/15/toffoli-anula-todos-os-atos-da-lava-jato-contra-o-ex-tesoureiro-do-pt-joao-vaccari-netto.ghtml"
+    },
+    {
+      "id": "pr-a-factcheck-11",
+      "tipo": "documento_oficial",
+      "veiculo": "Supremo Tribunal Federal",
+      "tipo_veiculo": "documento_oficial",
+      "titulo": "STF mantém nulidade de atos da Lava Jato contra Marcelo Odebrecht",
+      "data": "2024-09-06",
+      "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-nulidade-de-atos-da-lava-jato-contra-marcelo-odebrecht/"
     },
     {
       "id": "stf-2023-12-04-janones",
@@ -5765,15 +5647,6 @@
       "titulo": "Lula relata conversa com Vorcaro no Planalto: não haveria posição política pró ou contra o Master",
       "data": "2026-02-05",
       "url": "https://oglobo.globo.com/economia/noticia/2026/02/05/lula-disse-que-vorcaro-afirmou-a-ele-em-reuniao-fora-da-agenda-no-planalto-que-sofria-perseguicao.ghtml"
-    },
-    {
-      "id": "oglobo-2025-08-mantega-lobby",
-      "tipo": "reportagem",
-      "veiculo": "O Globo (Lauro Jardim)",
-      "tipo_veiculo": "grande_imprensa",
-      "titulo": "Mantega faz lobby no BC por operação do Banco Master",
-      "data": "2025-08",
-      "url": "https://oglobo.globo.com/blogs/lauro-jardim/post/2025/08/mantega-faz-lobby-no-bc-por-operacao-do-banco-master.ghtml"
     },
     {
       "id": "oglobo-2026-04-08-master-pagamentos",

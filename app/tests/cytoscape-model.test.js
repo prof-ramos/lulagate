@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import cytoscape from 'cytoscape';
 import {graphElements,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles,applyFocus} from '../cytoscape-model.js';
-import {parallelSlots,STATUS_CONFIG} from '../graph-model.js';
+import {parallelSlots,STATUS_CONFIG,compactLabel} from '../graph-model.js';
 const nodes=[{id:'lula',nome:'Luiz Inácio Lula da Silva',proximidade_lula:1},...Array.from({length:7},(_,i)=>({id:`p${i}`,nome:`Personagem ${i}`,proximidade_lula:[.9,.7,.5,.3,.1,.01,0][i]}))];
 const edges=[{id:'e1',origem:'lula',destino:'p0',status:'arquivado',rotulo:'um'},{id:'e2',origem:'p0',destino:'lula',status:'fato_documentado',rotulo:'dois'}];
 test('adapter keeps every person, relation, direction and metadata',()=>{
@@ -41,9 +41,10 @@ test('real dataset layout has case-based dimensions, finite positions and no ove
  const data=JSON.parse(await readFile(new URL('../../data/dataset.json',import.meta.url),'utf8'));
  const statuses=Object.fromEntries(Object.keys(STATUS_CONFIG).map(k=>[k,'#666']));
  const cy=cytoscape({headless:true,styleEnabled:true,style:graphStyles({ink:'#222',paper:'#fff',bg:'#eee',muted:'#666',node:'#777',accent:'#457',statuses}),elements:graphElements(data.personagens,data.conexoes)});
- layoutGraph(cy,'rede');
- assert.equal(cy.nodes().length,63);
  try {
+ layoutGraph(cy,'rede');
+ assert.equal(cy.nodes().length,data.personagens.length);
+ assert.equal(cy.edges().length,data.conexoes.length);
  const nodes=cy.nodes().toArray();
  for(const node of nodes){assert.ok(Number.isFinite(node.position('x'))&&Number.isFinite(node.position('y')));assert.equal(node.width(),node.data('size'));assert.equal(node.height(),node.data('size'))}
  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
@@ -91,4 +92,19 @@ test('hover focus preserves selection, search classes, labels and camera',()=>{
  applyFocus(cy,null);
  assert.deepEqual(cy.elements().map(e=>({id:e.id(),classes:e.classes(),data:{...e.data()}})),before);
  assert.deepEqual({zoom:cy.zoom(),pan:{...cy.pan()}},camera);cy.destroy();
+});
+
+test('labels preserve words in at most two lines after selection, including Mauro',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const data=JSON.parse(await readFile(new URL('../../data/dataset.json',import.meta.url),'utf8'));
+ const cy=cytoscape({headless:true,elements:graphElements(data.personagens,data.conexoes)});
+ try {
+  applySelection(cy,'lula');
+  for(const n of cy.nodes()){
+   const label=n.data('label');assert.doesNotMatch(label,/…|\.\.\./);assert.ok(label.split('\n').length<=2);
+   assert.equal(label.replace(/\n/g,' '),compactLabel(data.personagens.find(p=>p.id===n.id())));
+  }
+  const mauro=cy.nodes().filter(n=>n.data('nome').startsWith('Mauro Marcondes'))[0];
+  assert.equal(mauro.data('label'),'Mauro Marcondes\nMachado');
+ }finally{cy.destroy()}
 });
