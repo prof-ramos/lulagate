@@ -1,6 +1,7 @@
 [
   {
     "id": "lula",
+    "wikidata_qid": "Q37181",
     "nome": "Luiz Inácio Lula da Silva",
     "tipo": "pessoa",
     "ocupacao": "Presidente da República (2003-2010 e desde 2023)",
@@ -29,6 +30,16 @@
       "stf-2021-06-23-suspeicao",
       "folha-2019-11-08-solto"
     ],
+    "categoria_juridica": "condenacao_anulada",
+    "retrato": {
+      "arquivo": "retratos/lula.webp",
+      "autor": "Palácio do Planalto from Brasilia, Brasil",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(estreita).jpg",
+      "arquivo_commons": "File:Foto oficial de Luiz Inácio Lula da Silva (estreita).jpg",
+      "base64": "data:image/webp;base64,UklGRsQDAABXRUJQVlA4ILgDAADQFACdASpFAGAAPqlGnUqmI6KhqrgMYMAVCWgAvy/3CZF8h4wXu1/Ow6ayd37iTHj9zMoj77KxWZd4XbggrA3GtbGEf8FFtdqctkUUGb+mGhkEGHmDQtD1QchNTVIC3kcMVMwF9oqU7q98l1anOtC6vKL3e/qqopbGZLs7YCGNVp8E/gQkMd5ytt0fyayU003S5b6P2U6MTnLRax4KKUE9JrQCniK7hIvajEBA3/gAAP71gbTErp2PlpRZTyvEtGDbUAcFfVHf44SxH3g83UiIglxq28eCT6gt6zZbhnW6PkrfXpb5hqctZFi4zSnhc+ZgdWfTE56f9c+XUETRcNrAtvGuMbN3EiIwgD78OHZzdH3+Y7pjhVc98bDbRYfachoVqnw/kJ5M1YcCmj0+TsqeBS6XktG0BKa9tiJ9UKpwuzX3tlxUx8j9sro6/7Ezxl8nmDcJxmEl06bdWge1XdDgbpkpcSzDyHeoCOWuwEfwVmtdLJnaahV3+PwaJKanuC7RGRlioMNz7NY5Gah9OjXThFZ76CwxYhkfrQqDbpf9HefgUSyuXOs19mAJDwwKBG6tTYTLVjozlf2Ewiy+alzvC8gvZ7BH+J/Gth8mMo1pbCb9D1lDEOYyzatTiSCWc6yZtX72sIJK4DgkSgre+S26p7HyUoq6uHc8rAu8SazwD9Z6bpCGwvuL5fCz17Pwa2Y+6pLNB3uKXcHqh9AmI1FtluYXGu/Mlw9rGIMz+5R1HK3ZH09mtU6Y0AQiREGEkM9OYIFFsai6nxTvtjnsAFifQZNRXTKN1wsFCDdmr/N4JwzFqVY78Esc/lQ/k2ByGbncOZzbfzz52Eee6jeUYOtEi5xReBsKnrTCNP1MiKmmvX4T/SkpH0b+/aAPgY5j6Y1aeGYGJOMfqYllwTJpVha7Mae87PyZSSnajWN5EE+IKaYAYvfrpze7q+kQL7Gx3ItUYTZfluwQ8waqnJXNgp9hyyXoiIseHINbGR2of5jDO7xHv3/QcEMNr7tuhFNhrHyS8u/aU4fhNZUkPKK+W3W1m1Ihg6U5JX3c3+UpUTcCHksj+/iLY4uSNO0vuXf0F8BduWKY9QvbLRljhulUiECvgj7MAaX2ZqWuY7/JMgwnIW/xXLkiFh0LaMUdqLFB6TiuKPo+dYyxYN0V93R3K/8UEo/l7Hn7p9ZhcHOLicxTPZNoYQ/9Ub+1hJylANOUqQpgqavppqBe7jOOP32gor7IWuxCrW4Xw+u01IPdiE9y4XnggDlUUAAA"
+    },
     "escandalos": [
       "esc-angola-bndes",
       "esc-atibaia",
@@ -99,6 +110,7 @@
   },
   {
     "id": "marisa-leticia",
+    "wikidata_qid": "Q4199383",
     "nome": "Marisa Letícia Lula da Silva",
     "tipo": "pessoa",
     "ocupacao": "Ex-primeira-dama (morta em 2017)",
@@ -118,6 +130,16 @@
       "trf4-2019-11-27-atibaia",
       "g1-triplex-o-que-dizem"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/marisa-leticia.webp",
+      "autor": "Ricardo Stuckert/Presidência da República",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Marisa_Let%C3%ADcia_Lula_da_Silva.jpg",
+      "arquivo_commons": "File:Marisa Letícia Lula da Silva.jpg",
+      "base64": "data:image/webp;base64,UklGRhgFAABXRUJQVlA4IAwFAAAwGQCdASpIAGAAPqFAmkkmI6KhMzR+qMAUCUAYVoCTPP+f+dwVzuvpA/5m/Qb0daOzYr5OqTgxmXBaTTSW+lRsi8UC5sEE/lA26xilsUryJUnswRdvLt76glQzmJ0PDfedUS9Op3WrXn3Y4GIcjG9YO8QsNq/Bft96XOte5ULHCiEAWQRLlKpBtBT6PkffCzsKhYDvVWqtcGXw0Ykc8jMX9xz4GrosxTnYrkhrTavPX1QKrl+9+TMUyHkPowWMi6UnNMxJS+Fn48OTZ1u9G+td5+AA/QPcEN6xzHtpY+Zmwy5nmTu8aHM4EGdyO0o6alcwd+6H4vQ/dQyG6nmZ/AD6BOn76ymz2UlSznp3UJWFhw6jCS1mOgDVJHt4PpGURd8+QINmKHcz678uJ3i/FfiyRQmiTNxvhjVSzWn4fyEas+WuUX4WNviYk34idHiHdGwCb9a/D2nY4NXU88dtJ65eRbRBGv5udTO+XsjVITFcJKu+DDxXXU6wRJFf3V2I1p7Irmtpe7/jQhyu2NMfxucbjaOwLZZnvQXzsFtXAx1GsZho+S6vmaDQp8qR4RLOJV8T8uu44X2d9z++IcqCh2FyCMQMNhY0GUjeBDeiN8rVQFHCSPvQsXmFgGg90aqG3IROl0iwgBa8LsUJsjkIYZP8N/l1rM8gTvJcMhPFqnJjjw9UFAZadY0YFt1iN1dAC4lwmWz+KVdOse2cROXQjlMRn+zcrL+Fp7dfVvmcBVnlVNdnvgLoaQk+IUzl6gVmaaVG8wJYI1amxAQHt7QXlwH/irhSmXkyWSWqcMQoI8p0IQAJJwp2CLl9R4h5vSi0xLLIUusF4TVwAytgD0P2U106jAEwa/ls3FrWgT+yio7v1fd94elJXBn/8Oj5U1fFx+SrfbXQkkh/dXb/zXDR50ks0/D+uo5UoUxsPd+VBrhc/VJ2k5c1u9GYGUQDH6Fn5wFa/4XHPBPqjgau4eHFuQ7Cn2PjHmaBI5c8voQkM1nPIhVmFrMoPqr7szPjDtrf1SJekKvNULBq8KNSPro6r1tFvNoY9RbdWN4h/7aBQuh8Mw97EqvXcWvwMlWrDE7FwekA+bbRnKewEy3WDhSmECD7AvUV5NLDReF3750AfvyXUPanbxfacvfg6X14ZDeadmrOYlTD35Q608qdFk2AmYxqkA7//WJjHESWDPDrYMjXQN9DWtwXPHB0uP2JARIEvfP1BGKk7Bb5mNLOhWIeYS/cXxWh1pIL/angiMOw15uW5uAe4ZWJfY42lXWjvjXYSg39JdthnZmrp4V7Dfc/VZ6ajEjLwefm6+323sLC3pUL7X/pkkQP4lz7wGbmIF+gEtUW9iLr1rBQEE5FXEUM91TsguIyDJ6ZNuObEXzvSSlCCnUhG1RwA+LFDvB5pwoPcRMI5mTzwX1gZveFFKWrYTh/ooLM4EmdsHy79VCS0rG+rASfRnB0+EOiRp+5yhcR/Mjw3Wf+lXX2vz/xds5Xr640xyMGLrU+qzsergRCFxl9aRA6ZqXW4bqABqAEC9tdnLleg4FC++YlAlNREc6uK1/129YJKSY0V77KfyRD6g3Uwz7YxIKnPjQD3fWoGJ/ATCMhAo/4PNDhd5iFDfrExfHXGsPZIoXxuswQiRp0nCsPB11BalQtzAK5bUobjTLPPGQDrOUzd7L0kFkqnxRvZwOOnmSTy2+G0yj/+UcffOsl//gE9ZOf8ly3s4IAAA=="
+    },
     "escandalos": [
       "esc-atibaia",
       "esc-triplex"
@@ -129,6 +151,7 @@
   },
   {
     "id": "lulinha",
+    "wikidata_qid": "Q10286880",
     "nome": "Fábio Luís Lula da Silva (Lulinha)",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
@@ -153,6 +176,8 @@
       "folha-2022-01-17-mapa",
       "g1-2026-07-31-inquerito"
     ],
+    "categoria_juridica": "investigado",
+    "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha",
       "esc-gamecorp"
@@ -173,6 +198,7 @@
   },
   {
     "id": "luis-claudio",
+    "wikidata_qid": null,
     "nome": "Luís Cláudio Lula da Silva",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
@@ -192,6 +218,8 @@
       "estadao-2016-12-gripen",
       "stf-2023-02-tres-acoes"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-zelotes-gripen"
     ],
@@ -203,6 +231,7 @@
   },
   {
     "id": "frei-chico",
+    "wikidata_qid": null,
     "nome": "José Ferreira da Silva (Frei Chico)",
     "tipo": "pessoa",
     "ocupacao": "Sindicalista, vice-presidente do Sindnapi",
@@ -228,6 +257,8 @@
       "camara-2025-10-16-frei-chico",
       "oglobo-2025-10-09-cgu"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-inss-sindnapi"
     ],
@@ -239,6 +270,7 @@
   },
   {
     "id": "jose-dirceu",
+    "wikidata_qid": "Q1791320",
     "nome": "José Dirceu",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro-chefe da Casa Civil",
@@ -261,6 +293,16 @@
     "fontes": [
       "g1-2012-10-dirceu"
     ],
+    "categoria_juridica": "condenado",
+    "retrato": {
+      "arquivo": "retratos/jose-dirceu.webp",
+      "autor": "José CRuz/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Dirceu.jpg",
+      "arquivo_commons": "File:José Dirceu.jpg",
+      "base64": "data:image/webp;base64,UklGRugDAABXRUJQVlA4INwDAACQFACdASpLAGAAPqlGnUsmI6KhrNFdUMAVCWMAxnSvB3S3rexj3mrBN7TZ2EQ47/hafsbPZeu3RYahz2W2GyUiSZIqTYgVH/uTI+aP+JomdNk8kGHg/RRJvlE5hxqKJQ9kC7VhgXQyA4n8Wobd9QOSvn2A9GJckMR+ZxInVemtkkD4gT1vPGzS+d8vEre3kI/EbnQH1S4RJHaZQgDWSqRIZZM5q0cgpIKSJGvQAAD+uL6b88hCGIaRTvPq6nN4uC72h7g+PgVJLIsuyB5eRVIabgyB2ZrDHfF0VvW646Ve4wEHqa6DieMwRmvOx7mESuifxTe5+CenT3wnLfwBwjVFRAGYZggVSfn/PT23Xy1JdIZi0RTpBv6rQ8B4UTYkdZczbGtrP0rUpGue47Z0HBnrzG8v4/53k8uacnFYhQnwOdwFKcMO/hzjVw2q14rKU5H+MkjtW69BX4jZ62wU/m5tjbEdOkK+Gk2hZr+g8oVsQbBPa2l1KLl1g88zfTcPDa1wtkA9ZsTZNwtUBqYQXW59yDLxuG3mKgt4mSAzkVhQzemvcMDSodAvb8BYtGsqh4OSj5SPQZXbs5Fy6RzP/C4VuI+zO8FCU69lNZTZaK0nQmUblspIKNLQFUamDXBSY06NVVJ9QrMt/oWNkbwf0Z9+t0GaggWJ3yg89Ha+8oK9suPlPg+b4aoJIysMNDT09Vtm4ipSrloTd+XLWaNOZzql8YDuL9T2xFfQ4MRRNYviKyZEKWAPyvs7w7gxXU61pcF3mn6W4GojW5d9BQ0GtYKnDq5rnnVyAf2DNSlRvt59yIrkZGpBXrqXWxei4NX66fxbcLUsBY1mMTewUNhwV3cZH6NmiU6wAeQ7vABKeRqXBdEBuAXnrDpK5G1BPjJ+5pME9XmEeoYAIrHaPW0REzGfjNYKLOEEH/5GgztDlYSgUUxTlXJqyNqoILWVcu5oY7L5vhGrKzPfx9Ls/9wh5KuHbbj/sAc4pzIIdIwSiyzzXm9+I/JGlpMehdzch15yB9ESpkbkgsBWqusjcqjaKAHr1nNBjSLnTqERcUzk+78E4Sihu+cncCpLz0QR7mX4JeqTYC1sc1yHxNIOO51BgUXY99+OnLkdFFcziCzUN38aX9BLPYFPyKs3dcDCCErHOdrVsnIhZyc8caM9pyw8v8khG3fz0L48SNjk8JH5ZjLTgNuu2CmkCHsVO914lYXxfWpSWJwe//U7WqX6maJNnY+ImklbHVEb8ZcdEPcJI8WCRguUsVieBGoqWMzoF0PjLEr7+sTZ59EfKZIMoOcpCLJ6PmlmCNtt+EbQAAAA"
+    },
     "escandalos": [
       "esc-mensalao"
     ],
@@ -271,6 +313,7 @@
   },
   {
     "id": "delubio-soares",
+    "wikidata_qid": "Q5254980",
     "nome": "Delúbio Soares",
     "tipo": "pessoa",
     "ocupacao": "Ex-tesoureiro do PT",
@@ -289,6 +332,16 @@
     "fontes": [
       "folha-2005-11-09-delubio"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/delubio-soares.webp",
+      "autor": "Antonio Cruz/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:DelubioSoares113731.jpg",
+      "arquivo_commons": "File:DelubioSoares113731.jpg",
+      "base64": "data:image/webp;base64,UklGRnwEAABXRUJQVlA4IHAEAACQGACdASpgAEsAPqlCm0mmI6IhLfYuGMAVCUAXmwFCJ3CPMOlVLRXxpsdfWO8Cvrj4wRi4zwfkvKStqukOlqAOLAT46PHLWhiFRepP/fJusDlC89Jkr1l5cOV/edVkVwUK5HFya9PFRcv9ooBph+je6j4JDQlqDwy3c/eTMLeUrAJcLbD/m4v7rMlz/D0PkQqCjIrZdXSxhG1QiG0NkDqUzgHqlCSxFD68UwaeRqrbLBuvQ2ylcBRZD3X5iljHbxGzXvFVLzf2ZcbnZgJ8AP76EQr/NK9nHP/hOjjquAEkiGEhCa+vN9YjW50sO/p2HWl2J3X9xSOIVFQYO3yjgSDxGdyi5eNtFJV309zOCKJ5+A0XqZzhEkZhiC33l6eD6LWXuoqCjWg5Nhc6s7nRdpCkcw4JSBQTpoo3fcy7hcbKJikMVlaBldKsBkX+4kkfg2W4maQyKvd11gGL8iWlKW7D8gLVoc4rYUwH9n+JBu4A9w+B+5V1voNz+oWjwGhGJYYvNo0hgckphyhFQhYMEQse7hyx649Ji1ye60MDxmvhSRi0voTWeKU5Xrbe58mmTxWAswQhl0+SgvQTYfTgjn355PRU8u5h5UccbOnyg254bP8jEfCpS378dxA5OopI+xWBNronmgKDTsZTkW/wQTco19/1d0MYhQpChUfXOR3qwdh6+1dodk8VFTnjWCAD/AlpGbnn8f0zUITzRJUnDb70pOTyTRZu5jG38RpcrByAYeI6fP8cPFk6SrpBz5umC0t5IlubyedGSasqVrn0hO+JcTW0jMpByXmNWIG/IuXttuT1eN+zPVGbyeFiCMJab40aF6FHmcGbEmCbd5SHxaODxfhDNmvQUSOFXOu9oFKUT+UbqtkpSFMk5hVNMp78z0MwnNN7EMs/hGEacbTEW3prjro1IhPd9qMxC9jrTiyhMsb5RZAaFjvXf3sBgq8c3M7DKFBWzjifobXpHMMfF5Ffcr7rpOV6iTOmI7ccFvdm8SKW17ycVcoRBoLvdTmVvqaTHhZAtM1jR6iPyBPm/zW/Cs54zE3QHFJe4TbQK3Qf06D/nJPbBuj+tUKHuoRFNaayb5d0cBVzKPLr9fR+3/ZHsQloaKkWlZ4c2VDkMvWFVwXgRRWlBFM/Vz0d3B+1o7ZK5ceeSTg3zTLWNozo8VaIDBkUvAI7wpt5h62oELtwc20xwnsCtC804EauTHaip3hqo1wMnEmQS5wzRaqChrp7fQ9Awhn1XXmCqEjA2rV9lJHhTNjRLUE3PqlrA5rfdR/Sb3dFJuKmZiY/6Yq64FoIMfNv2vkKli+0h64RDeDMnfueEZj7hZdmSo3WOE2iSd+Tc2hlsbGs4XrvSGfAv+mDPrKYDMhY62ZDXTblx9/POISL1c0jl8J76O93T/rUCzZbPL+qiWHTsOfJsFLV2fUnCemSbquB3/kKdXhcJwynPGbVlLXQAnw6o/w/BtO14B3VX6VtRejGKogxBF4xDEZoaK+hu8audgSdhpowCQAAAA=="
+    },
     "escandalos": [
       "esc-mensalao"
     ],
@@ -299,6 +352,7 @@
   },
   {
     "id": "roberto-jefferson",
+    "wikidata_qid": "Q3306252",
     "nome": "Roberto Jefferson",
     "tipo": "pessoa",
     "ocupacao": "Ex-deputado federal (PTB)",
@@ -312,6 +366,8 @@
     "fontes": [
       "gazeta-stf-lula-mensalao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-mensalao"
     ],
@@ -322,6 +378,7 @@
   },
   {
     "id": "antonio-palocci",
+    "wikidata_qid": "Q603993",
     "nome": "Antonio Palocci",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro da Fazenda e da Casa Civil",
@@ -346,6 +403,16 @@
       "conjur-2020-12-14-palocci",
       "g1-2019-12-04-quadrilhao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/antonio-palocci.webp",
+      "autor": "the International Monetary Fund",
+      "licenca": "Public domain",
+      "licenca_url": "",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Antonio_Palloci.jpg",
+      "arquivo_commons": "File:Antonio Palloci.jpg",
+      "base64": "data:image/webp;base64,UklGRqADAABXRUJQVlA4IJQDAADQEgCdASpCAGAAPqlMnUomJKKhq9RsMMAVCWUAy4nhGICLQH8XMpvmv5IeP5yZnts9iB03VpwX7gHPqNgR1ll8Ukyx07XqvrTFJQMI4zjvpevG2pi3V1adroc8Af5w/NApQyxMIbjHeXE5z9pTvRCZVKTRdf+CfMmuuK2zBqe6X3yEIIjVMcvxLS2iLQWtWL1SuFJl5tmEjMA4HutiRgAA/vcImix7XEfolD1QD0QsctvVKCNRJoqnu4s6+F9+OH2XVMNM5J9+r77+4tzc3Q1qE7nMN2V6TYyN1oumaOcsy7QztNM8LE5tJfRJWDUbVFySpydLehRnnFstPHZx2DwPC1eL7/KXpY+Ri2NyrSv5UO476vIW/SonRptooXy9XHILLsFYP5P/UU92D87hixSrjn/QDf7hxnsQohAkrDSKBSgCWn4gKOdslYX15/7x2CHPGmG6B4lh1gep37KoQgntV+ry4MtHGGXviydw9GVUI/xyn/fYTLhD8qYTzxuHVJLzPA5Y510LT1MtM2exoTHFER7JpQulDJYIMwSPZJ3LCEUDiQq9aFnyZ71ApbCPg5yqyWyd4X5RACe9LSALdzdDhsjLQEwp10zdmVi3q8T5Oz9/uWPuoZzarYLSzGnTHkQP05qQuUIdVaeSi79OnbiDfVwocK8VhG9lTZBcW4BOZpfiNlEZ2RwAUa4Owyg/FImKDmx9ccU4b+NO+yx0iTpnZJPmt1Yyk50BQVtfT30t5iOa+bu1sDHdDJcLsMBt/KOsK9ieuyOvKIHEliLyU7aqBdt1fvHusGK1lX0TdI93iBPfNzmEleEVx5RUOk53I3vRm92rawNGh5QfKqAGF8vvgLYoVQLe+h57USl1HLHp7PVYhaW8E9QnZH0hBEGPlc7c/as72phey0o/utPPF7hgkc1u5myyrSzMeaGtL2EpV/NLOniH2DUAbAeVWzOpeTUWeQvzMzLvpx52uQbTYW9i4p5J8ohp4j8llKVgG9N1iJGLtm508CdnSPN/TT8JwWxEdddjc0zRNuWj/yv0qoAdsciO+VYqpkaVsf4/5RIbl1csxZL2OTViVgmZnGB9dmpL48PbzGtksoV+QwDV+0q/x/bho3EPyVrFHdv4pRxcFlrysDurxB2QNbtGOOj7pudaSliC8b+3UHzlNSnVKxRUldW/1bKWnc7pJA8PvJMgDNc5uT7ctCRQKS64s0ar/2uyAAAA"
+    },
     "escandalos": [
       "esc-instituto-lula",
       "esc-quadrilhao"
@@ -358,6 +425,7 @@
   },
   {
     "id": "guido-mantega",
+    "wikidata_qid": "Q1359689",
     "nome": "Guido Mantega",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro da Fazenda",
@@ -378,6 +446,16 @@
       "oglobo-2026-04-08-master-pagamentos",
       "metropoles-2026-master-pagamentos"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": {
+      "arquivo": "retratos/guido-mantega.webp",
+      "autor": "Roosewelt Pinheiro/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Guido_mantega.jpg",
+      "arquivo_commons": "File:Guido mantega.jpg",
+      "base64": "data:image/webp;base64,UklGRu4CAABXRUJQVlA4IOICAABwEQCdASpBAGAAPqlKoEumJCMnqbVaSPAVCWMAzdUTxoe2o1AnU/k8VboTB1GfXqr1zBMvpj7u6+gycS7j84eVYJDIhjePGLrjRgqOBCcCVxWHp9dD8QxfwXCiMeOvz/wSzSEDxDUQFqa4eiOFmhX7HAnJFRax7KgawO19FDMH+GocEiEuAf1PYj4uaRgjapIRmnqgAP78KxabmY1CUlS0eeSy26OAY+uCWH93TesWLkg9+hY2P8NhCK951+BLuupDvUXxjyloNC9qaAvwiJgIeIEcTjmkQ+TNTG2nN3Ws9sNWFXxz7Bqw4CTtJtHr2qeKC8X2JTOj36AgMaFzrSkP7Gwl/S9rC3c8cJ6fE6IzeN+8Ibh6sUG/4At2P3SHxpRQVZpg661A9d6iblCgjTLEev1pzBCg5fFFJtvPrDqJYP2a5siFeSY//dWA7xmQ4Rxu94ztGtoLu4+sguVz3+QtIQ4Naq+N6n41simOfX7KNKb3rUFrjvLoO3n7gkfvlQlrmb4Hay7zZUCDo8sYlpDzVoYhaekmCDin0f82xmLtBMzTjpkI9BjLjr9bHptdu2ef0iayfvf5Z2A/JBc514bf5jBToD5Cl8J752chbRsAOXIc/rHP24z7JbUovtJ9RbsjrycCBsRc81yDt9sJ6tFoOBOVAuiVmzHU/SueYH81uPxAXuVDsm3XmoJo6qJ/EVv73Lx3yu2q7YNSi1hqziye+SrZGpQwWrNgp5RBLOrVmzTTCKd2U7D1dj1zvBx8S8KUdbv/nZB8wQKHKqz6uvTc2GmN2X3Q2Y1EIfarGFYY+tFKsQa5JLLMQSXP6YhermqsLcpin80uo/gE2ElxLPfaHME/mEzaYPx+H+cbK/rhn9g671vsgNaX+s49n9nn9ab5Xk1TVF8aQs8iIVOgXolFqO0o/St6VMHU/BC9OTgbLU8UDrZlFZOQqYB/kzL7P7SfzMbmudc7kUzrSTMZBx0IAAA="
+    },
     "escandalos": [
       "esc-banco-master",
       "esc-quadrilhao"
@@ -393,6 +471,7 @@
   },
   {
     "id": "dilma-rousseff",
+    "wikidata_qid": "Q40722",
     "nome": "Dilma Rousseff",
     "tipo": "pessoa",
     "ocupacao": "Ex-presidente da República",
@@ -416,6 +495,16 @@
       "g1-2019-12-04-quadrilhao",
       "g1-2021-10-19-rose"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": {
+      "arquivo": "retratos/dilma-rousseff.webp",
+      "autor": "Vice-Presidência da República",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:04-06-2024_Reuni%C3%A3o_com_a_Presidente_do_Novo_Banco_de_Desenvolvimento_Dilma_Rousseff_(53769684843)_(cropped).jpg",
+      "arquivo_commons": "File:04-06-2024 Reunião com a Presidente do Novo Banco de Desenvolvimento Dilma Rousseff (53769684843) (cropped).jpg",
+      "base64": "data:image/webp;base64,UklGRnoDAABXRUJQVlA4IG4DAACwEwCdASpIAGAAPqlKnksmJCKhq9LryMAVCWUAyfigzGK77G3skdjLq03jRJupyGEutSXDA4zLQgAeV73BJwSxWLHBiTdOdhbUOMIj+US2/TwvozJLC+rOOiF4PgsfQMmGsmPSYik0Us4Gt0p5DGn0dTt/vdbat+HG60kjvG1D/vkxx/4R9Q8FQneSZ96mbYh1BwHpCv/LOGEAFalINF6h0mGy86KAAP70DX2F0kHlShAJ/Rgy7E/fWvHMT7OWe3RazA2Hxj34dC93OKgLuA06PvvQxqZlwODQtcj78bgA29ugpfJXS0wIDJ4+S2h6cHHqxAZq/gFwRTKUnmM1uAJ9d7L4vVSghbK2ktjEFbwtRFv1ma2SSAk3PHKK1kANu8Yn1sT2PID75wF9LBYdC1JyJZTRkCwcny65d0EsP8vkj4Aqs+Rh481d2Cf5K3Ia9Oje5EfOBNhtlbTflTP5q2v32h/3qsiSgLD8wfyLyIF2jYhE4QKqKjif/VCpcNdveP+Kb/ryt8JJN1po4We+VBNhmTLMCE6SKTAF7JJbm5O7ECinMdfT3N7p0emBLvvPGrUkh5UZA4x4v9yrosOKHLV5Blfd2wlDXmWoVcjBmtNNWnlLZhirDUBbgICenq31jcYqJcT4bz6F4Y1If9Qsutt15sLLcVRMkeNWpHGHMR5F0HtOKBPKwmVDTOso2KoZrZfogUkqSYL6m+KomQlO5ubymXeC+QQD/2IKchBWHDw3mxMmL9owwuFf4snk6+hhzm9RS7VyitL5WnUf/9HxYJsjczYsRjGrv1a0IwOgE/e+hX0HbWCSXE8K/YYc1LuzS0i54Ff7x2AjhjYXs10I/5UbDzJzs6fe+0u7UYUA7S3doXSKDq6FZqHm5qSJaDvQvTVosdEuokAGJPDCyZkHqvHLlXIYQyGkyOPdHK7xqNKdEeHwot/mHAN81fHZ138mMTUllwwNzzDOiTBWw6It/h4+Vhw5j1KLBJjfQBh82Va0V2FgwB7rWhX9Ykgozn/uYwz7sqxmcYMArUfsi9pLqepskIPmKDqx/YzP1lFpieN0ILGJd/2hTxxpQVasjfQVb17HWo+/miiooLJ4B+7iftZw2f929EHMvQ61WelNUgu77x2w68ckuFA/9tYg62V9XLzue956bFViOkDJrHQAAA=="
+    },
     "escandalos": [
       "esc-porto-seguro",
       "esc-quadrilhao"
@@ -427,6 +516,7 @@
   },
   {
     "id": "joao-vaccari",
+    "wikidata_qid": "Q10312284",
     "nome": "João Vaccari Neto",
     "tipo": "pessoa",
     "ocupacao": "Ex-tesoureiro do PT",
@@ -446,6 +536,16 @@
       "g1-2019-12-04-quadrilhao",
       "oglobo-2021-stj-schahin"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/joao-vaccari.webp",
+      "autor": "Roosewelt Pinheiro/Abr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Vaccari.JPG",
+      "arquivo_commons": "File:Vaccari.JPG",
+      "base64": "data:image/webp;base64,UklGRlYEAABXRUJQVlA4IEoEAACQFQCdASpgAEcAPqlGnkumI6Kxp5SdijAVCWMAwCBxR965fMsxSvujjthBMrPEg1i3JuizdBR0LHzuy5tfMdS2qxhkza7xi1m40LGB/4GnsePjhfZ62U4fKvrljVboP5bhbsbbXvcq7Df7jY/5+6pqrEm74ByNVDLtJ3IULj+f8iF84oUibmkIqxELG9BADLpgx+tE4tODAlY1nr5bnnbONvWy1Ak43l9T+xq+99P20qsmBZt8AP7THhuyY/odtwyU3Q7GA/1Fnn1J0Tkqe+cJe9EvX9z6qthk0aYNV10oEEoTvY4eXdE07CtjVPFWe1GBaJBOjR/e6hFZ00zLk2BpSHioG6BfYkjxcS+mzQ6T8Nt+AI4ishjkGKkAniaaBwrOgRvLgdzcFrVbSyZMO+GONGgiOH6BX2izHDitG79JUT0wCLwIx1aFLNZfmHPWCnEAuykv+lLcSKRHw62W84V2jXl+utVrOSgPEdj9zd+afvQASAR/4uCUgUdlH/sOiBJb1xyXIqLruSbtGx+iqUM3vqJP0sbr2v7Q3gE22UFYUUWZnG43TBrli22ZxkBYe/nU0+GxPdVO0xxaE6W10DVy/tIkP9W2+fKn6RBPRo8Q8jR/RXQb0skhfVeCxmk+tejlLQLaYJ8HtIhIXtwdb1o4sHGX68u16Oxrx4PVTl++D/YhuBcVKZiO0laZa8GsX4OyXRdY05Xwx49kBnSmbuq4vWjZWYIRTVeuirPnSLJdJGgu47yVbbZADwf5cuK4ix5DAxFmrHkfmx+QNj+CiQPQwCY6svvZ24weXtegfMaMUOweG9luYt75oOD6Q6wKHEj+0jxu+os81NVOAb6oc8tOw2iKxlh2wyJAD1m0XDGjU1UR7qzxTreDGlRJns7aOml846ybDPCanBzEl2FT8fWsphtZGov2gbtRqYnyNVZ5saJkZ9vKS6I0RZ1vp00yY5ym9NRSXx+1yDA54gjI7S52TO2UEL5MlBYWd3oSdCpWALjCIbW1dNBVSM+mvA/pa60Lu8SRPs1EJb9GoEu1DvABXZGAMygK3n3A+0ZFP5CYp7ZeHAca+3FFoLR5C0DPpO0CNrOaC6YxwBInfjD9yZvRYBuWk9ATkwuiWyff/ibOkMyQensKtMTjZfDJ8bWUhSZ+8swJnnlTeLJ6fElLylGpB1uIKx36EhgNGqDWvGfbt2pjb7LpR2bMQugFVT4hN/JadVkEBWJKY5wLz6a8grDTKLmXVmHMZfMQpGoDsKrNISbmLS/W+eQOdCjVmA44TePlpd7aqq/0jV9ekOLS4x20GU+usTB7+QIWP2vhVcbcGF6v662t8u4fXpW2jWPTd5c/nJhHFitZD2os14LiqsBZSxeSb6BG11ZZtwOn4tFt+4DU/JXV5cxejihixrGtlujYxXuyg3Mw8dJdz6R+gklJ+YtoYfnDVa11zVQAAbYNxx+OqEEVX8wpAAA="
+    },
     "escandalos": [
       "esc-bumlai-schahin",
       "esc-quadrilhao"
@@ -458,6 +558,7 @@
   },
   {
     "id": "gilberto-carvalho",
+    "wikidata_qid": "Q10289545",
     "nome": "Gilberto Carvalho",
     "tipo": "pessoa",
     "ocupacao": "Ex-chefe de gabinete da Presidência e ex-ministro",
@@ -476,6 +577,16 @@
     "fontes": [
       "g1-2021-06-21-zelotes"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": {
+      "arquivo": "retratos/gilberto-carvalho.webp",
+      "autor": "Antonio Cruz/ABr",
+      "licenca": "CC BY 2.5 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.5/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Gilberto_carvalho_2011.jpg",
+      "arquivo_commons": "File:Gilberto carvalho 2011.jpg",
+      "base64": "data:image/webp;base64,UklGRoIEAABXRUJQVlA4IHYEAACwFwCdASpHAGAAPqlMn0umJCKhqJYLQMAVCWIAuVoL/AHXWhDqhlku6fedJ++Mkxy0Ht19sCtO2oEn2sAyRVgQp/ykTL424JCm91wKnoVVQzT3EV+XLku//Knd8ibDKYE2yXRdSgFtUZEJPpPT8iktCSav0E8SGW10gAlfrRHn0NznGQx7NtC2TX12JPwcle7eIl6deYAjAtNuESI93UeuP15QKn3H0GD+7qmu4Ru0j/429DJeGSmUjtFtB7jcgToQjx6RuAAA/vG3bKvtVXsX6MyO8MaIXK0mw0y3JRs0OV5NNJSgEvFpmUTDF7NUAsZpT0LjsGlY8aWigpgOh/6eIk7fdZzxIkRTPMtM8oa94xQWte4XYoCWrj0Ddkx+S7dPVlHG90r2W/o7rbdpl7sW1fv/23HGSHdUkZRBcvUHVHIik69UUJ8+mvi7TAzq00DCDej14++xdnETVFQPSnenKLP+aiOGXR6dtIDHYtdpuTanP3TyI9MoV3zCOeA5DTfdQXRyFAE7vhTQKD5NNbWGaRIGFZcLd7hkAPXC/dV/rV6OXhOXPrXIx0Y15+PCUt9ZgxePn+IV7iFSICPr6x+cSagqaM/tJqOemaFAVWGhUVhcdNRED+MGFJrp/WM1lf4HOu1lI5Aj6txshFDciUaAyhUTF5Jw3/6EBEYafYDFmlSLWTP6b0YpYVsnmlgwARHBFWTl+hlUsqh2oOQpruNv1TPz+IhEFwTkHbDkuVu7OFymZSa/3a/h6iEith53dQ5O0n9QGvwkObtmyhuOMwQdtr0lfiEM2qn2gpzqF8Ue6h2UdDrfV8iOdGc7L3rMwi8FiZbEye7YZ4nlusMTNekbSYV5hNaUvGRzbVY7C2Sfqbhu4marwG0duwXXF+IXFM/LyyuV37qJ/IPLcCAmnLEVNyApXlaNOtP6/Ws8Z/Pvr9bJcHHf/xiyiLZCdacGWaVxDp6FPlMnuz1/z3b6ijgehONibWzsJl/RaSgb/0h0QMOrIMCCsYkk/Ql+Tw5njOezsiU3DXsZlyAWy5bTY+iGIuB7n9D19R1ga2vxPjeeqqTZaO/FBIwblilEcqkrYNoffb1dXREaZjywcnWTzxAIvVPd0NGjkPamPcDS1qXTU4LnGJvA8J/znFgQAyOT2kXVKn9WnciFQ/X2EY9g6DzgV7jOSsU1sgCsd6AFW+zq9IzCef9y6ZSQvj+JK/tPfRoMZH9UxnZN5qXUj/ygycZwusV4kYrV3q9eoisfhC91qnFrQVMjsUlzgHIjEhg8wFkwq14UxySKT+n8PHkgpFj6jQCqYwRehx1MzbEObToqyJSr0FHci/HWcQCgR64AzpW0STBQGDDq40GHBVL7WwCYqnBEDwDnk6c12cy7jAOkxZwm7B1x13Pquhv7/vmcvN1dLIsXmN55sJzpROGpPEVB+WrGnvQsaZrf5YR3vm4ZLP28R4zGyLVMAUace9ie85WfQ5D2emtFTXdlf+ejZYlMGxWGhtJJAtSyXufg4TbkDjEgAAAAAA=="
+    },
     "escandalos": [
       "esc-zelotes-mp471"
     ],
@@ -486,6 +597,7 @@
   },
   {
     "id": "paulo-okamotto",
+    "wikidata_qid": "Q10346731",
     "nome": "Paulo Okamotto",
     "tipo": "pessoa",
     "ocupacao": "Presidente do Instituto Lula",
@@ -505,6 +617,16 @@
       "agbr-2017-07-okamotto",
       "stf-2023-02-tres-acoes"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": {
+      "arquivo": "retratos/paulo-okamotto.webp",
+      "autor": "Fabio Pozzebom/ABr, remix pelo uploader",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Paulo_Okamotto.jpg",
+      "arquivo_commons": "File:Paulo Okamotto.jpg",
+      "base64": "data:image/webp;base64,UklGRvwDAABXRUJQVlA4IPADAAAwFwCdASpVAGAAPqlKnkumJCKhq5J6cMAVCWMAw+CXTa21gz1MTKUtqDqo7JR1rA0MfHYaSvvzYrSSJ3iY48tpycPGDCSfLgmlfV7gOgaxRtxyqnMpzAO1aLoekapc660DQRR6FL7OaT7W9/YDXES8yEDX0yMFsDX9fdMzpCl+pTVgg+nIn+mW8av3GhYMiWmfEZ9zTc6AL+1TvP3BkDfTL/nG1Y2Xm4cIsawdUDpSVVlmMPLYvGQdLsquWWcPzmMtAAD+2tUpsPRDmooj9Ufits8apbQC9OZyXQihJnx9356b1N8qLi+Jx7VNOjY0Q5yRmOOoeaTyBpuiJCr6knO3KceLVkoLpwE7+owJLRbtyJaT4gefeYcqTCLSKcegxjjGd94vrMTdGuinjYAwzjP88krPwL+0BdM5N7ofIvlLOIuIsfalwyOvuQmlCZsgjprLnyCaKHn3HFUFEIOchplB1EkTXzlEzZRSHweDCfk/xUMDGPxeZEofagblIOwPGKhHg5NGVxXKrdpu4vJfddhfAHnEASr1xgCcIdUWKuYR57F3iXSmEWV9+Pu43ABZ7GqyKD47r7TH2FNXu0Cy7twpkfUxKieQH60FpWTUv249Y/KHYqCBNY6qn2scrhA+gKlzOzpzyolcolQ9qUQa+f3vjJthao8JiZnvwdjM1yX5QL1xTsQX5OqRBM3r7sXrvygZKPCygY0AyjlS4i8bib7xDG68lI4VwCIuFcRLY9jJw9+tW+fkQmltAAt3WuJ4UVXwRVmwcG4jvG3HTRmtwRdNMgarz4A1+dREvzp2GV3fAup6A5ycJDrMqUFoVIZVxQsAbjhVHviW1XKG+lRSy66LaXzKl8nJ882P5f3hU9UyuigffbGEPRVgnQST/HJK+EF0vGIoN4Kd6EYy1UTSQMu/GuBGMFDBhwWOsbOYiS9pKFwfKdXhEarr3v4uAbQYAHv62ujpidnNBdwWNn6Dzora0/vMjp7EDs4nKF8Q0I6N5Jb8iNyUj8JjBbZulM6N17SrQYb/J03eV2VXHx56QcyBa/t0+/MOz+O+1788BaXd3FJ0C7eP5d1t+A3NXkuS+bkNgNEUh0CHfj8P/0lgmSUaQJfb+AcEeEJS8amaGe3PRaIbM7DPk7tXSSBroRWLuVorws34oZMBg+ScH/x0bOyEGc0ksV/KerHeyKwFcb/OUUWUvO24XIqlzF9r5zhIl86BngLlSqKdi9yVosduue0tMe99nQDGOwHGX8qtngIBTzExK5mIkW/GeisdVsAW7mbuPfS+eMZ1+o6pdJYzsJbNh6e4HwSMZ5V4VnsxJn+lF7E53OzK8wlIsISC9SR9AAA="
+    },
     "escandalos": [
       "esc-instituto-lula",
       "esc-triplex"
@@ -516,6 +638,7 @@
   },
   {
     "id": "rosemary-noronha",
+    "wikidata_qid": null,
     "nome": "Rosemary Noronha",
     "tipo": "pessoa",
     "ocupacao": "Ex-chefe do gabinete da Presidência em São Paulo",
@@ -536,6 +659,8 @@
       "cgu-2013-09-rose",
       "folha-2012-11-30-rose-nega"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-porto-seguro"
     ],
@@ -546,6 +671,7 @@
   },
   {
     "id": "jose-carlos-bumlai",
+    "wikidata_qid": "Q27835253",
     "nome": "José Carlos Bumlai",
     "tipo": "pessoa",
     "ocupacao": "Pecuarista",
@@ -561,6 +687,16 @@
       "stj-2021-10-22-schahin",
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "condenacao_anulada",
+    "retrato": {
+      "arquivo": "retratos/jose-carlos-bumlai.webp",
+      "autor": "(Valter Campanato/Agência Brasil)",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Carlos_Bumlai.jpg",
+      "arquivo_commons": "File:José Carlos Bumlai.jpg",
+      "base64": "data:image/webp;base64,UklGRkYFAABXRUJQVlA4IDoFAAAwGACdASo/AGAAPpk+mUklo6KhM/d/GLATCWQAtRwKB2FeTtwR4L+4Pu3aU36cfNaFmOnO1l6agFptMk/WATtF41SkBM/LchraneanilPWNbt91JfqPlb4Ib+oj9/mC5voiAp5+vaITZawoOeIh7nKLT/C2RZgfysR7d05Si7QytQ4Efn0iwncfQcYIzh5Ba36ZhfcqXMARPXaVU1hNOMXE/RrQkvQpjuwFuUhuW/KX8J2/dvyrj9KRLuEaxqRHzLx7G9UsDU+sKwAAP78cUTWSewspYUNU2sGhWqUfMI//OWhf8ef/wJnk0fhtpump65Xv8RxwX9iJiT6YFMknghpGu9ODYlJEpyHf13WUGdpOLs7jFMat4d7pDNl3vNmqhYd4fRiCcmvXnOdYypFKQNcqHyN2DhVigkjIGHROP9P6tk6c70kcWH+rxnPCYRJpOeD1xZePnhxHqBiXbNUGRM1zbw4QQu1kYrLc2rPPfcudBzaO8jfyZPOWLCPBEIZjvx5VGtot8900KyPgExt8GcCwwrZL/k3asqHaz/DUDmSYRtglmYJdD+o0KQ5XO9hdNPnz0JhXHBfw3jzJGZ9+b+q1TWZI4iHNwm3JHAlsG0tLOcRBIh4oN/nQJ8KOasxJ0h+nTKnKKVBXMmQMEnwdVjpQ11GndVGAf3eoyg/TIBa+Vkbz4U/2GvVFER5BKtUf4cWv8EEzkp+UX0hyMWbKe03dgetFysEj+clWninhZ4r6iSoMSomtsSKZ3C8irnfMJ9JN0LmuiFs4MLF4qyZSufeq21ITEwEDOUSP3sX+lrDu/6QqmTT5v0eYXVSTVlmj7XwkJ7XjGRft2/Hrs6sUTIYzTLq8ZG8a29hWiEX4x4QnzrRdYO14E+y+M8zWI3SDNxQ+OG8TcqrsexCDQHYw6dFsixlJXGuGavftHmKZ811VICC7xVHiL8NxHbiBfVlqzDf9WqgO+4tzlwq7jvpchlDwdv/jpiapAJpVcxjpLKhU0HtuY64UZvi7S2LI/f+DV00QL7ESrQkHrTqrZz+Xw90UviRTNnOU6RTzL0Bp/H7A6+Z7oijtwaXWpb3W+bDjRlpV3SM5Q8RELKUxYB3Mju2omLaqGCJJ0WzM0LA/pbK3r0b7mMBW4QjDNNNn1s48L3anER/7AXg86aX3Q1OFb7dZoKsZBKS69e/Z/clylwmzs40Jegk7bqhfmziuSh/EqfTRs4+hWTDvDRN+sbsvKzkvl7Jr0RJau3kzV583v3XqyzTAFxHgHdkFUv7AEJoDeav2zgZOE4UN+CFGLHYPDl/yZq4meqwB9Iu4YwOUpAFOinRlZl/svD9/p1kMnJtceodCKhttJvVb87/+lHk6Bg9AWlEIU6X3gJePLHEY2OhFwNpp515okNatgGZ/p/6sUp9HAmPZomfDkpqHT5SsnuiZ5SIngLgWMGVIO+SJ6XsWFAe/I9PN0zm2n9yQAj6Ucvqx+7WMX/7zZr6jGWR7GIEuXSncmEvBBC/20iugqeUn6/2vCXyM6G10jb1yRcEf9ufG9YNF5lHbx6WMZqnJ6gBP5Bvd2DwWO3Ri3vhzn1lD7oZFtbN5dF1LY8UiITkx4TOixy0lU3yAyLykFCxLa/aQUU/V7Zj1qCCi/A42pC675f1zAcpqq2ifuM6K75MboeWmhfSOplpgIiS58qa/PT5sHb+3eK6D2OFsZqReHJXG8crtZq2wt4fSCfi0sHp+hrsbouJ9uVy3J6mWBXBPuxkyTOhtqvy3QDG8emLXouoZSMnbiAKz3oAAAA="
+    },
     "escandalos": [
       "esc-atibaia",
       "esc-bumlai-schahin"
@@ -573,6 +709,7 @@
   },
   {
     "id": "leo-pinheiro",
+    "wikidata_qid": null,
     "nome": "José Aldemário Pinheiro Filho (Léo Pinheiro)",
     "tipo": "pessoa",
     "ocupacao": "Ex-presidente do Grupo OAS",
@@ -592,6 +729,8 @@
       "g1-2017-leo-pinheiro",
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "condenado",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia",
       "esc-triplex"
@@ -604,6 +743,7 @@
   },
   {
     "id": "emilio-odebrecht",
+    "wikidata_qid": "Q1339842",
     "nome": "Emílio Odebrecht",
     "tipo": "pessoa",
     "ocupacao": "Presidente do conselho do Grupo Odebrecht",
@@ -623,6 +763,8 @@
       "trf4-2019-11-27-atibaia",
       "bbc-2017-09-palocci"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia",
       "esc-instituto-lula"
@@ -636,6 +778,7 @@
   },
   {
     "id": "marcelo-odebrecht",
+    "wikidata_qid": "Q1893387",
     "nome": "Marcelo Odebrecht",
     "tipo": "pessoa",
     "ocupacao": "Ex-presidente do Grupo Odebrecht",
@@ -655,6 +798,16 @@
       "agbr-2016-10-angola",
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/marcelo-odebrecht.webp",
+      "autor": "World Economic Forum from Cologny, Switzerland",
+      "licenca": "CC BY-SA 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Marcelo_Bahia_Odebrecht.jpg",
+      "arquivo_commons": "File:Marcelo Bahia Odebrecht.jpg",
+      "base64": "data:image/webp;base64,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"
+    },
     "escandalos": [
       "esc-angola-bndes",
       "esc-atibaia",
@@ -669,6 +822,7 @@
   },
   {
     "id": "alexandrino-alencar",
+    "wikidata_qid": null,
     "nome": "Alexandrino de Alencar",
     "tipo": "pessoa",
     "ocupacao": "Ex-executivo da Odebrecht",
@@ -687,6 +841,8 @@
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia"
     ],
@@ -697,6 +853,7 @@
   },
   {
     "id": "emyr-costa",
+    "wikidata_qid": null,
     "nome": "Emyr Diniz Costa Júnior",
     "tipo": "pessoa",
     "ocupacao": "Ex-diretor da Odebrecht",
@@ -715,6 +872,8 @@
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia"
     ],
@@ -725,6 +884,7 @@
   },
   {
     "id": "paulo-gordilho",
+    "wikidata_qid": null,
     "nome": "Paulo Gordilho",
     "tipo": "pessoa",
     "ocupacao": "Ex-diretor técnico da OAS",
@@ -743,6 +903,8 @@
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia"
     ],
@@ -753,6 +915,7 @@
   },
   {
     "id": "fernando-bittar",
+    "wikidata_qid": null,
     "nome": "Fernando Bittar",
     "tipo": "pessoa",
     "ocupacao": "Empresário, proprietário formal do sítio de Atibaia",
@@ -772,6 +935,8 @@
       "trf4-2019-11-27-atibaia",
       "pf-2019-12-10-mapa"
     ],
+    "categoria_juridica": "condenado",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia",
       "esc-gamecorp"
@@ -785,6 +950,7 @@
   },
   {
     "id": "kalil-bittar",
+    "wikidata_qid": null,
     "nome": "Kalil Bittar",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
@@ -803,6 +969,8 @@
     "fontes": [
       "pf-2019-12-10-mapa"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-gamecorp"
     ],
@@ -814,6 +982,7 @@
   },
   {
     "id": "jonas-suassuna",
+    "wikidata_qid": null,
     "nome": "Jonas Suassuna",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
@@ -832,6 +1001,8 @@
     "fontes": [
       "pf-2019-12-10-mapa"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-gamecorp"
     ],
@@ -842,6 +1013,7 @@
   },
   {
     "id": "roberto-teixeira",
+    "wikidata_qid": null,
     "nome": "Roberto Teixeira",
     "tipo": "pessoa",
     "ocupacao": "Advogado",
@@ -855,6 +1027,8 @@
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia"
     ],
@@ -865,6 +1039,7 @@
   },
   {
     "id": "rogerio-pimentel",
+    "wikidata_qid": null,
     "nome": "Rogério Aurélio Pimentel",
     "tipo": "pessoa",
     "ocupacao": "Auxiliar de Lula",
@@ -878,6 +1053,8 @@
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia"
     ],
@@ -888,6 +1065,7 @@
   },
   {
     "id": "cristiano-zanin",
+    "wikidata_qid": "Q85870824",
     "nome": "Cristiano Zanin",
     "tipo": "pessoa",
     "ocupacao": "Advogado de Lula; depois ministro do STF",
@@ -902,6 +1080,16 @@
       "stf-hc193726-decisao",
       "trf4-2019-11-27-atibaia"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/cristiano-zanin.webp",
+      "autor": "Rosinei Coutinho/STF",
+      "licenca": "Public domain",
+      "licenca_url": "",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:17.06.2026_-_Cristiano_Zanin_(cropped).jpg",
+      "arquivo_commons": "File:17.06.2026 - Cristiano Zanin (cropped).jpg",
+      "base64": "data:image/webp;base64,UklGRi4EAABXRUJQVlA4ICIEAABQFQCdASpGAGAAPqlInUqmJCKhqbVdsMAVCUAY3Y5SbwkNrGNAM/b4HFMZ10m7iLmNN+XzElvgQeEFrkjAnjDF4Wb83yr5F/ypReuu8bdUqv0FBm6XnY1JcGNj3j7sMc7EQBzeHGybjBu9mVJhkiuX7rp8pQMqCQ9tZ3FomLs81QHdXbZWhmwiU6CBmtkNIT9EBZIasH9W6f+aJ0ltv7Grheo9R9F8s56QRoM935reeVWBgAD++6OB3SZnL8WR6reX/DM2ab9we/EuMXBp/mM3LGcHD24jzOpLbdZTgTLWr8IfvEGla0ijez5qr0xtI3NSZa5NL6jugJGtFESKtuhrbKmsBfPFshJc3YJ61rBNbI33BffTzweznPnk7GYKOj0B6Yuk5xgBU9JgLpkicN/Wlf6+cunbP5KgBOA9dcYQZuaXv/akDZZdMvObyrv+Aqizx4c7rD1ZaDz1v9S54D/pzBXVPM3yMVIJ2gVgEs7FxPVgwBnrMHE0CKTqNrf0EIQT+D2XPpxlOYQTp+csL8xBk3+YafjNilOg9B0+9ee2ojqChrreH8mZEtAFwYsnJVJBq7eWGJZkTO12IAAwClo6IS1T7bNMbQvnSnuncSKjG988M+20SXbPUZGHVt8nB8PgId7GWk8qDPJBnoWuBAltUsgA8F/Wk7Idm6Vxzc7uoVUW6vN7F7hOMKjR0OP7F4G0hDtLhYCxbZXSNgqC12S3fxhGx7D7DucsiSunYatR1d033k+ucyWn98/dNl9taGVc5ATGc54qh1Sb+ii92uGbZaeHmQDCHkRN5THYspGegUccLQ6XciE4EEWKiQM7wiraqLuRRG4gNRnKVR8il0D1anYOfNL/23Q5tmvFjSDor9AGCy4WxSaqIgv5e3bh3esqKaIceBfVQRB0BGYftxgtaEuUbmOWIxUIehGdLAD+8NiwKt1XcgCAFtZ01I/4wwyfoGbpoYbLWWwnhrEb85trGzXjR2KZHOs5j+aIuDrTbHNu1gOxEXRWGEuZhpqaynBfVipLrSBUy68ly8Xejx9jtZNJndJ1kGwB4RRYjxw7oPYg275R8j797PoKXfKLL6LKJjBypb8dv2yijJnefhLGu3mh7L4uky6o7poLIrnRiEALy5fskt8O86E1UkTxUrbocvp7cCkz7d6uSRpp/jT/9GI6ShTpAUVFy3T0/cwN99bvt89OUuhAeBXPkHKkrJeP/iwRaJ+hxg3jvODJcisQqJvNk+tT1/jSzkVVKifd7tf8GjY5na+cCaPyL5eNl3bFFKZscndwu4LU8nz4eVg9dI/wx5QwfEF+fOWvV30v6KhdRwZ03qVt8DwlHGG0mCZ11iT6tdkdnnSEaexVZbW/KQ2vaUc4EPmB5plMyDqYeFiiRUCOKHuiALmAv5VVFusAAA=="
+    },
     "escandalos": [
       "esc-atibaia",
       "esc-triplex"
@@ -913,6 +1101,7 @@
   },
   {
     "id": "sergio-moro",
+    "wikidata_qid": "Q19607958",
     "nome": "Sergio Moro",
     "tipo": "pessoa",
     "ocupacao": "Ex-juiz da 13ª Vara Federal de Curitiba",
@@ -932,6 +1121,16 @@
       "g1-2017-07-sentenca-triplex",
       "stf-2021-06-23-suspeicao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/sergio-moro.webp",
+      "autor": "Agência Senado from Brasilia, Brazil",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689302414).jpg",
+      "arquivo_commons": "File:Senadores da 57ª Legislatura (52689302414).jpg",
+      "base64": "data:image/webp;base64,UklGRs4FAABXRUJQVlA4IMIFAAAQGgCdASpaAGAAPqlGnUqmI6KpqdRuETAVCUAZoJQZmb3ktF63sUX49i9HtTndYroAfob0itDvkHjxr9fxzgccNkrLeNGoK/dwgbcpDIQF8YcbWKUpTyGr452GFEU6I462rQvnXjAyimWWmaJPm+GVsXp4/TodPyyuL+99vODwo8yJ793Lt838UwCosj/vFsp/5B8qruG+2jFcPEQ54GregetBquIhH/Dl9K5Z/PpQRy9G7qpDItjSLKxCTxDNMoE31PKI17vvR5NpYjU9LJKWk65lt+zFNbwAAP7zgf8luF1NZ97tjX4QDi8PVDMMSbCeJtpggJ5zWLe9wy233ffgQv0xivFFX1YilqH/9H3rVZ1nxKWqBjIvw9+4jaBqkiSaBwfp930EOBBKg6HcvZyDUyfFUlZTH2YYWpuifbPxFNJzi3BTH5qKcaNtzz6VramzdrEqpzXe7trB+iGr4hKmZL7WFkPxFsGffVw8t7aeNhXb4V9OTjKVc5EKod6asuNzYjj7L38qUR6iR5UbiFGaZ1AHB8VhhfdMgtnHP8FEVppEAImZwSjC8pLfHD5O3v4XF4xhuDWdQ+q/AsODu/xzp3Kj0WG20a5hFeux4feR9mEpiqYq9LtolLaN7qyJ7m0pN0UmhLW2QBD8gBzeFNaS0rLMOwcxZQqqineHWEYvaE30fRKnFM2QISw5ic8TdesH7d3r0EfbcdfX5vsvRVWM1szK8qfIqXyxaF7ua3RUmuUDYXfm16rWmAafw+qURHdjPjoXbZSFh0PfX+6Kyeqt6fw3LZ9IL2KJWWies38h2UAveGfhxrRET+A3E6oSTBpCvYS4FTU2Y75OP+JnW+gV4deqp0SMSvUDdakE/6p1/dyD/3pxIx8e9kvh1S6iv4k+w2yDqgIIH8nzzDvuvDMV2Jd9kDNC7qTCGm3chL3UjX0h1xwGS7G0NH56/p8e/66ozrW7l/hy41fSbXwud3KzwJQ5La1IrCOo/dT+XMZq3WqtT2eXKMx8WhdDz/pbTNzc5BKqVKMU4N12EuQFKCESqOVXIESBzWrGLRTrKQWdbpFj2F/BIrcBrcYwTa00XKRReYWd9ZY7jI0/6iPa3CbVP1Jg3stzx4roJtUzF3pv7BeWDBi3ga8suYTQWv1b1BrFSnSRs7svN43Uv4vUYgXKaiY5KsD1kCi8cBX8sIj21CyKYc3D3bLGEq/uFpjq8jJJzD79EFCTDwJSLCAkXIg+ov49/Gibhj4QEiWu46OZf+mc87HEmbr4Zc0OAEjd5RNa0UP6gKzl11a8t9mdQzvDNux0w5x71yFehi5wRY7Ec/hbr1AyrKHbOioALpzv39pCxyZPii+5RKy7OYvdiYRXwLKxkv2/kRmYt4C6R2dneTkwyqo9dFL27RMvHsffrkz/hGXCpHbsuxDn3liXv5FaWLUzQyC3F2Hf5z7K6RirjkBLWMRd1R5S1wIt1Kc3tnUwDZAm7jKPN4BtBB30HOJ8QpTUQQmAbujQ/PtfmHBJ8fyChNeemE3skMxstV/N0VKZeGHO4bPDyVaYAhRNI/f/s5yxB6GCrzmsnS+pKfojGJDKFkn422b5sfsFk3EM2rrqJqA/wi7klxwub+EC8otBNFFTjQUiba/TPGcHKzeOR4KUqU3f6eEvtEf+e25we7Rve3iXyNR7935VSssdo9MNeCS5AcbDvzhJde2D0/1QyI6a/nQGTzNcgfvghEg+0c1fWy/Yatr7nUe5qV10Ij/5N2jIeVldYTtdDDjgQzk331qWgKbfcrlbWn1U10DgjRn5bYq7pec0XUpHrAET1cA2isAXznu0yJIxZL11De2vszHfes1T5pZBfy3Yi44l5xGJWsbHk3IO8mUmEECkkkskKyb+LbCdAg+7jAV5APWUbXCS+m41K4XR0pvMTRwrEIX/RlSgptBLkXs+PHaw+/tuCJZFDxGk/64VY8y+sAuFwAAA"
+    },
     "escandalos": [
       "esc-triplex"
     ],
@@ -943,6 +1142,7 @@
   },
   {
     "id": "gabriela-hardt",
+    "wikidata_qid": "Q59140354",
     "nome": "Gabriela Hardt",
     "tipo": "pessoa",
     "ocupacao": "Juíza federal",
@@ -962,6 +1162,8 @@
       "uol-2019-02-06-atibaia",
       "g1-2021-03-08-fachin"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia"
     ],
@@ -972,6 +1174,7 @@
   },
   {
     "id": "edson-fachin",
+    "wikidata_qid": "Q10320705",
     "nome": "Edson Fachin",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
@@ -990,6 +1193,16 @@
     "fontes": [
       "stf-2021-03-08-fachin"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/edson-fachin.webp",
+      "autor": "Marcelo Camargo/Agência Brasil",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Luiz_Edson_Fachin-12-05.2015.jpg",
+      "arquivo_commons": "File:Luiz Edson Fachin-12-05.2015.jpg",
+      "base64": "data:image/webp;base64,UklGRrwDAABXRUJQVlA4ILADAAAwFQCdASpgAEAAPqVEmkkmI6IhMBgMqMAUiUAY3Yj6VxWqryyxlHma8Pqq0m70LiHN74I1G6p9pQT3yucSe0Vhd7103uy23jcFsCqlJsET/0QlXjclzFusT/UW0qWnFW8UBtTw0f6dR+voH0mO7jSWk/KhRtt7fnIuNTQrXAlBkmj3O0wBHQ4Ojdr6WFhYrUbtudoMT51Q97XLL92IOhvLW1O7xGFDTC1WKn089mVBImgAAP3SJba/8nrDLfjXeSsqIKngYwnGFZ1cy6+9kkCzbKRSRqqXcY0bJs/SqSZCZzYF0bv9zD9gHsqcAx/elSnQI98zUEX43AbU86InLEL53UKwAJSwvfr/HotKRX+Y88HYgKQW0N/FnV2uU3f0XHXkoMAqZ47EOcwRs+fgSB6OWGze5EeYP21AGOOafkCyYEDM5c0tUuGY4G/n82yq2aVgokRPD/+GcDzVV6vSalxMBPo9heAsnQru4Z7154Lz+FH82+dS3XBZ18BHxI27bIxiSm+nBMebxLRZolIjNcpUEvbbY8UAcT0p2X1CKbS2IZ64TIim7SXn1T2fxusgqwL14mNVnNX0TvexQ8E+naAdWyk5nTDkAn4QwqvmoFsmw59hUlF7f2a+baIOL6N/tLjI9BkMN5vCzUAKokRDFDslktqQWZjNX2CuRDv2ZoJ0bAW//1y/v7/W9OCmyRn7P4F/87ARMTQfiujm1Tc1Ka7j2UqLiHC5yah9srCwkG+U4PM4WiWIH0Qu4LO5oJvxbmTpsT7zs0gP1dwLwE3n1zEJTEPA1wRvVfZfq6sLP3bHy2PlOydNpuTHYgaSkLopWSK+g0jRHg+GEN1Z9+5PzPDtVPaKMeQotsm5p+zbgr7MXhpq6kGxETs9gw5sLwcZCCjDCfEC1urmoujGRuqM6H/5zOpl5P32R0/bcijE8JJfw+dQlFpGbE3iaFFCbPaCIZmF+k62wSD9tN2MPg31kmQQynfSqNfnmfoP47mOlO0ZeboBTUrUUXHlZq0Uvfll+kAOWYgwgoXJCuAW8FGTLuo0oqXM1+hJJZYVOHC5syf0T19+IuCj9853vwdZ4LqJSQML/3H8cfVt9BiSHoX+DhnVFVeYizDayyjzln1/PO4G5GV8yEEP7D7tKkDr7NrA1+pfaaA2v6JYgru+h+n11rt7aiB091EEO7VSM7P5OoaTnyv6FNIt/N6conzRjUH7hxeNHxsG5IbgBAOHGJQcE1qd0sKvytFcmop1uje42aqAAA=="
+    },
     "escandalos": [
       "esc-atibaia",
       "esc-instituto-lula",
@@ -1002,6 +1215,7 @@
   },
   {
     "id": "gilmar-mendes",
+    "wikidata_qid": "Q2362405",
     "nome": "Gilmar Mendes",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
@@ -1021,6 +1235,16 @@
       "lexml-hc164493",
       "g1-2021-06-23-suspeicao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/gilmar-mendes.webp",
+      "autor": "Fabio Rodrigues Pozzebom/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Gilmar_Mendes.jpg",
+      "arquivo_commons": "File:Gilmar Mendes.jpg",
+      "base64": "data:image/webp;base64,UklGRrwEAABXRUJQVlA4ILAEAACwFwCdASpgAEUAPqlKnEqmJCKhqbcdsMAVCUAY7HqRfxWOeUZtNmmPNvrsZRgOt29KkyRBWJ/ysL+vWP2qnfP9bbRuNPTWvlS5bMHbG8rnFvFwL4mGTnYwfx0RHILmimcqsvKjgEg4/nDXHjK9I2SaUjTNkrJxZAMyLh2uH0f3traLGR9j2eUkmWQL5fprfghPgzRR5Z1CRh4QHFDdAv8W7ZYW6vogNMv8nmX1xR+pZCUT678dpUe2pO8PSaJzvyFl31YECgAA/sVXqfNBkiWOlEL91/DlSlSzffDnyNFpZaC0w9rPgG8fi2ycAYxJpv1TlPlW/AAV8GjHUGmaHDF7b0hIkxv7VbjPraIGYUrqNbbqSBknEg6SgQxQtOHymyOcdIpcVo1RzZNzydxSrF27JsvXA6WOlg1+YhEW7c9Mq37M5nYYOyyvm3ZL+7YUmI0dgqdT+nm0ox9rkneU2uR1YNZH0aNE8lEjsCtT3uwCUmjqhFOaY0qUOkwaGsLqEsFeHkIB9ysQy7+WGdRGT7LR2o/Ixw/75kILT/0QfCxT7bYctj2fwaMlqNDOhB061nOo+CHdsFtHYJ1AWFJzJhi6uVv9k+VgTzYxgNPwhQ6hpVxqRh5tPRikteGVR2NX+DPvXxu88Q7SsjdqHfYsr+BXaO6YY7WHR85eRjIi+GafHsJ2jxGQ2Ht3K8vo0puLohTbbKB79jGb+MQbmqIF6Dh72bVlhGjDc5To6Vzr4Lk+MH8h5Smcw/KQaEGNCK03ms/RzRQcTFgE7luzOMu4NRIaX1HgNP7d1Ekb4N2qDvPGUFleCixhAsahPB61Bb57srVKW2kwV6pwC0+VEbh+FxBDVbzaHw3qGJ0xkvIolokB3TLksaxPJ55Rv1amaqmZRQw9GUUUCvLjtosgHqDlq9e03APKsBkSU2472Vfg8UaX05u1LN99V4mCmAaMEGotSvsmCdO9h+guJmd/OkGe5A9GQ3CWoMik/OSSRUiTKvl4zjtxxwLO4gNYFMeKVDK91wQ/GyCjX2fWbM2mQA9o9GxNLa95S+1phY+2MxPqjIg61DMa8kC6g3XXoLeFJ5lty+/csQ4SvPInlFoJhMu4lYLEF9BU3TPYLqtmcCHOMR+JFpH0z586xlzYAxTckeXe0GXTvRxzPGDQj1+VFVI1uV8gpguxLcYxBEp/37sh76hJrsd/ZBtrcc/Xohwtv+Er+ujWTiPCuPtD2WdOdQjc1JH6PVMMnPn1tcC3yFHnzvtO9uHo8vN4Ja1r757idbxYtHuP5We1IS93O76N4+aR4ZguM4vmvo/lMrzYL32tOb58+znotuAygywznaEKeYVu9iko68l3zzX33a7DP79sYghKl+YGxdW4bAllLeQQyCripNP9yIURrEixIjPneD7tyTBG4bIRpKMfAGwL2utAYLfYO+5gtS7cquFGKNwtK2ndqe/SZtvXbG2oSfdmGgz2DC/JJvXLpGIpwPwMJ42CMlRnVRhAki/455TDMsSumlLJcdJRJzeYyJ30rpB5K4SPY8jlxrVblmKFg/2w1ESeeHpYZYlyHkexYWKRWiSwSA0A7hOcgYL4BPK99SA+wG6AAAA="
+    },
     "escandalos": [
       "esc-triplex"
     ],
@@ -1031,6 +1255,7 @@
   },
   {
     "id": "ricardo-lewandowski",
+    "wikidata_qid": "Q7322696",
     "nome": "Ricardo Lewandowski",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro do STF; ministro da Justiça no governo Lula 3",
@@ -1055,6 +1280,16 @@
       "poder360-2023-lewandowski",
       "oglobo-2026-04-10-master-servicos"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/ricardo-lewandowski.webp",
+      "autor": "Renato Araújo/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Ricardo_Lewandowski_2011.jpg",
+      "arquivo_commons": "File:Ricardo Lewandowski 2011.jpg",
+      "base64": "data:image/webp;base64,UklGRo4EAABXRUJQVlA4IIIEAADwGACdASpOAGAAPqlEnEkmI6KhLfdtKMAVCWMAxuyzyCYokwOnuxb70VErTyrrAFTYhVOCHEkdDlgXby8qvb5XP7ZTg9yzMNBoSCfOvKErMQjH8+6zR1rN/opZ6eHW9DpCps4P5eHCUTDCPBKiFFQ6LI0Kjcn3pFp8k74tZc5EKW58WkyxMCAsBYI6p3dAOsNExeb2BqIyzDyPFJBgd0jQ5QQ8Nndn8qpRY5kl8cDjVqzdJnE94mIBgf1o4ti+QgDIk9v4MCKiQjWeYRIgVLYgALBXKx9bfL6DQBnnEM4dzioovngsZeJLOaMtYBH6ZZzQGU+c8lnUUSS2n8qAchgL3sWJEjals4jNfKTyqqp2pz0lKF8NDhcpUB35j69xvcpwi01xOQjzA4bAzosKQxu8lLQiqJaFH431JFVSGdGEKEZNB/zOj1x9VWwBeBVmFP4Nl7Oyy88Gl6qbWZV3KWkLwiwuPaSEG6brOoL3IAqAMTiTO+NJOY5tNx0TqIiSAjLms1yQCxwvNGN+UQn9Fa29FsvXgjmu4RB5zujA/BX+M6NxFuAcsGzKihMgwBf4MJRFrfVLVFnsvP9SjRq8hY7DKjxfIMdhdIXEbjJqp+Hg+XiHMEG/Of0jng07sZpaNR1a97K/UaxW9ANigO0vVIP4dgD0iczbpHegejrD8NNhs/qlggOk4BlHquVjAtN3Y0YVqzMdEH8NUWODU0u62g7FBROGnmcYps6H4UhvY6hmpVkRK+Z2vkcJA9BrNKKGIpall+6ubIyXNE/p31cG2qkoWMIK8948DLsNw1qwFLwKIDP4gmtIXSa4rd/dKYdq925XEw//RuWvyHeBqROo5oSx7vTPR9LS2kNu03QbhbnQZFjhbFeCPeE/E820RMz+h827YlVvQXogGPYBchx8rgvcUawFY5hRBpCbV7N+xbhnskvtygRk8i1AKD1xMvm9S7vdOsqsKFUy1uk9WGboDU9FI+IXryhhx1VDHxZSwY8UglxXrSw3jjJH5cIUp8tpN/2K0Ot1/WM2MF1zJdIkK+UyTDwjiw0G+dkVwgC/PsyK670S62WSYPLSnkGjXibGrSoWiQLQSP3NqXwqwToG5gqSJUO4vvpT6VIYhejAdTVINtQ426Wzn4I4Ix4BBQmlNvaJM1MCPuNyOXLpgCcRnFgA7TdEtJmPaWZjSTkFen4nOHBn9BpO8xIiWJAnhoxXPwGq0zwfHX+SD/IypfPo5scK5wM2Pv+UJ7FkxxV/bEtHTy1w8VcLuJQJX0/IRDZjqI2OPLjLHniktnJTHkFMvmJQnZlc2H554LjQ9kyitHFoqnKxKB5m5eeJhOZhtKSbp97y2y88ilYj6p5Qoo17JNkAGHf/UZcYAci8V4qNyy/17tn+Cjl9hq1tLulfp8Pl4UOoNQgsJZsUqvW2sLxDV8NS5d0O5BsqC4SF3cb3eTInsbueJpOglyI+q1zTTjYsdZIxpOg8ZXeDQceW5FgBcH4BZzB83jo9YtqXEFo1a09tpU10qrbcdJ81raGzX+Tw78oAAA=="
+    },
     "escandalos": [
       "esc-banco-master",
       "esc-instituto-lula",
@@ -1068,6 +1303,7 @@
   },
   {
     "id": "dias-toffoli",
+    "wikidata_qid": "Q10266077",
     "nome": "Dias Toffoli",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
@@ -1086,6 +1322,16 @@
     "fontes": [
       "g1-2023-09-06-toffoli"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/dias-toffoli.webp",
+      "autor": "Geraldo Magela/Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Toffoli_aniversario_da_constitui%C3%A7%C3%A3o.jpg",
+      "arquivo_commons": "File:Toffoli aniversario da constituição.jpg",
+      "base64": "data:image/webp;base64,UklGRsQDAABXRUJQVlA4ILgDAACwEwCdASpgAEAAPqlQoEymJKMiJBVbaMAVCWVpH1q3Oz/w/hb5bhI58Eh9brGuLbPAvEZV5Y8mQGmTtjyq7YyPjRW+N7ldgOiEkqM1/YHY+zGMOZ13AtG/GihaqfKoIXoqNjqbvretdVObF/zX0y1mYWVqy4RPe3rQrAeTUWlWh1+VncD4Tx9JqUo9JKEGoKM45MHn6D/xF7qVfboc+j2e2kgX3CZWAP74igcqxdUE/BH+0TEu1JZgmvU3udic1hI9upS31CNpI3aj3SLfEF2bVlzP56GepXrG+WBEL9Ir3tGkxsDMgniB4RezXS3dNKgD799ttGVTKqyjyr9hi8btJbVOV8G9sfmKQwyGapCOWXZPNYPea15RU4MFJG63Bak5XspkA/ezJaO7EdfiqnvqoiMA+tBnAb8f39drpffb2rCz93xnDWeKwSn/YYU4/W4+co2YMnmdHZJ1l8HChlgWyRZjORfskolvy9DZIlrZPNfUjO+53nRkv7yYwK8oA3U6QC3oTTj0TefaJKXvNZR4UO6+sKEx4DPzzTEMWNM3Jz/xDLKfO5JQhLYpNqPUlTOsOR24dXkmZwiBSAOebnIfsq7lTzSl6TQ6iQR2W70PMxGcH2qAjGshCDvtQBXv8MXzePRGq/17+lrr0HJuOAKHofJwE1JvIjDh5ymXrq/K3mJDQ4zLCA/TpYM2KyTq8sgsn8H9WHSF/tj4E9T+m75VeoYrZMFVcGfVcYcnyKc+myZkfWQ0XTks8w90zSp/Ljnhgt9RskErgqRnUxamFyJBFYn9TotikmakCdeIsHQ1x+VOpnXrziTkUr14E4dH49Ah3K+0LJ2/GXrhqy+3ZViXW03ezERNpw8ji9FMl0zefu+RvEVfpsAukGid599LxkrNoWfGUDTa9a9Oq7U6bWlzm3c/HXfdrfoenfSs7HeNw5Qa8GMaf+qcIEXB8Lqn4Na/pZYwvPPn/6OShMzN6NTp3tsLAswHs2L8k7eDOHpEDrt755qQ0vlmOlYMbj8SjeB6oNpNrecq7gX9XL3YnFapbyXT5VZO2wbPe3JD5Bo90IzfJK3xd/EgeNHG/wwFTvdRlh8nX7hi5eBNkC5u/N7cVKmYEv0R+0ffU3CAdzkNM9C3JLWvow4WBuAreaYOlLIo4IpyeiZjz0VFFeRyzdwz2VbR5rY22evMqZ7NBA3CvzXYxZqJjahAwM08OCg3aC9uYREiNxwOaUqYOVID9wbkhh/swWqG1x94P8sv76PzC57GfhJARRwA"
+    },
     "escandalos": [
       "esc-instituto-lula"
     ],
@@ -1096,6 +1342,7 @@
   },
   {
     "id": "andre-mendonca",
+    "wikidata_qid": "Q60396070",
     "nome": "André Mendonça",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
@@ -1115,6 +1362,8 @@
       "agbr-2025-10-15-bloqueio",
       "g1-2026-07-31-inquerito"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha",
       "esc-inss-sindnapi"
@@ -1127,6 +1376,7 @@
   },
   {
     "id": "pollyanna-alves",
+    "wikidata_qid": null,
     "nome": "Pollyanna Kelly Martins Alves",
     "tipo": "pessoa",
     "ocupacao": "Juíza da 12ª Vara Federal do DF",
@@ -1146,6 +1396,8 @@
       "folha-2021-08-22-atibaia",
       "conjur-2022-01-28-triplex"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-atibaia",
       "esc-triplex"
@@ -1157,6 +1409,7 @@
   },
   {
     "id": "frederico-viana",
+    "wikidata_qid": null,
     "nome": "Frederico Botelho de Barros Viana",
     "tipo": "pessoa",
     "ocupacao": "Juiz da 10ª Vara Federal do DF",
@@ -1175,6 +1428,8 @@
     "fontes": [
       "g1-2021-06-21-zelotes"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-zelotes-mp471"
     ],
@@ -1185,6 +1440,7 @@
   },
   {
     "id": "marcus-bastos",
+    "wikidata_qid": null,
     "nome": "Marcus Vinicius Reis Bastos",
     "tipo": "pessoa",
     "ocupacao": "Juiz da 12ª Vara Federal do DF",
@@ -1203,6 +1459,8 @@
     "fontes": [
       "g1-2019-12-04-quadrilhao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-quadrilhao"
     ],
@@ -1213,6 +1471,7 @@
   },
   {
     "id": "ricardo-leite",
+    "wikidata_qid": null,
     "nome": "Ricardo Augusto Soares Leite",
     "tipo": "pessoa",
     "ocupacao": "Juiz da 10ª Vara Federal do DF",
@@ -1231,6 +1490,8 @@
     "fontes": [
       "g1-2018-07-12-obstrucao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-obstrucao-cervero"
     ],
@@ -1241,6 +1502,7 @@
   },
   {
     "id": "delcidio-amaral",
+    "wikidata_qid": "Q10264823",
     "nome": "Delcídio do Amaral",
     "tipo": "pessoa",
     "ocupacao": "Ex-senador",
@@ -1260,6 +1522,16 @@
       "g1-2018-07-12-obstrucao",
       "agbr-2018-07-obstrucao"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": {
+      "arquivo": "retratos/delcidio-amaral.webp",
+      "autor": "José Cruz/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Delcidio_amaral.jpg",
+      "arquivo_commons": "File:Delcidio amaral.jpg",
+      "base64": "data:image/webp;base64,UklGRmQEAABXRUJQVlA4IFgEAADwGACdASpOAGAAPqlEm0omI6IhrvN9eMAVCUAYuAQ6pZR+wwt31RmkWPWIOolakP/xxMg9uG935VBT4ZaQp+qcWdWe9MFmMwu3s/APfokHQny5sCBeQnkFlwb5IU8dIq2iEcujdIRVM+GTThsf1aBbB05liMPXXHLJvzHD1aXdSxjNa3W9B8Q+ESS4jhBxebpAzSYp4CQj5jDm3zXcrtuIZ60u1JvoegFW57QbIzx8mDY1Oz68VI2/g88WgM6MmQ/Vj95Et2ENDGx5Q0cifQ0AAP7r1K4FizEQ1myTpqll2PeZtXUr8DjAa0+CwuvOPIHK1tiBc8OEDITjAFxKUNwfAlh2UDjS4ZRmIn+DWYOjOwMmQRa0kTxEh0Y6NiWG5kVEMlSyRkjL8O+8nRTMDfghFMmgcowGDIUE0abeFc+j01OFyUnOsUzDQF4G/jzcwj9P40T42/sdyylGH7iTj/Avb7NyrhIk7LYZZ3km+NsnN74qhnU+JCtJywJNTC8EhkxdqWiMGbqK6E4AUfdSsYAcIb59uGrtw6Jqoey2TP91Z0eI7Y/ZvRswzVqM1LzHvnJI+oWttvIX08CgEwUoFKFusQ2Jy7xNrFo6AaziD/MDjYwLfBndQmtR0L4y4jUt5GGyw3UvZ+XEirGC741quph7hwDapdGD6RIzsLxOY1TQ7WMtXff0yDQRnxa8tIPCav9McF2ReLFeInqKl/jMz4bQj3hNi8WRbcSQjQbBabFxQ+wlU0/ISo6PpKO5/E7RehrgPdyFpt1O1WQMBbU7OgbCqNKlWqF/uHvwYMGRGYtLjd411LDDKWpLrESTkf2BaecjZP3dhqF35+uZnPjpGbAvEMKxWjLpV8HOp1JI4x+M+1+lvlT+k2DuLo8xGH8TsXb3woKZDzLUoGMLO9wHZrJsjr38fQ9jmaAI1lZE8vNEmKHkg3JPi3R7AUJjj1lpGqpbOoZsoQgvbfrHo9IlQ5L0olTcv+ZUypoPCqYfFjosRjVZtqGgeRnrb5sQEPLV1kyxIe8jNg9+DrWS1tslg9ndb3qmofHHAtSNJsFfHqOEe9xu1cu974GjvqgJy4EUG2BSDWc0IHRNOqUSkaNsRIMKWF/VTcAVcKMBAcTmFRMYY5FgTSQ7yZwljOH2E0Fi2YDSAr8BK8Y2Y4BK3vJimrcZXn9q7qzm+loWF0NkF8xrhrw4wMWB/OcN5zDyZk1/hDAiEj70MQ3toQcX06q1gWLnHXw14D3x+1wW0ZYFd+veDvUG0vj0IRHWm9CUu2usS92D1d+UIm4DeFNC++4S3rl0/lKYJstpyATliz0G/tCvHa1yGIBWdtpiL0pwqa3Q6AsdDX84BBia/Y13O83WkcZV0PUy9lnu3Ynlw0xexTs8BokHpoe5jZibOj9vosmvJD7LxrxQ/5qtDKYjIW02GgwWW2rv+T7t9VBYMnCVY248FBHWOpwBHb53edvQ4I3NYil575ZxKCvcAA=="
+    },
     "escandalos": [
       "esc-obstrucao-cervero"
     ],
@@ -1271,6 +1543,7 @@
   },
   {
     "id": "nestor-cervero",
+    "wikidata_qid": "Q18278628",
     "nome": "Nestor Cerveró",
     "tipo": "pessoa",
     "ocupacao": "Ex-diretor da Petrobras",
@@ -1284,6 +1557,16 @@
     "fontes": [
       "g1-2018-07-12-obstrucao"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/nestor-cervero.webp",
+      "autor": "Antonio Cruz/ABr",
+      "licenca": "CC BY 3.0 br",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Nestor_cervero.jpg",
+      "arquivo_commons": "File:Nestor cervero.jpg",
+      "base64": "data:image/webp;base64,UklGRrgDAABXRUJQVlA4IKwDAAAQEgCdASpgAEAAPqlGnksmI6MnqBVdwPAVCWMAxyi4iuJkHJUsk5P5gLCrSrNHLppRzg8gpWdQYQZa7VNVK2dwGu2dA3L5d1J29F4F/134CHzu8jqzMFTMfQJKQ9PQdydzlWXt8HvUNLMEcafJtbP8Cy+SELNKETQiAdpHboAoim0GMtQdkcoHXS6i0k9OMW1ck6m0v3HFJ2QA/uxlITL5h+46PJqn98PMywmUq2vO0sIDzMZBJVE8IwVrnKelgWKOpax1EUvTTF30QWNzKBzKXfLOD5RH/nrJs1QNFtRg1xeteMrSVViHKhjAap4iIXDoUrV3PrJ+Cr3StOZZ9xglmJ/dD6h57vlk4XBuj/lxFICfFhjoh2nvB0F3/Af/N2N38bQ+/szbEhjbr9K0n+o8lFsRLuLdw1Kt5k/HQe/XY9wSq3LBeYIvIlQe+ndObdp2LHXUDnw/LeoCWBPxH1snIKrgmn0LxeKF/QxSUMtHhpp7583/6qrGCpp8SqwT1if24AIUA4Yigrko9FQuvBnVtqFyU2Jb4MXUiR8a/itLDMeAf/kZyMFj3/7HxbRu+Zs7SCOR2VkoQCH+qbqknEl3C+s54cbuqF1Lsl6D2kZHUEfrXG0IV5ANGLCYteakz35SREFkETg6Fgw4Q7o+ZQaqcAc84P+0xEIZA99ITniXJE6xXVjuA99WB3r8tI0PwteRBWS/wVt+fF1R0Sahbyeqt6+0ULx8qpf22JFIA+Z8I0rjbIB6dPBdZMTvqUzWeo0yAs1SxZfK8GwKivtHonNppsWyPQDlTzbH7drnW2/4mcKgbptq7h7eJAjpINVQUmaq+UzoJRfCoweWvleRvkSk6E33ytk/In135Py64G0RuNYim7fUl/HMk7LHNBkPF7QeN+wh8L6PX8CkD8n5Gx+aEFWlzvUFreDXypxBiFGQT0H3pd+PhWzMvGtmUmMx5ZTEykIHNZyWVNnowbJ5bquczL0go+x4IUJBIcT5DnTDdJfdnMHVtFBNZ2iuJ60kbyJmkMKoqL/TuIOGE3MgNIYrMeuuLrMWWmepJCKqn/KATg2H7JLEtjo+dnKqDftllNI5jXxvH35iRjsqPu2R5vvF2N/kdINkYm6vgmxj7nxGbT3O4BK16N+vGa1q8dHCDPz3sRYyuJFiiYi8cN91TIfYS3sWEnco4KpjSkf0J/HRH+OxjAWsejMdLsCfDApTq2eDMns69GVz0d+PW63QDRU6VD2nC/0ehI9k4AAA"
+    },
     "escandalos": [
       "esc-obstrucao-cervero"
     ],
@@ -1294,6 +1577,7 @@
   },
   {
     "id": "andre-esteves",
+    "wikidata_qid": "Q9614196",
     "nome": "André Esteves",
     "tipo": "pessoa",
     "ocupacao": "Banqueiro (BTG Pactual)",
@@ -1307,6 +1591,16 @@
     "fontes": [
       "g1-2018-07-12-obstrucao"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": {
+      "arquivo": "retratos/andre-esteves.webp",
+      "autor": "Luiz Prado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Esteves_Entrevista_2.jpg",
+      "arquivo_commons": "File:André Esteves Entrevista 2.jpg",
+      "base64": "data:image/webp;base64,UklGRiYEAABXRUJQVlA4IBoEAAAwEwCdASpgAEAAPqlInkwmI6KiKBK84MAVCUAYTw2QSYuOmHzBg5j7TyUPHwy6cQ5oHl9g9r2NIcJjjw2BMVNoauJgyiauppxIExdtYZf2AkwL3XkAfM/UR3oQMecNLbuHCq9QbdNAcDNWeRUc0f7n4ISu9JIrS8sTSD0l30GSyuj6lFs4l2xdSdAAkbg+4p/U0aROQz4S8zoSqvhbMeCp7EAA/rRfclx1vwwGqjXYG237KM2zIJl1Rbel4CmvSw5dr80oEdN3LOgesKY6gQYLe9dqYbz++k4eWewL3c7aUHdMjidsYIFB7WZibRIfu2dUsBWLjTdqtSg6S3LZn+Z6Yv+h0g4voznMrHKGCPrTV76ChTvvk+MFu1QtrOx58DqzBAruI9YnBdVYyfqAUEfMi6A8ZTv6zNfSY3w24gu3iAdx2Ii4AHkjzRxwRJruN1+4VfW9Jd45zNEcLGj/lWlWWvlba2xVKHbycnsYmPWuoVkaJKdxiUQqoQ0NXJSZmBkxwyhaTF30CGGHd3Ir5sdWk0lMZ0vyutS95/3bMfO5EDjKxkX5D+baw87geYmBiP6LMpuITQyDDhtFYC2BgzeVBdW6NsKdw7Q9GTlU+a6Y+DPS+9dfkiyg1zLxHbvwn5ZgASM9ONyzQ7jZm56f+ztG2xsVdtfce1Agf5sJTdxNH8/3e/kvWjw6iPC30ssq1Ogsz+2iYxzeRfQ8WAFQPOWewwfaXkCYcfmRGH6vxHTdlP3EHWg/Z0B5VwKwGR2vsP4CH44WrKa5r89AR5e/bopXYwZf2j4pdVQuhreUsmbe8sWNHbUVtI7SH5TY5k8hsfxgM8J+sLbXXpCaoFsLyxFZTJzoyNbcMpEqagTLNbsjt3dUPIaU6euDYWZtceW8dsikMNRwLNZ0tOlZVjF2jGnwf1ZUITsVt1r+V+yTx81WsW8GO0x9o80UnWHRfUtStXCGWV0NpOei0az4cz5Qk2LY+iBBbbonxf8n01KNo58voAGgIj5dJb2s3NwnDEWoFwyVKItDg/V7ZLH5nuG64gPDC8qYWa2mFjgEf3bR5rp4HI29umhQdr1E6shLku9XrYSGdIlB7tNqDvQgdnYb0hAlfyO3xQ2ulfydlh028Zc5gEE54KLvinV71lgT2sJXLANRh3OuyyS0ZlfTLwJxJ/9z5peIqpKEPb5VALJ0hinXCxBHB4+KFz/1gM2KU7r01PfrbAF1vhnTHy1kl19fGEz88bgN66uOIUWk81SOgE9zZrU7+/wRSsYj3pt1LrSoUnCvAkWnuim3RpNwY6w5uGXzKapDKhQxM7TCKPpwS0qr4cOd/ku9hWARkYwxrdv52A9UdMFczdCLY+DjR/hNrw5NU40XifA2Ba55LkoCTut8RrMSPxFL5dTIAAA="
+    },
     "escandalos": [
       "esc-obstrucao-cervero"
     ],
@@ -1317,6 +1611,7 @@
   },
   {
     "id": "mauro-marcondes",
+    "wikidata_qid": null,
     "nome": "Mauro Marcondes Machado",
     "tipo": "pessoa",
     "ocupacao": "Lobista",
@@ -1331,6 +1626,8 @@
       "g1-2021-06-21-zelotes",
       "estadao-2016-12-gripen"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-zelotes-gripen",
       "esc-zelotes-mp471"
@@ -1344,6 +1641,7 @@
   },
   {
     "id": "cristina-mautoni",
+    "wikidata_qid": null,
     "nome": "Cristina Mautoni",
     "tipo": "pessoa",
     "ocupacao": "Lobista",
@@ -1357,6 +1655,8 @@
     "fontes": [
       "estadao-2016-12-gripen"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-zelotes-gripen"
     ],
@@ -1367,6 +1667,7 @@
   },
   {
     "id": "taiguara-santos",
+    "wikidata_qid": null,
     "nome": "Taiguara Rodrigues dos Santos",
     "tipo": "pessoa",
     "ocupacao": "Empresário (Exergia Brasil)",
@@ -1381,6 +1682,8 @@
       "folha-2019-07-24-angola",
       "g1-2020-09-01-trf1"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-angola-bndes"
     ],
@@ -1391,6 +1694,7 @@
   },
   {
     "id": "careca-do-inss",
+    "wikidata_qid": "Q135213575",
     "nome": "Antônio Carlos Camilo Antunes (Careca do INSS)",
     "tipo": "pessoa",
     "ocupacao": "Lobista e empresário",
@@ -1405,6 +1709,16 @@
       "g1-2026-07-31-inquerito",
       "senado-2025-08-28-careca"
     ],
+    "categoria_juridica": "investigado",
+    "retrato": {
+      "arquivo": "retratos/careca-do-inss.webp",
+      "autor": "Agência Senado from Brasilia, Brazil",
+      "licenca": "CC BY-SA 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:CPMI_-_INSS_-_Comiss%C3%A3o_Parlamentar_Mista_de_Inqu%C3%A9rito_do_INSS_-_2025_(54811649739).jpg",
+      "arquivo_commons": "File:CPMI - INSS - Comissão Parlamentar Mista de Inquérito do INSS - 2025 (54811649739).jpg",
+      "base64": "data:image/webp;base64,UklGRhYEAABXRUJQVlA4IAoEAADwFgCdASpgAEAAPqlKoEsmJCMhqBqrGMAVCWUAx6C6vnHRzw/sXHGkaa5/pyGk0vukTcpIiIndfR9QpIwQtGqP7uKepTnXascmlhPgG5Pg5sDxrVm9l7c3RWxflOIfr6+VUcBqg3sKbEj1UGJu32+iRUMUufQB20Zi8JG+5Uk7id368AE7yNMT83DfjlShvyksU37k6skx5E10d7Syw6LtBFitaJ6QVPCO2BbqCoH6z2u84dTiMuLDs9R0kXxbcKAA/vfpXjnM3/EaKcF48mtCnQmYfv8K+1h0H+XHwfFXZyjd3G7kamQ4lz+AZh/R9MUuWmFqHBRLPSeFNt14jyt7+J4L0n+DuomPO+LLExZy1JHpn5Z1t+uWDeCRRTi3oQvOTS080eNE8hKFQtkQsm8t/ewCdA/G5fQ4hCpu16D/6fcDlsLAt11GfHfW8Ibc9YpMybrSKzSysLgGYo1/qo++0GvsS5mDo1gEf76//r7g2E7fvIuI7P/JLqR66XO6qkVIL5Se2//iw8enRuil7j8/hZoW/yyMN2iAcqsfxeC0Gn7EaQuXXKBbgfGELTt9uxk6vd28au3Agkr0skor536NWoPpyPD//QGQ6aUocxs2qaHX/bsmRP2t8PcJlmoFFpIv1CUgDhog8mYIetkbdnCSfpMOUHYNBaDPdkDKR8rd+hYc+RnqYijCaOmuClNV/kC8T9ILU9CXGmQr10g2G+dTMKrwcjFgy9qb4BgoZjer0bO5KFZzydLqH3auhnGFOajeMkIdOOGEy72dpuij6k8nHWjMIOI11FRGlPf+mlJuGv28KVkY43t8cj0z+CrYhHgHcLOc5wGvbb9qZAvldOpa/aWv1R2zvejcYsCeIc+aGyYK+eGL2O47vuZ11BxIfc6LS1tgwh8daf6A95uYFNPC/OO5OQvkWdVbyhD1vYVpD/JGNNWCABfN2M01RSn8self1glzyxsZhDyA9eEiiHu8dUApTNoTMdvZe+hdo43nc1xftI6hC9eYwgio+0grM0bFa6BANSDw2pYw1ZRn6EQrNMsx9oe1mkGa4kGItuhF5uILEUOQmJY0eaLwohyC9GHiRg9c7jCWwtIzd/0gEc1gO+F8jt5y63ktXJKkov6hLz9wrNzOegqxNOX6dcwOq1nnLJ3BNf1qOD3ezINra8cITxzn5by43uX2RuwhtFX02Dd131okWYQjdGVxIZigtOkdIsWPZvxWx4lW0NWpj8dYTnBui6obVWdL0b0SvZYem6jg0M/AJ1bkvONi0M470U6BMDr4uqLzPTWYSMpJvWitus7Q9xiZLEzdgG+s3qV8OvnMKao46bc4cHC5ImP76jycLxmY3ZzQAo1ZbmQ8dhI12mrvgFGCGwAAAA=="
+    },
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1419,6 +1733,7 @@
   },
   {
     "id": "roberta-luchsinger",
+    "wikidata_qid": "Q141793366",
     "nome": "Roberta Luchsinger",
     "tipo": "pessoa",
     "ocupacao": "Empresária e lobista",
@@ -1433,6 +1748,16 @@
       "g1-2026-03-27-cpmi",
       "g1-2026-07-31-inquerito"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/roberta-luchsinger.webp",
+      "autor": "Unknown authorUnknown author",
+      "licenca": "CC BY 4.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/4.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:2018_ROBERTA_LUCHSINGER_CANDIDATA_DEPUTADO_ESTADUAL_SP_(250000624055).jpg",
+      "arquivo_commons": "File:2018 ROBERTA LUCHSINGER CANDIDATA DEPUTADO ESTADUAL SP (250000624055).jpg",
+      "base64": "data:image/webp;base64,UklGRuYCAABXRUJQVlA4INoCAACwFACdASpFAGAAPpU8mkklo6KhOJkLaLASiWkAEhA61TKDT6/Jls5qP9/xeFVXc54ZbE9/BVPrvixPI1H+kmW6MRqAvD2W0rLT3r0NZY/scIKE7kX+OZDzqHv0zlY5+gxrcUpwfz2YaRZ5yyAQRQcyDUO0TCFhkeky8id1XZDjQKCTCHPoQM7IPJwX+EQxr/WUz6Lb92fyEJmvstT+tBvhJPQjl3zhY/VNAZhrWgAA/vr+FIt0DOrEsdV7rHzc8+5RgVsQnIfPvDqth51EmRBDqhAqg8/9u8lxjAaRPH5Afr4FPfhR0zaTOMl4Bv+mDNxXsZC/NZHIr59+SaCy3SODHw7LtbrHnbvn78EOrQ45+vOx2uvQVlaH9PQ0tBS2Horj/YQ48Xv4xNRPIUnLFezBz7CaFyfRSrIZCJcK1ZjaEe/QVUyXfXbYPogTjLeVfBDBTm9oSr/ap/arWqpJJSSVO6Dw7j7N1tj/IJfmB5puALYIpYbx6Jd3QHQ7OK7zKTQCoXirP95faRWS/PvquRCrR5F6yJO8qx2xvwKWdc84lWQLyxRb+jhxX/0foWCNJnvR/YLP5cekZsc4w+LLhTdV05ys318GNDcEjL+sJfr8lOf9VWbx115lcYwh2rWH9eobizwwmToLRJed9AcRBLj92dNMUvgJUzzxUf9tGERNDK93KWDPRd7RJQefpH2lie60df12HQYmgVirYbyYxy5p+PnYarq2nHcn6zn3fuR3DYB899nkBX6I/XV0cfUu43D/F4+qzGSBFe9emQ+nGGqPUjWGJSXcfU0b40CB6rVFwjZP+eGTQTiW9BybmJT17R8Mvd3dOWXkFJ2ZlypARCpZiYD8vR53e+l6KkaJfMP3XxjsHrelIZLV/WVnSJ5CixMVn5Pl50RH/MAg8hd/lg1nQVADykvZgaIVkf+93P2aPuJ0kuxFLCCDJ0qjk1hAvrJlX0TCixgAAAAA"
+    },
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1444,6 +1769,7 @@
   },
   {
     "id": "edson-claro",
+    "wikidata_qid": null,
     "nome": "Edson Claro",
     "tipo": "pessoa",
     "ocupacao": "Ex-funcionário do Careca do INSS",
@@ -1458,6 +1784,8 @@
       "oglobo-2026-03-27-cpmi",
       "cnn-2026-03-27-cpmi"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1468,6 +1796,7 @@
   },
   {
     "id": "milton-cavalo",
+    "wikidata_qid": null,
     "nome": "Milton Baptista de Souza Filho (Milton Cavalo)",
     "tipo": "pessoa",
     "ocupacao": "Presidente do Sindnapi",
@@ -1486,6 +1815,8 @@
     "fontes": [
       "agbr-2025-10-15-bloqueio"
     ],
+    "categoria_juridica": "investigado",
+    "retrato": null,
     "escandalos": [
       "esc-inss-sindnapi"
     ],
@@ -1497,6 +1828,7 @@
   },
   {
     "id": "carlos-lupi",
+    "wikidata_qid": "Q9697177",
     "nome": "Carlos Lupi",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro da Previdência",
@@ -1515,6 +1847,16 @@
     "fontes": [
       "camara-2025-10-16-frei-chico"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/carlos-lupi.webp",
+      "autor": "Geraldo Magela/Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Carlos_Lupi._CAS_-_Comiss%C3%A3o_de_Assuntos_Sociais_(cropped).jpg",
+      "arquivo_commons": "File:Carlos Lupi. CAS - Comissão de Assuntos Sociais (cropped).jpg",
+      "base64": "data:image/webp;base64,UklGRlQFAABXRUJQVlA4IEgFAAAwGwCdASpIAGAAPqlIm0omJCIhrNgMcMAVCWMAxfygA9JtSxWc7IqXPFlEP6HWa2Lwg7VWa7/jgI1YtzH+2aXrlwg42kxiBhB0oXX8ogXTnJis0wYN/xPq3aSIT8KW7aY3AeXiSbVpb12ATxbb4i4Dfjgoe4++0erjCby7SAKJy7vMt7fR+2h3kyMAwbBNMuHR5WDLRTqbOPx4WJ93hlelJ+DeQuRc1PAtuBAFeCDiOlf9O20BHvAKKGchZjkqyZiteIzPPle7aTOvP8E9N/OEYmzdhE7ALAJR26kCVkQbsZwAAP6u8z2vGVkQQsu/t5skx5tiDIaXLc5dFLo47FSUJqIDjMRS6FFDG8dG0yf2qTS1oOsautsGd8mKI23BlcsYaxhCXc7jU+L8DQ2nW7hXNpdL8HDxJQwvLEeMTnSys/yuWJUuBBu5eFD26FKoZujrLhfgXfJz1J6aCc6AXHiyqQM3hAvjs+zwqZpl+LFlCCxlDS1pwet99q3N7RPuD7D88v5V0MXh/r166JWG3qGijWVxUBeJ1ScCvnrKncjPsAbD+F7BcpW54FU2liaVZd0BItaDk4pmsEFBx6f52xxF/LOOzbcTa1JsrTvVvK6ylun8xlsaoaaAvHUlPhSGRaV+386UrUNxlSr1XPXeOtubLtn4orlGdFvOtFapBnw+DIv8bOuj/Lirv/r4sl+50fnwZLoO8z7rwio3U6eR3GTdVQ949w97mzRiKoLy0O4+HwjYUzZgjqtPHTZudWbdg8OjjF9TrXdOcfQJFd14FLedsnsprwNwJqzV31iHtC/em2my9l1l7p8f4mahPaSKcOJzWWxAKT4OmzPYb0JHIEf5dFPJ601QKnzWN8kZzNGKB/1JIfqF/68XkfnY2fCjTwHnzxzjD+LbkgAg1ZGUi4VE8x96eMJpiqPOkMTv76zi3303zboOld6OtzsoRORa6oum6rM/I+E/PDjZvPXcXVTKYqk6cK6D5ZlwS2ySgyAq4f4/SQnQnAxrYpzd2cM+yzUjfWI1UaIrHbXvz4uugKM7XiYRGIyVyb3/zGXThkhqNJjd/GygyEgM/WY9rbnIXM7NSZ1C/CDR98e+gOvEAg+6EFhMXiN4T1yTu4e42kNfXxI223DBqtjkLsmWwnkUjUxyis+/OOhsBcvH00l07iquGjhVGjk5g2YozEXv2BmkFUCpMItugi+bEMJUeanDoUjWkR+ruSNoGox52+v4Tt34LZKYdkiQbcOE0oEnwmr4VWP1LGAN2UBbNdITpF2GhK16EshdT8ytjmgHFCggMEj0fg03FcpX+nYjmLTlPh1YmR3FlpBE0UuHdibxDpZQVtpfiEe9lK5iZZmeCEEFeqRPfljHxkwuo7aXtvY8nGdqsUFRrKz/O5FHEu1OkpZWZpB66rrmlJeCAIza7MxWG4HFrHlOcwh5PiaDF5A2t2d0Aqwi25jcFjK/d4ebhmEvClB1ZauFptZ76jEZa8UEffKAJ6dj7g5d71eFC0gFSeKcujnpBo/G+fjyRfdObyTo5JdAf780mQtUBdxcIU4+zpbsSmpF1djCKUuCIuW3STVfooxsTUbpDDVs9zew7Ef+dX+FXF+3dan/cwzTAOGxEg5NDLmWf76hOB+WgmKzLRi0mphlD/QJiOgmQLPt5O3l8y6Zx1Lv81RfbvYkswi+Mp59MgHP4+U2MPdSrqMPaT0G3J+B+a5F1lvAqaefXXE8UHPSsj8xZYH7qJotjJIEK/HiuDcmp4BhDTWZHtkdgD2EaynEIdFxNTVhKNCNQ3yZACPox8KTYcAAAA=="
+    },
     "escandalos": [
       "esc-inss-sindnapi"
     ],
@@ -1525,6 +1867,7 @@
   },
   {
     "id": "alfredo-gaspar",
+    "wikidata_qid": "Q115500037",
     "nome": "Alfredo Gaspar",
     "tipo": "pessoa",
     "ocupacao": "Deputado federal, relator da CPMI do INSS",
@@ -1543,6 +1886,16 @@
     "fontes": [
       "g1-2026-03-27-cpmi"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/alfredo-gaspar.webp",
+      "autor": "Bruno Spada/Câmara dos Deputados",
+      "licenca": "CC BY 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Alfredo_Gaspar_em_sess%C3%A3o_da_C%C3%A2mara_2024.jpg",
+      "arquivo_commons": "File:Alfredo Gaspar em sessão da Câmara 2024.jpg",
+      "base64": "data:image/webp;base64,UklGRpwEAABXRUJQVlA4IJAEAAAQFQCdASpgADsAPqlInEqmJCKhqVSekMAVCWIAyH1p/40tujipULpx8gvuLNMzTz7RDS5w9n5s8El5T2PW0rLfIsXK1Gaiis31lLaZFDkONbr+L4zPFdoGrs0+r1DoQ6YWHi5GZ9/xoiO/ogo0Mz4qUWqkEtCGh6NKvf9bBFXyf+che9sdBKQTjHpc+kl1UrTeFt4LyNZLg9gPjMvhbo3vmBngKJW60428a1EUXYbdyWgA/vzTxT31lp7JADDJXJTAEZt0lUmMzA7X3oL+V9SmGjA2oZ0GiSVYZG+/O+jEiQIBfyYxGfmXHx1FdBnAFgIp+pya29bQmyDxQvE9PG336qF7NS6tiL+bS/c7wzwxU+LtWEEH0g7Yx6PL2VOTxoyCBX9TCrWLj1QWffGIo+LyZDec9fNyiYZnsuTqMUbKGuib/Plza3n/nwWF5HntC72IOO/A362lqfWdf22fXSL3del8z97x/s3BAs+1XAkWQGRM2Eq47tLtdrMLzixHbgvft/iLLTNOiKxT5SFHt+8PZr6pDV27VmsyufMaGP7jX20Yg+vwWdRHTAGCPAeQ0xUUCMwn+UGu1pozRFXumcTS8Ea/9fhp90IldwJqb52m1gVxSvOOLo8wW0w5XKaHtxkjo+90HDu9uxMYfRdzxjg/QFFT6ryxdq69Z56bcgU9zxpjSFPQhRWLXRSBaeA9fzC9oYljeh/gR5HKly3XvYCsBgWD3Z8tPbzVXoHc209J+qaBzMgqv6/wquqc/HiEc18IK44XqvsuRE6+ecX3r+GKUoR6e1iL2/DzgVGGBtJrw/9ZIcaAPCUw6/NsNWn7Wvn7FQ+r48q520q09eUL8z/Re8qJpJdZa50YudZTIsn/NT5JYegjwLfT8nyzP1EQsW1ybpT4SBn9I5oPBz+QLqY4y6qOWa39gtL/6swUAozVQSUvHKDtwf3PxYudI1O28VC3qs4KAxxjjSV682pf1+Vo57u4UjHty1uFw1YBGFz+MFj7RUUUj4EvTT0xGpQZzCuxO6QvD57cbTusk1k44PuCCAuhGtUjHQLZ5j1/0RiWUiX9q+96QipbH38k9dSGA9DzsRL7PPtDk1ewZEsvcJ3Ne3W2e0Oa1AKgyv1ll4yXQ7S2yb+GZcFOiiZvmuO60dUozOs1C9QeJ33MuMxeuP/uKdO2aoClpWkoi1Yza0Ai20ZnkRzjdvkY1PSbnJvmL3GK3vnNx3XcSEW0HIrsYjDkpmDYkssGhLHoMk/htoPJoJZquhlejMD+5vXqaIVgI3q+8qwZAM+iQObzfneZOqj1fgAIOtP1PB5mpLljtqaWXmCz9JS7uLvFfptByBaLJUOP0p131EfmSiw1oyDUSlwwMuDpGjNSD+5rh7TONtnyEDWKlxWo3SK7LvRyXUr3Kc47+o1+7fSC/9ahd7DPrJrJT9TPR6ExQuB2KSxiVTVxzefnSPSqQp7zqRjAOjAoJfR9tPIlmBIcCQaLb4Ps0zqb6lc/u/WqLXqZMVGXe2ucxWAjXRh9hubo/9C4NiKzUIiwnwWxcNXwO5P2lsZDAlAA"
+    },
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1554,6 +1907,7 @@
   },
   {
     "id": "carlos-viana",
+    "wikidata_qid": "Q9697384",
     "nome": "Carlos Viana",
     "tipo": "pessoa",
     "ocupacao": "Senador, presidente da CPMI do INSS",
@@ -1572,6 +1926,8 @@
     "fontes": [
       "cnn-2026-03-27-cpmi"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1582,6 +1938,7 @@
   },
   {
     "id": "swedenberger-barbosa",
+    "wikidata_qid": null,
     "nome": "Swedenberger Barbosa (Berger)",
     "tipo": "pessoa",
     "ocupacao": "Ex-secretário-executivo do Ministério da Saúde",
@@ -1600,6 +1957,8 @@
     "fontes": [
       "g1-2026-07-31-inquerito"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1611,6 +1970,7 @@
   },
   {
     "id": "marco-aurelio-carvalho",
+    "wikidata_qid": "Q85875257",
     "nome": "Marco Aurélio de Carvalho",
     "tipo": "pessoa",
     "ocupacao": "Advogado de Lulinha",
@@ -1624,6 +1984,16 @@
     "fontes": [
       "g1-2026-07-31-inquerito"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/marco-aurelio-carvalho.webp",
+      "autor": "Defensoria Pública da União - DPU",
+      "licenca": "CC0",
+      "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:2025-11-05_Marco_Aur%C3%A9lio_de_Carvalho_recebe_a_medalha_da_Ordem_do_M%C3%A9rito_da_DPU,_002_(cropped).jpg",
+      "arquivo_commons": "File:2025-11-05 Marco Aurélio de Carvalho recebe a medalha da Ordem do Mérito da DPU, 002 (cropped).jpg",
+      "base64": "data:image/webp;base64,UklGRsYFAABXRUJQVlA4ILoFAAAQGgCdASpIAGAAPqlGnEsmI6KhqbVdsMAVCWIAtgwrVEmPyuQvbhG7kYGUi2iId8d5bz20xk0ny4RJcMQ+Kd6Q2LA4inK04C1Ox6Svft6ZRDM+iHFKONSB/11lUsMfC4WKvp1DZME9NZ6wP6Cxg9XIoHEb6zQqXTK7vy2a0jC/vsQFyYQ3Y2gj0XtTMa504C3uGyU9XICrLppFoP4LUC18JIxqtGu9FQYsYASk5V9yBRjMJ7DvdalHfrYWYWBz1gaMFvPQm6xuwO6e93o0o/NESjGgjmwa9ySAAP7r/pA+Un1fkrXysyf2yXznJGbny/sQ2qF3w6fTxjh635GzTKtd/cIdC1dM7c/xrQLW4mXPHAE41uXKHJuuT/cdD+28Ibp2st7yRET4gVjzp58w5vU0NqG78JsWON1xN/+C5V9oPL+oCx7HdIwvBzfpAV2AbO8v0zCP/Y5KrfsPdZYK6o/F9BTNS5PpkBO8r1ZELkMcWnskpGnywghuDLgeNkUz6tkzFnHJ9S9w4DJja3iULZrIgiaEHYnUcCD40xMeo1LRJ48JE6T5rE28tC8+vtAXwqWAex8yE++ti/RmcAdaPbhyLIkgbN2xNGNXyhVKOEMtNO+pYqwLIPH73uUCQJAQD3vqXtLVrhP5txA2i9PfuScTWI0/Qnl+coFWttzsFdrVVg+mdL+ZbsBW7tZgwQwrUvwBC5rllXvqB8Zfpcf0Gb+8x2i18w6yLt4KiaQ9Ab91MpQ1373hJDgdnT6pt3trJ7cpNTS7XbRqrPQPD4S75WYZ2u/PvvVQygnAMadi8PVx5YKkm5scU7Pl9WRxuAbmj/ew2KAig1y9dqfKqhw//AdgW4OYNaSyZFjUyY/H4sI2BiLS3+W1ppilMQnlFlUnmftLMc8RX5+m6bcUyjvzg/73P08UtBZe55rA7bTo+74vyGMkXybZIm9domUeTcf2unC4qRTzyjW29vstch34T2pkSNaEEEuxdMH5klGG4NgQzAn6ZTBt+jtZe8OR7knHiFs/7TQPPuAHbBSLsMJVrGGF6qxZincgGpmoO5k51bL+2DN0Klp5RIlERbenHyh8TPERG0lobYMgDf861mH61IsYDlwKKaSi5Hry8xH/eaBnQXuCS21fQmLvyKzH2udC7ppdZM+BwhhF23m+eFEZfupBXNHmw7A9ohpaHAxEIMTrDP9yWX9KmNSadvBDQpymfTZkHzk13WvSjevtv5rFirQ/7pBYf5f+mX/dynKPOYPtNZ3RyNCDN+bcb77LUWu233ca3r2YhXEoFzk+t8AeJccVH8xZpLtTM662F1XlBW+/ZRLrAgtvIuKGevwRZs7pBEtOfp7s40mYVYXA/DRjI9iEr7CBfjRYmPzXl148UHKBXDf2Dmb4hTSI4bRMbyrb1HseeQ44+Dj1VU3zKDOoAkQmGr9S84D1B4UqNiXQ3GPhuKM9JPHnfVjntV99Ze1fopSS04P+CETfHu3yC2i7E9mZhi7qrra4WXJ//1C9C4ndkFA43JAypDvNXBSN8NmtKIyEjEwWlf4pgflthpM8tXJuQINd/peVNZxtem4x1NwUHCYBMkq0O/g7Dh9qO7bklveDPRXPcw3168DGdoDbnBcf033xKDn7epMTsmJirira+p89dlNp9iJjO4ZkrBTY5S6RN15S6VkC7BLkaFYB6TX+zpE2MS5U6OscZJUniaOoH4RFSyWBiloX3QQ+YAfcg3voWaf6cDkFvC9cuh5NfCEJDZIkTMocO9fzErJUm1x8C7zD0Ws4MG5aaCGdT2YZosFkOSLiGH35faTfDEx/KGMIMYYt89wg1dvEYG9PvSpxeS1xY+6QnAf1QQs0YAjY5WcDSWSbo88psH7ehYSlWFSixKsD02IBmcz07c+hLs/7DFzbIkwyU/JSOF4flS769PyS93tDyoEZ6nqlkWH/Y8cQXFLKL67FjAAAAA=="
+    },
     "escandalos": [
       "esc-cpmi-lulinha"
     ],
@@ -1634,6 +2004,7 @@
   },
   {
     "id": "andre-janones",
+    "wikidata_qid": "Q59284492",
     "nome": "André Janones",
     "tipo": "pessoa",
     "ocupacao": "Deputado federal (Avante-MG)",
@@ -1649,6 +2020,16 @@
       "folha-2024-09-12-janones",
       "stf-2025-03-19-janones"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/andre-janones.webp",
+      "autor": "Câmara dos Deputados do Brasil",
+      "licenca": "CC BY 3.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/3.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:AndreJanones1.jpg",
+      "arquivo_commons": "File:AndreJanones1.jpg",
+      "base64": "data:image/webp;base64,UklGRtoEAABXRUJQVlA4IM4EAABQFwCdASpIAGAAPqlInUqmJCKhrNFc4MAVCWMA0BBnVoRhfTjY5hHe465OWtqGcePou6S0159y6pnd0EuVJSXDEzI4cjbvMXM8Db2mp+BtvPcsKJfvDFJceVa7QEPwzmq+s2NPcFo2CclkfuypFoxeMDapLrZXYkByXu35s+t/z8BkrWFYSUYhonuXUzCKSr+ArdcZF89d/Ev7+3tUClpWS8l1HnRnsTdWXBiIrYdeKYFZ61WIVoNPGvmv8yxG/9fMgGgA/v62me3/+SOObYbVjpXDsQ7OvtGq/Iavxa7PUlPA6qHn8AQyeyZLvNrZ2ux+ERW2DaCORwbBj87Zur0WoM9Gle9cW2cl5iLrHG9fkV+ucuJY9qjBB59WRAv+Nf1eWfdl2qWrlpULFX6gPf1+Gnk/qYNV60mHDyonB9EiWl78SW6PQ4V6nJfbi+3xvdOYkIkp21nmYuBs67isvGHJwE/+0r7AFM8ME9Y8GNgV64pJD0C1gkfrKjkY8KeVDXstbp706HAua67QAjUjco5sTYvpvGJiicsk1fPlkM6vqU+P0xYgWnNeFOm7cjJkal8M9p2a9EuSw4Ho2IIfFUelhBuVb/IhHntaCBvbRDXSXCRG9EYD3G4FkJCBq1IaWJeXaCuHbZhbWo55E2CRgoLJQK7OyDAGApeYWLyB7+EjQCzebKkmmdO//CMBU0ZRMCjGTcLJBsFumPEqU6w+KIoWh4zzxrpyez5gIUqUHHsxS3tVzyfNqX+XXyk+3U/BlSjetHhS1PjBiZDhNFQsgydzz/46MSOfYXcro0+DX/z217ufgbLWOcbE8I0wrjH3C9i0lx/ujxRu0qUroGNKARGcSJAZM7VOMSye43Go2Cy6bPSUiUPgGgrMJTIzVpCUD9087YchgckoFBvgE+5WPhdu5q8pE3K97AsFLmi0Y/jVNX2+Nl+MCqXY4HiP02PAFHW5w+FSpHqHh7Tx+dfCJr3I84ynIZm4uShzqM22RfYy2H6XGjfb9rDgVJxTNRD+V/KA2WU2nhZ3XScNf7+33A8agl6xvnyPUpWEaDeZ4z7vyi5VeLcFOdVHv1eiEnf7xym1laLir7HcuPwqAS1AM85drczJ7auQmizxur6ot7kGTYR+PDTw8HIvncd4jdcDhofQ+08x6ETUy0NTcuwD0my7ze1MMnhA8WJSDQ6VVN5GZVNWP7gWKpvzWejPrrz8uy4IoPvg2katPOqyn/dPLNyqq6mThVDjunk56BQmUdY90Ko0NbjwTwMLiIGQl9C/ufOucCNU9s6+nOOEH9D9y0ZsaG9b6gbKAysSb+ZEGu5kqZrI12GfC5+hclMa39V/slhu/X2ufVomubMjgRc+oNY11kFa0LLwQAHOtT9HnlyhvOcvfHNCvSz6NVTxbjk+o56Hf7ICouYS4RM90+uSZEE9uh97hx3NRIAFwanpt5Q6PQYlPTZ+4HS4r2KGv72ZIBSb9iRnOm3JVD+7cTtSQ01CdcHs1l7APdSfx+7EdcqQRTl/ckSKlSRPBJtkJzz3yG1rO9G1oHAV59t8fWgg29br+aRgHgc9lfDMaXS1vpjrNBJvm3gvq6OylrvRVqgTs09HaWlZjPWStj2+YHTvrKv1gUmZQ8uu/9LqN8OIgAA="
+    },
     "escandalos": [
       "esc-janones-rachadinha"
     ],
@@ -1659,6 +2040,7 @@
   },
   {
     "id": "renan-calheiros",
+    "wikidata_qid": "Q3623584",
     "nome": "Renan Calheiros",
     "tipo": "pessoa",
     "ocupacao": "Senador (MDB-AL)",
@@ -1680,6 +2062,8 @@
       "stf-2023-06-20-renan",
       "folha-2024-05-23-renan"
     ],
+    "categoria_juridica": "absolvido_arquivado",
+    "retrato": null,
     "escandalos": [
       "esc-renan-inqueritos"
     ],
@@ -1691,6 +2075,7 @@
   },
   {
     "id": "renan-filho",
+    "wikidata_qid": "Q10359235",
     "nome": "Renan Filho",
     "tipo": "pessoa",
     "ocupacao": "Ministro dos Transportes no governo Lula 3",
@@ -1713,6 +2098,16 @@
     "fontes": [
       "oglobo-2022-12-renan-filho"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/renan-filho.webp",
+      "autor": "Agência Senado from Brasilia, Brazil",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689452405).jpg",
+      "arquivo_commons": "File:Senadores da 57ª Legislatura (52689452405).jpg",
+      "base64": "data:image/webp;base64,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"
+    },
     "escandalos": [
       "esc-renan-inqueritos"
     ],
@@ -1724,6 +2119,7 @@
   },
   {
     "id": "daniel-vorcaro",
+    "wikidata_qid": "Q133259974",
     "nome": "Daniel Vorcaro",
     "tipo": "pessoa",
     "ocupacao": "Controlador do Banco Master",
@@ -1744,6 +2140,16 @@
       "folha-2026-01-26-vorcaro",
       "metropoles-2026-master-pagamentos"
     ],
+    "categoria_juridica": "investigado",
+    "retrato": {
+      "arquivo": "retratos/daniel-vorcaro.webp",
+      "autor": "Márcio Gustavo Vasconcelos",
+      "licenca": "CC0",
+      "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Daniel_Vorcaro_-_2024.jpg",
+      "arquivo_commons": "File:Daniel Vorcaro - 2024.jpg",
+      "base64": "data:image/webp;base64,UklGRjwDAABXRUJQVlA4IDADAACwEQCdASpYAGAAPqlOoE0mJDSxJHZrWpAVCWcDsB5UcggagrKbyW4hZ+MgUHyWho76uKYeZqzzro7Im8fbg2/dQdUsTXfLgp6FYR0r+bN3GYVMHuRbOvc/sjk8Vnb8UleQHwf3TQLBG6poQpB4tmHCvni/xW2G2oF97INdS9V4FIU3qXDM8D/NEugobIN7aBG/mLv46aAA/uyz7uoz5bYA3uUSllmm+CoJMtiDeixuab3yQ7OVcN7yYjHrwTp6rJIpg+abPkKCV3n++oC0b6f2uLNX+BGEUBEpe/eyuSeWIc6XOqNMDBz0Gft3S1gK50GIyrjeI+IHZDa/4OUF4FQLe4tMHVZMrEJsVNhUSlKtNM9OuWNYwwH+ufdL6xluDBuUiCVkT64yoY5TYXor7BlRfSBYfMFW0BZXSSXdEVmnRgzz5H/zkgDmxsMDUc6OxQvF86HLzLuCLemnfKfSsTJAjv5oEOtpRXvlslRIuoy27cmIeJMswbza6nungpLBjTUFShLQbDlJumYvupBSl4Ht5EOangPuEzE4x5pVg7+5gF0ZG+p9wtCBqL+Tadhy1QZVxmYZ6JFlarKzCT6TW2/EK9Vb1OB7qCw0pW1oMArzc+uYNysxoscALokZkHOKoqDSThd5RUK/gVhsTFeBg763DE0x9/D3Iy5FyCKQqxV4AOS3OI6/JeLe6VyoNYXBM5CPpqpy4HG9xxi8u5XZ29HlbjB78HOleSpDwiPcE61fOHD08CdrDQ7OVFN46dpdkqtdGuHO+/3d5VxtlmpnCskR1JZKwzr87UB76P50f2lAoqJczYpgmztWuo47XsV1IIaEEnJ3yWMXnbEZ/lpYee3vJVa8ncEBEwbHVhg8MYzSHa1E72i0GrhP0heKe6rHYAZvnjOT+7LZoVJdIU811Z8tFJ84D3Irh/qIi9rXw8nIWQx0xoIQEyoqBU8OJE4hUUGzXfQjUfWxQahjK0BZdtQ7PRi0VQZUBcI5Ys7VRYFYaGiaK/BosA/MFcuivIZnbLb805/VD698f5uqS32Tt8Qr+s69Snj5AR16OsqEGi3KG9bAC2mtYlgmGcKZr6XwyAA="
+    },
     "escandalos": [
       "esc-banco-master"
     ],
@@ -1760,6 +2166,7 @@
   },
   {
     "id": "gabriel-galipolo",
+    "wikidata_qid": "Q118333955",
     "nome": "Gabriel Galípolo",
     "tipo": "pessoa",
     "ocupacao": "Presidente do Banco Central (desde 2025)",
@@ -1778,6 +2185,16 @@
     "fontes": [
       "poder360-2026-vorcaro-lula"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/gabriel-galipolo.webp",
+      "autor": "Agência Senado",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Gabriel_Gal%C3%ADpolo_in_2023.jpg",
+      "arquivo_commons": "File:Gabriel Galípolo in 2023.jpg",
+      "base64": "data:image/webp;base64,UklGRi4EAABXRUJQVlA4ICIEAABQFwCdASpIAGAAPqVEm0kmI6KhMBVdUMAUiWMAw6S1EvDMvqwZBf3O8DQPTQJrOyXdevWkSobBAq9bj9L3pgqa+4FZkc3OiI+Y7tKppIooePTTck2/u2aEZ8QMwJvxmoTxb/vAX+b1Bv65mFMth/RKeliCfdMuxMNxxDjLWbuTRAZ+hiv/483BkpZph39UTSX7sSbIabphi9yOd7u00rtFplQNBsAZxPu75W1kU/MNenhmfZgkHRQtW4x946e9vZSB6sAA/q78A6DVjl4PPI0USZYgttdLZGIaUq+7Ji10hvUgdK2PGdqg/ILRhgRV33GRcMczWQoFlsXIj7izf46VziOI//3Q05+G7kCriYvQI2ywUml4Fn48DRfUS2EeV/mD4gdpR0PZNRxTzZ6ana58asHqWv8BwuEfttZIo1KrWPDWaPIS4YFMXqlRcAjtvC26aKYML5kF6LHoRPR0MoYNlI9lC/t2kNstOIZ0pC2sHB58VL7fU5mGyTBy0c3XbVvXzXNExZTYsDOUz3aoNnj8Jbc9k/NzR7tbUQPD9mvPTL4WaSvnEXl+zxa/VhzRveUk/b+qM0HRqIfczho7bjzmBHfZwepNAlnb6S3OxWCKl8UDI4tc6slZXbNKVLsmlRWtB4VP8UhQeZrWtzrsFhXzCQDZTvyzgtmimH4PF6jHILjg2RbrRL2XS+sDJvmO6KoabfDpKhYlWJd4hh2WYWkfC9wdQ1ss0DyN3bv75UzPiyl+YNwTjXQsLa3S9X9ra3oWWPQJqeHMjxVBkpj7Q0QKXb+kIWoF3aVXgzL2CLASnBNI8x2dwhQ/IAuD6yNJAdGtbuU/EnK8lP4KqPW6nuyeIA8GZeM+7XKokPHyKR+pr9MI5AoHmTVeSpUiJv9qJ9LzU9R2U11ABBgOIn6M3ejR16GFxt8axbiV/fBZH0BaPJPS+oLg8PnFMEaKPZFjLUD/M5xQVD/YSoMmw1iXn8SMR9mguVHMe4uFLWJdjUxLiO+EMGgunv/IyuN+dnW5J2ePrwJzez/Ik9KRRXHb6nUfxXHL5ZzlptdJuEEjiNLQ9Of0QL3VSEuZX/YkO1cz0hmCcEI1oOIPHJgZbvQtIIawooGzkUwcDVeqIUwEN4pYZg29S3TTXs///DalgPMMsneSfNw8aOop5SpZeYCP0q1eWua9VipcEJrcDq41jHjhK0UgnukZSIjgQtUeZEoqSB1B9wTrd/pVtMy4MVmRZz2VAZeryjb+TzEudHev0uPo3OkfcJlBy2pr0c5LqhCna3+soZjctFna21aRnzA47MD9if7PvPMXxJfayFamdo1pijy2m4vM0EmTsSXSkG0o55Vc8X8ZMFWiIdOn5Ms6gkaHtuEGTkNVMMg122v+D9mQFtswY3NoTrAPvhyVmdYZADSAAA=="
+    },
     "escandalos": [
       "esc-banco-master"
     ],
@@ -1789,6 +2206,7 @@
   },
   {
     "id": "rui-costa",
+    "wikidata_qid": "Q10365240",
     "nome": "Rui Costa",
     "tipo": "pessoa",
     "ocupacao": "Ministro da Casa Civil",
@@ -1812,6 +2230,16 @@
       "poder360-2026-vorcaro-lula",
       "oglobo-2026-02-05-lula-vorcaro"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/rui-costa.webp",
+      "autor": "Palácio do Planalto from Brasilia, Brasil",
+      "licenca": "CC BY 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:Rui_Costa_2023.jpg",
+      "arquivo_commons": "File:Rui Costa 2023.jpg",
+      "base64": "data:image/webp;base64,UklGRhwEAABXRUJQVlA4IBAEAAAwFQCdASpIAGAAPqlGnksmI6MiqJIOKMAVCWIAxJQOz0GHkBSte88sCUenLt1BrTx69DlqpxrU9jhVQwi946CaZn5/AgV/CKrFzhlmgcN6XwVZdHxG7Ka6drLG+/a0ebV0fvslXZmZ7BUNc1c5PT81Fo5Kqf9r4lGzKGDbU1GxtRadXX5HUpplBiAsUFaTRwp4HaHFEy++E/qGoOFAHd6Pxb4tL6BIlEj0CHCMDqBNrw8AAP7vjHeAY76+I1whr9u5m+drKhnJgxIpM93sNcHmtA19JkHbH+rmuWL3BlNN5vSN7c1Ioy8UUCmmC+plNbtaZcb4XcrkhCa/I8COzujFCpRzM4MEmEulVcQmvHQfPQMQDMk5lSLDn41Wp6l/+rP/BdgBuCbVNa7RzcWWWD94DYYYSoUxb/slT0tbwcuuW2JjD3NS5r/IDhgGoIVmfIqtALtUtYjJjjXAI3wCYQ+eZdWIx6fZUINhy98gVXE4QfCNQzuCZ2lpoppKtusWdEE3ScJTdIhP2RGJIs82l58ZLDY4m+wqsVjs1WjFWEZjik/hWUOK8RQgjwGCBsX2v+bSajHbfpyEb3Nnq7bzVtSonmpoQsNdfSrl8CVx2n398PloJpi6ol7JmcAWQHFr2ghXVV/pY9sJvSkIz9eDaXuA21PlE/h48QVKv8SJ+jG1tluRefB0uJI7hhTNC7ZGI2JmTq6Stq1c2nj73hFzzX7MYuvsIymeyFnPIMIQ69AkyDD+aTmH6UoXmKcfPFFs/AWRMgnyMr3rV08+JFiDp9C/vMOnTGKUFvDqVCduBiR30tleeyhPAmZXYiPM6bjAIvHg95UNT9TX2dtFnEUxbhVKeQCA4PjdOLpbei5oLPHHXotvjGlgJfN10r9qBRa/hyOlNdjNufNfnUlPEhd/fD9z0OSqiRYuaOHDyaIIZ1kLzDf6JhXAkz4///3zV2ROoAdyUS56AJJNa8GqfhgEwlSslI7bjTGBhfJ8Re6GV1NJskf3q8ACZuxoHgx+mu0DQadVeQAhq2o2LnGdPr8zjL81TA3nCHKU2PzlLwsnEqlMWzshssooqan4GnR4GovDdjTGc0P4ED9fITTsBbU4BIoCS+m4nAU1xgRjQb++5ouR//tRVJxhseEBGtDrY1kNhmSzAYTeddEuFT5mZ2NO1+52awzqxevk/7XhZLxdxt9yArHRWAmZUsHMAUsYiPY4wxqwxwme7AZmyTDf+VaFlSWJRZ7VH97FI+++P74R5cNrX3dO5LB4aGOfz7FTfR/drexTK4tk3nzjHflXE31d7dPC0n2wVxAe/Kik9/U5JbtqiR/BytPKAsmt/Qt/45KBy/8YVv27fB/f43OTscrpxrh8EGxITAENG7jUyBBxQc2QAA=="
+    },
     "escandalos": [
       "esc-banco-master"
     ],
@@ -1822,6 +2250,7 @@
   },
   {
     "id": "alexandre-silveira",
+    "wikidata_qid": "Q16336362",
     "nome": "Alexandre Silveira",
     "tipo": "pessoa",
     "ocupacao": "Ministro de Minas e Energia",
@@ -1841,6 +2270,16 @@
       "poder360-2026-vorcaro-lula",
       "valor-2026-01-26-vorcaro"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": {
+      "arquivo": "retratos/alexandre-silveira.webp",
+      "autor": "Alexandre  Silveira",
+      "licenca": "CC BY-SA 2.0",
+      "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "url_origem": "https://commons.wikimedia.org/wiki/File:F%C3%B3rum_Mobilidade_Urbana,_na_ALMG.jpg",
+      "arquivo_commons": "File:Fórum Mobilidade Urbana, na ALMG.jpg",
+      "base64": "data:image/webp;base64,UklGRvIDAABXRUJQVlA4IOYDAADwEwCdASpBAGAAPqVEnEkmI6KhLfYtoMAUiWMAyBjQSKq8UBtBKdkLVm/O4p0muLjmyn5vpHtOELMaJhQSUHFYIoYMwOi0TxHn6vZTPb+MOo0rFPHalQUMryBGs74hN55RDm2vNBKnk2zCkg6IE55RHsYs47EfDq5EQJYYaFT1wOxnI3Y94kGKv4u9x9pLoIQySOBHx4444Ok0bRwVnFg79Y+GiNbvewwA/vpbCOX9tGitYMtFslU3pFvCN97KDlIyYl2leDs3YoYY9HKxTqZAGaeapDOzej3rxi9XsBz73fV1vSWxAhmdcVomCBiQzGWk4WH95R8pspNrzORbtj++eZ82ptr+RoEj+qT8ZkmtmgV+eGTELd6n023Z016JrKKHEdoeidNQPvZlzVkL8+nP1uqz7X0HlhhZfh4VIERKZO6y+ggEX/AHFdc1y4Y3BOyEnGZ1IHzSXhU4645cJiwIcsOsJ5Ixt7Ji7AdgBxepH+RfzWXqlTpUMnu9WqqsoS7hXrfulHAjRtV7bNf9jJqzYzKt6c0AB4k+5dOjMvV9Wx3PipDUiGOE9dS8eYv2K/yNaO8ubJx/1BNbESti5bMovkdaeQBEKX5NAJqenXJCs6pKtOcv4AuH4BY5dCsNAh9uzVzLlTxsZFfyMOrETkcDJmhEw3y1XIP72mNJR6L1uABGaTg/J2KWA4CXQJwviI/oPPrKPWI+JvPiK+UsbF/P4xy+qHcofrZOi2a7BTqjyS73gbHE2nAeJ/hjGJHVyEe01KTgKb06XSFdDvO1hQ38LdNR8x4oG55NswjQwRPtRl/nNpxEwxlVjTquGkBL2eJ0N2mxydslDB5LfUbsHQpAi5oCAlm/OnuwdpC6a2clGgDyNMIH/RJtcNHH4MgFUnmDtoDpFM6TWQzC12um/ZuWwDV3LQKJorrVKQ/xBS4hiBUdKX1AxC0vxtcsmCdg/LEJqR4FhhwS5ko4sLJsKzaf2g9n8B21t95KlhkU1H4aisv0CnP2e4uPEwaMZk+sp/3ivVYq2yt1P8MWvJDmt83fEg+8qivhuip0uqB3oPfo82dRPxvtUed7k3kSq1Ys7cS0MOvmfBiOQen4H7VuEpdNONvBfyTYN7HK5eehkzNEhVmQew2EIYhoPpQ+mMPBtz1Bg4cVbGSo+ewk/DiDF70fzf5vi5Zc9e+PMjZUsk6wWa+BcgeSEFmjuvLL5CdQhMtk9Pch0rkQk7btzgg5UYWk20cajaN6hv4Dhbx/qfkeL16CiDclapKw4NesflhwWMnL5H92aaicha9s+EnIjeEhA6WlRcuoHzoGxk9uIv4y04GUmQAAAA=="
+    },
     "escandalos": [
       "esc-banco-master"
     ],
@@ -1851,6 +2290,7 @@
   },
   {
     "id": "augusto-lima",
+    "wikidata_qid": null,
     "nome": "Augusto Lima",
     "tipo": "pessoa",
     "ocupacao": "Ex-CEO do Banco Master",
@@ -1869,6 +2309,8 @@
     "fontes": [
       "poder360-2026-vorcaro-lula"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-banco-master"
     ],
@@ -1879,6 +2321,7 @@
   },
   {
     "id": "marcola",
+    "wikidata_qid": null,
     "nome": "Marco Aurélio Santana Ribeiro (Marcola)",
     "tipo": "pessoa",
     "ocupacao": "Chefe do Gabinete Pessoal da Presidência",
@@ -1897,6 +2340,8 @@
     "fontes": [
       "poder360-2026-vorcaro-lula"
     ],
+    "categoria_juridica": "sem_informacao",
+    "retrato": null,
     "escandalos": [
       "esc-banco-master"
     ],

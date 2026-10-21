@@ -1,0 +1,322 @@
+[
+  {
+    "pessoa_id": "lula",
+    "qid": "Q37181",
+    "arquivo_commons": "File:Foto oficial de Luiz Inácio Lula da Silva (estreita).jpg",
+    "autor": "Palácio do Planalto from Brasilia, Brasil",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Foto_oficial_de_Luiz_In%C3%A1cio_Lula_da_Silva_(estreita).jpg",
+    "arquivo_local": "lula.webp"
+  },
+  {
+    "pessoa_id": "marisa-leticia",
+    "qid": "Q4199383",
+    "arquivo_commons": "File:Marisa Letícia Lula da Silva.jpg",
+    "autor": "Ricardo Stuckert/Presidência da República",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Marisa_Let%C3%ADcia_Lula_da_Silva.jpg",
+    "arquivo_local": "marisa-leticia.webp"
+  },
+  {
+    "pessoa_id": "jose-dirceu",
+    "qid": "Q1791320",
+    "arquivo_commons": "File:José Dirceu.jpg",
+    "autor": "José CRuz/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Dirceu.jpg",
+    "arquivo_local": "jose-dirceu.webp"
+  },
+  {
+    "pessoa_id": "delubio-soares",
+    "qid": "Q5254980",
+    "arquivo_commons": "File:DelubioSoares113731.jpg",
+    "autor": "Antonio Cruz/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:DelubioSoares113731.jpg",
+    "arquivo_local": "delubio-soares.webp"
+  },
+  {
+    "pessoa_id": "antonio-palocci",
+    "qid": "Q603993",
+    "arquivo_commons": "File:Antonio Palloci.jpg",
+    "autor": "the International Monetary Fund",
+    "licenca": "Public domain",
+    "licenca_url": "",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Antonio_Palloci.jpg",
+    "arquivo_local": "antonio-palocci.webp"
+  },
+  {
+    "pessoa_id": "guido-mantega",
+    "qid": "Q1359689",
+    "arquivo_commons": "File:Guido mantega.jpg",
+    "autor": "Roosewelt Pinheiro/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Guido_mantega.jpg",
+    "arquivo_local": "guido-mantega.webp"
+  },
+  {
+    "pessoa_id": "dilma-rousseff",
+    "qid": "Q40722",
+    "arquivo_commons": "File:04-06-2024 Reunião com a Presidente do Novo Banco de Desenvolvimento Dilma Rousseff (53769684843) (cropped).jpg",
+    "autor": "Vice-Presidência da República",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:04-06-2024_Reuni%C3%A3o_com_a_Presidente_do_Novo_Banco_de_Desenvolvimento_Dilma_Rousseff_(53769684843)_(cropped).jpg",
+    "arquivo_local": "dilma-rousseff.webp"
+  },
+  {
+    "pessoa_id": "joao-vaccari",
+    "qid": "Q10312284",
+    "arquivo_commons": "File:Vaccari.JPG",
+    "autor": "Roosewelt Pinheiro/Abr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Vaccari.JPG",
+    "arquivo_local": "joao-vaccari.webp"
+  },
+  {
+    "pessoa_id": "gilberto-carvalho",
+    "qid": "Q10289545",
+    "arquivo_commons": "File:Gilberto carvalho 2011.jpg",
+    "autor": "Antonio Cruz/ABr",
+    "licenca": "CC BY 2.5 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.5/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Gilberto_carvalho_2011.jpg",
+    "arquivo_local": "gilberto-carvalho.webp"
+  },
+  {
+    "pessoa_id": "paulo-okamotto",
+    "qid": "Q10346731",
+    "arquivo_commons": "File:Paulo Okamotto.jpg",
+    "autor": "Fabio Pozzebom/ABr, remix pelo uploader",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Paulo_Okamotto.jpg",
+    "arquivo_local": "paulo-okamotto.webp"
+  },
+  {
+    "pessoa_id": "jose-carlos-bumlai",
+    "qid": "Q27835253",
+    "arquivo_commons": "File:José Carlos Bumlai.jpg",
+    "autor": "(Valter Campanato/Agência Brasil)",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Carlos_Bumlai.jpg",
+    "arquivo_local": "jose-carlos-bumlai.webp"
+  },
+  {
+    "pessoa_id": "marcelo-odebrecht",
+    "qid": "Q1893387",
+    "arquivo_commons": "File:Marcelo Bahia Odebrecht.jpg",
+    "autor": "World Economic Forum from Cologny, Switzerland",
+    "licenca": "CC BY-SA 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Marcelo_Bahia_Odebrecht.jpg",
+    "arquivo_local": "marcelo-odebrecht.webp"
+  },
+  {
+    "pessoa_id": "cristiano-zanin",
+    "qid": "Q85870824",
+    "arquivo_commons": "File:17.06.2026 - Cristiano Zanin (cropped).jpg",
+    "autor": "Rosinei Coutinho/STF",
+    "licenca": "Public domain",
+    "licenca_url": "",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:17.06.2026_-_Cristiano_Zanin_(cropped).jpg",
+    "arquivo_local": "cristiano-zanin.webp"
+  },
+  {
+    "pessoa_id": "sergio-moro",
+    "qid": "Q19607958",
+    "arquivo_commons": "File:Senadores da 57ª Legislatura (52689302414).jpg",
+    "autor": "Agência Senado from Brasilia, Brazil",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689302414).jpg",
+    "arquivo_local": "sergio-moro.webp"
+  },
+  {
+    "pessoa_id": "edson-fachin",
+    "qid": "Q10320705",
+    "arquivo_commons": "File:Luiz Edson Fachin-12-05.2015.jpg",
+    "autor": "Marcelo Camargo/Agência Brasil",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Luiz_Edson_Fachin-12-05.2015.jpg",
+    "arquivo_local": "edson-fachin.webp"
+  },
+  {
+    "pessoa_id": "gilmar-mendes",
+    "qid": "Q2362405",
+    "arquivo_commons": "File:Gilmar Mendes.jpg",
+    "autor": "Fabio Rodrigues Pozzebom/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Gilmar_Mendes.jpg",
+    "arquivo_local": "gilmar-mendes.webp"
+  },
+  {
+    "pessoa_id": "ricardo-lewandowski",
+    "qid": "Q7322696",
+    "arquivo_commons": "File:Ricardo Lewandowski 2011.jpg",
+    "autor": "Renato Araújo/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Ricardo_Lewandowski_2011.jpg",
+    "arquivo_local": "ricardo-lewandowski.webp"
+  },
+  {
+    "pessoa_id": "dias-toffoli",
+    "qid": "Q10266077",
+    "arquivo_commons": "File:Toffoli aniversario da constituição.jpg",
+    "autor": "Geraldo Magela/Agência Senado",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Toffoli_aniversario_da_constitui%C3%A7%C3%A3o.jpg",
+    "arquivo_local": "dias-toffoli.webp"
+  },
+  {
+    "pessoa_id": "delcidio-amaral",
+    "qid": "Q10264823",
+    "arquivo_commons": "File:Delcidio amaral.jpg",
+    "autor": "José Cruz/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Delcidio_amaral.jpg",
+    "arquivo_local": "delcidio-amaral.webp"
+  },
+  {
+    "pessoa_id": "nestor-cervero",
+    "qid": "Q18278628",
+    "arquivo_commons": "File:Nestor cervero.jpg",
+    "autor": "Antonio Cruz/ABr",
+    "licenca": "CC BY 3.0 br",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Nestor_cervero.jpg",
+    "arquivo_local": "nestor-cervero.webp"
+  },
+  {
+    "pessoa_id": "andre-esteves",
+    "qid": "Q9614196",
+    "arquivo_commons": "File:André Esteves Entrevista 2.jpg",
+    "autor": "Luiz Prado",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Esteves_Entrevista_2.jpg",
+    "arquivo_local": "andre-esteves.webp"
+  },
+  {
+    "pessoa_id": "careca-do-inss",
+    "qid": "Q135213575",
+    "arquivo_commons": "File:CPMI - INSS - Comissão Parlamentar Mista de Inquérito do INSS - 2025 (54811649739).jpg",
+    "autor": "Agência Senado from Brasilia, Brazil",
+    "licenca": "CC BY-SA 4.0",
+    "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:CPMI_-_INSS_-_Comiss%C3%A3o_Parlamentar_Mista_de_Inqu%C3%A9rito_do_INSS_-_2025_(54811649739).jpg",
+    "arquivo_local": "careca-do-inss.webp"
+  },
+  {
+    "pessoa_id": "roberta-luchsinger",
+    "qid": "Q141793366",
+    "arquivo_commons": "File:2018 ROBERTA LUCHSINGER CANDIDATA DEPUTADO ESTADUAL SP (250000624055).jpg",
+    "autor": "Unknown authorUnknown author",
+    "licenca": "CC BY 4.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/4.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:2018_ROBERTA_LUCHSINGER_CANDIDATA_DEPUTADO_ESTADUAL_SP_(250000624055).jpg",
+    "arquivo_local": "roberta-luchsinger.webp"
+  },
+  {
+    "pessoa_id": "carlos-lupi",
+    "qid": "Q9697177",
+    "arquivo_commons": "File:Carlos Lupi. CAS - Comissão de Assuntos Sociais (cropped).jpg",
+    "autor": "Geraldo Magela/Agência Senado",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Carlos_Lupi._CAS_-_Comiss%C3%A3o_de_Assuntos_Sociais_(cropped).jpg",
+    "arquivo_local": "carlos-lupi.webp"
+  },
+  {
+    "pessoa_id": "alfredo-gaspar",
+    "qid": "Q115500037",
+    "arquivo_commons": "File:Alfredo Gaspar em sessão da Câmara 2024.jpg",
+    "autor": "Bruno Spada/Câmara dos Deputados",
+    "licenca": "CC BY 3.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Alfredo_Gaspar_em_sess%C3%A3o_da_C%C3%A2mara_2024.jpg",
+    "arquivo_local": "alfredo-gaspar.webp"
+  },
+  {
+    "pessoa_id": "marco-aurelio-carvalho",
+    "qid": "Q85875257",
+    "arquivo_commons": "File:2025-11-05 Marco Aurélio de Carvalho recebe a medalha da Ordem do Mérito da DPU, 002 (cropped).jpg",
+    "autor": "Defensoria Pública da União - DPU",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:2025-11-05_Marco_Aur%C3%A9lio_de_Carvalho_recebe_a_medalha_da_Ordem_do_M%C3%A9rito_da_DPU,_002_(cropped).jpg",
+    "arquivo_local": "marco-aurelio-carvalho.webp"
+  },
+  {
+    "pessoa_id": "andre-janones",
+    "qid": "Q59284492",
+    "arquivo_commons": "File:AndreJanones1.jpg",
+    "autor": "Câmara dos Deputados do Brasil",
+    "licenca": "CC BY 3.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/3.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:AndreJanones1.jpg",
+    "arquivo_local": "andre-janones.webp"
+  },
+  {
+    "pessoa_id": "renan-filho",
+    "qid": "Q10359235",
+    "arquivo_commons": "File:Senadores da 57ª Legislatura (52689452405).jpg",
+    "autor": "Agência Senado from Brasilia, Brazil",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Senadores_da_57%C2%AA_Legislatura_(52689452405).jpg",
+    "arquivo_local": "renan-filho.webp"
+  },
+  {
+    "pessoa_id": "daniel-vorcaro",
+    "qid": "Q133259974",
+    "arquivo_commons": "File:Daniel Vorcaro - 2024.jpg",
+    "autor": "Márcio Gustavo Vasconcelos",
+    "licenca": "CC0",
+    "licenca_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Daniel_Vorcaro_-_2024.jpg",
+    "arquivo_local": "daniel-vorcaro.webp"
+  },
+  {
+    "pessoa_id": "gabriel-galipolo",
+    "qid": "Q118333955",
+    "arquivo_commons": "File:Gabriel Galípolo in 2023.jpg",
+    "autor": "Agência Senado",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Gabriel_Gal%C3%ADpolo_in_2023.jpg",
+    "arquivo_local": "gabriel-galipolo.webp"
+  },
+  {
+    "pessoa_id": "rui-costa",
+    "qid": "Q10365240",
+    "arquivo_commons": "File:Rui Costa 2023.jpg",
+    "autor": "Palácio do Planalto from Brasilia, Brasil",
+    "licenca": "CC BY 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:Rui_Costa_2023.jpg",
+    "arquivo_local": "rui-costa.webp"
+  },
+  {
+    "pessoa_id": "alexandre-silveira",
+    "qid": "Q16336362",
+    "arquivo_commons": "File:Fórum Mobilidade Urbana, na ALMG.jpg",
+    "autor": "Alexandre  Silveira",
+    "licenca": "CC BY-SA 2.0",
+    "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url_origem": "https://commons.wikimedia.org/wiki/File:F%C3%B3rum_Mobilidade_Urbana,_na_ALMG.jpg",
+    "arquivo_local": "alexandre-silveira.webp"
+  }
+]

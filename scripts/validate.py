@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Validate the published data using only the Python standard library."""
 
+from legal_category import legal_category, CATEGORIES
+import base64
+import csv
+import re
 import json
 import math
 from pathlib import Path
@@ -128,6 +132,8 @@ def main():
 
     for node in records("nodes"):
         label = f"node {node.get('id')!r}"
+        category = node.get("categoria_juridica")
+        check("Legal category", category in CATEGORIES and category == legal_category(node, indexes["sources"]), f"{label}: invalid category or missing valid person source")
         value = node.get("proximidade_lula")
         check("Proximity", type(value) in (int, float) and math.isfinite(value) and 0 <= value <= 1,
               f"{label}.proximidade_lula must be a number in [0, 1]")
@@ -138,6 +144,71 @@ def main():
         check("Dataset counts", isinstance(combined, list) and len(combined) == len(loaded[name]),
               f"dataset.{key}: expected {len(loaded[name])}, got "
               f"{len(combined) if isinstance(combined, list) else 'missing/non-list'}")
+
+    # Image metadata is a local, auditable input; no Commons requests at runtime.
+    try:
+        credits = json.loads((DATA / "creditos-imagens.json").read_text(encoding="utf-8"))
+        qids = json.loads((DATA / "wikidata-qids.json").read_text(encoding="utf-8"))
+        with (DATA / "creditos-imagens.csv").open(encoding="utf-8", newline="") as handle:
+            csv_credits = list(csv.DictReader(handle))
+        check("Portrait credits", isinstance(credits, list), "credits must be a list")
+        credits = credits if isinstance(credits, list) else []
+        check("Portrait credits", csv_credits == credits, "CSV and JSON credits differ")
+    except (OSError, ValueError) as exc:
+        check("Portrait credits", False, str(exc))
+        credits, qids = [], {}
+    check("Wikidata", isinstance(qids, dict), "QID mapping must be an object")
+    qids = qids if isinstance(qids, dict) else {}
+    for ident, qid in qids.items():
+        check("Wikidata", ident in indexes["nodes"] and isinstance(qid, str) and bool(re.fullmatch(r"Q\d+", qid)),
+              f"invalid mapping {ident!r}: {qid!r}")
+    check("Wikidata", len(set(qids.values())) == len(qids), "duplicate people in QID mapping")
+    credit_index, image_files = {}, set()
+    fields = {"pessoa_id", "qid", "arquivo_commons", "autor", "licenca", "licenca_url", "url_origem", "arquivo_local"}
+    for credit in credits:
+        if not isinstance(credit, dict):
+            check("Portrait credits", False, "credit must be an object")
+            continue
+        ident = credit.get("pessoa_id")
+        check("Portrait credits", set(credit) == fields and all(nonempty(credit.get(k)) for k in fields - {"licenca_url"}) and isinstance(credit.get("licenca_url"), str),
+              f"{ident}: missing or invalid credit fields")
+        check("Portrait credits", isinstance(ident, str) and ident in indexes["nodes"] and ident not in credit_index,
+              f"unknown or duplicate person {ident!r}")
+        if not isinstance(ident, str):
+            continue
+        credit_index[ident] = credit
+        check("Portrait license", bool(re.fullmatch(r"(?:CC0|Public domain|CC BY(?:-SA)? \d+\.\d+(?: [a-z]{2})?)", credit.get("licenca", ""))),
+              f"{ident}: license must be free, without NC/ND")
+        try:
+            origin = urlsplit(credit.get("url_origem", ""))
+            valid_origin = origin.scheme == "https" and origin.hostname == "commons.wikimedia.org" and not origin.username and not origin.password
+        except ValueError:
+            valid_origin = False
+        check("Portrait origin", valid_origin, f"{ident}: origin must be HTTPS Wikimedia Commons")
+        check("Portrait license", http_url(credit.get("licenca_url")) or credit.get("licenca") in {"CC0", "Public domain"} and credit.get("licenca_url") == "", f"{ident}: invalid license URL")
+        filename = credit.get("arquivo_local", "")
+        safe = isinstance(filename, str) and bool(re.fullmatch(r"[a-z0-9-]+\.webp", filename))
+        check("Portrait files", safe and (DATA.parent / "app/public/retratos" / filename).is_file(),
+              f"{ident}: missing or invalid local image {filename!r}")
+        check("Portrait files", filename not in image_files, f"duplicate image {filename!r}")
+        image_files.add(filename)
+        check("Wikidata", credit.get("qid") == qids.get(ident) and ident in qids,
+              f"{ident}: credit QID differs from mapping")
+    actual_images = {p.name for p in (DATA.parent / "app/public/retratos").glob("*.webp")}
+    check("Portrait files", actual_images == image_files, "local images and credits must correspond exactly")
+    dataset_people = loaded["dataset"].get("personagens", [])
+    check("Dataset consistency", dataset_people == loaded["nodes"], "dataset.personagens differs from nodes.json")
+    for node in records("nodes"):
+        ident = node["id"]
+        qid = node.get("wikidata_qid")
+        check("Wikidata", "wikidata_qid" in node and (qid is None or isinstance(qid, str) and bool(re.fullmatch(r"Q\d+", qid))) and qid == qids.get(ident),
+              f"{ident}: invalid or inconsistent QID")
+        credit = credit_index.get(ident)
+        expected = dict(arquivo="retratos/" + credit["arquivo_local"], **{k: credit.get(k) for k in ("autor", "licenca", "licenca_url", "url_origem", "arquivo_commons")}) if credit and isinstance(credit.get("arquivo_local"), str) else None
+        if expected:
+            expected["base64"] = "data:image/webp;base64," + base64.b64encode((DATA.parent / "app/public/retratos" / credit["arquivo_local"]).read_bytes()).decode()
+        check("Portrait mapping", "retrato" in node and node.get("retrato") == expected,
+              f"{ident}: portrait differs from credits or has no credits")
 
     for path in sorted(DATA.rglob("*")):
         if path.is_file():

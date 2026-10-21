@@ -1,7 +1,18 @@
-import json,os
-B='/workspace/lulagate/scripts/'
+import json,os,base64
+from legal_category import legal_category, CATEGORIES
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+B = str(ROOT / 'scripts') + '/'
 for f in ['build_sources.py','build_nodes.py','build_edges.py','build_cases.py','build_extra.py']: exec(open(B+f).read())
-D='/workspace/lulagate/data'
+D = str(ROOT / 'data')
+creditos = json.loads((ROOT / 'data/creditos-imagens.json').read_text(encoding='utf-8'))
+por_pessoa = {c['pessoa_id']: c for c in creditos}
+for n in N:
+    c = por_pessoa.get(n['id'])
+    n['categoria_juridica'] = legal_category(n, S)
+    n['retrato'] = dict(arquivo='retratos/' + c['arquivo_local'], **{k: c[k] for k in ('autor', 'licenca', 'licenca_url', 'url_origem', 'arquivo_commons')}) if c else None
+    if c:
+        n['retrato']['base64'] = 'data:image/webp;base64,' + base64.b64encode((ROOT / 'app/public/retratos' / c['arquivo_local']).read_bytes()).decode()
 SD={k:v['data'] for k,v in S.items()}
 for e in E:
     if e['periodo'] is None: e['periodo']=dict(inicio=None,fim=None)
@@ -22,6 +33,7 @@ meta=dict(titulo='Lula Gate',idioma='pt-BR',data_corte='2026-10-20',versao='0.1.
  leitura_conexoes="Cada conexão vai de 'origem' para 'destino'; o 'rotulo' descreve o que a origem é em relação ao destino.")
 for name,obj in [('nodes',N),('edges',E),('sources',sources),('cases',C),('groups',groups)]:
     json.dump(obj,open(f'{D}/{name}.json','w'),ensure_ascii=False,indent=2)
+meta['categorias_juridicas'] = CATEGORIES
 meta['metodologia']=open(D+'/metodologia.md').read() if os.path.exists(D+'/metodologia.md') else None
 json.dump(dict(meta=meta,personagens=N,conexoes=E,escandalos=C,grupos=groups,fontes=sources),open(f'{D}/dataset.json','w'),ensure_ascii=False,indent=2)
 print(len(N),len(E),len(C),len(sources),len(groups))
