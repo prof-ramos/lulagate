@@ -14,8 +14,9 @@ test('parallel slots are canonical and stable after filtering, including reverse
  assert.equal(slots.get('a'),-.5);assert.equal(slots.get('z'),.5);
 
 });
-test('all editorial proximity boundaries retain exact methodology semantics',()=>{
- assert.deepEqual([1,.9,.89,.7,.69,.5,.49,.3,.29,.1,.09,.01,0].map(proximityBand),[0,0,1,1,2,2,3,3,4,4,5,5,6]);
+test('verbal proximity bands retain exact methodology semantics without public scores',()=>{
+ assert.deepEqual(PROXIMITY_BANDS.map(b=>proximityBand(b.label)),[0,1,2,3,4,5,6]);
+ assert.equal(proximityBand('não classificado'),-1);
  assert.match(PROXIMITY_BANDS[5].label,/apenas contexto/);assert.match(PROXIMITY_BANDS[6].label,/nenhum vínculo/);
 });
 test('status legend and paths can share one explicit pattern configuration',()=>{

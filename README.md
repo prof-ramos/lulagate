@@ -30,7 +30,7 @@ A saída configurada pelo Vite é `dist/` na raiz, não `app/dist/`.
 
 O build contém apenas `index.html` (JavaScript, CSS, dataset e retratos incorporados) e `og.png`. Não requer chamadas externas durante a exploração. Os links de fontes e créditos só abrem por ação do usuário.
 
-Categorias jurídicas derivadas: 3 condenado, 2 condenação anulada, 4 investigado, 17 absolvido / arquivado e 37 sem informação. Regra conservadora e suas limitações em [metodologia](data/metodologia.md#categorias-jurídicas-dos-nós). Nenhum texto factual foi alterado.
+Situação jurídica explícita por pessoa, com categoria, fonte, data e texto. Critérios e limites na [metodologia](data/metodologia.md#categorias-jurídicas-dos-nós). Correções em [CHANGELOG-PR-B.md](CHANGELOG-PR-B.md).
 
 ## Prévias locais
 

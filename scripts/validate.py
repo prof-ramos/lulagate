@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Validate the published data using only the Python standard library."""
 
-from legal_category import legal_category, CATEGORIES
+from situacoes import CATEGORIES
+from datetime import date
 from research import load_research
 import base64
 import csv
 import re
 import json
-import math
 from pathlib import Path
 import sys
 from urllib.parse import urlsplit
@@ -62,6 +62,10 @@ def main():
             loaded[name] = {} if name == "dataset" else []
 
     research = load_research()
+    authored = json.loads((DATA.parent / "scripts/situacoes.json").read_text())
+    check("Research situations", set(authored) == {p["id"] for p in research["N"]}, "every research person requires an explicit situation")
+    for ident, situation in authored.items():
+        check("Research situations", isinstance(situation, dict) and situation.get("categoria") in CATEGORIES and all(k in situation for k in ("categoria", "fonte_id", "data", "texto")) and nonempty(situation.get("texto")), f"{ident}: invalid explicit research situation")
     research_ids = {r['id'] for key in ('N', 'E') for r in research[key]}
     try:
         hidden = json.loads((DATA / 'ocultos.json').read_text(encoding='utf-8'))
@@ -151,11 +155,25 @@ def main():
 
     for node in records("nodes"):
         label = f"node {node.get('id')!r}"
-        category = node.get("categoria_juridica")
-        check("Legal category", category in CATEGORIES and category == legal_category(node, indexes["sources"]), f"{label}: invalid category or missing valid person source")
-        value = node.get("proximidade_lula")
-        check("Proximity", type(value) in (int, float) and math.isfinite(value) and 0 <= value <= 1,
-              f"{label}.proximidade_lula must be a number in [0, 1]")
+        situation = node.get("situacao")
+        check("Explicit situation", isinstance(situation, dict), f"{label}: missing situacao")
+        situation = situation if isinstance(situation, dict) else {}
+        category = situation.get("categoria")
+        check("Explicit situation", category in CATEGORIES, f"{label}: invalid categoria")
+        check("Explicit situation", all(k in situation for k in ("categoria", "fonte_id", "data", "texto")) and nonempty(situation.get("texto")), f"{label}: incomplete situacao")
+        check("Explicit situation", node.get("categoria_juridica") == category and node.get("situacao_juridica") == situation.get("texto"), f"{label}: display aliases differ from explicit situation")
+        check("No public scores", "proximidade_lula" not in node and "nivel_juridico" not in node, f"{label}: public numerical score")
+        if category not in {"sem_informacao", "institucional"}:
+            source = indexes["sources"].get(situation.get("fonte_id"), {})
+            check("Situation evidence", http_url(source.get("url")), f"{label}: missing valid situation source")
+            value = situation.get("data")
+            try:
+                valid = isinstance(value, str) and bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", value)) and date.fromisoformat(value) <= date.fromisoformat(loaded["dataset"]["meta"]["data_atualizacao"])
+            except (ValueError, TypeError, KeyError):
+                valid = False
+            check("Situation date", valid, f"{label}: invalid or future situation date")
+        explicit = authored.get(node.get("id"))
+        check("No derived situations", situation == explicit, f"{label}: situation differs from authored input")
         references(node, "grupos", "groups", label, group_objects=True)
 
     for name, key in COLLECTIONS.items():

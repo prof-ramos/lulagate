@@ -1,0 +1,380 @@
+{
+  "lula": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "stf-2021-03-08-fachin",
+    "data": "2021-03-08",
+    "texto": "Sem condenação vigente até 21/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição."
+  },
+  "marisa-leticia": {
+    "categoria": "sem_informacao",
+    "fonte_id": "agbr-2017-03-03-marisa",
+    "data": "2017-03-03",
+    "texto": "Não foi condenada. Punibilidade extinta em março de 2017 em razão da morte; não houve absolvição de mérito."
+  },
+  "lulinha": {
+    "categoria": "investigado",
+    "fonte_id": "g1-2026-07-31-inquerito",
+    "data": "2026-07-31",
+    "texto": "Investigado em dois inquéritos da PF autorizados pelo STF em 30 e 31/07/2026; segundo a PF, não é investigado pelas fraudes do INSS em si."
+  },
+  "luis-claudio": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Situação não levantada por este mapa. A fonte de 2023 confirma o trancamento em relação a Lula; não confirma o desfecho de Luís Cláudio."
+  },
+  "frei-chico": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Não investigado, segundo as reportagens."
+  },
+  "jose-dirceu": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "pr-a-factcheck-02",
+    "data": "2026-10-21",
+    "texto": "Pena da AP 470 extinta por indulto em 2016; pena no caso Apolo Tubulars extinta por prescrição em maio de 2024. Atos de Moro em duas ações penais anulados pelo STF na Pet 12229 em outubro de 2024."
+  },
+  "delubio-soares": {
+    "categoria": "sem_informacao",
+    "fonte_id": "stf-2016-03-10-delubio",
+    "data": "2016-03-10",
+    "texto": "Pena da AP 470 extinta por indulto concedido pelo STF em 10/03/2016. Desfechos de outros processos não levantados por este mapa."
+  },
+  "roberto-jefferson": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Situação não levantada por este mapa"
+  },
+  "antonio-palocci": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "pr-a-factcheck-08",
+    "data": "2025-08-15",
+    "texto": "Atos dos processos da Lava Jato anulados pelo STF em 2025; decisão mantida pela Segunda Turma em agosto de 2025. Delação mantida."
+  },
+  "guido-mantega": {
+    "categoria": "absolvido",
+    "fonte_id": "g1-2019-12-04-quadrilhao",
+    "data": "2019-12-04",
+    "texto": "Absolvido (2019)."
+  },
+  "dilma-rousseff": {
+    "categoria": "absolvido",
+    "fonte_id": "g1-2019-12-04-quadrilhao",
+    "data": "2019-12-04",
+    "texto": "Absolvida (2019)."
+  },
+  "joao-vaccari": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "pr-a-factcheck-10",
+    "data": "2025-08-15",
+    "texto": "Atos da Lava Jato anulados pelo STF em agosto de 2025. Processo Schahin anulado pelo STJ em 2021; absolvido no quadrilhão do PT em 2019."
+  },
+  "gilberto-carvalho": {
+    "categoria": "absolvido",
+    "fonte_id": "g1-2021-06-21-zelotes",
+    "data": "2021-06-21",
+    "texto": "Absolvido (2021)."
+  },
+  "paulo-okamotto": {
+    "categoria": "absolvido",
+    "fonte_id": "agbr-2017-07-okamotto",
+    "data": "2017-07-12",
+    "texto": "Absolvido (2017)."
+  },
+  "rosemary-noronha": {
+    "categoria": "arquivado",
+    "fonte_id": "folha-2021-10-19-rose",
+    "data": "2021-10-19",
+    "texto": "Não foi condenada na ação penal encerrada em 2021 após anulação das provas; a decisão admitia recurso. Destituída administrativamente em 2013."
+  },
+  "jose-carlos-bumlai": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "stj-2021-10-22-schahin",
+    "data": "2021-10-22",
+    "texto": "Condenação do caso Schahin anulada (STJ, 2021); absolvido no TRF4 (Atibaia, 2019)."
+  },
+  "leo-pinheiro": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "pr-a-factcheck-05",
+    "data": "2025-02-04",
+    "texto": "Condenações da Lava Jato anuladas pelo STF em setembro de 2024, com decisão mantida pela Segunda Turma em fevereiro de 2025; delação mantida. Prescrição reconhecida no caso Atibaia no DF em 2021."
+  },
+  "emilio-odebrecht": {
+    "categoria": "prescricao",
+    "fonte_id": "pr-a-factcheck-06",
+    "data": "2021-08-22",
+    "texto": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021."
+  },
+  "marcelo-odebrecht": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "pr-a-factcheck-11",
+    "data": "2024-09-06",
+    "texto": "Atos da 13ª Vara Federal de Curitiba na Lava Jato anulados pelo STF em 2024; nulidade mantida pela Segunda Turma, sem trancamento automático dos processos."
+  },
+  "alexandrino-alencar": {
+    "categoria": "prescricao",
+    "fonte_id": "pr-a-factcheck-06",
+    "data": "2021-08-22",
+    "texto": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021."
+  },
+  "emyr-costa": {
+    "categoria": "absolvido",
+    "fonte_id": "trf4-2019-11-27-atibaia",
+    "data": "2019-11-27",
+    "texto": "Absolvido (TRF4, 2019)."
+  },
+  "paulo-gordilho": {
+    "categoria": "absolvido",
+    "fonte_id": "trf4-2019-11-27-atibaia",
+    "data": "2019-11-27",
+    "texto": "Absolvido (TRF4, 2019)."
+  },
+  "fernando-bittar": {
+    "categoria": "condenacao_anulada",
+    "fonte_id": "pr-a-factcheck-06",
+    "data": "2021-08-22",
+    "texto": "Condenação de Atibaia anulada; nova denúncia rejeitada pela Justiça Federal do DF em agosto de 2021."
+  },
+  "kalil-bittar": {
+    "categoria": "arquivado",
+    "fonte_id": "poder360-2022-01-mapa",
+    "data": "2026-10-21",
+    "texto": "Investigação Mapa da Mina arquivada em janeiro de 2022, sem denúncia, após reconhecimento da ilicitude das provas."
+  },
+  "jonas-suassuna": {
+    "categoria": "arquivado",
+    "fonte_id": "poder360-2022-01-mapa",
+    "data": "2026-10-21",
+    "texto": "Investigação Mapa da Mina arquivada em janeiro de 2022, sem denúncia, após reconhecimento da ilicitude das provas."
+  },
+  "roberto-teixeira": {
+    "categoria": "absolvido",
+    "fonte_id": "trf4-2019-11-27-atibaia",
+    "data": "2019-11-27",
+    "texto": "Absolvido (TRF4, 2019)."
+  },
+  "rogerio-pimentel": {
+    "categoria": "absolvido",
+    "fonte_id": "trf4-2019-11-27-atibaia",
+    "data": "2019-11-27",
+    "texto": "Absolvido."
+  },
+  "cristiano-zanin": {
+    "categoria": "institucional",
+    "fonte_id": "stf-hc193726-decisao",
+    "data": "2021-03-08",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Advogado de Lula; depois ministro do STF."
+  },
+  "sergio-moro": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2017-07-sentenca-triplex",
+    "data": "2017-07-12",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-juiz da 13ª Vara Federal de Curitiba."
+  },
+  "gabriela-hardt": {
+    "categoria": "institucional",
+    "fonte_id": "uol-2019-02-06-atibaia",
+    "data": "2019-02-06",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juíza federal."
+  },
+  "edson-fachin": {
+    "categoria": "institucional",
+    "fonte_id": "stf-2021-03-08-fachin",
+    "data": "2021-03-08",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+  },
+  "gilmar-mendes": {
+    "categoria": "institucional",
+    "fonte_id": "lexml-hc164493",
+    "data": "2021-03-23",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+  },
+  "ricardo-lewandowski": {
+    "categoria": "institucional",
+    "fonte_id": "stf-2023-02-tres-acoes",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-ministro do STF; ministro da Justiça no governo Lula 3."
+  },
+  "dias-toffoli": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2023-09-06-toffoli",
+    "data": "2023-09-06",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+  },
+  "andre-mendonca": {
+    "categoria": "institucional",
+    "fonte_id": "agbr-2025-10-15-bloqueio",
+    "data": "2025-10-15",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+  },
+  "pollyanna-alves": {
+    "categoria": "institucional",
+    "fonte_id": "folha-2021-08-22-atibaia",
+    "data": "2021-08-22",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juíza da 12ª Vara Federal do DF."
+  },
+  "frederico-viana": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2021-06-21-zelotes",
+    "data": "2021-06-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 10ª Vara Federal do DF."
+  },
+  "marcus-bastos": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2019-12-04-quadrilhao",
+    "data": "2019-12-04",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 12ª Vara Federal do DF."
+  },
+  "ricardo-leite": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2018-07-12-obstrucao",
+    "data": "2018-07-12",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 10ª Vara Federal do DF."
+  },
+  "delcidio-amaral": {
+    "categoria": "absolvido",
+    "fonte_id": "g1-2018-07-12-obstrucao",
+    "data": "2018-07-12",
+    "texto": "Absolvido na ação de obstrução de Justiça (2018)."
+  },
+  "nestor-cervero": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Situação não levantada por este mapa"
+  },
+  "andre-esteves": {
+    "categoria": "absolvido",
+    "fonte_id": "g1-2018-07-12-obstrucao",
+    "data": "2018-07-12",
+    "texto": "Absolvido (2018)."
+  },
+  "mauro-marcondes": {
+    "categoria": "absolvido",
+    "fonte_id": "g1-2021-06-21-zelotes",
+    "data": "2021-06-21",
+    "texto": "Absolvido na ação da Zelotes sobre a MP 471 (2021). O trancamento da ação Gripen em relação a ele não foi confirmado."
+  },
+  "cristina-mautoni": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Situação não levantada por este mapa. O trancamento em relação a Cristina Mautoni não foi confirmado nas fontes consultadas."
+  },
+  "taiguara-santos": {
+    "categoria": "arquivado",
+    "fonte_id": "g1-2020-09-01-trf1",
+    "data": "2020-09-01",
+    "texto": "Ação penal Janus 1 trancada pelo TRF1 em relação a Taiguara em junho de 2020, segundo G1 de 01/09/2020. Não se trata de absolvição de mérito."
+  },
+  "antonio-carlos-camilo-antunes": {
+    "categoria": "indiciado",
+    "fonte_id": "pr-a-factcheck-09",
+    "data": "2026-10-21",
+    "texto": "Indiciado pela PF em julho de 2026 na Operação Sem Desconto; sem condenação nas fontes deste mapa. Segundo G1 de 31/07/2026, estava preso preventivamente desde setembro de 2025. Permanência da prisão em 21/10/2026 não confirmada. O relatório de indiciamento foi enviado ao STF/PGR; manifestação posterior da PGR não confirmada."
+  },
+  "roberta-luchsinger": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Indiciamento sugerido no relatório do relator da CPMI."
+  },
+  "edson-claro": {
+    "categoria": "sem_informacao",
+    "fonte_id": null,
+    "data": "2026-10-21",
+    "texto": "Situação não levantada por este mapa"
+  },
+  "milton-cavalo": {
+    "categoria": "investigado",
+    "fonte_id": "agbr-2025-10-15-bloqueio",
+    "data": "2025-10-15",
+    "texto": "Investigado."
+  },
+  "carlos-lupi": {
+    "categoria": "institucional",
+    "fonte_id": "camara-2025-10-16-frei-chico",
+    "data": "2025-10-16",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-ministro da Previdência."
+  },
+  "alfredo-gaspar": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2026-03-27-cpmi",
+    "data": "2026-03-27",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Deputado federal, relator da CPMI do INSS."
+  },
+  "carlos-viana": {
+    "categoria": "institucional",
+    "fonte_id": "cnn-2026-03-27-cpmi",
+    "data": "2026-03-27",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Senador, presidente da CPMI do INSS."
+  },
+  "swedenberger-barbosa": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2026-07-31-inquerito",
+    "data": "2026-07-31",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-secretário-executivo do Ministério da Saúde."
+  },
+  "marco-aurelio-carvalho": {
+    "categoria": "institucional",
+    "fonte_id": "g1-2026-07-31-inquerito",
+    "data": "2026-07-31",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Advogado de Lulinha."
+  },
+  "andre-janones": {
+    "categoria": "sem_informacao",
+    "fonte_id": "stf-2025-03-19-janones",
+    "data": "2025-03-19",
+    "texto": "ANPP homologado pelo STF em 19/03/2025; não é condenação nem gera antecedentes criminais."
+  },
+  "renan-calheiros": {
+    "categoria": "arquivado",
+    "fonte_id": "conjur-2025-02-26-renan",
+    "data": "2025-02-26",
+    "texto": "Inquéritos arquivados no STF; último inquérito arquivado em fevereiro de 2025, segundo ConJur."
+  },
+  "renan-filho": {
+    "categoria": "institucional",
+    "fonte_id": "oglobo-2022-12-renan-filho",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro dos Transportes no governo Lula 3."
+  },
+  "daniel-vorcaro": {
+    "categoria": "investigado",
+    "fonte_id": "g1-2026-10-19-vorcaro",
+    "data": "2026-10-19",
+    "texto": "Investigado na Operação Compliance Zero. Prisão preventiva noticiada em 2026; a fonte de 19/10/2026 trata da manifestação da PGR sobre familiares e assessores. Situação prisional atual de Vorcaro não reconfirmada."
+  },
+  "gabriel-galipolo": {
+    "categoria": "institucional",
+    "fonte_id": "poder360-2026-vorcaro-lula",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Presidente do Banco Central (desde 2025)."
+  },
+  "rui-costa": {
+    "categoria": "institucional",
+    "fonte_id": "poder360-2026-vorcaro-lula",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro da Casa Civil."
+  },
+  "alexandre-silveira": {
+    "categoria": "institucional",
+    "fonte_id": "poder360-2026-vorcaro-lula",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro de Minas e Energia."
+  },
+  "augusto-lima": {
+    "categoria": "institucional",
+    "fonte_id": "poder360-2026-vorcaro-lula",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-CEO do Banco Master."
+  },
+  "marco-aurelio-santana-ribeiro": {
+    "categoria": "institucional",
+    "fonte_id": "poder360-2026-vorcaro-lula",
+    "data": "2026-10-21",
+    "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Chefe do Gabinete Pessoal da Presidência."
+  }
+}

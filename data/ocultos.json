@@ -22,5 +22,17 @@
     "motivo": "Desfecho do relatório da CPMI não confirmado com segurança; ocultação preventiva autorizada.",
     "referencia": "/tmp/jur/lulagate-risco-publicacao.md, ranking item 5",
     "data": "2026-10-21"
+  },
+  {
+    "id": "con-041",
+    "motivo": "Fonte citada não sustenta nomeação ao Ministério da Justiça.",
+    "referencia": "Fact-check, relatorio.csv: con-041",
+    "data": "2026-10-21"
+  },
+  {
+    "id": "con-072",
+    "motivo": "Liquidação não sustentada nas fontes legíveis da aresta.",
+    "referencia": "Fact-check, relatorio.csv: con-072",
+    "data": "2026-10-21"
   }
 ]

@@ -47,18 +47,17 @@
     "destino": "lula",
     "rotulo": "filho; corréu no caso Gripen",
     "tipo": "familiar",
-    "status": "arquivado",
+    "status": "fato_documentado",
     "periodo": {
       "inicio": "2016-12",
       "fim": "2023-02"
     },
-    "descricao": "Denunciados juntos na Zelotes; ação trancada pelo STF.",
+    "descricao": "Denunciados no caso Gripen em 2016. Trancamento confirmado apenas em relação a Lula; desfecho dos demais não confirmado.",
     "escandalos": [
       "esc-zelotes-gripen"
     ],
     "fontes": [
-      "estadao-2016-12-gripen",
-      "stf-2023-02-tres-acoes"
+      "estadao-2016-12-gripen"
     ],
     "data_referencia": "2016-12"
   },
@@ -86,7 +85,7 @@
     "id": "con-005",
     "origem": "frei-chico",
     "destino": "milton-cavalo",
-    "rotulo": "vice-presidente do sindicato presidido por",
+    "rotulo": "colega de diretoria do Sindnapi",
     "tipo": "profissional",
     "status": "associacao_indireta",
     "periodo": {
@@ -114,13 +113,14 @@
       "inicio": "2003",
       "fim": "2005"
     },
-    "descricao": "Dirceu condenado na AP 470; Lula não foi denunciado.",
+    "descricao": "Dirceu condenado na AP 470; Lula não foi denunciado. Pena da AP 470 extinta por indulto em 2016.",
     "escandalos": [
       "esc-mensalao"
     ],
     "fontes": [
       "g1-2012-10-dirceu",
-      "gazeta-stf-lula-mensalao"
+      "gazeta-stf-lula-mensalao",
+      "pr-a-factcheck-01"
     ],
     "data_referencia": "2012-10-09"
   },
@@ -175,13 +175,14 @@
       "inicio": "2017-09-06",
       "fim": null
     },
-    "descricao": "Delação excluída da ação contra Lula pelo STF em 2020.",
+    "descricao": "Delação excluída da ação contra Lula pelo STF em 2020. Atos dos processos da Lava Jato contra Palocci anulados em 2025; delação mantida.",
     "escandalos": [
       "esc-instituto-lula"
     ],
     "fontes": [
       "bbc-2017-09-palocci",
-      "conjur-2020-12-14-palocci"
+      "conjur-2020-12-14-palocci",
+      "pr-a-factcheck-08"
     ],
     "data_referencia": "2017-09-06"
   },
@@ -354,18 +355,17 @@
     "destino": "luis-claudio",
     "rotulo": "corréu no caso Gripen",
     "tipo": "processual",
-    "status": "arquivado",
+    "status": "fato_documentado",
     "periodo": {
       "inicio": "2016-12",
       "fim": "2023-02"
     },
-    "descricao": "Ação trancada pelo STF.",
+    "descricao": "Denunciados no caso Gripen em 2016. Trancamento confirmado apenas em relação a Lula; desfecho dos demais não confirmado.",
     "escandalos": [
       "esc-zelotes-gripen"
     ],
     "fontes": [
-      "estadao-2016-12-gripen",
-      "stf-2023-02-tres-acoes"
+      "estadao-2016-12-gripen"
     ],
     "data_referencia": "2016-12"
   },
@@ -415,14 +415,14 @@
     "id": "con-021",
     "origem": "jose-carlos-bumlai",
     "destino": "lula",
-    "rotulo": "amigo próximo (segundo o TRF4)",
+    "rotulo": "amigo próximo, segundo a acusação reproduzida pelo TRF4",
     "tipo": "pessoal",
     "status": "fato_documentado",
     "periodo": {
       "inicio": "2019-11-27",
       "fim": null
     },
-    "descricao": "",
+    "descricao": "O acórdão usa o condicional ao reproduzir a acusação; Bumlai foi absolvido no caso Atibaia.",
     "escandalos": [
       "esc-bumlai-schahin",
       "esc-atibaia"
@@ -443,14 +443,15 @@
       "inicio": "2017-04-20",
       "fim": "2021-03-08"
     },
-    "descricao": "Depoimento usado na condenação anulada pelo STF.",
+    "descricao": "Depoimento usado na condenação anulada pelo STF. Condenações de Léo Pinheiro anuladas pelo STF em 2024, decisão mantida em 2025; delação mantida.",
     "escandalos": [
       "esc-triplex",
       "esc-atibaia"
     ],
     "fontes": [
       "g1-2017-leo-pinheiro",
-      "stf-2021-03-08-fachin"
+      "stf-2021-03-08-fachin",
+      "pr-a-factcheck-05"
     ],
     "data_referencia": "2017-04-20"
   },
@@ -615,10 +616,10 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-031",
@@ -636,10 +637,10 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-032",
@@ -657,9 +658,9 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-033",
@@ -677,10 +678,10 @@
       "esc-gamecorp"
     ],
     "fontes": [
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2019-12-10"
+    "data_referencia": "2022-01"
   },
   {
     "id": "con-034",
@@ -827,28 +828,6 @@
       "lexml-hc164493"
     ],
     "data_referencia": "2021-03-23"
-  },
-  {
-    "id": "con-041",
-    "origem": "ricardo-lewandowski",
-    "destino": "lula",
-    "rotulo": "trancou três ações; depois ministro da Justiça de Lula",
-    "tipo": "processual",
-    "status": "arquivado",
-    "periodo": {
-      "inicio": "2023-02",
-      "fim": null
-    },
-    "descricao": "",
-    "escandalos": [
-      "esc-instituto-lula",
-      "esc-zelotes-gripen"
-    ],
-    "fontes": [
-      "stf-2023-02-tres-acoes",
-      "poder360-2023-lewandowski"
-    ],
-    "data_referencia": "2023-02"
   },
   {
     "id": "con-042",
@@ -1076,7 +1055,7 @@
   },
   {
     "id": "con-053",
-    "origem": "careca-do-inss",
+    "origem": "antonio-carlos-camilo-antunes",
     "destino": "lulinha",
     "rotulo": "viajou com; suspeita de favorecimento investigada pela PF",
     "tipo": "negocios",
@@ -1139,7 +1118,7 @@
   {
     "id": "con-060",
     "origem": "swedenberger-barbosa",
-    "destino": "careca-do-inss",
+    "destino": "antonio-carlos-camilo-antunes",
     "rotulo": "recebeu em reunião no Ministério da Saúde",
     "tipo": "profissional",
     "status": "fato_documentado",
@@ -1336,8 +1315,7 @@
       "esc-banco-master"
     ],
     "fontes": [
-      "oglobo-2026-04-08-master-pagamentos",
-      "metropoles-2026-master-pagamentos"
+      "oglobo-2026-04-08-master-pagamentos"
     ],
     "data_referencia": "2026-04-08"
   },
@@ -1359,27 +1337,6 @@
     "fontes": [
       "poder360-2026-vorcaro-lula",
       "oglobo-2026-02-05-lula-vorcaro"
-    ],
-    "data_referencia": "2026-01"
-  },
-  {
-    "id": "con-072",
-    "origem": "gabriel-galipolo",
-    "destino": "daniel-vorcaro",
-    "rotulo": "participou da reunião; BC depois liquidou o Master",
-    "tipo": "processual",
-    "status": "fato_documentado",
-    "periodo": {
-      "inicio": "2024-12-04",
-      "fim": "2025-11-18"
-    },
-    "descricao": "",
-    "escandalos": [
-      "esc-banco-master"
-    ],
-    "fontes": [
-      "poder360-2026-vorcaro-lula",
-      "metropoles-2026-master-pagamentos"
     ],
     "data_referencia": "2026-01"
   },

@@ -26,6 +26,7 @@
       "folha-2005-11-08-responsabilidade",
       "folha-2005-11-09-delubio"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-006",
       "con-007",
@@ -81,6 +82,7 @@
       "cnn-2021-03-10-mentira",
       "agbr-2017-07-okamotto"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-001",
       "con-019",
@@ -142,6 +144,7 @@
       "g1-2021-08-22-atibaia",
       "cnn-2021-03-10-mentira"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-001",
       "con-021",
@@ -207,13 +210,13 @@
       "g1-2023-09-06-toffoli",
       "cnn-2021-03-10-mentira"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-009",
       "con-010",
       "con-019",
       "con-023",
       "con-039",
-      "con-041",
       "con-042"
     ]
   },
@@ -248,6 +251,7 @@
       "stj-2021-10-22-schahin",
       "oglobo-2021-stj-schahin"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-014",
       "con-021"
@@ -279,6 +283,7 @@
       "g1-2019-12-04-quadrilhao",
       "conjur-2019-12-sentenca-quadrilhao"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-011",
       "con-012",
@@ -311,6 +316,7 @@
       "g1-2018-07-12-obstrucao",
       "agbr-2018-07-obstrucao"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-048",
       "con-049",
@@ -344,6 +350,7 @@
       "folha-2019-07-24-angola",
       "g1-2020-09-01-trf1"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-024",
       "con-052"
@@ -373,6 +380,7 @@
       "poder360-2024-07-tcu-bndes",
       "oglobo-2024-07-tcu-mariel"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": []
   },
   {
@@ -407,6 +415,7 @@
       "g1-2021-06-21-zelotes",
       "conjur-2021-06-21-zelotes"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-015",
       "con-016",
@@ -442,12 +451,12 @@
       "stf-2022-03-gripen",
       "stf-2023-02-tres-acoes"
     ],
+    "grupo_lista": "lula_parte",
     "conexoes": [
       "con-003",
       "con-016",
       "con-017",
-      "con-018",
-      "con-041"
+      "con-018"
     ]
   },
   {
@@ -485,11 +494,12 @@
     "fontes": [
       "folha-2005-07-09-telemar",
       "folha-2005-08-08-telemar",
-      "pf-2019-12-10-mapa",
+      "poder360-2022-01-mapa",
       "g1-2019-12-10-mapa",
       "folha-2022-01-17-mapa",
       "poder360-2022-01-mapa"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-002",
       "con-030",
@@ -520,10 +530,11 @@
     "fontes": [
       "folha-2021-10-19-rose",
       "g1-2021-10-19-rose",
-      "cgu-2013-09-rose",
+      "dou-2013-09-25-rose",
       "folha-2012-11-30-lula-silencia",
       "folha-2012-11-30-rose-nega"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-020"
     ]
@@ -571,6 +582,7 @@
       "oglobo-2025-10-09-cgu",
       "r7-2025-12-03-lula-inss"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-004",
       "con-005",
@@ -592,7 +604,7 @@
     "versao_de_lula": "Lula disse em 30/07/2026 que, se o filho for julgado, não terá privilégios, não vai se esconder e terá de provar inocência (G1).",
     "personagens": [
       "lulinha",
-      "careca-do-inss",
+      "antonio-carlos-camilo-antunes",
       "alfredo-gaspar",
       "carlos-viana",
       "andre-mendonca",
@@ -626,6 +638,7 @@
       "estadao-2026-defesa-lulinha",
       "cnn-2026-advogado-lulinha"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-002",
       "con-043",
@@ -668,6 +681,7 @@
       "tse-2022-10-janones",
       "bbc-2023-janones"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-064"
     ]
@@ -703,6 +717,7 @@
       "folha-2024-05-23-renan",
       "oglobo-2022-12-renan-filho"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-065",
       "con-066",
@@ -751,14 +766,13 @@
       "valor-2026-01-26-vorcaro",
       "oglobo-2026-02-05-lula-vorcaro",
       "oglobo-2026-04-08-master-pagamentos",
-      "oglobo-2026-04-10-master-servicos",
-      "metropoles-2026-master-pagamentos"
+      "oglobo-2026-04-10-master-servicos"
     ],
+    "grupo_lista": "terceiros_contexto",
     "conexoes": [
       "con-068",
       "con-069",
       "con-070",
-      "con-072",
       "con-073",
       "con-074",
       "con-075",

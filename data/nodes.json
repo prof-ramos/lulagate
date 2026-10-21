@@ -5,9 +5,7 @@
     "nome": "Luiz Inácio Lula da Silva",
     "tipo": "pessoa",
     "ocupacao": "Presidente da República (2003-2010 e desde 2023)",
-    "proximidade_lula": 1.0,
     "classificacao": "central",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -23,13 +21,19 @@
       }
     ],
     "relacao_com_lula": "personagem central",
-    "resumo": "Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
-    "situacao_juridica": "Sem condenação vigente até 20/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição.",
+    "resumo": "Sem condenação vigente até 21/10/2026. Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
+    "situacao_juridica": "Sem condenação vigente até 21/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição.",
     "fontes": [
       "stf-2021-03-08-fachin",
       "stf-2021-06-23-suspeicao",
       "folha-2019-11-08-solto"
     ],
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "stf-2021-03-08-fachin",
+      "data": "2021-03-08",
+      "texto": "Sem condenação vigente até 21/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": {
       "arquivo": "retratos/lula.webp",
@@ -88,7 +92,6 @@
       "con-037",
       "con-038",
       "con-039",
-      "con-041",
       "con-042",
       "con-045",
       "con-046",
@@ -114,9 +117,7 @@
     "nome": "Marisa Letícia Lula da Silva",
     "tipo": "pessoa",
     "ocupacao": "Ex-primeira-dama (morta em 2017)",
-    "proximidade_lula": 0.98,
     "classificacao": "principal",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-familia-lula",
@@ -124,12 +125,19 @@
       }
     ],
     "relacao_com_lula": "esposa",
-    "resumo": "Esposa de Lula. O voto do relator no TRF4 (caso Atibaia, decisão depois anulada) atribuiu ao casal as solicitações de reformas; Léo Pinheiro afirmou a Moro que reformas no triplex foram pedidas por Lula e Marisa.",
-    "situacao_juridica": "Nenhuma condenação.",
+    "resumo": "Não foi condenada; a punibilidade foi extinta com sua morte, em 2017. Esposa de Lula, foi citada nos processos do triplex e de Atibaia, depois anulados pelo STF.",
+    "situacao_juridica": "Não foi condenada. Punibilidade extinta em março de 2017 em razão da morte; não houve absolvição de mérito.",
     "fontes": [
       "trf4-2019-11-27-atibaia",
-      "g1-triplex-o-que-dizem"
+      "g1-triplex-o-que-dizem",
+      "agbr-2017-03-03-marisa"
     ],
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": "agbr-2017-03-03-marisa",
+      "data": "2017-03-03",
+      "texto": "Não foi condenada. Punibilidade extinta em março de 2017 em razão da morte; não houve absolvição de mérito."
+    },
     "categoria_juridica": "sem_informacao",
     "retrato": {
       "arquivo": "retratos/marisa-leticia.webp",
@@ -155,9 +163,7 @@
     "nome": "Fábio Luís Lula da Silva (Lulinha)",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
-    "proximidade_lula": 0.95,
     "classificacao": "principal",
-    "nivel_juridico": 2,
     "grupos": [
       {
         "grupo_id": "grp-familia-lula",
@@ -176,6 +182,12 @@
       "folha-2022-01-17-mapa",
       "g1-2026-07-31-inquerito"
     ],
+    "situacao": {
+      "categoria": "investigado",
+      "fonte_id": "g1-2026-07-31-inquerito",
+      "data": "2026-07-31",
+      "texto": "Investigado em dois inquéritos da PF autorizados pelo STF em 30 e 31/07/2026; segundo a PF, não é investigado pelas fraudes do INSS em si."
+    },
     "categoria_juridica": "investigado",
     "retrato": null,
     "escandalos": [
@@ -200,9 +212,7 @@
     "nome": "Luís Cláudio Lula da Silva",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
-    "proximidade_lula": 0.93,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-familia-lula",
@@ -210,13 +220,19 @@
       }
     ],
     "relacao_com_lula": "filho",
-    "resumo": "Filho de Lula, denunciado com o pai em 2016 na Operação Zelotes (caças Gripen e MP 627). A ação foi trancada pelo STF em 2023.",
-    "situacao_juridica": "Ação penal trancada pelo STF (2023).",
+    "resumo": "Filho de Lula, foi denunciado em 2016 na Operação Zelotes (caças Gripen e MP 627). A fonte do STF de 2023 confirma o trancamento em relação a Lula; o desfecho em relação a Luís Cláudio não foi confirmado.",
+    "situacao_juridica": "Situação não levantada por este mapa. A fonte de 2023 confirma o trancamento em relação a Lula; não confirma o desfecho de Luís Cláudio.",
     "fontes": [
       "estadao-2016-12-gripen",
       "stf-2023-02-tres-acoes"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": null,
+      "data": "2026-10-21",
+      "texto": "Situação não levantada por este mapa. A fonte de 2023 confirma o trancamento em relação a Lula; não confirma o desfecho de Luís Cláudio."
+    },
+    "categoria_juridica": "sem_informacao",
     "retrato": null,
     "escandalos": [
       "esc-zelotes-gripen"
@@ -233,9 +249,7 @@
     "nome": "José Ferreira da Silva (Frei Chico)",
     "tipo": "pessoa",
     "ocupacao": "Sindicalista, vice-presidente do Sindnapi",
-    "proximidade_lula": 0.92,
     "classificacao": "principal",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-familia-lula",
@@ -247,7 +261,7 @@
       }
     ],
     "relacao_com_lula": "irmão",
-    "resumo": "Irmão mais velho de Lula e dirigente do Sindnapi, entidade alvo da Operação Sem Desconto. Segundo CNN, Estadão e Agência Brasil, não é investigado nem foi alvo de medidas. A CPMI rejeitou sua convocação em 16/10/2025. A CGU apontou que o sindicato omitiu sua presença na diretoria ao renovar parceria com o INSS.",
+    "resumo": "Não é investigado, segundo CNN, Estadão e Agência Brasil. Irmão mais velho de Lula e dirigente do Sindnapi, entidade alvo da Operação Sem Desconto. Segundo CNN, Estadão e Agência Brasil, não é investigado nem foi alvo de medidas. A CPMI rejeitou sua convocação em 16/10/2025. A CGU apontou que o sindicato omitiu sua presença na diretoria ao renovar parceria com o INSS.",
     "situacao_juridica": "Não investigado, segundo as reportagens.",
     "fontes": [
       "cnn-2025-04-23-sindnapi",
@@ -255,6 +269,12 @@
       "camara-2025-10-16-frei-chico",
       "oglobo-2025-10-09-cgu"
     ],
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": null,
+      "data": "2026-10-21",
+      "texto": "Não investigado, segundo as reportagens."
+    },
     "categoria_juridica": "sem_informacao",
     "retrato": null,
     "escandalos": [
@@ -272,9 +292,7 @@
     "nome": "José Dirceu",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro-chefe da Casa Civil",
-    "proximidade_lula": 0.75,
     "classificacao": "principal",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -294,7 +312,12 @@
       "pr-a-factcheck-03",
       "g1-2012-10-dirceu"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "pr-a-factcheck-02",
+      "data": "2026-10-21",
+      "texto": "Pena da AP 470 extinta por indulto em 2016; pena no caso Apolo Tubulars extinta por prescrição em maio de 2024. Atos de Moro em duas ações penais anulados pelo STF na Pet 12229 em outubro de 2024."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": {
       "arquivo": "retratos/jose-dirceu.webp",
@@ -319,9 +342,7 @@
     "nome": "Delúbio Soares",
     "tipo": "pessoa",
     "ocupacao": "Ex-tesoureiro do PT",
-    "proximidade_lula": 0.55,
     "classificacao": "secundario",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -329,11 +350,18 @@
       }
     ],
     "relacao_com_lula": "tesoureiro do partido",
-    "resumo": "Tesoureiro do PT na época do mensalão. Segundo a Folha (2005), o presidente do PT afirmou que ele era o \"traidor\" mencionado por Lula no Roda Viva.",
-    "situacao_juridica": "Réu da AP 470.",
+    "resumo": "Pena da AP 470 extinta por indulto concedido pelo STF em 10/03/2016. Desfechos de outros processos não levantados por este mapa. Tesoureiro do PT na época do mensalão. Segundo a Folha (2005), o presidente do PT afirmou que ele era o \"traidor\" mencionado por Lula no Roda Viva.",
+    "situacao_juridica": "Pena da AP 470 extinta por indulto concedido pelo STF em 10/03/2016. Desfechos de outros processos não levantados por este mapa.",
     "fontes": [
-      "folha-2005-11-09-delubio"
+      "folha-2005-11-09-delubio",
+      "stf-2016-03-10-delubio"
     ],
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": "stf-2016-03-10-delubio",
+      "data": "2016-03-10",
+      "texto": "Pena da AP 470 extinta por indulto concedido pelo STF em 10/03/2016. Desfechos de outros processos não levantados por este mapa."
+    },
     "categoria_juridica": "sem_informacao",
     "retrato": {
       "arquivo": "retratos/delubio-soares.webp",
@@ -358,16 +386,20 @@
     "nome": "Roberto Jefferson",
     "tipo": "pessoa",
     "ocupacao": "Ex-deputado federal (PTB)",
-    "proximidade_lula": 0.2,
     "classificacao": "secundario",
-    "nivel_juridico": 0,
     "grupos": [],
     "relacao_com_lula": "acusador",
     "resumo": "Pediu ao STF a inclusão de Lula entre os réus da AP 470; os pedidos foram rejeitados.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Situação não levantada por este mapa",
     "fontes": [
       "gazeta-stf-lula-mensalao"
     ],
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": null,
+      "data": "2026-10-21",
+      "texto": "Situação não levantada por este mapa"
+    },
     "categoria_juridica": "sem_informacao",
     "retrato": null,
     "escandalos": [
@@ -384,9 +416,7 @@
     "nome": "Antonio Palocci",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro da Fazenda e da Casa Civil",
-    "proximidade_lula": 0.72,
     "classificacao": "principal",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -407,7 +437,12 @@
       "conjur-2020-12-14-palocci",
       "g1-2019-12-04-quadrilhao"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "pr-a-factcheck-08",
+      "data": "2025-08-15",
+      "texto": "Atos dos processos da Lava Jato anulados pelo STF em 2025; decisão mantida pela Segunda Turma em agosto de 2025. Delação mantida."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": {
       "arquivo": "retratos/antonio-palocci.webp",
@@ -434,9 +469,7 @@
     "nome": "Guido Mantega",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro da Fazenda",
-    "proximidade_lula": 0.6,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-1-2",
@@ -448,10 +481,15 @@
     "situacao_juridica": "Absolvido (2019).",
     "fontes": [
       "g1-2019-12-04-quadrilhao",
-      "oglobo-2026-04-08-master-pagamentos",
-      "metropoles-2026-master-pagamentos"
+      "oglobo-2026-04-08-master-pagamentos"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "g1-2019-12-04-quadrilhao",
+      "data": "2019-12-04",
+      "texto": "Absolvido (2019)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": {
       "arquivo": "retratos/guido-mantega.webp",
       "autor": "Roosewelt Pinheiro/ABr",
@@ -479,9 +517,7 @@
     "nome": "Dilma Rousseff",
     "tipo": "pessoa",
     "ocupacao": "Ex-presidente da República",
-    "proximidade_lula": 0.75,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -493,13 +529,19 @@
       }
     ],
     "relacao_com_lula": "sucessora",
-    "resumo": "Sucessora de Lula; absolvida com ele no quadrilhão do PT (2019). Demitiu Rosemary Noronha em 2012.",
+    "resumo": "Absolvida no quadrilhão do PT (2019). Sucessora de Lula; demitiu Rosemary Noronha em 2012.",
     "situacao_juridica": "Absolvida (2019).",
     "fontes": [
       "g1-2019-12-04-quadrilhao",
       "g1-2021-10-19-rose"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "g1-2019-12-04-quadrilhao",
+      "data": "2019-12-04",
+      "texto": "Absolvida (2019)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": {
       "arquivo": "retratos/dilma-rousseff.webp",
       "autor": "Vice-Presidência da República",
@@ -524,9 +566,7 @@
     "nome": "João Vaccari Neto",
     "tipo": "pessoa",
     "ocupacao": "Ex-tesoureiro do PT",
-    "proximidade_lula": 0.45,
     "classificacao": "secundario",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -541,7 +581,12 @@
       "g1-2019-12-04-quadrilhao",
       "oglobo-2021-stj-schahin"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "pr-a-factcheck-10",
+      "data": "2025-08-15",
+      "texto": "Atos da Lava Jato anulados pelo STF em agosto de 2025. Processo Schahin anulado pelo STJ em 2021; absolvido no quadrilhão do PT em 2019."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": {
       "arquivo": "retratos/joao-vaccari.webp",
@@ -568,9 +613,7 @@
     "nome": "Gilberto Carvalho",
     "tipo": "pessoa",
     "ocupacao": "Ex-chefe de gabinete da Presidência e ex-ministro",
-    "proximidade_lula": 0.78,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-1-2",
@@ -578,12 +621,18 @@
       }
     ],
     "relacao_com_lula": "chefe de gabinete",
-    "resumo": "Chefe de gabinete de Lula; absolvido com ele em 2021 na ação da Zelotes sobre a MP 471.",
+    "resumo": "Absolvido na ação Zelotes sobre a MP 471 (2021). Foi chefe de gabinete de Lula.",
     "situacao_juridica": "Absolvido (2021).",
     "fontes": [
       "g1-2021-06-21-zelotes"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "g1-2021-06-21-zelotes",
+      "data": "2021-06-21",
+      "texto": "Absolvido (2021)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": {
       "arquivo": "retratos/gilberto-carvalho.webp",
       "autor": "Antonio Cruz/ABr",
@@ -607,9 +656,7 @@
     "nome": "Paulo Okamotto",
     "tipo": "pessoa",
     "ocupacao": "Presidente do Instituto Lula",
-    "proximidade_lula": 0.8,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-instituto-lula",
@@ -623,7 +670,13 @@
       "agbr-2017-07-okamotto",
       "stf-2023-02-tres-acoes"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "agbr-2017-07-okamotto",
+      "data": "2017-07-12",
+      "texto": "Absolvido (2017)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": {
       "arquivo": "retratos/paulo-okamotto.webp",
       "autor": "Fabio Pozzebom/ABr, remix pelo uploader",
@@ -648,9 +701,7 @@
     "nome": "Rosemary Noronha",
     "tipo": "pessoa",
     "ocupacao": "Ex-chefe do gabinete da Presidência em São Paulo",
-    "proximidade_lula": 0.6,
     "classificacao": "principal",
-    "nivel_juridico": 2,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-1-2",
@@ -658,14 +709,20 @@
       }
     ],
     "relacao_com_lula": "assessora nomeada",
-    "resumo": "Nomeada por Lula e mantida por Dilma, foi demitida em 2012 após a Operação Porto Seguro. A CGU a destituiu do cargo em 2013. A ação penal foi encerrada em 2021 após anulação das provas. Negou ter praticado corrupção.",
-    "situacao_juridica": "Ação penal encerrada (2021); punição administrativa da CGU (2013).",
+    "resumo": "Não foi condenada na ação penal encerrada em 2021 após anulação das provas; a decisão admitia recurso. Destituída administrativamente em 2013. Nomeada por Lula e mantida por Dilma, foi demitida em 2012. Negou ter praticado corrupção.",
+    "situacao_juridica": "Não foi condenada na ação penal encerrada em 2021 após anulação das provas; a decisão admitia recurso. Destituída administrativamente em 2013.",
     "fontes": [
       "folha-2021-10-19-rose",
-      "cgu-2013-09-rose",
+      "dou-2013-09-25-rose",
       "folha-2012-11-30-rose-nega"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "arquivado",
+      "fonte_id": "folha-2021-10-19-rose",
+      "data": "2021-10-19",
+      "texto": "Não foi condenada na ação penal encerrada em 2021 após anulação das provas; a decisão admitia recurso. Destituída administrativamente em 2013."
+    },
+    "categoria_juridica": "arquivado",
     "retrato": null,
     "escandalos": [
       "esc-porto-seguro"
@@ -681,18 +738,22 @@
     "nome": "José Carlos Bumlai",
     "tipo": "pessoa",
     "ocupacao": "Pecuarista",
-    "proximidade_lula": 0.6,
     "classificacao": "principal",
-    "nivel_juridico": 2,
     "grupos": [],
     "relacao_com_lula": "amigo",
-    "resumo": "Descrito pelo TRF4 como amigo próximo de Lula. Condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
+    "resumo": "Condenação de 2016 no caso Schahin anulada pelo STJ em 2021; absolvido pelo TRF4 no caso Atibaia em 2019. A acusação reproduzida pelo TRF4 o descrevia como amigo próximo de Lula.",
     "situacao_juridica": "Condenação do caso Schahin anulada (STJ, 2021); absolvido no TRF4 (Atibaia, 2019).",
     "fontes": [
       "oglobo-2016-bumlai",
       "stj-2021-10-22-schahin",
       "trf4-2019-11-27-atibaia"
     ],
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "stj-2021-10-22-schahin",
+      "data": "2021-10-22",
+      "texto": "Condenação do caso Schahin anulada (STJ, 2021); absolvido no TRF4 (Atibaia, 2019)."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": {
       "arquivo": "retratos/jose-carlos-bumlai.webp",
@@ -719,9 +780,7 @@
     "nome": "José Aldemário Pinheiro Filho (Léo Pinheiro)",
     "tipo": "pessoa",
     "ocupacao": "Ex-presidente do Grupo OAS",
-    "proximidade_lula": 0.42,
     "classificacao": "principal",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-oas",
@@ -738,7 +797,12 @@
       "g1-2017-leo-pinheiro",
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "pr-a-factcheck-05",
+      "data": "2025-02-04",
+      "texto": "Condenações da Lava Jato anuladas pelo STF em setembro de 2024, com decisão mantida pela Segunda Turma em fevereiro de 2025; delação mantida. Prescrição reconhecida no caso Atibaia no DF em 2021."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": null,
     "escandalos": [
@@ -757,9 +821,7 @@
     "nome": "Emílio Odebrecht",
     "tipo": "pessoa",
     "ocupacao": "Presidente do conselho do Grupo Odebrecht",
-    "proximidade_lula": 0.45,
     "classificacao": "secundario",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-odebrecht",
@@ -774,8 +836,13 @@
       "trf4-2019-11-27-atibaia",
       "bbc-2017-09-palocci"
     ],
-    "categoria_juridica_declarada": "absolvido_arquivado",
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "prescricao",
+      "fonte_id": "pr-a-factcheck-06",
+      "data": "2021-08-22",
+      "texto": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021."
+    },
+    "categoria_juridica": "prescricao",
     "retrato": null,
     "escandalos": [
       "esc-atibaia",
@@ -794,9 +861,7 @@
     "nome": "Marcelo Odebrecht",
     "tipo": "pessoa",
     "ocupacao": "Ex-presidente do Grupo Odebrecht",
-    "proximidade_lula": 0.35,
     "classificacao": "secundario",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-odebrecht",
@@ -811,7 +876,12 @@
       "agbr-2016-10-angola",
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "pr-a-factcheck-11",
+      "data": "2024-09-06",
+      "texto": "Atos da 13ª Vara Federal de Curitiba na Lava Jato anulados pelo STF em 2024; nulidade mantida pela Segunda Turma, sem trancamento automático dos processos."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": {
       "arquivo": "retratos/marcelo-odebrecht.webp",
@@ -840,9 +910,7 @@
     "nome": "Alexandrino de Alencar",
     "tipo": "pessoa",
     "ocupacao": "Ex-executivo da Odebrecht",
-    "proximidade_lula": 0.25,
     "classificacao": "periferico",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-odebrecht",
@@ -856,8 +924,13 @@
       "pr-a-factcheck-06",
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica_declarada": "absolvido_arquivado",
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "prescricao",
+      "fonte_id": "pr-a-factcheck-06",
+      "data": "2021-08-22",
+      "texto": "Prescrição reconhecida pela Justiça Federal do DF no caso Atibaia em agosto de 2021."
+    },
+    "categoria_juridica": "prescricao",
     "retrato": null,
     "escandalos": [
       "esc-atibaia"
@@ -873,9 +946,7 @@
     "nome": "Emyr Diniz Costa Júnior",
     "tipo": "pessoa",
     "ocupacao": "Ex-diretor da Odebrecht",
-    "proximidade_lula": 0.15,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-odebrecht",
@@ -883,12 +954,18 @@
       }
     ],
     "relacao_com_lula": "executivo",
-    "resumo": "Supervisionou a obra no sítio, segundo o TRF4, que o absolveu em 2019.",
+    "resumo": "Absolvido pelo TRF4 no caso Atibaia (2019). Segundo a acusação, supervisionou a obra no sítio.",
     "situacao_juridica": "Absolvido (TRF4, 2019).",
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "trf4-2019-11-27-atibaia",
+      "data": "2019-11-27",
+      "texto": "Absolvido (TRF4, 2019)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": null,
     "escandalos": [
       "esc-atibaia"
@@ -904,9 +981,7 @@
     "nome": "Paulo Gordilho",
     "tipo": "pessoa",
     "ocupacao": "Ex-diretor técnico da OAS",
-    "proximidade_lula": 0.15,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-oas",
@@ -919,7 +994,13 @@
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "trf4-2019-11-27-atibaia",
+      "data": "2019-11-27",
+      "texto": "Absolvido (TRF4, 2019)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": null,
     "escandalos": [
       "esc-atibaia"
@@ -935,9 +1016,7 @@
     "nome": "Fernando Bittar",
     "tipo": "pessoa",
     "ocupacao": "Empresário, proprietário formal do sítio de Atibaia",
-    "proximidade_lula": 0.6,
     "classificacao": "principal",
-    "nivel_juridico": 2,
     "grupos": [
       {
         "grupo_id": "grp-gamecorp",
@@ -950,9 +1029,14 @@
     "fontes": [
       "pr-a-factcheck-06",
       "trf4-2019-11-27-atibaia",
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
-    "categoria_juridica_declarada": "condenacao_anulada",
+    "situacao": {
+      "categoria": "condenacao_anulada",
+      "fonte_id": "pr-a-factcheck-06",
+      "data": "2021-08-22",
+      "texto": "Condenação de Atibaia anulada; nova denúncia rejeitada pela Justiça Federal do DF em agosto de 2021."
+    },
     "categoria_juridica": "condenacao_anulada",
     "retrato": null,
     "escandalos": [
@@ -972,9 +1056,7 @@
     "nome": "Kalil Bittar",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
-    "proximidade_lula": 0.35,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-gamecorp",
@@ -982,12 +1064,18 @@
       }
     ],
     "relacao_com_lula": "sócio do filho",
-    "resumo": "Citado pela PF entre os controladores das empresas do grupo Gamecorp/Gol investigadas na Mapa da Mina.",
-    "situacao_juridica": "Investigação arquivada (2022).",
+    "resumo": "Investigação Mapa da Mina arquivada em 2022 sem denúncia, após anulação das provas. Sócio de Lulinha em empresas do grupo Gamecorp/Gol, foi citado na apuração iniciada em 2019.",
+    "situacao_juridica": "Investigação Mapa da Mina arquivada em janeiro de 2022, sem denúncia, após reconhecimento da ilicitude das provas.",
     "fontes": [
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "arquivado",
+      "fonte_id": "poder360-2022-01-mapa",
+      "data": "2026-10-21",
+      "texto": "Investigação Mapa da Mina arquivada em janeiro de 2022, sem denúncia, após reconhecimento da ilicitude das provas."
+    },
+    "categoria_juridica": "arquivado",
     "retrato": null,
     "escandalos": [
       "esc-gamecorp"
@@ -1004,9 +1092,7 @@
     "nome": "Jonas Suassuna",
     "tipo": "pessoa",
     "ocupacao": "Empresário",
-    "proximidade_lula": 0.35,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-gamecorp",
@@ -1014,12 +1100,18 @@
       }
     ],
     "relacao_com_lula": "sócio do filho",
-    "resumo": "Citado pela PF entre os controladores das empresas investigadas na Mapa da Mina.",
-    "situacao_juridica": "Investigação arquivada (2022).",
+    "resumo": "Investigação Mapa da Mina arquivada em 2022 sem denúncia, após anulação das provas. Sócio de Lulinha em empresas do grupo Gamecorp/Gol, foi citado na apuração iniciada em 2019.",
+    "situacao_juridica": "Investigação Mapa da Mina arquivada em janeiro de 2022, sem denúncia, após reconhecimento da ilicitude das provas.",
     "fontes": [
-      "pf-2019-12-10-mapa"
+      "poder360-2022-01-mapa"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "arquivado",
+      "fonte_id": "poder360-2022-01-mapa",
+      "data": "2026-10-21",
+      "texto": "Investigação Mapa da Mina arquivada em janeiro de 2022, sem denúncia, após reconhecimento da ilicitude das provas."
+    },
+    "categoria_juridica": "arquivado",
     "retrato": null,
     "escandalos": [
       "esc-gamecorp"
@@ -1035,17 +1127,21 @@
     "nome": "Roberto Teixeira",
     "tipo": "pessoa",
     "ocupacao": "Advogado",
-    "proximidade_lula": 0.7,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [],
     "relacao_com_lula": "advogado e amigo",
-    "resumo": "Advogado e amigo de Lula, segundo o TRF4; absolvido no caso Atibaia em 2019.",
+    "resumo": "Absolvido no caso Atibaia em 2019. Advogado e amigo de Lula, segundo o TRF4.",
     "situacao_juridica": "Absolvido (TRF4, 2019).",
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "trf4-2019-11-27-atibaia",
+      "data": "2019-11-27",
+      "texto": "Absolvido (TRF4, 2019)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": null,
     "escandalos": [
       "esc-atibaia"
@@ -1061,17 +1157,21 @@
     "nome": "Rogério Aurélio Pimentel",
     "tipo": "pessoa",
     "ocupacao": "Auxiliar de Lula",
-    "proximidade_lula": 0.7,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [],
     "relacao_com_lula": "auxiliar de confiança",
-    "resumo": "Descrito pelo TRF4 como auxiliar de confiança de Lula; absolvido em todas as instâncias no caso Atibaia.",
+    "resumo": "Absolvido em todas as instâncias no caso Atibaia. Descrito pelo TRF4 como auxiliar de confiança de Lula.",
     "situacao_juridica": "Absolvido.",
     "fontes": [
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "trf4-2019-11-27-atibaia",
+      "data": "2019-11-27",
+      "texto": "Absolvido."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": null,
     "escandalos": [
       "esc-atibaia"
@@ -1087,18 +1187,22 @@
     "nome": "Cristiano Zanin",
     "tipo": "pessoa",
     "ocupacao": "Advogado de Lula; depois ministro do STF",
-    "proximidade_lula": 0.65,
     "classificacao": "secundario",
-    "nivel_juridico": 0,
     "grupos": [],
     "relacao_com_lula": "advogado",
     "resumo": "Advogado de Lula que impetrou os habeas corpus e sustentou a defesa no TRF4.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Advogado de Lula; depois ministro do STF.",
     "fontes": [
       "stf-hc193726-decisao",
       "trf4-2019-11-27-atibaia"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "stf-hc193726-decisao",
+      "data": "2021-03-08",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Advogado de Lula; depois ministro do STF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/cristiano-zanin.webp",
       "autor": "Rosinei Coutinho/STF",
@@ -1123,9 +1227,7 @@
     "nome": "Sergio Moro",
     "tipo": "pessoa",
     "ocupacao": "Ex-juiz da 13ª Vara Federal de Curitiba",
-    "proximidade_lula": 0.25,
     "classificacao": "principal",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-13vara-curitiba",
@@ -1134,12 +1236,18 @@
     ],
     "relacao_com_lula": "juiz que o condenou",
     "resumo": "Condenou Lula no caso triplex (2017). O STF declarou sua suspeição (2021), anulando todos os seus atos no caso.",
-    "situacao_juridica": "Declarado suspeito pelo STF no caso triplex.",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-juiz da 13ª Vara Federal de Curitiba.",
     "fontes": [
       "g1-2017-07-sentenca-triplex",
       "stf-2021-06-23-suspeicao"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2017-07-sentenca-triplex",
+      "data": "2017-07-12",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-juiz da 13ª Vara Federal de Curitiba."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/sergio-moro.webp",
       "autor": "Agência Senado from Brasilia, Brazil",
@@ -1164,9 +1272,7 @@
     "nome": "Gabriela Hardt",
     "tipo": "pessoa",
     "ocupacao": "Juíza federal",
-    "proximidade_lula": 0.15,
     "classificacao": "secundario",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-13vara-curitiba",
@@ -1175,12 +1281,18 @@
     ],
     "relacao_com_lula": "juíza que o condenou",
     "resumo": "Condenou Lula no caso Atibaia (2019); decisão anulada pelo STF (2021).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juíza federal.",
     "fontes": [
       "uol-2019-02-06-atibaia",
       "g1-2021-03-08-fachin"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "uol-2019-02-06-atibaia",
+      "data": "2019-02-06",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juíza federal."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-atibaia"
@@ -1196,9 +1308,7 @@
     "nome": "Edson Fachin",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
-    "proximidade_lula": 0.15,
     "classificacao": "secundario",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-stf",
@@ -1207,11 +1317,17 @@
     ],
     "relacao_com_lula": "relator",
     "resumo": "Relator do HC 193.726, que declarou a incompetência de Curitiba e anulou as condenações em 08/03/2021.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF.",
     "fontes": [
       "stf-2021-03-08-fachin"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "stf-2021-03-08-fachin",
+      "data": "2021-03-08",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/edson-fachin.webp",
       "autor": "Marcelo Camargo/Agência Brasil",
@@ -1237,9 +1353,7 @@
     "nome": "Gilmar Mendes",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
-    "proximidade_lula": 0.12,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-stf",
@@ -1248,12 +1362,18 @@
     ],
     "relacao_com_lula": "julgador",
     "resumo": "Votou pela suspeição de Moro no HC 164.493 (2ª Turma).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF.",
     "fontes": [
       "lexml-hc164493",
       "g1-2021-06-23-suspeicao"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "lexml-hc164493",
+      "data": "2021-03-23",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/gilmar-mendes.webp",
       "autor": "Fabio Rodrigues Pozzebom/ABr",
@@ -1277,9 +1397,7 @@
     "nome": "Ricardo Lewandowski",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro do STF; ministro da Justiça no governo Lula 3",
-    "proximidade_lula": 0.3,
     "classificacao": "secundario",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-stf",
@@ -1291,14 +1409,20 @@
       }
     ],
     "relacao_com_lula": "julgador",
-    "resumo": "Trancou em 2023 três ações contra Lula (terreno e doações ao Instituto Lula; caças Gripen). Prestou consultoria jurídica ao Banco Master após deixar o STF e antes de assumir o Ministério da Justiça, segundo O Globo.",
-    "situacao_juridica": "",
+    "resumo": "Como ministro do STF, trancou em 2023 três ações contra Lula. Após deixar a Corte em abril de 2023 e antes de assumir o Ministério da Justiça em 2024, prestou consultoria ao Banco Master, segundo O Globo. Declarou que o serviço consistia em orientação técnica em temas jurídicos da instituição.",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-ministro do STF; ministro da Justiça no governo Lula 3.",
     "fontes": [
       "stf-2023-02-tres-acoes",
       "poder360-2023-lewandowski",
       "oglobo-2026-04-10-master-servicos"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "stf-2023-02-tres-acoes",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-ministro do STF; ministro da Justiça no governo Lula 3."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/ricardo-lewandowski.webp",
       "autor": "Renato Araújo/ABr",
@@ -1314,7 +1438,6 @@
       "esc-zelotes-gripen"
     ],
     "conexoes": [
-      "con-041",
       "con-078"
     ],
     "faixa_proximidade": "Vínculo direto pontual ou apenas alegado"
@@ -1325,9 +1448,7 @@
     "nome": "Dias Toffoli",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
-    "proximidade_lula": 0.12,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-stf",
@@ -1336,11 +1457,17 @@
     ],
     "relacao_com_lula": "julgador",
     "resumo": "Em 2023 invalidou provas do acordo de leniência da Odebrecht e chamou a prisão de Lula de um dos maiores erros judiciários da história.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF.",
     "fontes": [
       "g1-2023-09-06-toffoli"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2023-09-06-toffoli",
+      "data": "2023-09-06",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/dias-toffoli.webp",
       "autor": "Geraldo Magela/Agência Senado",
@@ -1364,9 +1491,7 @@
     "nome": "André Mendonça",
     "tipo": "pessoa",
     "ocupacao": "Ministro do STF",
-    "proximidade_lula": 0.1,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-stf",
@@ -1375,12 +1500,18 @@
     ],
     "relacao_com_lula": "julgador",
     "resumo": "Relator da Operação Sem Desconto no STF; bloqueou R$ 389 milhões ligados ao Sindnapi e autorizou em 2026 inquéritos sobre Lulinha.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF.",
     "fontes": [
       "agbr-2025-10-15-bloqueio",
       "g1-2026-07-31-inquerito"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "agbr-2025-10-15-bloqueio",
+      "data": "2025-10-15",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro do STF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha",
@@ -1398,9 +1529,7 @@
     "nome": "Pollyanna Kelly Martins Alves",
     "tipo": "pessoa",
     "ocupacao": "Juíza da 12ª Vara Federal do DF",
-    "proximidade_lula": 0.08,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-justica-federal-df",
@@ -1409,12 +1538,18 @@
     ],
     "relacao_com_lula": "julgadora",
     "resumo": "Rejeitou a reabertura do caso Atibaia (2021) e arquivou o triplex por prescrição (2022).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juíza da 12ª Vara Federal do DF.",
     "fontes": [
       "folha-2021-08-22-atibaia",
       "conjur-2022-01-28-triplex"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "folha-2021-08-22-atibaia",
+      "data": "2021-08-22",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juíza da 12ª Vara Federal do DF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-atibaia",
@@ -1431,9 +1566,7 @@
     "nome": "Frederico Botelho de Barros Viana",
     "tipo": "pessoa",
     "ocupacao": "Juiz da 10ª Vara Federal do DF",
-    "proximidade_lula": 0.06,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-justica-federal-df",
@@ -1442,11 +1575,17 @@
     ],
     "relacao_com_lula": "julgador",
     "resumo": "Absolveu Lula e outros na ação da Zelotes sobre a MP 471 (2021).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 10ª Vara Federal do DF.",
     "fontes": [
       "g1-2021-06-21-zelotes"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2021-06-21-zelotes",
+      "data": "2021-06-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 10ª Vara Federal do DF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-zelotes-mp471"
@@ -1462,9 +1601,7 @@
     "nome": "Marcus Vinicius Reis Bastos",
     "tipo": "pessoa",
     "ocupacao": "Juiz da 12ª Vara Federal do DF",
-    "proximidade_lula": 0.06,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-justica-federal-df",
@@ -1473,11 +1610,17 @@
     ],
     "relacao_com_lula": "julgador",
     "resumo": "Absolveu sumariamente Lula e outros no quadrilhão do PT (2019).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 12ª Vara Federal do DF.",
     "fontes": [
       "g1-2019-12-04-quadrilhao"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2019-12-04-quadrilhao",
+      "data": "2019-12-04",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 12ª Vara Federal do DF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-quadrilhao"
@@ -1493,9 +1636,7 @@
     "nome": "Ricardo Augusto Soares Leite",
     "tipo": "pessoa",
     "ocupacao": "Juiz da 10ª Vara Federal do DF",
-    "proximidade_lula": 0.06,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-justica-federal-df",
@@ -1504,11 +1645,17 @@
     ],
     "relacao_com_lula": "julgador",
     "resumo": "Absolveu Lula e outros seis no caso de obstrução de Justiça (2018).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 10ª Vara Federal do DF.",
     "fontes": [
       "g1-2018-07-12-obstrucao"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2018-07-12-obstrucao",
+      "data": "2018-07-12",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Juiz da 10ª Vara Federal do DF."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-obstrucao-cervero"
@@ -1524,9 +1671,7 @@
     "nome": "Delcídio do Amaral",
     "tipo": "pessoa",
     "ocupacao": "Ex-senador",
-    "proximidade_lula": 0.4,
     "classificacao": "secundario",
-    "nivel_juridico": 2,
     "grupos": [
       {
         "grupo_id": "grp-pt",
@@ -1534,13 +1679,19 @@
       }
     ],
     "relacao_com_lula": "aliado",
-    "resumo": "Acusado de tentar comprar o silêncio de Nestor Cerveró; absolvido com Lula em 2018.",
-    "situacao_juridica": "Absolvido (2018).",
+    "resumo": "Absolvido na ação de obstrução de Justiça em 2018. Fora acusado de tentar comprar o silêncio de Nestor Cerveró.",
+    "situacao_juridica": "Absolvido na ação de obstrução de Justiça (2018).",
     "fontes": [
       "g1-2018-07-12-obstrucao",
       "agbr-2018-07-obstrucao"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "g1-2018-07-12-obstrucao",
+      "data": "2018-07-12",
+      "texto": "Absolvido na ação de obstrução de Justiça (2018)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": {
       "arquivo": "retratos/delcidio-amaral.webp",
       "autor": "José Cruz/ABr",
@@ -1565,16 +1716,20 @@
     "nome": "Nestor Cerveró",
     "tipo": "pessoa",
     "ocupacao": "Ex-diretor da Petrobras",
-    "proximidade_lula": 0.08,
     "classificacao": "periferico",
-    "nivel_juridico": 3,
     "grupos": [],
     "relacao_com_lula": "contexto",
     "resumo": "Ex-diretor da Petrobras e delator cujo silêncio, segundo a denúncia, se tentou comprar.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Situação não levantada por este mapa",
     "fontes": [
       "g1-2018-07-12-obstrucao"
     ],
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": null,
+      "data": "2026-10-21",
+      "texto": "Situação não levantada por este mapa"
+    },
     "categoria_juridica": "sem_informacao",
     "retrato": {
       "arquivo": "retratos/nestor-cervero.webp",
@@ -1599,9 +1754,7 @@
     "nome": "André Esteves",
     "tipo": "pessoa",
     "ocupacao": "Banqueiro (BTG Pactual)",
-    "proximidade_lula": 0.1,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [],
     "relacao_com_lula": "corréu absolvido",
     "resumo": "Absolvido com Lula no processo de obstrução de Justiça (2018).",
@@ -1609,7 +1762,13 @@
     "fontes": [
       "g1-2018-07-12-obstrucao"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "g1-2018-07-12-obstrucao",
+      "data": "2018-07-12",
+      "texto": "Absolvido (2018)."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": {
       "arquivo": "retratos/andre-esteves.webp",
       "autor": "Luiz Prado",
@@ -1633,18 +1792,22 @@
     "nome": "Mauro Marcondes Machado",
     "tipo": "pessoa",
     "ocupacao": "Lobista",
-    "proximidade_lula": 0.25,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [],
     "relacao_com_lula": "lobista",
-    "resumo": "Absolvido na ação da MP 471 (2021); denunciado com Lula e Luís Cláudio no caso Gripen.",
-    "situacao_juridica": "Absolvido (2021); ação Gripen trancada.",
+    "resumo": "Absolvido na ação da Zelotes sobre a MP 471 em 2021. Foi denunciado também no caso Gripen; o trancamento em relação a ele não foi confirmado.",
+    "situacao_juridica": "Absolvido na ação da Zelotes sobre a MP 471 (2021). O trancamento da ação Gripen em relação a ele não foi confirmado.",
     "fontes": [
       "g1-2021-06-21-zelotes",
       "estadao-2016-12-gripen"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "absolvido",
+      "fonte_id": "g1-2021-06-21-zelotes",
+      "data": "2021-06-21",
+      "texto": "Absolvido na ação da Zelotes sobre a MP 471 (2021). O trancamento da ação Gripen em relação a ele não foi confirmado."
+    },
+    "categoria_juridica": "absolvido",
     "retrato": null,
     "escandalos": [
       "esc-zelotes-gripen",
@@ -1663,17 +1826,21 @@
     "nome": "Cristina Mautoni",
     "tipo": "pessoa",
     "ocupacao": "Lobista",
-    "proximidade_lula": 0.15,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [],
     "relacao_com_lula": "lobista",
-    "resumo": "Denunciada com o marido, Mauro Marcondes, no caso Gripen (2016).",
-    "situacao_juridica": "Ação trancada.",
+    "resumo": "Foi denunciada no caso Gripen em 2016. O desfecho em relação a ela não foi confirmado pelas fontes deste mapa.",
+    "situacao_juridica": "Situação não levantada por este mapa. O trancamento em relação a Cristina Mautoni não foi confirmado nas fontes consultadas.",
     "fontes": [
       "estadao-2016-12-gripen"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": null,
+      "data": "2026-10-21",
+      "texto": "Situação não levantada por este mapa. O trancamento em relação a Cristina Mautoni não foi confirmado nas fontes consultadas."
+    },
+    "categoria_juridica": "sem_informacao",
     "retrato": null,
     "escandalos": [
       "esc-zelotes-gripen"
@@ -1689,18 +1856,22 @@
     "nome": "Taiguara Rodrigues dos Santos",
     "tipo": "pessoa",
     "ocupacao": "Empresário (Exergia Brasil)",
-    "proximidade_lula": 0.3,
     "classificacao": "secundario",
-    "nivel_juridico": 2,
     "grupos": [],
     "relacao_com_lula": "empresário",
-    "resumo": "Corréu no caso Angola/Operação Janus, sobre financiamentos do BNDES à Odebrecht; ação contra Lula trancada pelo TRF1 em 2020.",
-    "situacao_juridica": "",
+    "resumo": "Ação penal Janus 1 trancada pelo TRF1 em relação a Taiguara em junho de 2020. Foi corréu no caso Angola, sobre financiamentos do BNDES à Odebrecht.",
+    "situacao_juridica": "Ação penal Janus 1 trancada pelo TRF1 em relação a Taiguara em junho de 2020, segundo G1 de 01/09/2020. Não se trata de absolvição de mérito.",
     "fontes": [
       "folha-2019-07-24-angola",
       "g1-2020-09-01-trf1"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "arquivado",
+      "fonte_id": "g1-2020-09-01-trf1",
+      "data": "2020-09-01",
+      "texto": "Ação penal Janus 1 trancada pelo TRF1 em relação a Taiguara em junho de 2020, segundo G1 de 01/09/2020. Não se trata de absolvição de mérito."
+    },
+    "categoria_juridica": "arquivado",
     "retrato": null,
     "escandalos": [
       "esc-angola-bndes"
@@ -1711,25 +1882,28 @@
     "faixa_proximidade": "Vínculo direto pontual ou apenas alegado"
   },
   {
-    "id": "careca-do-inss",
+    "id": "antonio-carlos-camilo-antunes",
     "wikidata_qid": "Q135213575",
-    "nome": "Antônio Carlos Camilo Antunes (Careca do INSS)",
+    "nome": "Antônio Carlos Camilo Antunes, chamado pela imprensa de ‘Careca do INSS’",
     "tipo": "pessoa",
     "ocupacao": "Lobista e empresário",
-    "proximidade_lula": 0.3,
     "classificacao": "principal",
-    "nivel_juridico": 3,
     "grupos": [],
     "relacao_com_lula": "contato do filho",
-    "resumo": "Indiciado pela PF em julho de 2026 na investigação sobre descontos ilegais no INSS; relatório enviado ao STF/PGR, aguardando manifestação da PGR. Preso desde setembro de 2025. Viajou a Portugal com Lulinha em 2024, segundo a defesa deste.",
-    "situacao_juridica": "Indiciado pela PF em julho de 2026 na investigação sobre descontos ilegais no INSS; relatório enviado ao STF/PGR, aguardando manifestação da PGR. Preso desde setembro de 2025.",
+    "resumo": "Segundo a PF, um dos principais operadores das fraudes do INSS; indiciado em julho de 2026, sem condenação nas fontes deste mapa. G1 de 31/07/2026 noticiava prisão desde setembro de 2025; permanência da prisão na data de atualização não confirmada. Viajou a Portugal com Lulinha em 2024, segundo a defesa deste.",
+    "situacao_juridica": "Indiciado pela PF em julho de 2026 na Operação Sem Desconto; sem condenação nas fontes deste mapa. Segundo G1 de 31/07/2026, estava preso preventivamente desde setembro de 2025. Permanência da prisão em 21/10/2026 não confirmada. O relatório de indiciamento foi enviado ao STF/PGR; manifestação posterior da PGR não confirmada.",
     "fontes": [
       "pr-a-factcheck-09",
       "g1-2026-07-31-inquerito",
       "senado-2025-08-28-careca"
     ],
-    "categoria_juridica_declarada": "investigado",
-    "categoria_juridica": "investigado",
+    "situacao": {
+      "categoria": "indiciado",
+      "fonte_id": "pr-a-factcheck-09",
+      "data": "2026-10-21",
+      "texto": "Indiciado pela PF em julho de 2026 na Operação Sem Desconto; sem condenação nas fontes deste mapa. Segundo G1 de 31/07/2026, estava preso preventivamente desde setembro de 2025. Permanência da prisão em 21/10/2026 não confirmada. O relatório de indiciamento foi enviado ao STF/PGR; manifestação posterior da PGR não confirmada."
+    },
+    "categoria_juridica": "indiciado",
     "retrato": {
       "arquivo": "retratos/careca-do-inss.webp",
       "autor": "Agência Senado from Brasilia, Brazil",
@@ -1754,9 +1928,7 @@
     "nome": "Milton Baptista de Souza Filho (Milton Cavalo)",
     "tipo": "pessoa",
     "ocupacao": "Presidente do Sindnapi",
-    "proximidade_lula": 0.15,
     "classificacao": "secundario",
-    "nivel_juridico": 2,
     "grupos": [
       {
         "grupo_id": "grp-sindnapi",
@@ -1769,6 +1941,12 @@
     "fontes": [
       "agbr-2025-10-15-bloqueio"
     ],
+    "situacao": {
+      "categoria": "investigado",
+      "fonte_id": "agbr-2025-10-15-bloqueio",
+      "data": "2025-10-15",
+      "texto": "Investigado."
+    },
     "categoria_juridica": "investigado",
     "retrato": null,
     "escandalos": [
@@ -1786,9 +1964,7 @@
     "nome": "Carlos Lupi",
     "tipo": "pessoa",
     "ocupacao": "Ex-ministro da Previdência",
-    "proximidade_lula": 0.4,
     "classificacao": "secundario",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-3",
@@ -1797,11 +1973,17 @@
     ],
     "relacao_com_lula": "ministro",
     "resumo": "Ministro da Previdência de Lula quando a Operação Sem Desconto foi deflagrada (abril de 2025).",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-ministro da Previdência.",
     "fontes": [
       "camara-2025-10-16-frei-chico"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "camara-2025-10-16-frei-chico",
+      "data": "2025-10-16",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-ministro da Previdência."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/carlos-lupi.webp",
       "autor": "Geraldo Magela/Agência Senado",
@@ -1825,9 +2007,7 @@
     "nome": "Alfredo Gaspar",
     "tipo": "pessoa",
     "ocupacao": "Deputado federal, relator da CPMI do INSS",
-    "proximidade_lula": 0.05,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-cpmi-inss",
@@ -1836,11 +2016,17 @@
     ],
     "relacao_com_lula": "adversário político",
     "resumo": "Relator que sugeriu o indiciamento de Lulinha e de mais de 200 pessoas em 27/03/2026.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Deputado federal, relator da CPMI do INSS.",
     "fontes": [
       "g1-2026-03-27-cpmi"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2026-03-27-cpmi",
+      "data": "2026-03-27",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Deputado federal, relator da CPMI do INSS."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/alfredo-gaspar.webp",
       "autor": "Bruno Spada/Câmara dos Deputados",
@@ -1865,9 +2051,7 @@
     "nome": "Carlos Viana",
     "tipo": "pessoa",
     "ocupacao": "Senador, presidente da CPMI do INSS",
-    "proximidade_lula": 0.05,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-cpmi-inss",
@@ -1876,11 +2060,17 @@
     ],
     "relacao_com_lula": "contexto",
     "resumo": "Disse que a mesada a Lulinha era sustentada apenas por uma testemunha, sem confirmação.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Senador, presidente da CPMI do INSS.",
     "fontes": [
       "cnn-2026-03-27-cpmi"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "cnn-2026-03-27-cpmi",
+      "data": "2026-03-27",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Senador, presidente da CPMI do INSS."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha"
@@ -1896,9 +2086,7 @@
     "nome": "Swedenberger Barbosa (Berger)",
     "tipo": "pessoa",
     "ocupacao": "Ex-secretário-executivo do Ministério da Saúde",
-    "proximidade_lula": 0.3,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-3",
@@ -1907,11 +2095,17 @@
     ],
     "relacao_com_lula": "auxiliar do governo",
     "resumo": "Recebeu o Careca do INSS em janeiro de 2025; afirma que o encontro foi institucional e sem desdobramentos.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-secretário-executivo do Ministério da Saúde.",
     "fontes": [
       "g1-2026-07-31-inquerito"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2026-07-31-inquerito",
+      "data": "2026-07-31",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-secretário-executivo do Ministério da Saúde."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-cpmi-lulinha"
@@ -1928,17 +2122,21 @@
     "nome": "Marco Aurélio de Carvalho",
     "tipo": "pessoa",
     "ocupacao": "Advogado de Lulinha",
-    "proximidade_lula": 0.2,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [],
     "relacao_com_lula": "advogado do filho",
     "resumo": "Advogado que nega envolvimento de Lulinha e chama os inquéritos de \"pesca probatória\".",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Advogado de Lulinha.",
     "fontes": [
       "g1-2026-07-31-inquerito"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "g1-2026-07-31-inquerito",
+      "data": "2026-07-31",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Advogado de Lulinha."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/marco-aurelio-carvalho.webp",
       "autor": "Defensoria Pública da União - DPU",
@@ -1962,18 +2160,22 @@
     "nome": "André Janones",
     "tipo": "pessoa",
     "ocupacao": "Deputado federal (Avante-MG)",
-    "proximidade_lula": 0.4,
     "classificacao": "secundario",
-    "nivel_juridico": 3,
     "grupos": [],
     "relacao_com_lula": "aliado de campanha em 2022",
-    "resumo": "Atuou na linha de frente da campanha digital de Lula em 2022 (descrito pelo TSE como \"coordenador digital\"). Investigado no STF por rachadinha a partir de 2023, foi indiciado pela PF em 2024 e firmou acordo de não persecução penal homologado em 19/03/2025, no qual admitiu a prática e se comprometeu a pagar R$ 157,8 mil.",
-    "situacao_juridica": "ANPP homologado pelo STF (2025); sem condenação.",
+    "resumo": "ANPP homologado pelo STF em 19/03/2025; não é condenação nem gera antecedentes criminais. Atuou na linha de frente da campanha digital de Lula em 2022 (descrito pelo TSE como \"coordenador digital\"). Investigado no STF por rachadinha a partir de 2023, foi indiciado pela PF em 2024 e firmou acordo de não persecução penal homologado em 19/03/2025, no qual admitiu a prática e se comprometeu a pagar R$ 157,8 mil.",
+    "situacao_juridica": "ANPP homologado pelo STF em 19/03/2025; não é condenação nem gera antecedentes criminais.",
     "fontes": [
       "tse-2022-10-janones",
       "folha-2024-09-12-janones",
       "stf-2025-03-19-janones"
     ],
+    "situacao": {
+      "categoria": "sem_informacao",
+      "fonte_id": "stf-2025-03-19-janones",
+      "data": "2025-03-19",
+      "texto": "ANPP homologado pelo STF em 19/03/2025; não é condenação nem gera antecedentes criminais."
+    },
     "categoria_juridica": "sem_informacao",
     "retrato": {
       "arquivo": "retratos/andre-janones.webp",
@@ -1998,9 +2200,7 @@
     "nome": "Renan Calheiros",
     "tipo": "pessoa",
     "ocupacao": "Senador (MDB-AL)",
-    "proximidade_lula": 0.6,
     "classificacao": "secundario",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-mdb",
@@ -2008,15 +2208,22 @@
       }
     ],
     "relacao_com_lula": "aliado político",
-    "resumo": "Aliado de Lula, com relação próxima durante os governos dele, segundo O Globo; apoiou o impeachment de Dilma em 2016 e retomou a aliança em 2017; apoiou Lula em 2022. Teve inquéritos da Lava Jato e da Zelotes arquivados no STF (2017, 2018, 2022, 2023, 2024).",
-    "situacao_juridica": "Inquéritos arquivados no STF.",
+    "resumo": "Inquéritos arquivados no STF; último inquérito arquivado em fevereiro de 2025, segundo ConJur. Aliado de Lula, com relação próxima durante os governos dele, segundo O Globo; apoiou o impeachment de Dilma em 2016 e retomou a aliança em 2017; apoiou Lula em 2022. Teve inquéritos da Lava Jato e da Zelotes arquivados no STF (2017, 2018, 2022, 2023, 2024).",
+    "situacao_juridica": "Inquéritos arquivados no STF; último inquérito arquivado em fevereiro de 2025, segundo ConJur.",
     "fontes": [
       "oglobo-2022-renan-lula",
       "uol-2022-07-18-mdb",
       "stf-2023-06-20-renan",
-      "folha-2024-05-23-renan"
+      "folha-2024-05-23-renan",
+      "conjur-2025-02-26-renan"
     ],
-    "categoria_juridica": "absolvido_arquivado",
+    "situacao": {
+      "categoria": "arquivado",
+      "fonte_id": "conjur-2025-02-26-renan",
+      "data": "2025-02-26",
+      "texto": "Inquéritos arquivados no STF; último inquérito arquivado em fevereiro de 2025, segundo ConJur."
+    },
+    "categoria_juridica": "arquivado",
     "retrato": null,
     "escandalos": [
       "esc-renan-inqueritos"
@@ -2033,9 +2240,7 @@
     "nome": "Renan Filho",
     "tipo": "pessoa",
     "ocupacao": "Ministro dos Transportes no governo Lula 3",
-    "proximidade_lula": 0.55,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-mdb",
@@ -2048,11 +2253,17 @@
     ],
     "relacao_com_lula": "ministro",
     "resumo": "Filho de Renan Calheiros, anunciado por Lula como ministro dos Transportes em dezembro de 2022.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro dos Transportes no governo Lula 3.",
     "fontes": [
       "oglobo-2022-12-renan-filho"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "oglobo-2022-12-renan-filho",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro dos Transportes no governo Lula 3."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/renan-filho.webp",
       "autor": "Agência Senado from Brasilia, Brazil",
@@ -2077,9 +2288,7 @@
     "nome": "Daniel Vorcaro",
     "tipo": "pessoa",
     "ocupacao": "Controlador do Banco Master",
-    "proximidade_lula": 0.3,
     "classificacao": "principal",
-    "nivel_juridico": 3,
     "grupos": [
       {
         "grupo_id": "grp-banco-master",
@@ -2088,12 +2297,18 @@
     ],
     "relacao_com_lula": "banqueiro recebido em reunião",
     "resumo": "Recebido por Lula no Planalto em 04/12/2024, fora da agenda oficial, levado por Guido Mantega, consultor do Master. O BC barrou a venda do Master ao BRB em setembro de 2025 e liquidou o banco em 18/11/2025; Vorcaro foi preso na Operação Compliance Zero (novembro de 2025) e novamente em março de 2026.",
-    "situacao_juridica": "Preso; investigado na Operação Compliance Zero.",
+    "situacao_juridica": "Investigado na Operação Compliance Zero. Prisão preventiva noticiada em 2026; a fonte de 19/10/2026 trata da manifestação da PGR sobre familiares e assessores. Situação prisional atual de Vorcaro não reconfirmada.",
     "fontes": [
       "poder360-2026-vorcaro-lula",
       "folha-2026-01-26-vorcaro",
-      "metropoles-2026-master-pagamentos"
+      "g1-2026-10-19-vorcaro"
     ],
+    "situacao": {
+      "categoria": "investigado",
+      "fonte_id": "g1-2026-10-19-vorcaro",
+      "data": "2026-10-19",
+      "texto": "Investigado na Operação Compliance Zero. Prisão preventiva noticiada em 2026; a fonte de 19/10/2026 trata da manifestação da PGR sobre familiares e assessores. Situação prisional atual de Vorcaro não reconfirmada."
+    },
     "categoria_juridica": "investigado",
     "retrato": {
       "arquivo": "retratos/daniel-vorcaro.webp",
@@ -2110,7 +2325,6 @@
     "conexoes": [
       "con-068",
       "con-069",
-      "con-072",
       "con-073",
       "con-074",
       "con-075",
@@ -2124,9 +2338,7 @@
     "nome": "Gabriel Galípolo",
     "tipo": "pessoa",
     "ocupacao": "Presidente do Banco Central (desde 2025)",
-    "proximidade_lula": 0.5,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-3",
@@ -2135,11 +2347,17 @@
     ],
     "relacao_com_lula": "indicado ao BC",
     "resumo": "Chamado por Lula à reunião com Vorcaro em 2024; sob sua presidência o BC rejeitou a venda do Master ao BRB e liquidou o banco.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Presidente do Banco Central (desde 2025).",
     "fontes": [
       "poder360-2026-vorcaro-lula"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "poder360-2026-vorcaro-lula",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Presidente do Banco Central (desde 2025)."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/gabriel-galipolo.webp",
       "autor": "Agência Senado",
@@ -2152,9 +2370,7 @@
     "escandalos": [
       "esc-banco-master"
     ],
-    "conexoes": [
-      "con-072"
-    ],
+    "conexoes": [],
     "faixa_proximidade": "Vínculo direto, forte e repetido"
   },
   {
@@ -2163,9 +2379,7 @@
     "nome": "Rui Costa",
     "tipo": "pessoa",
     "ocupacao": "Ministro da Casa Civil",
-    "proximidade_lula": 0.6,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-3",
@@ -2178,12 +2392,18 @@
     ],
     "relacao_com_lula": "ministro",
     "resumo": "Participou da reunião de Lula com Vorcaro em 04/12/2024; Lula disse que Rui conhecia o banqueiro.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro da Casa Civil.",
     "fontes": [
       "poder360-2026-vorcaro-lula",
       "oglobo-2026-02-05-lula-vorcaro"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "poder360-2026-vorcaro-lula",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro da Casa Civil."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/rui-costa.webp",
       "autor": "Palácio do Planalto from Brasilia, Brasil",
@@ -2207,9 +2427,7 @@
     "nome": "Alexandre Silveira",
     "tipo": "pessoa",
     "ocupacao": "Ministro de Minas e Energia",
-    "proximidade_lula": 0.5,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-3",
@@ -2218,12 +2436,18 @@
     ],
     "relacao_com_lula": "ministro",
     "resumo": "Participou da reunião com Vorcaro no Planalto em 2024, segundo Poder360, Folha e Valor.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro de Minas e Energia.",
     "fontes": [
       "poder360-2026-vorcaro-lula",
       "valor-2026-01-26-vorcaro"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "poder360-2026-vorcaro-lula",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ministro de Minas e Energia."
+    },
+    "categoria_juridica": "institucional",
     "retrato": {
       "arquivo": "retratos/alexandre-silveira.webp",
       "autor": "Alexandre  Silveira",
@@ -2247,9 +2471,7 @@
     "nome": "Augusto Lima",
     "tipo": "pessoa",
     "ocupacao": "Ex-CEO do Banco Master",
-    "proximidade_lula": 0.1,
     "classificacao": "periferico",
-    "nivel_juridico": 1,
     "grupos": [
       {
         "grupo_id": "grp-banco-master",
@@ -2258,11 +2480,17 @@
     ],
     "relacao_com_lula": "contexto",
     "resumo": "Acompanhou Vorcaro e Mantega na reunião com Lula em 2024.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-CEO do Banco Master.",
     "fontes": [
       "poder360-2026-vorcaro-lula"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "poder360-2026-vorcaro-lula",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Ex-CEO do Banco Master."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-banco-master"
@@ -2278,9 +2506,7 @@
     "nome": "Marco Aurélio Santana Ribeiro",
     "tipo": "pessoa",
     "ocupacao": "Chefe do Gabinete Pessoal da Presidência",
-    "proximidade_lula": 0.8,
     "classificacao": "periferico",
-    "nivel_juridico": 0,
     "grupos": [
       {
         "grupo_id": "grp-governo-lula-3",
@@ -2289,11 +2515,17 @@
     ],
     "relacao_com_lula": "assessor próximo",
     "resumo": "Recebeu Mantega em audiência registrada em 04/12/2024, antes do encontro de Vorcaro com Lula.",
-    "situacao_juridica": "",
+    "situacao_juridica": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Chefe do Gabinete Pessoal da Presidência.",
     "fontes": [
       "poder360-2026-vorcaro-lula"
     ],
-    "categoria_juridica": "sem_informacao",
+    "situacao": {
+      "categoria": "institucional",
+      "fonte_id": "poder360-2026-vorcaro-lula",
+      "data": "2026-10-21",
+      "texto": "Não é investigado nem acusado nas fontes citadas neste registro; aparece pela atuação institucional ou profissional: Chefe do Gabinete Pessoal da Presidência."
+    },
+    "categoria_juridica": "institucional",
     "retrato": null,
     "escandalos": [
       "esc-banco-master"

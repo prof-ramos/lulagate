@@ -1,0 +1,2 @@
+"""Vocabulário explícito. Proibido inferir categoria de texto, cargo ou pontuação."""
+CATEGORIES = {'condenado': 'Condenado', 'reu': 'Réu', 'investigado': 'Investigado', 'indiciado': 'Indiciado', 'condenacao_anulada': 'Condenação anulada', 'absolvido': 'Absolvido', 'arquivado': 'Arquivado', 'prescricao': 'Prescrição', 'institucional': 'Atuação institucional ou profissional (não é parte)', 'sem_informacao': 'Situação não levantada por este mapa'}

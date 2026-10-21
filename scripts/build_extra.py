@@ -74,3 +74,96 @@ case('esc-banco-master','Banco Master e Daniel Vorcaro',P('2024-12-04',None),'in
  ['daniel-vorcaro','guido-mantega','gabriel-galipolo','rui-costa','alexandre-silveira','augusto-lima','marco-aurelio-santana-ribeiro','ricardo-lewandowski','lula'],
  [dict(descricao='Pagamentos do Master a Mantega (2024-2025)',valor=14000000,moeda='BRL'),dict(descricao='Pagamentos do Master a políticos e ex-ministros (2023-2025)',valor=65830000,moeda='BRL')],
  ['poder360-2026-vorcaro-lula','folha-2026-01-26-vorcaro','valor-2026-01-26-vorcaro','oglobo-2026-02-05-lula-vorcaro','oglobo-2026-04-08-master-pagamentos','oglobo-2026-04-10-master-servicos','metropoles-2026-master-pagamentos'])
+
+# PR B: correções editoriais fundamentadas no fact-check.
+RESUMOS_PR_B = {'lula': 'Sem condenação vigente até 21/10/2026. Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela '
+         '13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência '
+         'de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição '
+         'ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP '
+         '471).',
+ 'luis-claudio': 'Filho de Lula, foi denunciado em 2016 na Operação Zelotes (caças Gripen e MP 627). A fonte '
+                 'do STF de 2023 confirma o trancamento em relação a Lula; o desfecho em relação a Luís '
+                 'Cláudio não foi confirmado.',
+ 'cristina-mautoni': 'Foi denunciada no caso Gripen em 2016. O desfecho em relação a ela não foi confirmado '
+                     'pelas fontes deste mapa.',
+ 'marisa-leticia': 'Não foi condenada; a punibilidade foi extinta com sua morte, em 2017. Esposa de Lula, '
+                   'foi citada nos processos do triplex e de Atibaia, depois anulados pelo STF.',
+ 'jose-carlos-bumlai': 'Condenação de 2016 no caso Schahin anulada pelo STJ em 2021; absolvido pelo TRF4 no '
+                       'caso Atibaia em 2019. A acusação reproduzida pelo TRF4 o descrevia como amigo '
+                       'próximo de Lula.',
+ 'kalil-bittar': 'Investigação Mapa da Mina arquivada em 2022 sem denúncia, após anulação das provas. Sócio '
+                 'de Lulinha em empresas do grupo Gamecorp/Gol, foi citado na apuração iniciada em 2019.',
+ 'jonas-suassuna': 'Investigação Mapa da Mina arquivada em 2022 sem denúncia, após anulação das provas. '
+                   'Sócio de Lulinha em empresas do grupo Gamecorp/Gol, foi citado na apuração iniciada em '
+                   '2019.',
+ 'rosemary-noronha': 'Não foi condenada na ação penal encerrada em 2021 após anulação das provas; a decisão '
+                     'admitia recurso. Destituída administrativamente em 2013. Nomeada por Lula e mantida '
+                     'por Dilma, foi demitida em 2012. Negou ter praticado corrupção.',
+ 'ricardo-lewandowski': 'Como ministro do STF, trancou em 2023 três ações contra Lula. Após deixar a Corte '
+                        'em abril de 2023 e antes de assumir o Ministério da Justiça em 2024, prestou '
+                        'consultoria ao Banco Master, segundo O Globo. Declarou que o serviço consistia em '
+                        'orientação técnica em temas jurídicos da instituição.',
+ 'delubio-soares': 'Pena da AP 470 extinta por indulto concedido pelo STF em 10/03/2016. Desfechos de outros '
+                   'processos não levantados por este mapa. Tesoureiro do PT na época do mensalão. Segundo a '
+                   'Folha (2005), o presidente do PT afirmou que ele era o "traidor" mencionado por Lula no '
+                   'Roda Viva.',
+ 'frei-chico': 'Não é investigado, segundo CNN, Estadão e Agência Brasil. Irmão mais velho de Lula e '
+               'dirigente do Sindnapi, entidade alvo da Operação Sem Desconto. Segundo CNN, Estadão e '
+               'Agência Brasil, não é investigado nem foi alvo de medidas. A CPMI rejeitou sua convocação em '
+               '16/10/2025. A CGU apontou que o sindicato omitiu sua presença na diretoria ao renovar '
+               'parceria com o INSS.',
+ 'dilma-rousseff': 'Absolvida no quadrilhão do PT (2019). Sucessora de Lula; demitiu Rosemary Noronha em '
+                   '2012.',
+ 'gilberto-carvalho': 'Absolvido na ação Zelotes sobre a MP 471 (2021). Foi chefe de gabinete de Lula.',
+ 'emyr-costa': 'Absolvido pelo TRF4 no caso Atibaia (2019). Segundo a acusação, supervisionou a obra no '
+               'sítio.',
+ 'roberto-teixeira': 'Absolvido no caso Atibaia em 2019. Advogado e amigo de Lula, segundo o TRF4.',
+ 'rogerio-pimentel': 'Absolvido em todas as instâncias no caso Atibaia. Descrito pelo TRF4 como auxiliar de '
+                     'confiança de Lula.',
+ 'delcidio-amaral': 'Absolvido na ação de obstrução de Justiça em 2018. Fora acusado de tentar comprar o '
+                    'silêncio de Nestor Cerveró.',
+ 'mauro-marcondes': 'Absolvido na ação da Zelotes sobre a MP 471 em 2021. Foi denunciado também no caso '
+                    'Gripen; o trancamento em relação a ele não foi confirmado.',
+ 'renan-calheiros': 'Inquéritos arquivados no STF; último inquérito arquivado em fevereiro de 2025, segundo '
+                    'ConJur. Aliado de Lula, com relação próxima durante os governos dele, segundo O Globo; '
+                    'apoiou o impeachment de Dilma em 2016 e retomou a aliança em 2017; apoiou Lula em 2022. '
+                    'Teve inquéritos da Lava Jato e da Zelotes arquivados no STF (2017, 2018, 2022, 2023, '
+                    '2024).',
+ 'andre-janones': 'ANPP homologado pelo STF em 19/03/2025; não é condenação nem gera antecedentes criminais. '
+                  'Atuou na linha de frente da campanha digital de Lula em 2022 (descrito pelo TSE como '
+                  '"coordenador digital"). Investigado no STF por rachadinha a partir de 2023, foi indiciado '
+                  'pela PF em 2024 e firmou acordo de não persecução penal homologado em 19/03/2025, no qual '
+                  'admitiu a prática e se comprometeu a pagar R$ 157,8 mil.',
+ 'antonio-carlos-camilo-antunes': 'Segundo a PF, um dos principais operadores das fraudes do INSS; indiciado '
+                                  'em julho de 2026, sem condenação nas fontes deste mapa. G1 de 31/07/2026 '
+                                  'noticiava prisão desde setembro de 2025; permanência da prisão na data de '
+                                  'atualização não confirmada. Viajou a Portugal com Lulinha em 2024, '
+                                  'segundo a defesa deste.',
+ 'taiguara-santos': 'Ação penal Janus 1 trancada pelo TRF1 em relação a Taiguara em junho de 2020. Foi '
+                    'corréu no caso Angola, sobre financiamentos do BNDES à Odebrecht.'}
+for n in N:
+    if n["id"] in RESUMOS_PR_B: n["resumo"] = RESUMOS_PR_B[n["id"]]
+    if n["id"] == "antonio-carlos-camilo-antunes": n["nome"] = "Antônio Carlos Camilo Antunes, chamado pela imprensa de ‘Careca do INSS’"
+    n["fontes"] = [f for f in n["fontes"] if f != "metropoles-2026-master-pagamentos"]
+for e in E:
+    e["fontes"] = [f for f in e["fontes"] if f != "metropoles-2026-master-pagamentos"]
+    if e["id"] in ("con-003", "con-018"):
+        e["status"] = "fato_documentado"
+        e["descricao"] = "Denunciados no caso Gripen em 2016. Trancamento confirmado apenas em relação a Lula; desfecho dos demais não confirmado."
+        e["fontes"] = ["estadao-2016-12-gripen"]
+    if e["id"] == "con-005": e["rotulo"] = "colega de diretoria do Sindnapi"
+    if e["id"] == "con-006":
+        e["descricao"] += " Pena da AP 470 extinta por indulto em 2016."
+        e["fontes"].append("pr-a-factcheck-01")
+    if e["id"] == "con-009":
+        e["descricao"] += " Atos dos processos da Lava Jato contra Palocci anulados em 2025; delação mantida."
+        e["fontes"].append("pr-a-factcheck-08")
+    if e["id"] == "con-021":
+        e["rotulo"] = "amigo próximo, segundo a acusação reproduzida pelo TRF4"
+        e["descricao"] = "O acórdão usa o condicional ao reproduzir a acusação; Bumlai foi absolvido no caso Atibaia."
+    if e["id"] == "con-022":
+        e["descricao"] += " Condenações de Léo Pinheiro anuladas pelo STF em 2024, decisão mantida em 2025; delação mantida."
+        e["fontes"].append("pr-a-factcheck-05")
+for c in C:
+    c["fontes"] = [f for f in c["fontes"] if f != "metropoles-2026-master-pagamentos"]
+    c["grupo_lista"] = "lula_parte" if c["id"] in ['esc-triplex', 'esc-atibaia', 'esc-instituto-lula', 'esc-quadrilhao', 'esc-obstrucao-cervero', 'esc-angola-bndes', 'esc-zelotes-mp471', 'esc-zelotes-gripen'] else "terceiros_contexto"

@@ -3,9 +3,21 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {nodeSize,LEGAL_COLORS} from '../graph-model.js';
 const data=JSON.parse(readFileSync(new URL('../../data/dataset.json',import.meta.url)));
-test('legal categories require person evidence and conservative explicit text',()=>{
+test('situations are explicit, sourced and dated; no public numerical scores',()=>{
  const sources=new Map(data.fontes.map(s=>[s.id,s]));
- for(const p of data.personagens){assert.ok(LEGAL_COLORS[p.categoria_juridica]);if(p.categoria_juridica!=='sem_informacao')assert.ok(p.fontes.some(id=>/^https?:\/\//.test(sources.get(id)?.url)))}
+ const authored=JSON.parse(readFileSync(new URL('../../scripts/situacoes.json',import.meta.url)));
+ for(const p of data.personagens){
+  assert.deepEqual(p.situacao,authored[p.id]);
+  assert.equal(p.categoria_juridica,p.situacao.categoria);
+  assert.ok(LEGAL_COLORS[p.situacao.categoria]);
+  assert.ok(p.situacao.texto.trim());
+  assert.equal('proximidade_lula' in p,false);assert.equal('nivel_juridico' in p,false);
+  if(!['sem_informacao','institucional'].includes(p.situacao.categoria)){
+   assert.match(sources.get(p.situacao.fonte_id)?.url,/^https?:\/\//);
+   assert.match(p.situacao.data,/^\d{4}-\d{2}-\d{2}$/);
+   assert.ok(p.situacao.data<=data.meta.data_atualizacao);
+  }
+ }
 });
 test('size grows with case count, Lula retains prominence',()=>{
  assert.ok(nodeSize({escandalos:['a','b']})>nodeSize({escandalos:['a']}));

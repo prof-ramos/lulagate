@@ -1,10 +1,18 @@
 import json,os,base64
-from legal_category import legal_category, CATEGORIES
+from situacoes import CATEGORIES
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 from research import load_research
 research = load_research()
 S, N, E, C, groups = (research[k] for k in ('S', 'N', 'E', 'C', 'groups'))
+situacoes = json.loads((ROOT / 'scripts/situacoes.json').read_text(encoding='utf-8'))
+if set(situacoes) != {n['id'] for n in N}:
+    raise ValueError('Cada pessoa da pesquisa exige uma situação explícita; não há fallback ou inferência.')
+for n in N:
+    n['situacao'] = situacoes[n['id']]
+    n['situacao_juridica'] = n['situacao']['texto']
+    ref = n['situacao']['fonte_id']
+    if ref and ref not in n['fontes']: n['fontes'].append(ref)
 ocultos = json.loads((ROOT / 'data/ocultos.json').read_text(encoding='utf-8'))
 ids_pesquisa = {x['id'] for x in N + E}
 for entrada in ocultos:
@@ -21,7 +29,7 @@ creditos = json.loads((ROOT / 'data/creditos-imagens.json').read_text(encoding='
 por_pessoa = {c['pessoa_id']: c for c in creditos}
 for n in N:
     c = por_pessoa.get(n['id'])
-    n['categoria_juridica'] = legal_category(n, S)
+    n['categoria_juridica'] = n['situacao']['categoria']
     n['retrato'] = dict(arquivo='retratos/' + c['arquivo_local'], **{k: c[k] for k in ('autor', 'licenca', 'licenca_url', 'url_origem', 'arquivo_commons')}) if c else None
     if c:
         n['retrato']['base64'] = 'data:image/webp;base64,' + base64.b64encode((ROOT / 'app/public/retratos' / c['arquivo_local']).read_bytes()).decode()
@@ -38,10 +46,12 @@ def faixa(v):
     for k in ['0.90','0.70','0.50','0.30','0.10','0.01']:
         if v>=float(k): return next(x for x in escala if x.startswith(k))
     return '0'
-for n in N: n['faixa_proximidade']=escala[faixa(n['proximidade_lula'])]
+for n in N:
+    n['faixa_proximidade']=escala[faixa(n.pop('proximidade_lula'))]
+    n.pop('nivel_juridico', None)
 legenda={'condenacao_anulada':'Condenação anulada','arquivado':'Arquivado ou trancado','absolvido':'Absolvido','investigacao_em_curso':'Investigação em curso','fato_documentado':'Fato documentado','associacao_indireta':'Associação indireta','alegacao_nao_comprovada':'Alegação não comprovada'}
 sources=list(S.values())
-meta=dict(titulo='Lula Gate',idioma='pt-BR',data_corte='2026-10-20',versao='0.1.0',personagem_central='lula',legenda_status=legenda,proximidades=dict(campo='proximidade_lula',escala=escala),
+meta=dict(titulo='LulaGate: mapa de casos, decisões e conexões citados na imprensa',idioma='pt-BR',data_corte='2026-10-21',data_atualizacao='2026-10-21',versao='0.1.0',personagem_central='lula',legenda_status=legenda,proximidades=dict(campo='faixa_proximidade',escala=list(escala.values())),
  leitura_conexoes="Cada conexão vai de 'origem' para 'destino'; o 'rotulo' descreve o que a origem é em relação ao destino.")
 for name,obj in [('nodes',N),('edges',E),('sources',sources),('cases',C),('groups',groups)]:
     json.dump(obj,open(f'{D}/{name}.json','w'),ensure_ascii=False,indent=2)

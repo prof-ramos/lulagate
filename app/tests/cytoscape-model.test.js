@@ -2,8 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import cytoscape from 'cytoscape';
 import {graphElements,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles,applyFocus} from '../cytoscape-model.js';
-import {parallelSlots,STATUS_CONFIG} from '../graph-model.js';
-const nodes=[{id:'lula',nome:'Luiz Inácio Lula da Silva',proximidade_lula:1},...Array.from({length:7},(_,i)=>({id:`p${i}`,nome:`Personagem ${i}`,proximidade_lula:[.9,.7,.5,.3,.1,.01,0][i]}))];
+import {parallelSlots,STATUS_CONFIG,PROXIMITY_BANDS} from '../graph-model.js';
+const nodes=[{id:'lula',nome:'Luiz Inácio Lula da Silva',faixa_proximidade:PROXIMITY_BANDS[0].label},...Array.from({length:7},(_,i)=>({id:`p${i}`,nome:`Personagem ${i}`,faixa_proximidade:PROXIMITY_BANDS[i].label}))];
 const edges=[{id:'e1',origem:'lula',destino:'p0',status:'arquivado',rotulo:'um'},{id:'e2',origem:'p0',destino:'lula',status:'fato_documentado',rotulo:'dois'}];
 test('adapter keeps every person, relation, direction and metadata',()=>{
  const cy=cytoscape({headless:true,elements:graphElements(nodes,edges,parallelSlots(edges))});

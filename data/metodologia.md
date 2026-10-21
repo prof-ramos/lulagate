@@ -15,14 +15,13 @@ Todas as informações deste mapa vêm de reportagens já publicadas por veícul
 ## Critérios
 
 - Cada caso e cada conexão tem pelo menos uma fonte com URL, veículo e data.
-- Proximidade (`proximidade_lula`, de 0 a 1) em sete faixas: 0,90 a 1,00 família imediata ou convívio íntimo; 0,70 a 0,89 círculo próximo; 0,50 a 0,69 vínculo direto, forte e repetido; 0,30 a 0,49 vínculo direto pontual ou apenas alegado; 0,10 a 0,29 vínculo fraco ou indireto; 0,01 a 0,09 apenas contexto; 0 nenhum vínculo. Os valores são atribuição editorial a partir dos vínculos documentados, não cálculo automático nem medida de culpa.
-- `nivel_juridico` (0 a 4) é escala separada sobre a situação jurídica da própria pessoa.
+- A proximidade editorial usa sete rótulos verbais: família imediata ou convívio íntimo; círculo próximo; vínculo direto, forte e repetido; vínculo direto pontual ou apenas alegado; vínculo fraco ou indireto; apenas contexto; nenhum vínculo. Não é uma medida de culpa ou responsabilidade jurídica. Pontuações de pesquisa não são publicadas no dataset nem exibidas no painel.
 - Valores são nominais, na moeda noticiada.
 - Alegações sem fonte verificável ficaram de fora.
 
 ## Data de corte
 
-20/10/2026.
+21/10/2026.
 
 ## Veículos de imprensa (19)
 
@@ -46,13 +45,11 @@ Todas as informações deste mapa vêm de reportagens já publicadas por veícul
 - UOL
 - Valor Econômico
 
-## Documentos e órgãos oficiais (12)
+## Documentos e órgãos oficiais
 
 - Agência Câmara de Notícias
 - Agência Senado
-- Consultor Jurídico (ConJur)
 - Controladoria-Geral da União
-- Polícia Federal
 - Presidência da República
 - STF (LexML)
 - Superior Tribunal de Justiça
@@ -63,10 +60,24 @@ Todas as informações deste mapa vêm de reportagens já publicadas por veícul
 
 ## Categorias jurídicas dos nós
 
-O build deriva `categoria_juridica` apenas de `situacao_juridica` da própria pessoa e exige pelo menos uma referência em `fontes` que exista em `sources.json` (a coleção de fontes deste projeto) com URL HTTP(S) e host. A validação é estrutural e não verifica disponibilidade remota. Status de conexões, casos, ocupações e nível jurídico não atribuem categoria à pessoa.
+Cada pessoa possui um registro explícito `situacao`, com `categoria`, `fonte_id`, `data` (AAAA-MM-DD) e `texto`, editado em `scripts/situacoes.json`. Nenhuma categoria é derivada de palavras, regex, ocupação, casos, conexões ou pontuações. O build apenas copia o registro; os campos de compatibilidade `categoria_juridica` e `situacao_juridica` reproduzem sua categoria e seu texto.
 
-A regra, em ordem: menção explícita a condenação ou condenações anuladas; investigado ou investigada (exceto “não investigado”); condenado ou condenada; absolvido, arquivado, trancado ou ação penal encerrada. Os dois últimos desfechos compartilham a categoria “Absolvido / arquivado” apenas para navegação, sem equivalência jurídica. As demais situações e pessoas sem fonte válida recebem “Sem informação”, que significa ausência de classificação nestas categorias, não ausência de antecedentes. O texto original continua em destaque no painel. Anulação de processo, sem menção explícita a condenação anulada, não basta para essa categoria. A ordem resolve textos com múltiplos desfechos e não representa uma conclusão jurídica atualizada além do dataset.
+O vocabulário é: condenado, réu, investigado, indiciado, condenação anulada, absolvido, arquivado, prescrição, atuação institucional ou profissional (não é parte) e situação não levantada por este mapa. Absolvição, arquivamento e prescrição são categorias distintas. Atuação institucional é usada para quem aparece nas fontes citadas como julgador, advogado, parlamentar da CPMI ou autoridade sem imputação naquele registro; não é uma certificação geral sobre outros processos. Na dúvida, registra-se `sem_informacao`, com o texto “Situação não levantada por este mapa”. Extinção por morte, indulto e ANPP são descritos em texto, sem forçar equivalência com as demais categorias.
 
-As cores identificam essas cinco categorias, acompanhadas de nomes e contagens nos filtros. O tamanho dos nós representa o número de casos associados, com destaque adicional para Lula; não representa culpa ou gravidade. A seleção destaca as conexões imediatas e esmaece o restante.
+Exceto nas categorias `sem_informacao` e `institucional`, a validação exige fonte existente com URL HTTP(S) e data ISO válida, não posterior a `meta.data_atualizacao`. A data identifica a referência da situação; quando a fonte só informa mês ou ano, usa-se a data da revisão editorial e isso não certifica nova consulta ao andamento processual. A revisão editorial global é de 21/10/2026. Afirmações cuja atualidade não foi reconfirmada são delimitadas pela data da fonte, especialmente prisões e manifestações da PGR. A validação estrutural não verifica disponibilidade remota ou o mérito das fontes.
 
-Retratos locais são miniaturas WebP de até 96 px, incorporadas em base64 ao dataset pelo build, com créditos preservados. A imagem social é criada localmente por `scripts/build_og.py`.
+Cor, forma e rótulo identificam a categoria; a categoria institucional usa cinza neutro. O tamanho representa o número de casos, não culpa ou gravidade. Os casos são separados entre “Casos em que Lula foi investigado ou réu” e “Casos de terceiros, contexto”. A presença de Lula num caso de terceiros não o torna parte na investigação.
+
+ConJur é imprensa jurídica, não órgão oficial. A cópia de sentença hospedada no ConJur é identificada como cópia de decisão, com veículo de imprensa jurídica. Colunas de bastidor não equivalem a documentos oficiais. A fonte restrita da PF sobre Mapa da Mina foi substituída pela reportagem do Poder360 de 18/01/2022. A notícia inacessível da CGU sobre Rosemary foi substituída pelo ato de destituição no Diário Oficial da União; a URL pública do relatório administrativo não foi confirmada.
+
+Retratos locais são miniaturas WebP de até 96 px, incorporadas ao dataset, com autor, licença, link de origem e indicação de redução no painel. A imagem social é criada localmente por `scripts/build_og.py`.
+
+## Correções e direito de resposta
+
+Se você é citado neste mapa e quer corrigir uma informação ou publicar sua versão, abra uma issue em https://github.com/prof-ramos/lulagate/issues. Informe o registro, o trecho e as fontes da correção. O prazo editorial de resposta é de até 48 horas no período eleitoral e 7 dias fora dele. Correções são publicadas no próprio registro e documentadas com data no [registro público de correções](https://github.com/prof-ramos/lulagate/blob/main/CHANGELOG-PR-B.md). O [PR A](https://github.com/prof-ramos/lulagate/blob/main/CHANGELOG-PR-A.md) registra as ocultações anteriores.
+
+Contato por e-mail: **TODO: informar e-mail de contato do responsável**. Nenhum endereço de e-mail foi localizado nos READMEs do projeto; o canal de issues está disponível.
+
+## Expediente
+
+Autor e responsável editorial: Gabriel Ramos. Data de atualização: 21/10/2026. Contato: https://github.com/prof-ramos/lulagate/issues. E-mail: **TODO: informar e-mail de contato do responsável**.

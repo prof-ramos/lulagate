@@ -11,7 +11,7 @@ export function proximityPositions(people){
  const clearance=(a,b)=>Math.max(Math.abs(a.x-b.x)-150,Math.abs(a.y-b.y)-68);
  if(people.some(p=>p.id==='lula'))placed.push({x:0,y:0});
  for(let band=0;band<7;band++){
-  const group=people.filter(p=>p.id!=='lula'&&proximityBand(p.proximidade_lula)===band).sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
+  const group=people.filter(p=>p.id!=='lula'&&proximityBand(p.faixa_proximidade)===band).sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
   group.forEach((p,i)=>{
    const nominal=i/group.length*Math.PI*2-Math.PI/2,radius=(band+1)*BAND_STEP;
    let best,score=-Infinity;
@@ -29,7 +29,7 @@ export function proximityPositions(people){
  return positions;
 }
 export function graphElements(people,edges,slots=parallelSlots(edges)){
- return [...people.map(p=>({group:'nodes',data:{...p,label:compactLabel(p),compact:compactLabel(p),size:nodeSize(p),legalColor:LEGAL_COLORS[p.categoria_juridica]||LEGAL_COLORS.sem_informacao,legalShape:({condenado:'diamond',condenacao_anulada:'hexagon',investigado:'triangle',absolvido_arquivado:'round-rectangle'})[p.categoria_juridica]||'ellipse'},classes:p.id==='lula'?'central':''})),...edges.map(e=>({group:'edges',data:{...e,source:e.origem,target:e.destino,slot:slots.get(e.id)||0,curve:(slots.get(e.id)||0)*65*(e.origem<e.destino?1:-1)},classes:`status-${e.status}`}))];
+ return [...people.map(p=>({group:'nodes',data:{...p,label:compactLabel(p),compact:compactLabel(p),size:nodeSize(p),legalColor:LEGAL_COLORS[p.categoria_juridica]||LEGAL_COLORS.sem_informacao,legalShape:({condenado:'diamond',condenacao_anulada:'hexagon',investigado:'triangle',absolvido:'round-rectangle',arquivado:'round-rectangle',prescricao:'round-rectangle',indiciado:'triangle',reu:'diamond',institucional:'rectangle'})[p.categoria_juridica]||'ellipse'},classes:p.id==='lula'?'central':''})),...edges.map(e=>({group:'edges',data:{...e,source:e.origem,target:e.destino,slot:slots.get(e.id)||0,curve:(slots.get(e.id)||0)*65*(e.origem<e.destino?1:-1)},classes:`status-${e.status}`}))];
 }
 // Reconcile the actual graph; retained nodes keep their identity and dragged positions.
 export function syncSlice(cy,people,edges,slots){

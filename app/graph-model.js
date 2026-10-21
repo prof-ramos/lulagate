@@ -9,15 +9,15 @@ export const STATUS_CONFIG={
  alegacao_nao_comprovada:{dash:'3 6'},
 };
 export const PROXIMITY_BANDS=[
- {min:.9,range:'0,90–1,00',label:'família imediata ou convívio íntimo'},
- {min:.7,range:'0,70–0,89',label:'círculo próximo'},
- {min:.5,range:'0,50–0,69',label:'vínculo direto, forte e repetido'},
- {min:.3,range:'0,30–0,49',label:'vínculo direto pontual ou apenas alegado'},
- {min:.1,range:'0,10–0,29',label:'vínculo fraco ou indireto'},
- {min:.01,range:'0,01–0,09',label:'apenas contexto'},
- {min:0,range:'0',label:'nenhum vínculo'},
+ {label:'família imediata ou convívio íntimo'},
+ {label:'círculo próximo'},
+ {label:'vínculo direto, forte e repetido'},
+ {label:'vínculo direto pontual ou apenas alegado'},
+ {label:'vínculo fraco ou indireto'},
+ {label:'apenas contexto'},
+ {label:'nenhum vínculo'},
 ];
-export const proximityBand=value=>PROXIMITY_BANDS.findIndex(b=>value>=b.min);
+export const proximityBand=value=>PROXIMITY_BANDS.findIndex(b=>b.label===value?.toLocaleLowerCase('pt-BR'));
 export function filterGraph(people,edges,enabled,caseId){
  const visibleEdges=edges.filter(e=>enabled.has(e.status)&&(!caseId||e.escandalos.includes(caseId)));
  const active=new Set(visibleEdges.flatMap(e=>[e.origem,e.destino]));
@@ -32,9 +32,10 @@ export function parallelSlots(edges){
 // Context names shorten only existing words; details always retain the full name.
 export function compactLabel(person){
  const alias=person.nome.match(/\(([^)]+)\)/)?.[1];if(alias)return alias;
+ if(person.id==='antonio-carlos-camilo-antunes')return 'Antônio Carlos Camilo Antunes';
  if(person.id==='lula')return 'Lula';
  const words=person.nome.trim().split(/\s+/);return words.length>3?`${words[0]} ${words.at(-1)}`:person.nome;
 }
 
-export const LEGAL_COLORS={condenado:'#994500',condenacao_anulada:'#6551a3',investigado:'#006d8f',absolvido_arquivado:'#24704e',sem_informacao:'#626c77'};
+export const LEGAL_COLORS={condenado:'#994500',condenacao_anulada:'#6551a3',investigado:'#006d8f',absolvido:'#24704e',arquivado:'#24704e',prescricao:'#24704e',indiciado:'#006d8f',reu:'#994500',institucional:'#687078',sem_informacao:'#626c77'};
 export const nodeSize=p=>p.id==='lula'?82:28+Math.min(32,Math.sqrt(p.escandalos?.length||0)*10);

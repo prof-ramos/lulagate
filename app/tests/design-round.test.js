@@ -49,3 +49,8 @@ test('ten opening labels fit the mobile grid without collision at initial zoom',
  const nodes=ids.map((id,i)=>({id,label:data.personagens.find(p=>p.id===id).nome,x:grid[i][0],y:grid[i][1],priority:1}));
  assert.equal(readableLabels(nodes,.65).length,10);
 });
+
+test('old Careca deep links resolve to the civil name identifier',()=>{
+ for(const key of ['p','personagem']) assert.equal(personFromSearch(`?${key}=careca-do-inss`,data.personagens),'antonio-carlos-camilo-antunes');
+ assert.equal(data.personagens.some(p=>p.id==='careca-do-inss'),false);
+});

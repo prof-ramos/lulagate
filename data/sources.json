@@ -379,7 +379,7 @@
   },
   {
     "id": "conjur-2019-12-sentenca-quadrilhao",
-    "tipo": "documento_oficial",
+    "tipo": "copia_de_decisao",
     "veiculo": "Consultor Jurídico (ConJur)",
     "tipo_veiculo": "imprensa_juridica",
     "titulo": "Sentença de absolvição sumária no caso do quadrilhão do PT (íntegra)",
@@ -513,15 +513,6 @@
     "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0808200518.htm"
   },
   {
-    "id": "pf-2019-12-10-mapa",
-    "tipo": "documento_oficial",
-    "veiculo": "Polícia Federal",
-    "tipo_veiculo": "documento_oficial",
-    "titulo": "PF deflagra a 69ª Fase da Operação Lava Jato: Operação Mapa da Mina",
-    "data": "2019-12-10",
-    "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/12/pf-deflagra-a-69a-fase-da-operacao-lava-jato-operacao-mapa-da-mina"
-  },
-  {
     "id": "g1-2019-12-10-mapa",
     "tipo": "reportagem",
     "veiculo": "G1",
@@ -565,15 +556,6 @@
     "titulo": "Justiça Federal em SP encerra ação penal contra Rosemary Noronha, ex-assessora de Lula",
     "data": "2021-10-19",
     "url": "https://g1.globo.com/sp/sao-paulo/noticia/2021/10/19/justica-federal-em-sp-encerra-acao-penal-contra-rosemary-noronha-ex-assessora-de-lula.ghtml"
-  },
-  {
-    "id": "cgu-2013-09-rose",
-    "tipo": "documento_oficial",
-    "veiculo": "Controladoria-Geral da União",
-    "tipo_veiculo": "documento_oficial",
-    "titulo": "CGU aplica pena de destituição de cargo público a Rosemary Noronha",
-    "data": "2013-09",
-    "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2013/09/cgu-aplica-pena-de-destituicao-de-cargo-publico-a-rosemary-noronha"
   },
   {
     "id": "folha-2012-11-30-lula-silencia",
@@ -835,6 +817,51 @@
     "titulo": "STF mantém nulidade de atos da Lava Jato contra Marcelo Odebrecht",
     "data": "2024-09-06",
     "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-nulidade-de-atos-da-lava-jato-contra-marcelo-odebrecht/"
+  },
+  {
+    "id": "dou-2013-09-25-rose",
+    "tipo": "documento_oficial",
+    "veiculo": "Diário Oficial da União",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Destituição de Rosemary Nóvoa de Noronha, DOU seção 2",
+    "data": "2013-09-25",
+    "url": "https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-oficial-da-uniao-1/2013/dou2_2013_09_25.pdf/at_download/file"
+  },
+  {
+    "id": "stf-2016-03-10-delubio",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Ministro Luís Roberto Barroso concede indulto a Delúbio Soares",
+    "data": "2016-03-10",
+    "url": "https://noticias.stf.jus.br/postsnoticias/ministro-luis-roberto-barroso-concede-o-indulto-a-delubio-soares/"
+  },
+  {
+    "id": "agbr-2017-03-03-marisa",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil (via UOL)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Moro extingue punibilidade da ex-primeira-dama Marisa Letícia",
+    "data": "2017-03-03",
+    "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-brasil/2017/03/03/moro-extingue-punibilidade-da-ex-primeira-dama-marisa-leticia.amp.htm"
+  },
+  {
+    "id": "conjur-2025-02-26-renan",
+    "tipo": "reportagem",
+    "veiculo": "Consultor Jurídico (ConJur)",
+    "tipo_veiculo": "imprensa_juridica",
+    "titulo": "Último inquérito contra Renan Calheiros é arquivado no STF",
+    "data": "2025-02-26",
+    "url": "https://conjur.com.br/2025-fev-26/ultimo-inquerito-contra-renan-calheiros-e-arquivado-no-stf-2/"
+  },
+  {
+    "id": "g1-2026-10-19-vorcaro",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Caso Master: PGR defende manutenção da prisão de familiares e assessores de Vorcaro",
+    "data": "2026-10-19",
+    "url": "https://g1.globo.com/politica/noticia/2026/10/19/caso-master-pgr-defende-manutencao-da-prisao-de-familiares-e-assessores-de-vorcaro.ghtml"
   },
   {
     "id": "stf-2023-12-04-janones",

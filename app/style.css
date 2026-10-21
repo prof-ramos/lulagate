@@ -376,3 +376,6 @@ main,main:has(.person-panel) {display:flex;flex-direction:column;position:relati
   .controls input, .search input, .controls select { font-size: 16px; }
   .person-panel { overflow-wrap: anywhere; }
 }
+
+/* Título documental e avisos longos mantêm leitura em telas estreitas. */
+.brand{min-width:0}.brand h1{font-size:clamp(1.05rem,2vw,1.65rem);max-width:48ch;text-wrap:balance}.caution{line-height:1.5}.legal-status{overflow-wrap:anywhere}.timeline>section{min-width:0}.timeline>section>h2{font-size:1.25rem}
