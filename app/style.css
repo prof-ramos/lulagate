@@ -368,3 +368,11 @@ main,main:has(.person-panel) {display:flex;flex-direction:column;position:relati
 @media(max-width:640px){
  .zoom-controls {max-width:none;flex-direction:row;flex-wrap:nowrap;}
 }
+
+/* Independent touch refinements from upstream; retain the current sheet layout. */
+.masthead nav button[aria-label='Alternar tema'] { min-width: 44px; flex: 0 0 44px; }
+.zoom-controls svg { display: block; margin: auto; }
+@media (max-width: 1100px) {
+  .controls input, .search input, .controls select { font-size: 16px; }
+  .person-panel { overflow-wrap: anywhere; }
+}
