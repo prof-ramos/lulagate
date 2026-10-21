@@ -1096,89 +1096,6 @@
     "data_referencia": "2026-07-31"
   },
   {
-    "id": "con-054",
-    "origem": "careca-do-inss",
-    "destino": "lulinha",
-    "rotulo": "teria pago mesada de R$ 300 mil (relato de uma testemunha)",
-    "tipo": "financeiro",
-    "status": "alegacao_nao_comprovada",
-    "periodo": {
-      "inicio": "2026-03-27",
-      "fim": null
-    },
-    "descricao": "Relato de Edson Claro citado pela CPMI; sem confirmação, segundo o presidente da comissão; defesa nega.",
-    "escandalos": [
-      "esc-cpmi-lulinha"
-    ],
-    "fontes": [
-      "oglobo-2026-03-27-cpmi",
-      "cnn-2026-03-27-cpmi",
-      "cnn-2026-advogado-lulinha"
-    ],
-    "data_referencia": "2026-03-27"
-  },
-  {
-    "id": "con-055",
-    "origem": "roberta-luchsinger",
-    "destino": "lulinha",
-    "rotulo": "amiga; apresentou o Careca do INSS",
-    "tipo": "pessoal",
-    "status": "investigacao_em_curso",
-    "periodo": {
-      "inicio": "2024",
-      "fim": null
-    },
-    "descricao": "",
-    "escandalos": [
-      "esc-cpmi-lulinha"
-    ],
-    "fontes": [
-      "g1-2026-07-31-inquerito"
-    ],
-    "data_referencia": "2026-07-31"
-  },
-  {
-    "id": "con-056",
-    "origem": "roberta-luchsinger",
-    "destino": "careca-do-inss",
-    "rotulo": "contratada para prospectar negócios por",
-    "tipo": "negocios",
-    "status": "investigacao_em_curso",
-    "periodo": {
-      "inicio": "2024",
-      "fim": "2025"
-    },
-    "descricao": "Recebeu R$ 1,4 milhão, segundo o relator da CPMI; defesa nega irregularidades.",
-    "escandalos": [
-      "esc-cpmi-lulinha"
-    ],
-    "fontes": [
-      "poder360-2026-03-27-cpmi",
-      "g1-2026-07-31-inquerito"
-    ],
-    "data_referencia": "2026-03-27"
-  },
-  {
-    "id": "con-057",
-    "origem": "edson-claro",
-    "destino": "careca-do-inss",
-    "rotulo": "ex-funcionário; testemunha",
-    "tipo": "profissional",
-    "status": "fato_documentado",
-    "periodo": {
-      "inicio": "2026-03-27",
-      "fim": null
-    },
-    "descricao": "",
-    "escandalos": [
-      "esc-cpmi-lulinha"
-    ],
-    "fontes": [
-      "oglobo-2026-03-27-cpmi"
-    ],
-    "data_referencia": "2026-03-27"
-  },
-  {
     "id": "con-058",
     "origem": "alfredo-gaspar",
     "destino": "lulinha",
@@ -1446,26 +1363,6 @@
     "data_referencia": "2026-01"
   },
   {
-    "id": "con-071",
-    "origem": "guido-mantega",
-    "destino": "gabriel-galipolo",
-    "rotulo": "fez lobby no BC pela venda do Master ao BRB, segundo Lauro Jardim",
-    "tipo": "negocios",
-    "status": "alegacao_nao_comprovada",
-    "periodo": {
-      "inicio": "2025-08",
-      "fim": null
-    },
-    "descricao": "Relato de coluna; sem confirmação oficial.",
-    "escandalos": [
-      "esc-banco-master"
-    ],
-    "fontes": [
-      "oglobo-2025-08-mantega-lobby"
-    ],
-    "data_referencia": "2025-08"
-  },
-  {
     "id": "con-072",
     "origem": "gabriel-galipolo",
     "destino": "daniel-vorcaro",
@@ -1548,7 +1445,7 @@
   },
   {
     "id": "con-076",
-    "origem": "marcola",
+    "origem": "marco-aurelio-santana-ribeiro",
     "destino": "guido-mantega",
     "rotulo": "recebeu em audiência no Planalto",
     "tipo": "profissional",
@@ -1568,7 +1465,7 @@
   },
   {
     "id": "con-077",
-    "origem": "marcola",
+    "origem": "marco-aurelio-santana-ribeiro",
     "destino": "lula",
     "rotulo": "chefe do gabinete pessoal",
     "tipo": "profissional",

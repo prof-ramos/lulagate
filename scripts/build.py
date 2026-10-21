@@ -2,8 +2,20 @@ import json,os,base64
 from legal_category import legal_category, CATEGORIES
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-B = str(ROOT / 'scripts') + '/'
-for f in ['build_sources.py','build_nodes.py','build_edges.py','build_cases.py','build_extra.py']: exec(open(B+f).read())
+from research import load_research
+research = load_research()
+S, N, E, C, groups = (research[k] for k in ('S', 'N', 'E', 'C', 'groups'))
+ocultos = json.loads((ROOT / 'data/ocultos.json').read_text(encoding='utf-8'))
+ids_pesquisa = {x['id'] for x in N + E}
+for entrada in ocultos:
+    if entrada['id'] not in ids_pesquisa or not entrada['motivo'].strip():
+        raise ValueError(f"Ocultação inválida: {entrada!r}")
+ids_ocultos = {x['id'] for x in ocultos}
+N = [n for n in N if n['id'] not in ids_ocultos]
+ids_visiveis = {n['id'] for n in N}
+E = [e for e in E if e['id'] not in ids_ocultos and {e['origem'], e['destino']} <= ids_visiveis]
+for caso in C:
+    caso['personagens'] = [ident for ident in caso['personagens'] if ident in ids_visiveis]
 D = str(ROOT / 'data')
 creditos = json.loads((ROOT / 'data/creditos-imagens.json').read_text(encoding='utf-8'))
 por_pessoa = {c['pessoa_id']: c for c in creditos}

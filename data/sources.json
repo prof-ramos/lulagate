@@ -738,6 +738,105 @@
     "url": "https://www.cnnbrasil.com.br/politica/advogado-de-lulinha-nega-que-ele-tenha-recebido-mesada-de-careca-do-inss/"
   },
   {
+    "id": "pr-a-factcheck-01",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Indulto extingue a punibilidade de José Dirceu na AP 470",
+    "data": "2016-10-17",
+    "url": "https://noticias.stf.jus.br/postsnoticias/indulto-extingue-a-punibilidade-de-jose-dirceu-na-ap-470/"
+  },
+  {
+    "id": "pr-a-factcheck-02",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF anula atos processuais de duas ações penais contra José Dirceu",
+    "data": "2024-10",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-anula-atos-processuais-de-duas-acoes-penais-contra-jose-dirceu/"
+  },
+  {
+    "id": "pr-a-factcheck-03",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Supremo extingue pena do ex-ministro José Dirceu por corrupção passiva",
+    "data": "2024-05-21",
+    "url": "https://noticias.stf.jus.br/postsnoticias/supremo-extingue-pena-do-ex-ministro-jose-dirceu-por-corrupcao-passiva/"
+  },
+  {
+    "id": "pr-a-factcheck-04",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Toffoli anula condenações na Lava Jato de Léo Pinheiro, um dos principais delatores",
+    "data": "2024-09-27",
+    "url": "https://g1.globo.com/politica/noticia/2024/09/27/toffoli-anula-condenacoes-na-lava-jato-de-leo-pinheiro-um-dos-principais-delatores.ghtml"
+  },
+  {
+    "id": "pr-a-factcheck-05",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STF mantém por 3 a 2 decisão de Toffoli que anulou condenações de Léo Pinheiro na Lava Jato",
+    "data": "2025-02-04",
+    "url": "https://oglobo.globo.com/politica/noticia/2025/02/04/stf-mantem-por-3-a-2-decisao-de-toffoli-que-anulou-condenacoes-de-leo-pinheiro-na-lava-jato.ghtml"
+  },
+  {
+    "id": "pr-a-factcheck-06",
+    "tipo": "reportagem",
+    "veiculo": "DW",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça rejeita denúncia contra Lula sobre sítio em Atibaia",
+    "data": "2021-08-22",
+    "url": "https://www.dw.com/pt-br/justi%C3%A7a-federal-rejeita-nova-den%C3%BAncia-contra-lula-sobre-s%C3%ADtio-em-atibaia/a-58952329"
+  },
+  {
+    "id": "pr-a-factcheck-07",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF anula processos contra Antonio Palocci na Lava Jato",
+    "data": "2025-02",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-anula-processos-contra-antonio-palocci-na-lava-jato/"
+  },
+  {
+    "id": "pr-a-factcheck-08",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STF mantém decisão que anulou processo contra Palocci na Lava Jato",
+    "data": "2025-08-15",
+    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2025-08/stf-mantem-decisao-que-anulou-processo-contra-palocci-na-lava-jato"
+  },
+  {
+    "id": "pr-a-factcheck-09",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "PF indicia Careca do INSS e mais 47 por esquema de descontos ilegais",
+    "data": "2026-07",
+    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-07/pf-indicia-careca-do-inss-e-mais-47-por-esquema-de-descontos-ilegais"
+  },
+  {
+    "id": "pr-a-factcheck-10",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Toffoli anula todos os atos da Lava Jato contra o ex-tesoureiro do PT João Vaccari Netto",
+    "data": "2025-08-15",
+    "url": "https://g1.globo.com/politica/noticia/2025/08/15/toffoli-anula-todos-os-atos-da-lava-jato-contra-o-ex-tesoureiro-do-pt-joao-vaccari-netto.ghtml"
+  },
+  {
+    "id": "pr-a-factcheck-11",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF mantém nulidade de atos da Lava Jato contra Marcelo Odebrecht",
+    "data": "2024-09-06",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-mantem-nulidade-de-atos-da-lava-jato-contra-marcelo-odebrecht/"
+  },
+  {
     "id": "stf-2023-12-04-janones",
     "tipo": "documento_oficial",
     "veiculo": "Supremo Tribunal Federal",

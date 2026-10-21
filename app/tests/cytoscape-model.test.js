@@ -41,9 +41,10 @@ test('real dataset layout has case-based dimensions, finite positions and no ove
  const data=JSON.parse(await readFile(new URL('../../data/dataset.json',import.meta.url),'utf8'));
  const statuses=Object.fromEntries(Object.keys(STATUS_CONFIG).map(k=>[k,'#666']));
  const cy=cytoscape({headless:true,styleEnabled:true,style:graphStyles({ink:'#222',paper:'#fff',bg:'#eee',muted:'#666',node:'#777',accent:'#457',statuses}),elements:graphElements(data.personagens,data.conexoes)});
- layoutGraph(cy,'rede');
- assert.equal(cy.nodes().length,63);
  try {
+ layoutGraph(cy,'rede');
+ assert.equal(cy.nodes().length,data.personagens.length);
+ assert.equal(cy.edges().length,data.conexoes.length);
  const nodes=cy.nodes().toArray();
  for(const node of nodes){assert.ok(Number.isFinite(node.position('x'))&&Number.isFinite(node.position('y')));assert.equal(node.width(),node.data('size'));assert.equal(node.height(),node.data('size'))}
  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){

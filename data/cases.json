@@ -530,7 +530,7 @@
   },
   {
     "id": "esc-inss-sindnapi",
-    "titulo": "Fraude dos descontos no INSS: Sindnapi e Frei Chico",
+    "titulo": "Fraude dos descontos no INSS: Sindnapi",
     "periodo": {
       "inicio": "2025-04-23",
       "fim": null
@@ -593,8 +593,6 @@
     "personagens": [
       "lulinha",
       "careca-do-inss",
-      "roberta-luchsinger",
-      "edson-claro",
       "alfredo-gaspar",
       "carlos-viana",
       "andre-mendonca",
@@ -632,10 +630,6 @@
       "con-002",
       "con-043",
       "con-053",
-      "con-054",
-      "con-055",
-      "con-056",
-      "con-057",
       "con-058",
       "con-059",
       "con-060",
@@ -734,7 +728,7 @@
       "rui-costa",
       "alexandre-silveira",
       "augusto-lima",
-      "marcola",
+      "marco-aurelio-santana-ribeiro",
       "ricardo-lewandowski",
       "lula"
     ],
@@ -764,7 +758,6 @@
       "con-068",
       "con-069",
       "con-070",
-      "con-071",
       "con-072",
       "con-073",
       "con-074",

@@ -4,8 +4,11 @@ import {readFileSync} from 'node:fs';
 import {personFromSearch} from '../url-model.js';
 import {openingPeople,readableLabels} from '../mobile-model.js';
 const data=JSON.parse(readFileSync(new URL('../../data/dataset.json',import.meta.url)));
-test('canonical dataset counts remain exact',()=>{
- assert.deepEqual([data.personagens.length,data.conexoes.length,data.escandalos.length,data.fontes.length],[63,78,18,103]);
+test('published dataset counts match canonical data files',()=>{
+ for(const [key,file] of [['personagens','nodes'],['conexoes','edges'],['escandalos','cases'],['fontes','sources']]){
+  const canonical=JSON.parse(readFileSync(new URL(`../../data/${file}.json`,import.meta.url)));
+  assert.equal(data[key].length,canonical.length,key);
+ }
 });
 test('mobile opening includes Lula and nine most connected people deterministically',()=>{
  const ids=openingPeople(data.personagens,data.conexoes);assert.equal(ids.length,10);assert.equal(ids[0],'lula');
