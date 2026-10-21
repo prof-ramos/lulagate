@@ -232,3 +232,48 @@ summary { cursor: pointer; min-height: 44px; padding: 11px 0; font-size: 13px; l
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+/* Touch layout keeps filters and disclosures out of the map's layout flow. */
+.masthead nav button[aria-label='Alternar tema'] { min-width: 44px; flex: 0 0 44px; }
+.zoom-controls svg { display: block; margin: auto; }
+@media (max-width: 1100px) {
+  .controls.expanded { position: absolute; inset: 0 0 auto; height: 100%; z-index: 5; display: flex; flex-direction: column; overflow: hidden; }
+  .controls-top { flex-shrink: 0; background: var(--paper); }
+  .expanded .control-body { flex: 1; min-height: 0; max-height: none; overflow: auto; padding: 16px 4px calc(24px + env(safe-area-inset-bottom)); }
+  .controls input, .search input, .controls select { font-size: 16px; }
+  .controls .check { min-height: 44px; }
+  .graph, .graph-rings { top: 62px; bottom: 128px; height: calc(100% - 190px); }
+  .map-caption { top: 8px; left: 12px; }
+  .map-note { left: 12px; bottom: 18px; max-width: calc(100% - 160px); }
+  .zoom-controls { right: 12px; bottom: 8px; }
+  .graph-people, .band-legend, .band-legend[open] { top: auto; bottom: 62px; width: calc(50% - 18px); max-width: none; max-height: none; height: 60px; overflow: visible; padding: 0 10px; }
+  .graph-people { left: 12px; }
+  .band-legend { right: 12px; }
+  .graph-people summary, .band-legend summary { display: flex; align-items: center; min-height: 58px; padding: 4px 0; font-size: 12px; line-height: 17px; }
+  .graph-people summary::before, .band-legend summary::before { content: '+'; margin-right: 6px; }
+  .graph-people[open] summary::before, .band-legend[open] summary::before { content: '−'; }
+  .disclosure-content { position: absolute; bottom: 66px; width: calc(200% + 12px); max-height: min(48dvh, 360px); overflow: auto; overscroll-behavior: contain; padding: 12px; border: 1px solid var(--border); border-radius: 5px; background: var(--paper); box-shadow: 0 -4px 18px var(--shadow); }
+  .graph-people .disclosure-content { left: -1px; }
+  .band-legend .disclosure-content { right: -1px; }
+  .graph-focus-name { top: 64px; left: 12px; }
+  .person-panel { height: 100%; max-height: 100%; padding-bottom: calc(24px + env(safe-area-inset-bottom)); overflow-wrap: anywhere; }
+  .person-panel .close { position: sticky; top: 0; background: var(--paper); z-index: 1; }
+  .has-person .graph-people, .has-person .band-legend, .has-person .zoom-controls, .has-person .map-note { visibility: hidden; }
+}
+@media (max-width: 640px) {
+  .masthead { min-height: 64px; gap: 6px; padding: 8px 12px; }
+  .brand h1 { font-size: 27px; white-space: nowrap; }
+  .brand p { display: none; }
+  .masthead nav { flex-wrap: nowrap; max-width: none; gap: 0; }
+  .masthead nav button { padding: 7px 5px; font-size: 11px; }
+  .masthead nav span { display: none; }
+  .person-panel { height: 58dvh; max-height: 58dvh; }
+  .person-panel::before { display: none; }
+  footer { min-height: 0; padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 1100px) {
+  main { grid-template-rows: 65px minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  main { grid-template-rows: 61px minmax(0, 1fr); }
+}

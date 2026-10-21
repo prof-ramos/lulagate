@@ -5,7 +5,7 @@ import {BAND_STEP,proximityPositions,syncSlice,applySelection,layoutGraph,graphS
 
 export default function Graph({data,view,selected,onSelect,visibleNodes,visibleEdges,graphRef,matches}){
  const container=useRef(null),cyRef=useRef(null),fitRef=useRef(()=>{}),onSelectRef=useRef(onSelect),stateRef=useRef({});
- const [camera,setCamera]=useState({zoom:1,pan:{x:0,y:0}}),[focused,setFocused]=useState(null),[peopleOpen,setPeopleOpen]=useState(false),[bandsOpen,setBandsOpen]=useState(()=>!matchMedia('(max-width:640px)').matches);
+ const [camera,setCamera]=useState({zoom:1,pan:{x:0,y:0}}),[focused,setFocused]=useState(null),[peopleOpen,setPeopleOpen]=useState(false),[bandsOpen,setBandsOpen]=useState(()=>!matchMedia('(max-width:1100px)').matches);
  const slots=useMemo(()=>parallelSlots(data.conexoes),[data]),positions=useMemo(()=>proximityPositions(data.personagens),[data]);
  const panelOpen=Boolean(selected),people=useMemo(()=>[...visibleNodes].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR')),[visibleNodes]);
  const focusPerson=visibleNodes.find(p=>p.id===(focused||selected));
@@ -29,26 +29,28 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
   const fit=()=>{
    if(cy.destroyed())return;
    cy.resize();const rect=element.getBoundingClientRect();if(!rect.width||!rect.height)return;
-   let left=18,top=68,right=rect.width-18,bottom=rect.height-52;
+   const mobile=matchMedia('(max-width:1100px)').matches;
+   let left=mobile?8:18,top=mobile?8:68,right=rect.width-(mobile?8:18),bottom=rect.height-(mobile?8:52);
    let rightInset=0,bottomInset=0;
    const panel=document.querySelector('.person-panel')?.getBoundingClientRect();
-   if(panel&&panel.left<rect.right&&panel.right>rect.left&&panel.top<rect.bottom&&panel.bottom>rect.top){
+   if(!mobile&&panel&&panel.left<rect.right&&panel.right>rect.left&&panel.top<rect.bottom&&panel.bottom>rect.top){
     if(panel.width>rect.width*.75){bottomInset=Math.max(0,rect.bottom-panel.top);bottom=Math.min(bottom,panel.top-rect.top-16)}
     else {rightInset=Math.max(0,rect.right-panel.left);right=Math.min(right,panel.left-rect.left-18)}
    }
    element.parentElement.style.setProperty('--graph-right-inset',`${rightInset}px`);
    element.parentElement.style.setProperty('--graph-bottom-inset',`${bottomInset}px`);
    const band=element.parentElement.querySelector('.band-legend')?.getBoundingClientRect();
-   if(band){if(rect.width>700)right=Math.min(right,band.left-rect.left-16);else top=Math.max(top,band.bottom-rect.top+14)}
+   if(!mobile&&band){if(rect.width>700)right=Math.min(right,band.left-rect.left-16);else top=Math.max(top,band.bottom-rect.top+14)}
    const list=element.parentElement.querySelector('.graph-people')?.getBoundingClientRect();
-   if(list&&list.top<rect.top+bottom){if(rect.width>700&&list.height>80)left=Math.max(left,list.right-rect.left+16);else bottom=Math.min(bottom,list.top-rect.top-16)}
+   if(!mobile&&list&&list.top<rect.top+bottom){if(rect.width>700&&list.height>80)left=Math.max(left,list.right-rect.left+16);else bottom=Math.min(bottom,list.top-rect.top-16)}
    // Expanded overlays can leave only a small viewport; keep a useful camera at its centre.
    const width=Math.max(100,right-left),height=Math.max(100,bottom-top),center={x:left+width/2,y:top+height/2};
    if(!cy.nodes().length){cy.pan(center);return}
    const box=cy.elements().boundingBox({includeLabels:true,includeOverlays:false});
-   if(stateRef.current.view==='proximidade'){const radius=PROXIMITY_BANDS.length*BAND_STEP;box.x1=Math.min(box.x1,-radius);box.y1=Math.min(box.y1,-radius);box.x2=Math.max(box.x2,radius);box.y2=Math.max(box.y2,radius);box.w=box.x2-box.x1;box.h=box.y2-box.y1}
-   const zoom=Math.max(cy.minZoom(),Math.min(1.35,(width-36)/Math.max(1,box.w),(height-36)/Math.max(1,box.h)));
-   cy.viewport({zoom,pan:{x:center.x-(box.x1+box.x2)/2*zoom,y:center.y-(box.y1+box.y2)/2*zoom}});
+   if(!mobile&&stateRef.current.view==='proximidade'){const radius=PROXIMITY_BANDS.length*BAND_STEP;box.x1=Math.min(box.x1,-radius);box.y1=Math.min(box.y1,-radius);box.x2=Math.max(box.x2,radius);box.y2=Math.max(box.y2,radius);box.w=box.x2-box.x1;box.h=box.y2-box.y1}
+   const zoom=Math.max(mobile ? .9 : cy.minZoom(),Math.min(1.35,(width-36)/Math.max(1,box.w),(height-36)/Math.max(1,box.h)));
+   const anchor=mobile?(cy.getElementById(stateRef.current.selected||'lula').position()):null;
+   cy.viewport({zoom,pan:{x:center.x-(anchor?.x??(box.x1+box.x2)/2)*zoom,y:center.y-(anchor?.y??(box.y1+box.y2)/2)*zoom}});
   };
   fitRef.current=fit;
   graphRef.current={reset:fit,zoomBy:factor=>{const rect=element.getBoundingClientRect();cy.zoom({level:Math.max(cy.minZoom(),Math.min(cy.maxZoom(),cy.zoom()*factor)),renderedPosition:{x:rect.width/2,y:rect.height/2}})}};
@@ -81,8 +83,8 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
   <div ref={container} className="graph" tabIndex={0} onKeyDown={pan} role="region" aria-label={`Mapa interativo: ${visibleNodes.length} personagens e ${visibleEdges.length} conexões no recorte`} aria-describedby="graph-keyboard-help"/>
   <span id="graph-keyboard-help" className="sr-only">Na Rede, arraste personagens para reorganizar. Na Proximidade, os personagens permanecem em sua faixa editorial. Arraste o fundo para mover o mapa. Com foco no mapa, use as setas para mover, mais e menos para ampliar ou reduzir e zero para restaurar. A lista Personagens do recorte permite consultar todos os nomes com Tab e abrir detalhes com Enter ou espaço.</span>
   {focusPerson&&focused&&focused!==selected&&<div className="graph-focus-name" aria-live="polite">{focusPerson.nome}</div>}
-  <details className="graph-people" open={peopleOpen} onToggle={e=>setPeopleOpen(e.currentTarget.open)}><summary>Personagens do recorte ({people.length})</summary><p>Tab percorre os nomes; Enter abre os detalhes. No mapa, use as setas para mover e + / − para zoom.</p><ul>{people.map(person=><li key={person.id}><button aria-pressed={selected===person.id} onFocus={()=>setFocused(person.id)} onBlur={()=>setFocused(null)} onClick={()=>onSelect(person.id)}>{person.nome}{selected===person.id&&<span className="sr-only">, selecionado</span>}</button></li>)}</ul>{!people.length&&<p>Nenhum personagem no recorte atual.</p>}</details>
-  {view==='proximidade'&&<details className="band-legend" open={bandsOpen} onToggle={e=>setBandsOpen(e.currentTarget.open)}><summary>Faixas de proximidade editorial</summary><ol>{PROXIMITY_BANDS.map((band,i)=><li key={band.min}><span className="band-number">{i+1}</span><strong>{band.range}</strong><span>{band.label}</span></li>)}</ol><p>Do anel interno ao externo. Atribuição editorial, não medida de culpa.</p></details>}
+  <details className="graph-people" open={peopleOpen} onToggle={e=>{setPeopleOpen(e.currentTarget.open);if(e.currentTarget.open&&matchMedia('(max-width:1100px)').matches)setBandsOpen(false)}}><summary>Personagens do recorte ({people.length})</summary><div className="disclosure-content"><p>Tab percorre os nomes; Enter abre os detalhes. No mapa, use as setas para mover e + / − para zoom.</p><ul>{people.map(person=><li key={person.id}><button aria-pressed={selected===person.id} onFocus={()=>setFocused(person.id)} onBlur={()=>setFocused(null)} onClick={()=>{setPeopleOpen(false);onSelect(person.id)}}>{person.nome}{selected===person.id&&<span className="sr-only">, selecionado</span>}</button></li>)}</ul>{!people.length&&<p>Nenhum personagem no recorte atual.</p>}</div></details>
+  {view==='proximidade'&&<details className="band-legend" open={bandsOpen} onToggle={e=>{setBandsOpen(e.currentTarget.open);if(e.currentTarget.open&&matchMedia('(max-width:1100px)').matches)setPeopleOpen(false)}}><summary>Faixas de proximidade editorial</summary><div className="disclosure-content"><ol>{PROXIMITY_BANDS.map((band,i)=><li key={band.min}><span className="band-number">{i+1}</span><strong>{band.range}</strong><span>{band.label}</span></li>)}</ol><p>Do anel interno ao externo. Atribuição editorial, não medida de culpa.</p></div></details>}
   <span className="graph-theme-probes" aria-hidden="true">{Object.keys(STATUS_CONFIG).map(status=><span key={status} className={`graph-theme-probe status-${status}`}/>)}</span>
  </>;
 }
