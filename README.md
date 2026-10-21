@@ -14,5 +14,5 @@ As skills de design do projeto estão versionadas em `.agents/skills/`. Consulte
 
 ```bash
 cd app && npm ci && npm run build
-cp dist/index.html ../docs/index.html
+cp ../dist/index.html ../docs/index.html
 ```
