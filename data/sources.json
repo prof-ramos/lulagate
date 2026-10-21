@@ -1,0 +1,929 @@
+[
+  {
+    "id": "stf-2021-03-08-fachin",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Fachin anula condenações de Lula e manda ações penais para Justiça Federal do DF",
+    "data": "2021-03-08",
+    "url": "https://noticias.stf.jus.br/postsnoticias/fachin-anula-condenacoes-de-lula-e-manda-acoes-penais-para-justica-federal-do-df/"
+  },
+  {
+    "id": "stf-hc193726-decisao",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal (via G1)",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Decisão no HC 193.726 (íntegra)",
+    "data": "2021-03-08",
+    "url": "https://estaticog1.globo.com/2021/03/08/hc193726ed.pdf"
+  },
+  {
+    "id": "g1-2021-03-08-fachin",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Fachin anula condenações de Lula relacionadas à Lava Jato; ex-presidente volta a ser elegível",
+    "data": "2021-03-08",
+    "url": "https://g1.globo.com/politica/noticia/2021/03/08/fachin-anula-condenacoes-de-lula-relacionadas-a-operacao-lava-jato.ghtml"
+  },
+  {
+    "id": "stf-2021-06-23-suspeicao",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF confirma suspeição de Sergio Moro na ação do triplex do Guarujá",
+    "data": "2021-06-23",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-confirma-suspeicao-de-sergio-moro-na-acao-do-triplex-do-guaruja/"
+  },
+  {
+    "id": "g1-2021-06-23-suspeicao",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Plenário do STF reconhece decisão da Segunda Turma que declarou Moro parcial ao condenar Lula",
+    "data": "2021-06-23",
+    "url": "https://g1.globo.com/politica/noticia/2021/06/23/plenario-do-stf-reconhece-decisao-da-segunda-turma-que-declarou-moro-parcial-ao-condenar-lula.ghtml"
+  },
+  {
+    "id": "lexml-hc164493",
+    "tipo": "documento_oficial",
+    "veiculo": "STF (LexML)",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Acórdão HC 164.493/PR, 2ª Turma (suspeição de Moro)",
+    "data": "2021-03-23",
+    "url": "https://www.lexml.gov.br/urn/urn:lex:br:supremo.tribunal.federal;turma.2:acordao;hc:2021-03-23;164493-5581966"
+  },
+  {
+    "id": "g1-2017-07-sentenca-triplex",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "A sentença que condenou Lula: leia a íntegra e veja os pontos principais",
+    "data": "2017-07-12",
+    "url": "https://g1.globo.com/politica/noticia/a-sentenca-da-condenacao-de-lula.ghtml"
+  },
+  {
+    "id": "trf4-2018-01-24-triplex",
+    "tipo": "documento_oficial",
+    "veiculo": "TRF4",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Operação Lava Jato: TRF4 confirma condenação do ex-presidente Luiz Inácio Lula da Silva",
+    "data": "2018-01-24",
+    "url": "https://www.trf4.jus.br/trf4/controlador.php?acao=noticia_visualizar&id_noticia=13418"
+  },
+  {
+    "id": "agbr-2018-01-trf4",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Por 3 a 0, desembargadores do TRF4 mantêm condenação de Lula no caso triplex",
+    "data": "2018-01-24",
+    "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2018-01/desembargadores-do-trf4-mantem-condenacao-de-lula-no-caso-triplex"
+  },
+  {
+    "id": "g1-2017-05-depoimento-lula",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula diz a Moro que nunca teve intenção de adquirir triplex",
+    "data": "2017-05-10",
+    "url": "https://g1.globo.com/pr/parana/noticia/termina-o-depoimento-de-lula-a-moro-apos-quase-5-horas.ghtml"
+  },
+  {
+    "id": "g1-2017-leo-pinheiro",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Ex-presidente da OAS diz a Moro que Lula o orientou a destruir provas",
+    "data": "2017-04-20",
+    "url": "https://g1.globo.com/pr/parana/noticia/ex-presidente-da-oas-diz-a-moro-que-lula-o-orientou-a-destruir-provas-que-pudessem-incrimina-lo.ghtml"
+  },
+  {
+    "id": "g1-triplex-o-que-dizem",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Triplex do Guarujá: o que dizem ex-executivos da OAS, o Ministério Público Federal e o ex-presidente Lula",
+    "data": "2017",
+    "url": "https://g1.globo.com/politica/operacao-lava-jato/noticia/triplex-do-guaruja-o-que-dizem-ex-executivos-da-oas-o-ministerio-publico-federal-e-o-ex-presidente-lula.ghtml"
+  },
+  {
+    "id": "agbr-2017-07-okamotto",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Moro absolve Paulo Okamotto da acusação de lavagem de dinheiro",
+    "data": "2017-07-12",
+    "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2017-07/moro-absolve-paulo-okamotto-da-acusacao-de-lavagem-de-dinheiro"
+  },
+  {
+    "id": "conjur-2022-01-28-triplex",
+    "tipo": "reportagem",
+    "veiculo": "Consultor Jurídico (ConJur)",
+    "tipo_veiculo": "imprensa_juridica",
+    "titulo": "Justiça do DF declara prescrição e arquiva ação do tríplex do Guarujá",
+    "data": "2022-01-28",
+    "url": "https://conjur.com.br/2022-jan-28/justica-df-declara-prescricao-arquiva-acao-triplex-guaruja/"
+  },
+  {
+    "id": "g1-2022-01-28-triplex",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça do DF arquiva caso do triplex do Guarujá envolvendo o ex-presidente Lula",
+    "data": "2022-01-28",
+    "url": "https://g1.globo.com/politica/noticia/2022/01/28/justica-do-df-arquiva-caso-do-triplex-do-guaruja-envolvendo-o-ex-presidente-lula.ghtml"
+  },
+  {
+    "id": "folha-2019-11-08-solto",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Ex-presidente Lula é solto após 580 dias preso na Polícia Federal em Curitiba",
+    "data": "2019-11-08",
+    "url": "https://www1.folha.uol.com.br/poder/2019/11/ex-presidente-lula-e-solto-apos-580-dias-preso-na-policia-federal-em-curitiba.shtml"
+  },
+  {
+    "id": "bbc-2019-11-solto",
+    "tipo": "reportagem",
+    "veiculo": "BBC News Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula deixa a prisão, critica Bolsonaro e promete percorrer o país",
+    "data": "2019-11-08",
+    "url": "https://www.bbc.com/portuguese/brasil-50341809"
+  },
+  {
+    "id": "uol-2019-02-06-atibaia",
+    "tipo": "reportagem",
+    "veiculo": "UOL",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lava Jato: Lula é condenado a 12 anos e 11 meses de prisão no caso do sítio de Atibaia",
+    "data": "2019-02-06",
+    "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2019/02/06/sitio-de-atibaia-substituta-de-moro-condena-lula-a-12-anos-e-11-meses.htm"
+  },
+  {
+    "id": "trf4-2019-11-27-atibaia",
+    "tipo": "documento_oficial",
+    "veiculo": "TRF4",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "TRF4 confirma condenação do ex-presidente Lula (sítio de Atibaia)",
+    "data": "2019-11-27",
+    "url": "https://www.trf4.jus.br/trf4/controlador.php?acao=noticia_visualizar&id_noticia=14914"
+  },
+  {
+    "id": "folha-2021-08-22-atibaia",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Juíza de Brasília rejeita denúncia contra Lula no caso do sítio de Atibaia e declara extinta punição",
+    "data": "2021-08-22",
+    "url": "https://www1.folha.uol.com.br/poder/2021/08/juiza-de-brasilia-rejeita-denuncia-contra-lula-no-caso-do-sitio-de-atibaia-e-declara-extinta-punicao.shtml"
+  },
+  {
+    "id": "g1-2021-08-22-atibaia",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Juíza federal do DF rejeita pedido do MP para reabrir ação penal contra Lula por sítio de Atibaia",
+    "data": "2021-08-22",
+    "url": "https://g1.globo.com/politica/noticia/2021/08/22/juiza-federal-do-df-rejeita-pedido-do-mp-para-reabrir-acao-penal-contra-lula-por-sitio-de-atibaia.ghtml"
+  },
+  {
+    "id": "stf-2023-02-tres-acoes",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF encerra três ações penais contra o presidente Lula",
+    "data": "2023-02",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-encerra-tres-acoes-penais-contra-o-presidente-lula/"
+  },
+  {
+    "id": "conjur-2023-02-18-tranca",
+    "tipo": "reportagem",
+    "veiculo": "Consultor Jurídico (ConJur)",
+    "tipo_veiculo": "imprensa_juridica",
+    "titulo": "Por contaminação de provas, STF tranca três ações contra Lula",
+    "data": "2023-02-18",
+    "url": "https://conjur.com.br/2023-fev-18/contaminacao-provas-stf-tranca-tres-acoes-lula/"
+  },
+  {
+    "id": "poder360-2023-lewandowski",
+    "tipo": "reportagem",
+    "veiculo": "Poder360",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lewandowski encerra 3 investigações contra Lula",
+    "data": "2023-02",
+    "url": "https://www.poder360.com.br/justica/lewandowski-encerra-3-investigacoes-contra-lula/"
+  },
+  {
+    "id": "bbc-2017-09-palocci",
+    "tipo": "reportagem",
+    "veiculo": "BBC News Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Pacto de sangue: as acusações de Palocci contra Lula e Odebrecht",
+    "data": "2017-09-06",
+    "url": "https://www.bbc.com/portuguese/brasil-41169461"
+  },
+  {
+    "id": "jn-2017-09-palocci",
+    "tipo": "reportagem",
+    "veiculo": "G1 (Jornal Nacional)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Palocci diz a Moro que Lula tinha pacto de sangue com a Odebrecht",
+    "data": "2017-09-06",
+    "url": "https://g1.globo.com/jornal-nacional/noticia/2017/09/palocci-diz-moro-que-lula-tinha-pacto-de-sangue-com-odebrecht.html"
+  },
+  {
+    "id": "conjur-2020-12-14-palocci",
+    "tipo": "reportagem",
+    "veiculo": "Consultor Jurídico (ConJur)",
+    "tipo_veiculo": "imprensa_juridica",
+    "titulo": "STF mantém decisão que tira delação de Palocci de ação contra Lula",
+    "data": "2020-12-14",
+    "url": "https://conjur.com.br/2020-dez-14/stf-mantem-decisao-tira-delacao-palocci-acao-lula/"
+  },
+  {
+    "id": "valor-2020-08-04-palocci",
+    "tipo": "reportagem",
+    "veiculo": "Valor Econômico",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STF aponta parcialidade de Moro e exclui delação de Palocci de ação contra Lula",
+    "data": "2020-08-04",
+    "url": "https://valor.globo.com/politica/noticia/2020/08/04/stf-aponta-parcialidade-de-moro-e-exclui-delacao-de-palocci-de-acao-contra-lula.ghtml"
+  },
+  {
+    "id": "g1-2023-09-06-toffoli",
+    "tipo": "reportagem",
+    "veiculo": "G1 (Jornal Nacional)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Toffoli invalida provas obtidas em acordo de leniência da Odebrecht e diz sobre prisão de Lula: um dos maiores erros judiciais da história",
+    "data": "2023-09-06",
+    "url": "https://g1.globo.com/jornal-nacional/noticia/2023/09/06/toffoli-invalida-provas-obtidas-em-acordo-de-leniencia-da-odebrecht-e-diz-sobre-prisao-de-lula-um-dos-maiores-erros-judiciais-da-historia.ghtml"
+  },
+  {
+    "id": "uol-2023-09-06-toffoli",
+    "tipo": "reportagem",
+    "veiculo": "UOL",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Toffoli anula provas e diz que prisão de Lula foi erro histórico",
+    "data": "2023-09-06",
+    "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2023/09/06/toffoli-anula-provas-e-diz-que-prisao-de-lula-foi-erro-historico.htm"
+  },
+  {
+    "id": "cnn-2021-03-10-mentira",
+    "tipo": "reportagem",
+    "veiculo": "CNN Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Fui vítima da maior mentira jurídica contada em 500 anos de história, diz Lula",
+    "data": "2021-03-10",
+    "url": "https://www.cnnbrasil.com.br/politica/fui-vitima-da-maior-mentira-juridica-contada-em-500-anos-de-historia-diz-lula/"
+  },
+  {
+    "id": "g1-2021-03-10-lula",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula diz que foi vítima da maior mentira jurídica em 500 anos de História",
+    "data": "2021-03-10",
+    "url": "https://g1.globo.com/sp/sao-paulo/noticia/2021/03/10/lula-entrevista-anulacao-condenacoes-moro-lava-jato.ghtml"
+  },
+  {
+    "id": "oglobo-2016-bumlai",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Bumlai é condenado a nove anos de prisão por corrupção e empréstimo fraudulento para o PT",
+    "data": "2016-09-15",
+    "url": "https://oglobo.globo.com/politica/bumlai-condenado-nove-anos-de-prisao-por-corrupcao-emprestimo-fraudulento-para-pt-20115151"
+  },
+  {
+    "id": "g1-2016-09-bumlai",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Bumlai é condenado a 9 anos de prisão pela Lava Jato",
+    "data": "2016-09-15",
+    "url": "https://g1.globo.com/pr/parana/noticia/2016/09/bumlai-e-condenado-9-anos-de-prisao-pela-lava-jato.html"
+  },
+  {
+    "id": "stj-2021-10-22-schahin",
+    "tipo": "documento_oficial",
+    "veiculo": "Superior Tribunal de Justiça",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Justiça Eleitoral vai julgar ação sobre empréstimo de R$ 12 milhões do banco Schahin investigado na Lava Jato",
+    "data": "2021-10-22",
+    "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/22102021-Justica-Eleitoral-vai-julgar-acao-sobre-emprestimo-de-R--12-milhoes-ao-banco-Schahin-investigado-na-Lava-Jato.aspx"
+  },
+  {
+    "id": "oglobo-2021-stj-schahin",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STJ anula processo que condenou Bumlai e Vaccari por empréstimo no Banco Schahin",
+    "data": "2021-10",
+    "url": "https://oglobo.globo.com/politica/stj-anula-processo-que-condenou-bumlai-vaccari-por-emprestimo-no-banco-schahin-25225750"
+  },
+  {
+    "id": "g1-2012-10-dirceu",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Supremo condena José Dirceu por compra de votos no mensalão",
+    "data": "2012-10-09",
+    "url": "https://g1.globo.com/politica/mensalao/noticia/2012/10/supremo-condena-jose-dirceu-por-compra-de-votos-no-mensalao.html"
+  },
+  {
+    "id": "gazeta-stf-lula-mensalao",
+    "tipo": "reportagem",
+    "veiculo": "Gazeta do Povo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "STF rejeita pedido para incluir Lula entre os réus do mensalão",
+    "data": "2010",
+    "url": "https://www.gazetadopovo.com.br/vida-publica/stf-rejeita-pedido-para-incluir-lula-entre-os-reus-do-mensalao-1bna6ksohyajqsjlyjtexhsge/"
+  },
+  {
+    "id": "planalto-2005-11-07-rodaviva",
+    "tipo": "documento_oficial",
+    "veiculo": "Presidência da República",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Entrevista do presidente Lula ao programa Roda Viva (transcrição)",
+    "data": "2005-11-07",
+    "url": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/ex-presidentes/luiz-inacio-lula-da-silva-2/entrevistas/2005/07-11-2005-entrevista-exclusiva-concedida-pelo-presidente-da-republica-luiz-inacio-lula-da-silva-ao-programa-roda-viva-da-tv-cultura-sp.pdf"
+  },
+  {
+    "id": "folha-2005-11-09-delubio",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Delúbio é o traidor citado por Lula, diz presidente do PT",
+    "data": "2005-11-09",
+    "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0911200510.htm"
+  },
+  {
+    "id": "folha-2005-11-08-responsabilidade",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula admite ter responsabilidade na crise",
+    "data": "2005-11-08",
+    "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0811200510.htm"
+  },
+  {
+    "id": "g1-2019-12-04-quadrilhao",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça do DF absolve Lula, Dilma, Palocci, Mantega e Vaccari no processo do quadrilhão do PT",
+    "data": "2019-12-04",
+    "url": "https://g1.globo.com/politica/noticia/2019/12/04/justica-do-df-absolve-lula-dilma-palocci-mantega-e-vaccari-no-quadrilhao-do-pt.ghtml"
+  },
+  {
+    "id": "conjur-2019-12-sentenca-quadrilhao",
+    "tipo": "documento_oficial",
+    "veiculo": "Consultor Jurídico (ConJur)",
+    "tipo_veiculo": "imprensa_juridica",
+    "titulo": "Sentença de absolvição sumária no caso do quadrilhão do PT (íntegra)",
+    "data": "2019-12-04",
+    "url": "https://conjur.com.br/wp-content/uploads/2019/12/juiz-absolve-cupula-pt.pdf"
+  },
+  {
+    "id": "g1-2018-07-12-obstrucao",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Juiz do Distrito Federal absolve Lula, André Esteves e mais cinco em processo sobre obstrução de Justiça",
+    "data": "2018-07-12",
+    "url": "https://g1.globo.com/politica/noticia/juiz-do-df-absolve-lula-e-mais-seis-em-processo-sobre-obstrucao-de-justica.ghtml"
+  },
+  {
+    "id": "agbr-2018-07-obstrucao",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Juiz absolve Lula e outros acusados em caso de obstrução de Justiça",
+    "data": "2018-07-12",
+    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2018-07/justica-absolve-lula-e-outros-acusados-em-caso-de-obstrucao-de-justica"
+  },
+  {
+    "id": "agbr-2016-10-angola",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula e Marcelo Odebrecht são denunciados por suspeitas em obras em Angola",
+    "data": "2016-10",
+    "url": "https://agenciabrasil.ebc.com.br/politica/noticia/2016-10/ex-presidente-lula-e-denunciado-pelo-ministerio-publico-federal"
+  },
+  {
+    "id": "folha-2019-07-24-angola",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Juiz isenta Lula de parte das acusações em ação por benefício à Odebrecht em Angola",
+    "data": "2019-07-24",
+    "url": "https://www1.folha.uol.com.br/poder/2019/07/juiz-isenta-lula-de-parte-das-acusacoes-em-acao-por-beneficio-a-odebrecht-em-angola.shtml"
+  },
+  {
+    "id": "g1-2020-09-01-trf1",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "TRF-1 tranca ação penal que acusava Lula de participação em fraudes de contratos do BNDES",
+    "data": "2020-09-01",
+    "url": "https://g1.globo.com/politica/noticia/2020/09/01/trf-1-tranca-acao-penal-que-acusava-lula-de-participacao-em-fraudes-de-contratos-do-bndes.ghtml"
+  },
+  {
+    "id": "poder360-2024-07-tcu-bndes",
+    "tipo": "reportagem",
+    "veiculo": "Poder360",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "TCU arquiva processo de financiamento do BNDES no exterior",
+    "data": "2024-07",
+    "url": "https://www.poder360.com.br/justica/tcu-arquiva-processo-de-financiamento-do-bndes-no-exterior/"
+  },
+  {
+    "id": "oglobo-2024-07-tcu-mariel",
+    "tipo": "reportagem",
+    "veiculo": "O Globo (Lauro Jardim)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "TCU arquiva investigações sobre apoio do BNDES a obras em Cuba e na Venezuela",
+    "data": "2024-07",
+    "url": "https://oglobo.globo.com/blogs/lauro-jardim/post/2024/07/tcu-arquiva-investigacoes-sobre-apoio-do-bndes-a-obras-em-cuba-e-na-venezuela.ghtml"
+  },
+  {
+    "id": "g1-2021-06-21-zelotes",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça Federal absolve Lula e Gilberto Carvalho em ação por corrupção passiva na Zelotes",
+    "data": "2021-06-21",
+    "url": "https://g1.globo.com/politica/noticia/2021/06/21/justica-federal-absolve-lula-e-gilberto-carvalho-em-acao-da-operacao-zelotes.ghtml"
+  },
+  {
+    "id": "conjur-2021-06-21-zelotes",
+    "tipo": "reportagem",
+    "veiculo": "Consultor Jurídico (ConJur)",
+    "tipo_veiculo": "imprensa_juridica",
+    "titulo": "Juiz não vê evidências mínimas em denúncia e absolve Lula",
+    "data": "2021-06-21",
+    "url": "https://www.conjur.com.br/2021-jun-21/juiz-nao-ve-evidencias-minimas-denuncia-absolve-lula/"
+  },
+  {
+    "id": "estadao-2016-12-gripen",
+    "tipo": "reportagem",
+    "veiculo": "Estadão (Blog do Fausto Macedo)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula é denunciado na Zelotes por tráfico de influência na compra dos caças Gripen",
+    "data": "2016-12",
+    "url": "https://www.estadao.com.br/politica/blog-do-fausto-macedo/ex-presidente-lula-e-filho-sao-denunciados/"
+  },
+  {
+    "id": "dw-2016-12-gripen",
+    "tipo": "reportagem",
+    "veiculo": "DW Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula e filho são denunciados na Operação Zelotes",
+    "data": "2016-12",
+    "url": "https://www.dw.com/pt-br/lula-e-filho-s%C3%A3o-denunciados-na-opera%C3%A7%C3%A3o-zelotes/a-36716375"
+  },
+  {
+    "id": "stf-2022-03-gripen",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Lewandowski suspende ação penal contra Lula sobre compra de caças Gripen",
+    "data": "2022-03",
+    "url": "https://noticias.stf.jus.br/postsnoticias/lewandowski-suspende-acao-penal-contra-lula-sobre-compra-de-cacas-gripen/"
+  },
+  {
+    "id": "folha-2005-07-09-telemar",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Telemar põe R$ 5 milhões em empresa do filho de Lula",
+    "data": "2005-07-09",
+    "url": "https://www1.folha.uol.com.br/folha/brasil/ult96u70377.shtml"
+  },
+  {
+    "id": "folha-2005-08-08-telemar",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Outro lado: Ação é estratégica, diz Telemar",
+    "data": "2005-08-08",
+    "url": "https://www1.folha.uol.com.br/fsp/brasil/fc0808200518.htm"
+  },
+  {
+    "id": "pf-2019-12-10-mapa",
+    "tipo": "documento_oficial",
+    "veiculo": "Polícia Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "PF deflagra a 69ª Fase da Operação Lava Jato: Operação Mapa da Mina",
+    "data": "2019-12-10",
+    "url": "https://www.gov.br/pf/pt-br/assuntos/noticias/2019/12/pf-deflagra-a-69a-fase-da-operacao-lava-jato-operacao-mapa-da-mina"
+  },
+  {
+    "id": "g1-2019-12-10-mapa",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Nova fase da Lava Jato investiga repasses do grupo Oi para empresa de filho de Lula",
+    "data": "2019-12-10",
+    "url": "https://g1.globo.com/pr/parana/noticia/2019/12/10/pf-esta-nas-ruas-cumprindo-mandados-em-nova-fase-da-lava-jato.ghtml"
+  },
+  {
+    "id": "folha-2022-01-17-mapa",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo (Mônica Bergamo)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça arquiva caso que liga Lulinha a supostos repasses ilegais da Oi",
+    "data": "2022-01-17",
+    "url": "https://www1.folha.uol.com.br/colunas/monicabergamo/2022/01/justica-arquiva-caso-que-liga-lulinha-a-supostos-repasses-ilegais-da-oi.shtml"
+  },
+  {
+    "id": "poder360-2022-01-mapa",
+    "tipo": "reportagem",
+    "veiculo": "Poder360",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Juíza arquiva investigação da Lava Jato contra Lulinha",
+    "data": "2022-01",
+    "url": "https://www.poder360.com.br/lava-jato/juiza-arquiva-investigacao-da-lava-jato-contra-filho-de-lula/"
+  },
+  {
+    "id": "folha-2021-10-19-rose",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça anula provas e encerra ação criminal contra Rosemary Noronha, ex-assessora de Lula",
+    "data": "2021-10-19",
+    "url": "https://www1.folha.uol.com.br/poder/2021/10/justica-anula-provas-e-encerra-acao-criminal-contra-rosemary-noronha-ex-assessora-de-lula.shtml"
+  },
+  {
+    "id": "g1-2021-10-19-rose",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Justiça Federal em SP encerra ação penal contra Rosemary Noronha, ex-assessora de Lula",
+    "data": "2021-10-19",
+    "url": "https://g1.globo.com/sp/sao-paulo/noticia/2021/10/19/justica-federal-em-sp-encerra-acao-penal-contra-rosemary-noronha-ex-assessora-de-lula.ghtml"
+  },
+  {
+    "id": "cgu-2013-09-rose",
+    "tipo": "documento_oficial",
+    "veiculo": "Controladoria-Geral da União",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "CGU aplica pena de destituição de cargo público a Rosemary Noronha",
+    "data": "2013-09",
+    "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias/2013/09/cgu-aplica-pena-de-destituicao-de-cargo-publico-a-rosemary-noronha"
+  },
+  {
+    "id": "folha-2012-11-30-lula-silencia",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula evita imprensa e silencia sobre investigação",
+    "data": "2012-11-30",
+    "url": "https://www1.folha.uol.com.br/fsp/poder/80969-lula-evita-imprensa-e-silencia-sobre-investigacao.shtml"
+  },
+  {
+    "id": "folha-2012-11-30-rose-nega",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Investigada afirma que não praticou corrupção",
+    "data": "2012-11-30",
+    "url": "https://www1.folha.uol.com.br/fsp/poder/80963-investigada-afirma-que-nao-praticou-corrupcao.shtml"
+  },
+  {
+    "id": "cnn-2025-04-23-sindnapi",
+    "tipo": "reportagem",
+    "veiculo": "CNN Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Sindicato de irmão de Lula é alvo de operação contra fraudes no INSS",
+    "data": "2025-04-23",
+    "url": "https://www.cnnbrasil.com.br/politica/sindicato-de-irmao-de-lula-e-alvo-de-operacao-contra-fraudes-no-inss/"
+  },
+  {
+    "id": "oglobo-2025-04-30-sindnapi",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "INSS: sindicato que tem irmão de Lula como diretor bateu recorde de arrecadação com descontos de aposentadorias",
+    "data": "2025-04-30",
+    "url": "https://oglobo.globo.com/economia/noticia/2025/04/30/inss-sindicato-que-tem-irmao-de-lula-como-diretor-bateu-recorde-de-arrecadacao-com-descontos-de-aposentadorias.ghtml"
+  },
+  {
+    "id": "agbr-2025-10-15-bloqueio",
+    "tipo": "reportagem",
+    "veiculo": "Agência Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Fraude no INSS: bloqueio de valores ligados a sindicato soma R$ 389 mi",
+    "data": "2025-10-15",
+    "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-10/fraude-no-inss-bloqueio-de-valores-ligados-sindicato-soma-r-389-mi"
+  },
+  {
+    "id": "estadao-2025-10-sindnapi",
+    "tipo": "reportagem",
+    "veiculo": "Estadão",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "PF suspeita que sindicato de irmão de Lula desviou aposentadorias do INSS para empresas de fachada",
+    "data": "2025-10",
+    "url": "https://www.estadao.com.br/politica/pf-suspeita-que-sindicato-de-irmao-de-lula-desviou-aposentadorias-do-inss-para-empresas-de-fachada/"
+  },
+  {
+    "id": "camara-2025-10-16-frei-chico",
+    "tipo": "documento_oficial",
+    "veiculo": "Agência Câmara de Notícias",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "CPMI do INSS rejeita convocação de Frei Chico, irmão de Lula",
+    "data": "2025-10-16",
+    "url": "https://www.camara.leg.br/noticias/1212823-cpmi-do-inss-rejeita-convocacao-de-frei-chico-irmao-de-lula"
+  },
+  {
+    "id": "oglobo-2025-10-09-cgu",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Fraude do INSS: sindicato deu informação falsa ao negar presença de irmão de Lula na organização, aponta CGU",
+    "data": "2025-10-09",
+    "url": "https://oglobo.globo.com/politica/noticia/2025/10/09/fraude-do-inss-sindicato-deu-informacao-falsa-ao-negar-presenca-de-irmao-de-lula-na-organizacao-aponta-cgu.ghtml"
+  },
+  {
+    "id": "r7-2025-12-03-lula-inss",
+    "tipo": "reportagem",
+    "veiculo": "R7",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula volta a defender punições e retomada de bens em fraudes no INSS",
+    "data": "2025-12-03",
+    "url": "https://noticias.r7.com/brasilia/lula-volta-a-defender-punicoes-e-retomada-de-bens-em-fraudes-no-inss-03122025/"
+  },
+  {
+    "id": "senado-2025-08-28-careca",
+    "tipo": "documento_oficial",
+    "veiculo": "Agência Senado",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "CPMI pedirá à Procuradoria Federal informações sobre o Careca do INSS",
+    "data": "2025-08-28",
+    "url": "https://www12.senado.leg.br/noticias/materias/2025/08/28/cpmi-pede-informacoes-sobre-o-careca-do-inss"
+  },
+  {
+    "id": "g1-2026-03-27-cpmi",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "CPMI do INSS: relator pede indiciamento de mais de 200 pessoas, incluindo Lulinha e ex-ministros de Lula e Bolsonaro",
+    "data": "2026-03-27",
+    "url": "https://g1.globo.com/politica/noticia/2026/03/27/cpmi-do-inss-relatorio.ghtml"
+  },
+  {
+    "id": "oglobo-2026-03-27-cpmi",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Relatório da CPI diz que testemunha citou pagamentos de R$ 300 mil de Careca do INSS a Lulinha e sugere prisão de filho do presidente",
+    "data": "2026-03-27",
+    "url": "https://oglobo.globo.com/politica/noticia/2026/03/27/relatorio-da-cpi-afirma-que-testemunha-citou-pagamentos-de-r-300-mil-mensais-de-careca-do-inss-a-lulinha.ghtml"
+  },
+  {
+    "id": "poder360-2026-03-27-cpmi",
+    "tipo": "reportagem",
+    "veiculo": "Poder360",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Relatório cita mesada do Careca do INSS para Lulinha",
+    "data": "2026-03-27",
+    "url": "https://www.poder360.com.br/poder-congresso/relatorio-cita-mesada-do-careca-do-inss-para-lulinha/"
+  },
+  {
+    "id": "cnn-2026-03-27-cpmi",
+    "tipo": "reportagem",
+    "veiculo": "CNN Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Relator de CPMI detalha supostos pagamentos de Careca do INSS a Lulinha",
+    "data": "2026-03-27",
+    "url": "https://www.cnnbrasil.com.br/politica/relator-de-cpmi-detalha-pagamentos-de-careca-do-inss-a-lulinha/"
+  },
+  {
+    "id": "g1-2026-07-31-inquerito",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lulinha: PF abre investigações por tráfico de influência e corrupção",
+    "data": "2026-07-31",
+    "url": "https://g1.globo.com/politica/noticia/2026/07/31/pf-abre-inquerito-contra-lulinha-entenda-o-que-esta-sendo-investigado.ghtml"
+  },
+  {
+    "id": "g1-2026-07-30-lula",
+    "tipo": "reportagem",
+    "veiculo": "G1",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lulinha investigado: Lula afirma que filho não terá privilégios",
+    "data": "2026-07-30",
+    "url": "https://g1.globo.com/politica/noticia/2026/07/30/lula-diz-que-lulinha-nao-vai-se-esconder-caso-seja-julgado.ghtml"
+  },
+  {
+    "id": "estadao-2026-defesa-lulinha",
+    "tipo": "reportagem",
+    "veiculo": "Estadão",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Defesa de Lulinha nega relação com esquema no INSS e diz que provará inocência",
+    "data": "2026",
+    "url": "https://www.estadao.com.br/politica/defesa-de-lulinha-nega-relacao-com-esquema-no-inss-e-diz-que-provara-inocencia-bala-de-festim/"
+  },
+  {
+    "id": "cnn-2026-advogado-lulinha",
+    "tipo": "reportagem",
+    "veiculo": "CNN Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Advogado de Lulinha nega que ele tenha recebido mesada do Careca do INSS",
+    "data": "2026-03",
+    "url": "https://www.cnnbrasil.com.br/politica/advogado-de-lulinha-nega-que-ele-tenha-recebido-mesada-de-careca-do-inss/"
+  },
+  {
+    "id": "stf-2023-12-04-janones",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "A pedido da PGR, STF autoriza abertura de inquérito contra deputado André Janones",
+    "data": "2023-12-04",
+    "url": "https://noticias.stf.jus.br/postsnoticias/a-pedido-da-pgr-stf-autoriza-abertura-de-inquerito-contra-deputado-andre-janones/"
+  },
+  {
+    "id": "folha-2024-09-12-janones",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "PF indicia Janones por suspeita de rachadinha",
+    "data": "2024-09-12",
+    "url": "https://www1.folha.uol.com.br/poder/2024/09/pf-indicia-janones-sob-suspeita-de-corrupcao-em-caso-de-rachadinha.shtml"
+  },
+  {
+    "id": "stf-2025-03-19-janones",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF homologa acordo entre deputado André Janones e PGR sobre rachadinha",
+    "data": "2025-03-19",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-homologa-acordo-entre-deputado-andre-janones-e-pgr-sobre-rachadinha/"
+  },
+  {
+    "id": "tse-2022-10-janones",
+    "tipo": "documento_oficial",
+    "veiculo": "Tribunal Superior Eleitoral (via Poder360)",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Decisão do TSE sobre postagens de André Janones, \"coordenador digital\" da campanha Lula-Alckmin",
+    "data": "2022-10",
+    "url": "https://static.poder360.com.br/2022/10/decisa%CC%83o-TSE-Andre-Janones.pdf"
+  },
+  {
+    "id": "bbc-2023-janones",
+    "tipo": "reportagem",
+    "veiculo": "BBC News Brasil",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "André Janones: o que se sabe sobre acusações de rachadinha feitas por ex-assessores contra deputado",
+    "data": "2023-11",
+    "url": "https://www.bbc.com/portuguese/articles/c5198ypqlj9o"
+  },
+  {
+    "id": "oglobo-2022-renan-lula",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula se encontra com o senador Renan Calheiros e o governador de Alagoas em SP",
+    "data": "2022",
+    "url": "https://oglobo.globo.com/politica/lula-se-encontra-com-senador-renan-calheiros-o-governador-de-alagoas-em-sp-25375368"
+  },
+  {
+    "id": "uol-2022-07-18-mdb",
+    "tipo": "reportagem",
+    "veiculo": "UOL",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula encontra Renan Calheiros e Eunício para selar apoio de parte do MDB",
+    "data": "2022-07-18",
+    "url": "https://www.uol.com.br/eleicoes/2022/07/18/lula-mdb-apoio.htm"
+  },
+  {
+    "id": "oglobo-2022-12-renan-filho",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Saiba quem é o novo ministro dos Transportes, Renan Filho",
+    "data": "2022-12",
+    "url": "https://oglobo.globo.com/politica/noticia/2022/12/saiba-quem-e-o-novo-ministro-dos-transportes-renan-filho.ghtml"
+  },
+  {
+    "id": "stf-2017-10-10-renan",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Ministro acolhe pedido do MPF e arquiva inquérito que investigava Renan, Jucá e Sarney",
+    "data": "2017-10-10",
+    "url": "https://noticias.stf.jus.br/postsnoticias/ministro-acolhe-pedido-do-mpf-e-arquiva-inquerito-que-investigava-renan-juca-e-sarney/"
+  },
+  {
+    "id": "stf-2018-09-17-renan",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "Ministro atende pedido da PGR para arquivamento de inquérito de Renan Calheiros e Romero Jucá (Zelotes)",
+    "data": "2018-09-17",
+    "url": "https://noticias.stf.jus.br/postsnoticias/ministro-atende-pedido-da-pgr-para-arquivamento-de-inquerito-de-renan-calheiros-e-romero-juca/"
+  },
+  {
+    "id": "stf-2022-02-14-renan",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "STF arquiva inquérito contra Renan Calheiros e Jader Barbalho (Belo Monte)",
+    "data": "2022-02-14",
+    "url": "https://noticias.stf.jus.br/postsnoticias/stf-arquiva-inquerito-contra-renan-calheiros-e-jader-barbalho/"
+  },
+  {
+    "id": "stf-2023-06-20-renan",
+    "tipo": "documento_oficial",
+    "veiculo": "Supremo Tribunal Federal",
+    "tipo_veiculo": "documento_oficial",
+    "titulo": "A pedido da PGR, Supremo arquiva inquérito contra senador Renan Calheiros (Estaleiro Rio Tietê)",
+    "data": "2023-06-20",
+    "url": "https://noticias.stf.jus.br/postsnoticias/a-pedido-da-pgr-supremo-arquiva-inquerito-contra-senador-renan-calheiros/"
+  },
+  {
+    "id": "folha-2024-05-23-renan",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Fachin arquiva inquérito contra Jucá e Renan Calheiros",
+    "data": "2024-05-23",
+    "url": "https://www1.folha.uol.com.br/poder/2024/05/fachin-arquiva-inquerito-da-lava-jato-contra-juca-e-renan-a-pedido-de-procuradoria.shtml"
+  },
+  {
+    "id": "poder360-2026-vorcaro-lula",
+    "tipo": "reportagem",
+    "veiculo": "Poder360",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula recebeu Vorcaro, dono do Master, sem registro na agenda",
+    "data": "2026-01",
+    "url": "https://www.poder360.com.br/poder-governo/lula-recebeu-vorcaro-dono-do-master-sem-registro-na-agenda/"
+  },
+  {
+    "id": "folha-2026-01-26-vorcaro",
+    "tipo": "reportagem",
+    "veiculo": "Folha de S.Paulo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula recebeu Vorcaro e Galípolo no Planalto em 2024",
+    "data": "2026-01-26",
+    "url": "https://www1.folha.uol.com.br/mercado/2026/01/lula-recebeu-vorcaro-em-reuniao-no-palacio-do-planalto-no-fim-de-2024.shtml"
+  },
+  {
+    "id": "valor-2026-01-26-vorcaro",
+    "tipo": "reportagem",
+    "veiculo": "Valor Econômico",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula teve reunião com dono do Banco Master e Galípolo fora da agenda em 2024, dizem fontes",
+    "data": "2026-01-26",
+    "url": "https://valor.globo.com/financas/noticia/2026/01/26/lula-teve-reuniao-com-vorcaro-e-galipolo-fora-da-agenda-em-2024-dizem-fontes.ghtml"
+  },
+  {
+    "id": "oglobo-2026-02-05-lula-vorcaro",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Lula relata conversa com Vorcaro no Planalto: não haveria posição política pró ou contra o Master",
+    "data": "2026-02-05",
+    "url": "https://oglobo.globo.com/economia/noticia/2026/02/05/lula-disse-que-vorcaro-afirmou-a-ele-em-reuniao-fora-da-agenda-no-planalto-que-sofria-perseguicao.ghtml"
+  },
+  {
+    "id": "oglobo-2025-08-mantega-lobby",
+    "tipo": "reportagem",
+    "veiculo": "O Globo (Lauro Jardim)",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Mantega faz lobby no BC por operação do Banco Master",
+    "data": "2025-08",
+    "url": "https://oglobo.globo.com/blogs/lauro-jardim/post/2025/08/mantega-faz-lobby-no-bc-por-operacao-do-banco-master.ghtml"
+  },
+  {
+    "id": "oglobo-2026-04-08-master-pagamentos",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Master declarou ao menos R$ 65 milhões em pagamentos de serviços de ex-presidente, ex-ministros e dirigentes partidários",
+    "data": "2026-04-08",
+    "url": "https://oglobo.globo.com/politica/noticia/2026/04/08/master-pagamentos.ghtml"
+  },
+  {
+    "id": "oglobo-2026-04-10-master-servicos",
+    "tipo": "reportagem",
+    "veiculo": "O Globo",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "De consultoria econômica a gestão de crise: pagamentos do Master bancaram atuação de ex-ministros e aliados políticos",
+    "data": "2026-04-10",
+    "url": "https://oglobo.globo.com/politica/noticia/2026/04/10/de-consultoria-economica-a-gestao-de-crise-pagamentos-do-master-bancaram-atuacao-de-ex-ministros-e-aliados-politicos.ghtml"
+  },
+  {
+    "id": "metropoles-2026-master-pagamentos",
+    "tipo": "reportagem",
+    "veiculo": "Metrópoles",
+    "tipo_veiculo": "grande_imprensa",
+    "titulo": "Master declarou pagamentos a Temer, ACM Neto, Rueda e Lewandowski",
+    "data": "2026-04",
+    "url": "https://www.metropoles.com/brasil/master-declarou-pagamentos-a-temer-rueda-acm-neto-e-lewandowski"
+  }
+]

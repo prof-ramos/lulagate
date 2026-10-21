@@ -1,0 +1,777 @@
+[
+  {
+    "id": "esc-mensalao",
+    "titulo": "Mensalão (AP 470)",
+    "periodo": {
+      "inicio": "2005",
+      "fim": "2012-12"
+    },
+    "status": "associacao_indireta",
+    "status_detalhe": "Lula nunca foi denunciado. O STF rejeitou pedidos de Roberto Jefferson para incluí-lo como réu. José Dirceu foi condenado em 2012 por corrupção ativa.",
+    "resumo": "Esquema de compra de apoio parlamentar no primeiro governo Lula, julgado pelo STF na AP 470. O ex-ministro da Casa Civil José Dirceu foi condenado. Lula não figurou como réu.",
+    "papel_de_lula": "Presidente da República à época; não denunciado.",
+    "versao_de_lula": "No Roda Viva (07/11/2005), disse sentir-se traído por petistas que \"terceirizaram\" a arrecadação de campanha e admitiu responsabilidade política na crise (Folha, 08/11/2005).",
+    "personagens": [
+      "lula",
+      "jose-dirceu",
+      "delubio-soares",
+      "roberto-jefferson"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "g1-2012-10-dirceu",
+      "gazeta-stf-lula-mensalao",
+      "planalto-2005-11-07-rodaviva",
+      "folha-2005-11-08-responsabilidade",
+      "folha-2005-11-09-delubio"
+    ],
+    "conexoes": [
+      "con-006",
+      "con-007",
+      "con-008"
+    ]
+  },
+  {
+    "id": "esc-triplex",
+    "titulo": "Lava Jato: triplex do Guarujá",
+    "periodo": {
+      "inicio": "2016",
+      "fim": "2022-01-27"
+    },
+    "status": "condenacao_anulada",
+    "status_detalhe": "Condenação anulada pelo STF: em 08/03/2021 Fachin declarou a incompetência da 13ª Vara de Curitiba (HC 193.726); em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Em 27/01/2022 a 12ª Vara Federal do DF arquivou a ação por prescrição, a pedido do MPF.",
+    "resumo": "Lula foi condenado por Sergio Moro em 12/07/2017 a 9 anos e 6 meses por corrupção passiva e lavagem, sob acusação de receber da OAS o apartamento 164-A do Solaris e reformas. O TRF4 elevou a pena para 12 anos e 1 mês em 24/01/2018. Preso em 07/04/2018, foi solto em 08/11/2019 após 580 dias. A condenação foi anulada em 2021 e o caso, arquivado em 2022. Na mesma sentença, Lula e Okamotto foram absolvidos da acusação ligada ao armazenamento do acervo presidencial.",
+    "papel_de_lula": "Réu; condenado em 1ª e 2ª instâncias, condenação anulada.",
+    "versao_de_lula": "Em depoimento a Moro (10/05/2017), negou ser dono do triplex e disse nunca ter tido intenção de comprá-lo. Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
+    "personagens": [
+      "lula",
+      "marisa-leticia",
+      "leo-pinheiro",
+      "paulo-okamotto",
+      "sergio-moro",
+      "edson-fachin",
+      "gilmar-mendes",
+      "pollyanna-alves",
+      "cristiano-zanin"
+    ],
+    "valores": [
+      {
+        "descricao": "Pena na sentença de Moro",
+        "valor": "9 anos e 6 meses"
+      },
+      {
+        "descricao": "Pena no TRF4",
+        "valor": "12 anos e 1 mês"
+      }
+    ],
+    "escandalos_relacionados": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "g1-2017-07-sentenca-triplex",
+      "trf4-2018-01-24-triplex",
+      "agbr-2018-01-trf4",
+      "g1-2017-05-depoimento-lula",
+      "g1-2017-leo-pinheiro",
+      "stf-2021-03-08-fachin",
+      "stf-2021-06-23-suspeicao",
+      "conjur-2022-01-28-triplex",
+      "folha-2019-11-08-solto",
+      "cnn-2021-03-10-mentira",
+      "agbr-2017-07-okamotto"
+    ],
+    "conexoes": [
+      "con-001",
+      "con-019",
+      "con-022",
+      "con-036",
+      "con-037",
+      "con-039",
+      "con-040",
+      "con-045"
+    ]
+  },
+  {
+    "id": "esc-atibaia",
+    "titulo": "Lava Jato: sítio de Atibaia",
+    "periodo": {
+      "inicio": "2017",
+      "fim": "2021-08-21"
+    },
+    "status": "condenacao_anulada",
+    "status_detalhe": "Condenação anulada pelo STF: em 08/03/2021 Fachin declarou a incompetência da 13ª Vara de Curitiba (HC 193.726); em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Em 21/08/2021 a Justiça Federal do DF rejeitou a nova denúncia e declarou extinta a punibilidade por prescrição.",
+    "resumo": "Gabriela Hardt condenou Lula em 06/02/2019 a 12 anos e 11 meses por corrupção e lavagem, por reformas no sítio (proprietário formal: Fernando Bittar) custeadas por Odebrecht, OAS e Bumlai, segundo a acusação. O TRF4 elevou a pena para 17 anos, 1 mês e 10 dias em 27/11/2019 e absolveu Bumlai, Roberto Teixeira, Emyr Costa e Paulo Gordilho. A condenação de Lula foi anulada em 2021.",
+    "papel_de_lula": "Réu; condenado em 1ª e 2ª instâncias, condenação anulada.",
+    "versao_de_lula": "A defesa (Cristiano Zanin) alegou no TRF4 parcialidade de Moro e Hardt e ausência de prova de vantagem indevida. Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
+    "personagens": [
+      "lula",
+      "marisa-leticia",
+      "fernando-bittar",
+      "jose-carlos-bumlai",
+      "leo-pinheiro",
+      "emilio-odebrecht",
+      "marcelo-odebrecht",
+      "alexandrino-alencar",
+      "emyr-costa",
+      "paulo-gordilho",
+      "roberto-teixeira",
+      "rogerio-pimentel",
+      "gabriela-hardt",
+      "pollyanna-alves",
+      "cristiano-zanin"
+    ],
+    "valores": [
+      {
+        "descricao": "Pena na sentença de Hardt",
+        "valor": "12 anos e 11 meses"
+      },
+      {
+        "descricao": "Pena no TRF4",
+        "valor": "17 anos, 1 mês e 10 dias"
+      }
+    ],
+    "escandalos_relacionados": [
+      "esc-triplex"
+    ],
+    "fontes": [
+      "uol-2019-02-06-atibaia",
+      "trf4-2019-11-27-atibaia",
+      "stf-2021-03-08-fachin",
+      "folha-2021-08-22-atibaia",
+      "g1-2021-08-22-atibaia",
+      "cnn-2021-03-10-mentira"
+    ],
+    "conexoes": [
+      "con-001",
+      "con-021",
+      "con-022",
+      "con-023",
+      "con-024",
+      "con-025",
+      "con-026",
+      "con-027",
+      "con-028",
+      "con-029",
+      "con-034",
+      "con-035",
+      "con-036",
+      "con-038",
+      "con-039",
+      "con-045"
+    ]
+  },
+  {
+    "id": "esc-instituto-lula",
+    "titulo": "Lava Jato: terreno e doações ao Instituto Lula (Odebrecht) e delação de Palocci",
+    "periodo": {
+      "inicio": "2017",
+      "fim": "2023-02"
+    },
+    "status": "arquivado",
+    "status_detalhe": "Ações declaradas fora da competência de Curitiba em 08/03/2021 e trancadas pelo STF (Lewandowski) em fevereiro de 2023, por provas consideradas nulas. A delação de Palocci foi excluída do processo pela 2ª Turma do STF em 2020. Em 06/09/2023 Toffoli invalidou provas do acordo de leniência da Odebrecht. Não houve sentença de mérito.",
+    "resumo": "O MPF acusou Lula de receber da Odebrecht um imóvel para o Instituto Lula (avaliado em R$ 12,4 milhões, segundo a decisão do HC 193.726) e um apartamento em São Bernardo do Campo, além de doações ao instituto. Palocci afirmou a Moro, em 2017, que Lula tinha um \"pacto de sangue\" com Emílio Odebrecht.",
+    "papel_de_lula": "Réu; ações trancadas.",
+    "versao_de_lula": "Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
+    "personagens": [
+      "lula",
+      "paulo-okamotto",
+      "antonio-palocci",
+      "emilio-odebrecht",
+      "edson-fachin",
+      "ricardo-lewandowski",
+      "dias-toffoli"
+    ],
+    "valores": [
+      {
+        "descricao": "Valor atribuído ao imóvel para o Instituto Lula",
+        "valor": 12422000,
+        "moeda": "BRL"
+      },
+      {
+        "descricao": "Apartamento em São Bernardo do Campo",
+        "valor": 504000,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "stf-hc193726-decisao",
+      "stf-2023-02-tres-acoes",
+      "conjur-2023-02-18-tranca",
+      "bbc-2017-09-palocci",
+      "conjur-2020-12-14-palocci",
+      "valor-2020-08-04-palocci",
+      "g1-2023-09-06-toffoli",
+      "cnn-2021-03-10-mentira"
+    ],
+    "conexoes": [
+      "con-009",
+      "con-010",
+      "con-019",
+      "con-023",
+      "con-039",
+      "con-041",
+      "con-042"
+    ]
+  },
+  {
+    "id": "esc-bumlai-schahin",
+    "titulo": "Bumlai e o empréstimo do Banco Schahin",
+    "periodo": {
+      "inicio": "2004",
+      "fim": "2021-10-22"
+    },
+    "status": "condenacao_anulada",
+    "status_detalhe": "Condenação de Bumlai e Vaccari anulada pelo STJ em 2021 por incompetência; caso remetido à Justiça Eleitoral. Lula não era réu.",
+    "resumo": "Moro condenou o pecuarista José Carlos Bumlai em 15/09/2016 por obter, em 2004, empréstimo de R$ 12 milhões no Banco Schahin destinado ao PT, quitado de forma fraudulenta segundo a sentença.",
+    "papel_de_lula": "Não réu; amigo de Bumlai.",
+    "versao_de_lula": "Sem manifestação de Lula localizada nas fontes consultadas.",
+    "personagens": [
+      "jose-carlos-bumlai",
+      "joao-vaccari",
+      "lula"
+    ],
+    "valores": [
+      {
+        "descricao": "Empréstimo do Banco Schahin",
+        "valor": 12000000,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "oglobo-2016-bumlai",
+      "g1-2016-09-bumlai",
+      "stj-2021-10-22-schahin",
+      "oglobo-2021-stj-schahin"
+    ],
+    "conexoes": [
+      "con-014",
+      "con-021"
+    ]
+  },
+  {
+    "id": "esc-quadrilhao",
+    "titulo": "Quadrilhão do PT",
+    "periodo": {
+      "inicio": "2017",
+      "fim": "2019-12-04"
+    },
+    "status": "absolvido",
+    "status_detalhe": "Absolvição sumária pela 12ª Vara Federal do DF em 04/12/2019.",
+    "resumo": "Lula, Dilma, Palocci, Mantega e Vaccari foram acusados de organização criminosa. O juiz concluiu que a denúncia não demonstrava organização estável e tentava criminalizar a atividade política.",
+    "papel_de_lula": "Réu; absolvido.",
+    "versao_de_lula": "Lula negou as acusações; foi absolvido sumariamente.",
+    "personagens": [
+      "lula",
+      "dilma-rousseff",
+      "antonio-palocci",
+      "guido-mantega",
+      "joao-vaccari",
+      "marcus-bastos"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "g1-2019-12-04-quadrilhao",
+      "conjur-2019-12-sentenca-quadrilhao"
+    ],
+    "conexoes": [
+      "con-011",
+      "con-012",
+      "con-013",
+      "con-047"
+    ]
+  },
+  {
+    "id": "esc-obstrucao-cervero",
+    "titulo": "Obstrução de Justiça (caso Delcídio/Cerveró)",
+    "periodo": {
+      "inicio": "2016",
+      "fim": "2018-07-12"
+    },
+    "status": "absolvido",
+    "status_detalhe": "Absolvição pela 10ª Vara Federal do DF em 12/07/2018 por falta de provas.",
+    "resumo": "A denúncia dizia que Delcídio do Amaral tentou comprar o silêncio de Nestor Cerveró para evitar sua delação. Lula, Delcídio, André Esteves e outros foram absolvidos.",
+    "papel_de_lula": "Réu; absolvido.",
+    "versao_de_lula": "Lula negou as acusações; foi absolvido.",
+    "personagens": [
+      "lula",
+      "delcidio-amaral",
+      "nestor-cervero",
+      "andre-esteves",
+      "ricardo-leite"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "g1-2018-07-12-obstrucao",
+      "agbr-2018-07-obstrucao"
+    ],
+    "conexoes": [
+      "con-048",
+      "con-049",
+      "con-050",
+      "con-051"
+    ]
+  },
+  {
+    "id": "esc-angola-bndes",
+    "titulo": "Operação Janus: Odebrecht em Angola e BNDES",
+    "periodo": {
+      "inicio": "2016-10",
+      "fim": "2020-09-01"
+    },
+    "status": "arquivado",
+    "status_detalhe": "Em julho de 2019 a Justiça Federal do DF absolveu Lula de parte das acusações; em 01/09/2020 o TRF1 trancou a ação remanescente.",
+    "resumo": "O MPF acusou Lula de tráfico de influência para favorecer a Odebrecht em financiamentos do BNDES para obras em Angola, com Taiguara Rodrigues dos Santos e a Exergia. A ação foi trancada.",
+    "papel_de_lula": "Réu; parcialmente absolvido e ação trancada.",
+    "versao_de_lula": "Sem manifestação direta localizada nas fontes consultadas; a defesa obteve o trancamento da ação.",
+    "personagens": [
+      "lula",
+      "marcelo-odebrecht",
+      "taiguara-santos"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [
+      "esc-bndes-tcu"
+    ],
+    "fontes": [
+      "agbr-2016-10-angola",
+      "folha-2019-07-24-angola",
+      "g1-2020-09-01-trf1"
+    ],
+    "conexoes": [
+      "con-024",
+      "con-052"
+    ]
+  },
+  {
+    "id": "esc-bndes-tcu",
+    "titulo": "Financiamentos do BNDES no exterior (Porto de Mariel e Venezuela) no TCU",
+    "periodo": {
+      "inicio": "2009",
+      "fim": "2024-07"
+    },
+    "status": "arquivado",
+    "status_detalhe": "TCU arquivou em julho de 2024 a apuração sobre Mariel (Cuba) e estaleiro na Venezuela, reconhecendo falhas na cadeia decisória do BNDES sem aplicar sanções.",
+    "resumo": "Financiamentos do BNDES a obras de empreiteiras brasileiras no exterior, como o Porto de Mariel (Odebrecht), foram auditados pelo TCU. Lula não foi responsabilizado.",
+    "papel_de_lula": "Presidente quando parte das operações foi aprovada; não responsabilizado.",
+    "versao_de_lula": "Sem manifestação de Lula localizada nas fontes consultadas.",
+    "personagens": [
+      "lula",
+      "marcelo-odebrecht"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [
+      "esc-angola-bndes"
+    ],
+    "fontes": [
+      "poder360-2024-07-tcu-bndes",
+      "oglobo-2024-07-tcu-mariel"
+    ],
+    "conexoes": []
+  },
+  {
+    "id": "esc-zelotes-mp471",
+    "titulo": "Operação Zelotes: MP 471 (montadoras)",
+    "periodo": {
+      "inicio": "2009-11",
+      "fim": "2021-06-21"
+    },
+    "status": "absolvido",
+    "status_detalhe": "Absolvição pela 10ª Vara Federal do DF em 21/06/2021; o próprio MPF pediu absolvição por insuficiência de provas.",
+    "resumo": "O MPF acusava Lula e Gilberto Carvalho de aceitar promessa de R$ 6 milhões para campanhas do PT em troca da MP 471/2009, que prorrogou incentivos a montadoras (MMC e Caoa).",
+    "papel_de_lula": "Réu; absolvido.",
+    "versao_de_lula": "A defesa pediu a nulidade da denúncia; Lula foi absolvido.",
+    "personagens": [
+      "lula",
+      "gilberto-carvalho",
+      "mauro-marcondes",
+      "frederico-viana"
+    ],
+    "valores": [
+      {
+        "descricao": "Valor que teria sido prometido, segundo a denúncia",
+        "valor": 6000000,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [
+      "esc-zelotes-gripen"
+    ],
+    "fontes": [
+      "g1-2021-06-21-zelotes",
+      "conjur-2021-06-21-zelotes"
+    ],
+    "conexoes": [
+      "con-015",
+      "con-016",
+      "con-046"
+    ]
+  },
+  {
+    "id": "esc-zelotes-gripen",
+    "titulo": "Operação Zelotes: caças Gripen e MP 627 (Luís Cláudio)",
+    "periodo": {
+      "inicio": "2016-12",
+      "fim": "2023-02"
+    },
+    "status": "arquivado",
+    "status_detalhe": "Ação suspensa em março de 2022 e trancada pelo STF (Lewandowski) em fevereiro de 2023, por provas ilícitas e falta de justa causa. Não houve julgamento de mérito.",
+    "resumo": "Lula, seu filho Luís Cláudio e os lobistas Mauro Marcondes e Cristina Mautoni foram denunciados em 2016 por tráfico de influência, lavagem e organização criminosa ligados à compra de 36 caças Gripen e à MP 627.",
+    "papel_de_lula": "Réu; ação trancada.",
+    "versao_de_lula": "Sem manifestação direta localizada nas fontes consultadas.",
+    "personagens": [
+      "lula",
+      "luis-claudio",
+      "mauro-marcondes",
+      "cristina-mautoni",
+      "ricardo-lewandowski"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [
+      "esc-zelotes-mp471"
+    ],
+    "fontes": [
+      "estadao-2016-12-gripen",
+      "dw-2016-12-gripen",
+      "stf-2022-03-gripen",
+      "stf-2023-02-tres-acoes"
+    ],
+    "conexoes": [
+      "con-003",
+      "con-016",
+      "con-017",
+      "con-018",
+      "con-041"
+    ]
+  },
+  {
+    "id": "esc-gamecorp",
+    "titulo": "Lulinha, Gamecorp e Oi (Operação Mapa da Mina)",
+    "periodo": {
+      "inicio": "2005-01",
+      "fim": "2022-01-17"
+    },
+    "status": "arquivado",
+    "status_detalhe": "Investigação arquivada em 17/01/2022 pela Justiça Federal em SP, a pedido do MPF, por falta de provas válidas após as anulações da Lava Jato.",
+    "resumo": "Em 2005 a Telemar (Oi) investiu R$ 5 milhões na Gamecorp, que tinha Lulinha como sócio. Em 10/12/2019 a 69ª fase da Lava Jato apurou repasses de mais de R$ 132 milhões da Oi/Telemar a empresas do grupo Gamecorp/Gol.",
+    "papel_de_lula": "Pai do investigado; não investigado nesse caso.",
+    "versao_de_lula": "Sem manifestação de Lula localizada; a Telemar disse em 2005 que o investimento era estratégico.",
+    "personagens": [
+      "lulinha",
+      "fernando-bittar",
+      "kalil-bittar",
+      "jonas-suassuna",
+      "lula"
+    ],
+    "valores": [
+      {
+        "descricao": "Investimento da Telemar na Gamecorp (2005)",
+        "valor": 5000000,
+        "moeda": "BRL"
+      },
+      {
+        "descricao": "Repasses apurados pela Lava Jato (Oi/Telemar)",
+        "valor": "mais de 132 milhões",
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "folha-2005-07-09-telemar",
+      "folha-2005-08-08-telemar",
+      "pf-2019-12-10-mapa",
+      "g1-2019-12-10-mapa",
+      "folha-2022-01-17-mapa",
+      "poder360-2022-01-mapa"
+    ],
+    "conexoes": [
+      "con-002",
+      "con-030",
+      "con-031",
+      "con-032",
+      "con-033"
+    ]
+  },
+  {
+    "id": "esc-porto-seguro",
+    "titulo": "Rosemary Noronha e a Operação Porto Seguro",
+    "periodo": {
+      "inicio": "2012-11",
+      "fim": "2021-10-19"
+    },
+    "status": "arquivado",
+    "status_detalhe": "Ação penal encerrada em 19/10/2021 após anulação das provas. A CGU aplicou a pena administrativa de destituição em 2013. Lula não foi investigado.",
+    "resumo": "A PF investigou em 2012 esquema de venda de pareceres em órgãos federais. Rosemary Noronha, chefe do gabinete da Presidência em SP nomeada por Lula, foi demitida por Dilma.",
+    "papel_de_lula": "Responsável pela nomeação; não investigado.",
+    "versao_de_lula": "Lula evitou a imprensa e não comentou a investigação na época (Folha, 30/11/2012).",
+    "personagens": [
+      "rosemary-noronha",
+      "lula",
+      "dilma-rousseff"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "folha-2021-10-19-rose",
+      "g1-2021-10-19-rose",
+      "cgu-2013-09-rose",
+      "folha-2012-11-30-lula-silencia",
+      "folha-2012-11-30-rose-nega"
+    ],
+    "conexoes": [
+      "con-020"
+    ]
+  },
+  {
+    "id": "esc-inss-sindnapi",
+    "titulo": "Fraude dos descontos no INSS: Sindnapi e Frei Chico",
+    "periodo": {
+      "inicio": "2025-04-23",
+      "fim": null
+    },
+    "status": "investigacao_em_curso",
+    "status_detalhe": "Operação Sem Desconto (PF/CGU) em curso. O Sindnapi é investigado; Frei Chico, irmão de Lula, não é investigado nem foi alvo de medidas, segundo PF e imprensa. A CPMI rejeitou sua convocação (19 a 11).",
+    "resumo": "Operação deflagrada em 23/04/2025 apura descontos associativos não autorizados estimados em R$ 6,3 bilhões (2019-2024). O STF bloqueou R$ 389 milhões ligados ao Sindnapi em outubro de 2025. A CGU apontou que o sindicato omitiu a presença de Frei Chico na diretoria.",
+    "papel_de_lula": "Irmão de dirigente da entidade; não investigado.",
+    "versao_de_lula": "Lula defendeu punição e recuperação dos bens dos responsáveis pelas fraudes (R7, 03/12/2025).",
+    "personagens": [
+      "frei-chico",
+      "milton-cavalo",
+      "andre-mendonca",
+      "carlos-lupi",
+      "lula"
+    ],
+    "valores": [
+      {
+        "descricao": "Descontos estimados (todas as entidades, 2019-2024)",
+        "valor": 6300000000,
+        "moeda": "BRL"
+      },
+      {
+        "descricao": "Bloqueio ligado ao Sindnapi",
+        "valor": 389000000,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "cnn-2025-04-23-sindnapi",
+      "oglobo-2025-04-30-sindnapi",
+      "agbr-2025-10-15-bloqueio",
+      "estadao-2025-10-sindnapi",
+      "camara-2025-10-16-frei-chico",
+      "oglobo-2025-10-09-cgu",
+      "r7-2025-12-03-lula-inss"
+    ],
+    "conexoes": [
+      "con-004",
+      "con-005",
+      "con-044",
+      "con-062"
+    ]
+  },
+  {
+    "id": "esc-cpmi-lulinha",
+    "titulo": "CPMI do INSS, Careca do INSS e inquéritos sobre Lulinha",
+    "periodo": {
+      "inicio": "2025-08",
+      "fim": null
+    },
+    "status": "investigacao_em_curso",
+    "status_detalhe": "O relatório do relator da CPMI (27/03/2026) sugeriu o indiciamento de Lulinha; CPI não indicia nem prende. Em 30 e 31/07/2026 o STF autorizou dois inquéritos da PF por suspeita de tráfico de influência e corrupção (Ministério da Saúde e Dataprev), que não tratam das fraudes do INSS. A alegação de mesada de R$ 300 mil vem de uma única testemunha, sem confirmação.",
+    "resumo": "A CPMI apontou relação entre Lulinha e o lobista Antônio Carlos Camilo Antunes, o Careca do INSS, por meio de Roberta Luchsinger, incluindo viagens à Europa em 2024. A defesa admite a viagem a Portugal paga pelo lobista e nega irregularidades.",
+    "papel_de_lula": "Pai do investigado; não investigado.",
+    "versao_de_lula": "Lula disse em 30/07/2026 que, se o filho for julgado, não terá privilégios, não vai se esconder e terá de provar inocência (G1).",
+    "personagens": [
+      "lulinha",
+      "careca-do-inss",
+      "roberta-luchsinger",
+      "edson-claro",
+      "alfredo-gaspar",
+      "carlos-viana",
+      "andre-mendonca",
+      "swedenberger-barbosa",
+      "marco-aurelio-carvalho",
+      "lula"
+    ],
+    "valores": [
+      {
+        "descricao": "Mesada alegada por testemunha (não comprovada)",
+        "valor": 300000,
+        "moeda": "BRL"
+      },
+      {
+        "descricao": "Consultoria recebida por Roberta Luchsinger, segundo o relator",
+        "valor": 1400000,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [
+      "esc-inss-sindnapi"
+    ],
+    "fontes": [
+      "senado-2025-08-28-careca",
+      "g1-2026-03-27-cpmi",
+      "oglobo-2026-03-27-cpmi",
+      "poder360-2026-03-27-cpmi",
+      "cnn-2026-03-27-cpmi",
+      "g1-2026-07-31-inquerito",
+      "g1-2026-07-30-lula",
+      "estadao-2026-defesa-lulinha",
+      "cnn-2026-advogado-lulinha"
+    ],
+    "conexoes": [
+      "con-002",
+      "con-043",
+      "con-053",
+      "con-054",
+      "con-055",
+      "con-056",
+      "con-057",
+      "con-058",
+      "con-059",
+      "con-060",
+      "con-061",
+      "con-063"
+    ]
+  },
+  {
+    "id": "esc-janones-rachadinha",
+    "titulo": "André Janones: rachadinha",
+    "periodo": {
+      "inicio": "2023-11",
+      "fim": "2025-03-19"
+    },
+    "status": "associacao_indireta",
+    "status_detalhe": "Lula não é parte. Janones firmou ANPP homologado pelo STF em 19/03/2025, admitindo a prática, sem condenação; dois assessores tiveram o caso enviado à Justiça Federal do DF.",
+    "resumo": "Deputado que atuou na campanha digital de Lula em 2022 foi investigado no STF (INQ 4949) por devolução de salários de assessores. A PF o indiciou em 12/09/2024.",
+    "papel_de_lula": "Nenhum; Janones foi aliado de campanha.",
+    "versao_de_lula": "Sem manifestação de Lula localizada nas fontes consultadas.",
+    "personagens": [
+      "andre-janones",
+      "lula"
+    ],
+    "valores": [
+      {
+        "descricao": "Valor do ANPP (reparação e multa)",
+        "valor": 157800,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "stf-2023-12-04-janones",
+      "folha-2024-09-12-janones",
+      "stf-2025-03-19-janones",
+      "tse-2022-10-janones",
+      "bbc-2023-janones"
+    ],
+    "conexoes": [
+      "con-064"
+    ]
+  },
+  {
+    "id": "esc-renan-inqueritos",
+    "titulo": "Renan Calheiros: aliança com Lula e inquéritos arquivados",
+    "periodo": {
+      "inicio": "2016",
+      "fim": "2024-05-23"
+    },
+    "status": "arquivado",
+    "status_detalhe": "Inquéritos contra Renan arquivados no STF: obstrução (2017), Zelotes/MP 471 (2018), Belo Monte (2022), Transpetro/Estaleiro Rio Tietê (2023) e Odebrecht/MP (2024). Lula não é parte.",
+    "resumo": "Aliado de Lula, Renan apoiou a campanha de 2022; seu filho Renan Filho tornou-se ministro dos Transportes. As investigações contra o senador, baseadas em delações, foram arquivadas por falta de provas.",
+    "papel_de_lula": "Nenhum nos inquéritos; aliado político.",
+    "versao_de_lula": "Sem manifestação de Lula sobre os inquéritos localizada nas fontes consultadas. A defesa de Renan atribuiu as investigações a \"delações frágeis\" (Folha, 23/05/2024).",
+    "personagens": [
+      "renan-calheiros",
+      "renan-filho",
+      "lula"
+    ],
+    "valores": [],
+    "escandalos_relacionados": [
+      "esc-zelotes-mp471"
+    ],
+    "fontes": [
+      "oglobo-2022-renan-lula",
+      "uol-2022-07-18-mdb",
+      "stf-2017-10-10-renan",
+      "stf-2018-09-17-renan",
+      "stf-2022-02-14-renan",
+      "stf-2023-06-20-renan",
+      "folha-2024-05-23-renan",
+      "oglobo-2022-12-renan-filho"
+    ],
+    "conexoes": [
+      "con-065",
+      "con-066",
+      "con-067"
+    ]
+  },
+  {
+    "id": "esc-banco-master",
+    "titulo": "Banco Master e Daniel Vorcaro",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "status": "investigacao_em_curso",
+    "status_detalhe": "Operação Compliance Zero (PF) em curso; Master liquidado pelo BC em 18/11/2025; Vorcaro preso. Lula não é investigado; o encontro de 2024 é fato documentado e confirmado por ele.",
+    "resumo": "Lula recebeu Vorcaro no Planalto em 04/12/2024, fora da agenda, com Rui Costa, Alexandre Silveira e Galípolo, a pedido de Guido Mantega, consultor remunerado do Master. O BC rejeitou a venda do Master ao BRB em 03/09/2025. Documentos da Receita mostram pagamentos do Master a ex-ministros, inclusive Mantega e Lewandowski.",
+    "papel_de_lula": "Recebeu o banqueiro uma vez; não investigado.",
+    "versao_de_lula": "Lula disse ao UOL (05/02/2026) que avisou a Vorcaro que \"não haverá posição política pró ou contra o Banco Master\" e que a apuração seria técnica, do Banco Central; defendeu punição de quem estiver envolvido.",
+    "personagens": [
+      "daniel-vorcaro",
+      "guido-mantega",
+      "gabriel-galipolo",
+      "rui-costa",
+      "alexandre-silveira",
+      "augusto-lima",
+      "marcola",
+      "ricardo-lewandowski",
+      "lula"
+    ],
+    "valores": [
+      {
+        "descricao": "Pagamentos do Master a Mantega (2024-2025)",
+        "valor": 14000000,
+        "moeda": "BRL"
+      },
+      {
+        "descricao": "Pagamentos do Master a políticos e ex-ministros (2023-2025)",
+        "valor": 65830000,
+        "moeda": "BRL"
+      }
+    ],
+    "escandalos_relacionados": [],
+    "fontes": [
+      "poder360-2026-vorcaro-lula",
+      "folha-2026-01-26-vorcaro",
+      "valor-2026-01-26-vorcaro",
+      "oglobo-2026-02-05-lula-vorcaro",
+      "oglobo-2026-04-08-master-pagamentos",
+      "oglobo-2026-04-10-master-servicos",
+      "metropoles-2026-master-pagamentos"
+    ],
+    "conexoes": [
+      "con-068",
+      "con-069",
+      "con-070",
+      "con-071",
+      "con-072",
+      "con-073",
+      "con-074",
+      "con-075",
+      "con-076",
+      "con-077",
+      "con-078"
+    ]
+  }
+]

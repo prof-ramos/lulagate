@@ -1,0 +1,98 @@
+[
+  {
+    "id": "grp-familia-lula",
+    "nome": "Família Lula da Silva",
+    "tipo": "familia",
+    "descricao": "Núcleo familiar de Luiz Inácio Lula da Silva."
+  },
+  {
+    "id": "grp-pt",
+    "nome": "Partido dos Trabalhadores (PT)",
+    "tipo": "partido",
+    "descricao": "Partido de Lula e de vários personagens do mapa."
+  },
+  {
+    "id": "grp-governo-lula-1-2",
+    "nome": "Governo Lula (2003-2010)",
+    "tipo": "governo",
+    "descricao": "Primeiros dois mandatos presidenciais de Lula."
+  },
+  {
+    "id": "grp-governo-lula-3",
+    "nome": "Governo Lula (2023- )",
+    "tipo": "governo",
+    "descricao": "Terceiro mandato presidencial de Lula."
+  },
+  {
+    "id": "grp-instituto-lula",
+    "nome": "Instituto Lula",
+    "tipo": "instituicao",
+    "descricao": "Instituto criado por Lula após a Presidência; alvo de ações da Lava Jato trancadas pelo STF."
+  },
+  {
+    "id": "grp-odebrecht",
+    "nome": "Grupo Odebrecht (Novonor)",
+    "tipo": "empresa",
+    "descricao": "Empreiteira cujo acordo de leniência teve provas invalidadas pelo STF em 2023."
+  },
+  {
+    "id": "grp-oas",
+    "nome": "Grupo OAS",
+    "tipo": "empresa",
+    "descricao": "Empreiteira do condomínio Solaris (Guarujá) e de reformas no sítio de Atibaia, segundo as sentenças anuladas."
+  },
+  {
+    "id": "grp-gamecorp",
+    "nome": "Gamecorp / Grupo Gol",
+    "tipo": "empresa",
+    "descricao": "Empresas que tiveram Fábio Luís Lula da Silva como sócio; investigadas na Operação Mapa da Mina."
+  },
+  {
+    "id": "grp-oi-telemar",
+    "nome": "Oi / Telemar",
+    "tipo": "empresa",
+    "descricao": "Operadora de telefonia que investiu na Gamecorp em 2005."
+  },
+  {
+    "id": "grp-sindnapi",
+    "nome": "Sindnapi",
+    "tipo": "sindicato",
+    "descricao": "Sindicato Nacional dos Aposentados, Pensionistas e Idosos (Força Sindical), alvo da Operação Sem Desconto."
+  },
+  {
+    "id": "grp-13vara-curitiba",
+    "nome": "13ª Vara Federal de Curitiba",
+    "tipo": "judiciario",
+    "descricao": "Juízo da Lava Jato declarado incompetente pelo STF para os casos de Lula."
+  },
+  {
+    "id": "grp-stf",
+    "nome": "Supremo Tribunal Federal",
+    "tipo": "judiciario",
+    "descricao": "Corte que anulou condenações de Lula (2021) e trancou ações (2023)."
+  },
+  {
+    "id": "grp-cpmi-inss",
+    "nome": "CPMI do INSS",
+    "tipo": "congresso",
+    "descricao": "Comissão Parlamentar Mista de Inquérito sobre fraudes no INSS (2025-2026)."
+  },
+  {
+    "id": "grp-justica-federal-df",
+    "nome": "Justiça Federal do DF",
+    "tipo": "judiciario",
+    "descricao": "Varas que receberam os casos remetidos de Curitiba e julgaram outras ações contra Lula."
+  },
+  {
+    "id": "grp-banco-master",
+    "nome": "Banco Master",
+    "tipo": "empresa",
+    "descricao": "Banco de Daniel Vorcaro, liquidado pelo BC em 18/11/2025; alvo da Operação Compliance Zero."
+  },
+  {
+    "id": "grp-mdb",
+    "nome": "MDB",
+    "tipo": "partido",
+    "descricao": "Partido de Renan Calheiros e Renan Filho."
+  }
+]

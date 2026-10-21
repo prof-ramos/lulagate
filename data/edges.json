@@ -1,0 +1,1609 @@
+[
+  {
+    "id": "con-001",
+    "origem": "marisa-leticia",
+    "destino": "lula",
+    "rotulo": "esposa",
+    "tipo": "familiar",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": null,
+      "fim": "2017"
+    },
+    "descricao": "Casamento; Marisa morreu em 2017.",
+    "escandalos": [
+      "esc-triplex",
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-002",
+    "origem": "lulinha",
+    "destino": "lula",
+    "rotulo": "filho",
+    "tipo": "familiar",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": null,
+      "fim": null
+    },
+    "descricao": "Filho mais velho.",
+    "escandalos": [
+      "esc-gamecorp",
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-003",
+    "origem": "luis-claudio",
+    "destino": "lula",
+    "rotulo": "filho; corréu no caso Gripen",
+    "tipo": "familiar",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2016-12",
+      "fim": "2023-02"
+    },
+    "descricao": "Denunciados juntos na Zelotes; ação trancada pelo STF.",
+    "escandalos": [
+      "esc-zelotes-gripen"
+    ],
+    "fontes": [
+      "estadao-2016-12-gripen",
+      "stf-2023-02-tres-acoes"
+    ],
+    "data_referencia": "2016-12"
+  },
+  {
+    "id": "con-004",
+    "origem": "frei-chico",
+    "destino": "lula",
+    "rotulo": "irmão",
+    "tipo": "familiar",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": null,
+      "fim": null
+    },
+    "descricao": "Irmão mais velho; não investigado no caso Sindnapi.",
+    "escandalos": [
+      "esc-inss-sindnapi"
+    ],
+    "fontes": [
+      "agbr-2025-10-15-bloqueio"
+    ],
+    "data_referencia": "2025-10-15"
+  },
+  {
+    "id": "con-005",
+    "origem": "frei-chico",
+    "destino": "milton-cavalo",
+    "rotulo": "vice-presidente do sindicato presidido por",
+    "tipo": "profissional",
+    "status": "associacao_indireta",
+    "periodo": {
+      "inicio": "2025",
+      "fim": null
+    },
+    "descricao": "Ambos dirigentes do Sindnapi; só Milton foi alvo de medidas.",
+    "escandalos": [
+      "esc-inss-sindnapi"
+    ],
+    "fontes": [
+      "agbr-2025-10-15-bloqueio",
+      "estadao-2025-10-sindnapi"
+    ],
+    "data_referencia": "2025-10-15"
+  },
+  {
+    "id": "con-006",
+    "origem": "jose-dirceu",
+    "destino": "lula",
+    "rotulo": "ministro da Casa Civil; condenado no mensalão",
+    "tipo": "politico",
+    "status": "associacao_indireta",
+    "periodo": {
+      "inicio": "2003",
+      "fim": "2005"
+    },
+    "descricao": "Dirceu condenado na AP 470; Lula não foi denunciado.",
+    "escandalos": [
+      "esc-mensalao"
+    ],
+    "fontes": [
+      "g1-2012-10-dirceu",
+      "gazeta-stf-lula-mensalao"
+    ],
+    "data_referencia": "2012-10-09"
+  },
+  {
+    "id": "con-007",
+    "origem": "delubio-soares",
+    "destino": "lula",
+    "rotulo": "tesoureiro do PT apontado como o \"traidor\" citado por Lula",
+    "tipo": "politico",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2005-11-09",
+      "fim": null
+    },
+    "descricao": "Atribuição feita pelo presidente do PT à Folha.",
+    "escandalos": [
+      "esc-mensalao"
+    ],
+    "fontes": [
+      "folha-2005-11-09-delubio"
+    ],
+    "data_referencia": "2005-11-09"
+  },
+  {
+    "id": "con-008",
+    "origem": "roberto-jefferson",
+    "destino": "lula",
+    "rotulo": "pediu ao STF a inclusão de Lula como réu",
+    "tipo": "politico",
+    "status": "alegacao_nao_comprovada",
+    "periodo": {
+      "inicio": "2010",
+      "fim": null
+    },
+    "descricao": "STF rejeitou os pedidos.",
+    "escandalos": [
+      "esc-mensalao"
+    ],
+    "fontes": [
+      "gazeta-stf-lula-mensalao"
+    ],
+    "data_referencia": "2010"
+  },
+  {
+    "id": "con-009",
+    "origem": "antonio-palocci",
+    "destino": "lula",
+    "rotulo": "ex-ministro; delator que o acusou de \"pacto de sangue\" com a Odebrecht",
+    "tipo": "politico",
+    "status": "alegacao_nao_comprovada",
+    "periodo": {
+      "inicio": "2017-09-06",
+      "fim": null
+    },
+    "descricao": "Delação excluída da ação contra Lula pelo STF em 2020.",
+    "escandalos": [
+      "esc-instituto-lula"
+    ],
+    "fontes": [
+      "bbc-2017-09-palocci",
+      "conjur-2020-12-14-palocci"
+    ],
+    "data_referencia": "2017-09-06"
+  },
+  {
+    "id": "con-010",
+    "origem": "antonio-palocci",
+    "destino": "emilio-odebrecht",
+    "rotulo": "afirmou ter recolhido valores de acerto atribuído a",
+    "tipo": "negocios",
+    "status": "alegacao_nao_comprovada",
+    "periodo": {
+      "inicio": "2010",
+      "fim": null
+    },
+    "descricao": "Relato de Palocci; ele disse não ter presenciado a conversa entre Lula e Emílio.",
+    "escandalos": [
+      "esc-instituto-lula"
+    ],
+    "fontes": [
+      "jn-2017-09-palocci"
+    ],
+    "data_referencia": "2017-09-06"
+  },
+  {
+    "id": "con-011",
+    "origem": "dilma-rousseff",
+    "destino": "lula",
+    "rotulo": "sucessora; corré absolvida no quadrilhão",
+    "tipo": "politico",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-12-04",
+      "fim": null
+    },
+    "descricao": "Absolvição sumária.",
+    "escandalos": [
+      "esc-quadrilhao"
+    ],
+    "fontes": [
+      "g1-2019-12-04-quadrilhao"
+    ],
+    "data_referencia": "2019-12-04"
+  },
+  {
+    "id": "con-012",
+    "origem": "guido-mantega",
+    "destino": "lula",
+    "rotulo": "ex-ministro; corréu absolvido no quadrilhão",
+    "tipo": "politico",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-quadrilhao"
+    ],
+    "fontes": [
+      "g1-2019-12-04-quadrilhao"
+    ],
+    "data_referencia": "2019-12-04"
+  },
+  {
+    "id": "con-013",
+    "origem": "joao-vaccari",
+    "destino": "lula",
+    "rotulo": "ex-tesoureiro do PT; corréu absolvido no quadrilhão",
+    "tipo": "politico",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-quadrilhao"
+    ],
+    "fontes": [
+      "g1-2019-12-04-quadrilhao"
+    ],
+    "data_referencia": "2019-12-04"
+  },
+  {
+    "id": "con-014",
+    "origem": "joao-vaccari",
+    "destino": "jose-carlos-bumlai",
+    "rotulo": "corréu no caso Schahin",
+    "tipo": "processual",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2016-09-15",
+      "fim": "2021-10"
+    },
+    "descricao": "Condenação anulada pelo STJ; caso enviado à Justiça Eleitoral.",
+    "escandalos": [
+      "esc-bumlai-schahin"
+    ],
+    "fontes": [
+      "oglobo-2021-stj-schahin",
+      "stj-2021-10-22-schahin"
+    ],
+    "data_referencia": "2021-10"
+  },
+  {
+    "id": "con-015",
+    "origem": "gilberto-carvalho",
+    "destino": "lula",
+    "rotulo": "chefe de gabinete; corréu absolvido na MP 471",
+    "tipo": "profissional",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2017-09-19",
+      "fim": "2021-06-21"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-zelotes-mp471"
+    ],
+    "fontes": [
+      "g1-2021-06-21-zelotes"
+    ],
+    "data_referencia": "2021-06-21"
+  },
+  {
+    "id": "con-016",
+    "origem": "mauro-marcondes",
+    "destino": "lula",
+    "rotulo": "lobista corréu absolvido (MP 471) e denunciado no caso Gripen",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2016-12",
+      "fim": "2021-06-21"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-zelotes-mp471",
+      "esc-zelotes-gripen"
+    ],
+    "fontes": [
+      "g1-2021-06-21-zelotes",
+      "estadao-2016-12-gripen"
+    ],
+    "data_referencia": "2021-06-21"
+  },
+  {
+    "id": "con-017",
+    "origem": "cristina-mautoni",
+    "destino": "mauro-marcondes",
+    "rotulo": "esposa",
+    "tipo": "familiar",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2016-12",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-zelotes-gripen"
+    ],
+    "fontes": [
+      "estadao-2016-12-gripen"
+    ],
+    "data_referencia": "2016-12"
+  },
+  {
+    "id": "con-018",
+    "origem": "mauro-marcondes",
+    "destino": "luis-claudio",
+    "rotulo": "corréu no caso Gripen",
+    "tipo": "processual",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2016-12",
+      "fim": "2023-02"
+    },
+    "descricao": "Ação trancada pelo STF.",
+    "escandalos": [
+      "esc-zelotes-gripen"
+    ],
+    "fontes": [
+      "estadao-2016-12-gripen",
+      "stf-2023-02-tres-acoes"
+    ],
+    "data_referencia": "2016-12"
+  },
+  {
+    "id": "con-019",
+    "origem": "paulo-okamotto",
+    "destino": "lula",
+    "rotulo": "presidente do Instituto Lula",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2017-07-12",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-triplex",
+      "esc-instituto-lula"
+    ],
+    "fontes": [
+      "agbr-2017-07-okamotto"
+    ],
+    "data_referencia": "2017-07-12"
+  },
+  {
+    "id": "con-020",
+    "origem": "rosemary-noronha",
+    "destino": "lula",
+    "rotulo": "chefe do gabinete da Presidência em SP nomeada por Lula",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": null,
+      "fim": "2012-11"
+    },
+    "descricao": "Demitida por Dilma em 2012 após a Porto Seguro.",
+    "escandalos": [
+      "esc-porto-seguro"
+    ],
+    "fontes": [
+      "g1-2021-10-19-rose",
+      "folha-2021-10-19-rose"
+    ],
+    "data_referencia": "2021-10-19"
+  },
+  {
+    "id": "con-021",
+    "origem": "jose-carlos-bumlai",
+    "destino": "lula",
+    "rotulo": "amigo próximo (segundo o TRF4)",
+    "tipo": "pessoal",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-bumlai-schahin",
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-022",
+    "origem": "leo-pinheiro",
+    "destino": "lula",
+    "rotulo": "empreiteiro que o acusou em depoimento a Moro",
+    "tipo": "negocios",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2017-04-20",
+      "fim": "2021-03-08"
+    },
+    "descricao": "Depoimento usado na condenação anulada pelo STF.",
+    "escandalos": [
+      "esc-triplex",
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "g1-2017-leo-pinheiro",
+      "stf-2021-03-08-fachin"
+    ],
+    "data_referencia": "2017-04-20"
+  },
+  {
+    "id": "con-023",
+    "origem": "emilio-odebrecht",
+    "destino": "lula",
+    "rotulo": "relacionamento pessoal, segundo o TRF4",
+    "tipo": "pessoal",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": "2021-03-08"
+    },
+    "descricao": "Acórdão de Atibaia, depois anulado quanto a Lula.",
+    "escandalos": [
+      "esc-atibaia",
+      "esc-instituto-lula"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia",
+      "stf-2021-03-08-fachin"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-024",
+    "origem": "marcelo-odebrecht",
+    "destino": "lula",
+    "rotulo": "corréu no caso Angola e no caso Atibaia",
+    "tipo": "processual",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2016-10",
+      "fim": "2020-09-01"
+    },
+    "descricao": "Ação Angola trancada para Lula pelo TRF1.",
+    "escandalos": [
+      "esc-angola-bndes",
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "agbr-2016-10-angola",
+      "g1-2020-09-01-trf1"
+    ],
+    "data_referencia": "2016-10"
+  },
+  {
+    "id": "con-025",
+    "origem": "marcelo-odebrecht",
+    "destino": "emilio-odebrecht",
+    "rotulo": "filho",
+    "tipo": "familiar",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": null,
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-026",
+    "origem": "alexandrino-alencar",
+    "destino": "marcelo-odebrecht",
+    "rotulo": "executivo do grupo presidido por",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-027",
+    "origem": "emyr-costa",
+    "destino": "lula",
+    "rotulo": "supervisor da obra no sítio, segundo a acusação (absolvido)",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-028",
+    "origem": "paulo-gordilho",
+    "destino": "leo-pinheiro",
+    "rotulo": "diretor técnico da OAS",
+    "tipo": "profissional",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-029",
+    "origem": "fernando-bittar",
+    "destino": "lula",
+    "rotulo": "proprietário formal do sítio usado pela família",
+    "tipo": "pessoal",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": "2021-03-08"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia",
+      "stf-2021-03-08-fachin"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-030",
+    "origem": "fernando-bittar",
+    "destino": "lulinha",
+    "rotulo": "sócio no grupo Gamecorp/Gol",
+    "tipo": "negocios",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2019-12-10",
+      "fim": "2022-01-17"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-gamecorp"
+    ],
+    "fontes": [
+      "pf-2019-12-10-mapa",
+      "folha-2022-01-17-mapa"
+    ],
+    "data_referencia": "2019-12-10"
+  },
+  {
+    "id": "con-031",
+    "origem": "kalil-bittar",
+    "destino": "lulinha",
+    "rotulo": "sócio no grupo Gamecorp/Gol",
+    "tipo": "negocios",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2019-12-10",
+      "fim": "2022-01-17"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-gamecorp"
+    ],
+    "fontes": [
+      "pf-2019-12-10-mapa",
+      "folha-2022-01-17-mapa"
+    ],
+    "data_referencia": "2019-12-10"
+  },
+  {
+    "id": "con-032",
+    "origem": "kalil-bittar",
+    "destino": "fernando-bittar",
+    "rotulo": "sócio",
+    "tipo": "negocios",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2019-12-10",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-gamecorp"
+    ],
+    "fontes": [
+      "pf-2019-12-10-mapa"
+    ],
+    "data_referencia": "2019-12-10"
+  },
+  {
+    "id": "con-033",
+    "origem": "jonas-suassuna",
+    "destino": "lulinha",
+    "rotulo": "sócio no grupo Gamecorp/Gol",
+    "tipo": "negocios",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2019-12-10",
+      "fim": "2022-01-17"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-gamecorp"
+    ],
+    "fontes": [
+      "pf-2019-12-10-mapa",
+      "folha-2022-01-17-mapa"
+    ],
+    "data_referencia": "2019-12-10"
+  },
+  {
+    "id": "con-034",
+    "origem": "roberto-teixeira",
+    "destino": "lula",
+    "rotulo": "advogado e amigo (absolvido no caso Atibaia)",
+    "tipo": "pessoal",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-035",
+    "origem": "rogerio-pimentel",
+    "destino": "lula",
+    "rotulo": "auxiliar de confiança (absolvido)",
+    "tipo": "profissional",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-11-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2019-11-27"
+  },
+  {
+    "id": "con-036",
+    "origem": "cristiano-zanin",
+    "destino": "lula",
+    "rotulo": "advogado de defesa",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2019",
+      "fim": "2021"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-triplex",
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "stf-hc193726-decisao",
+      "trf4-2019-11-27-atibaia"
+    ],
+    "data_referencia": "2021-03-08"
+  },
+  {
+    "id": "con-037",
+    "origem": "sergio-moro",
+    "destino": "lula",
+    "rotulo": "juiz que o condenou (declarado suspeito)",
+    "tipo": "processual",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2017-07-12",
+      "fim": "2021-06-23"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-triplex"
+    ],
+    "fontes": [
+      "g1-2017-07-sentenca-triplex",
+      "stf-2021-06-23-suspeicao"
+    ],
+    "data_referencia": "2017-07-12"
+  },
+  {
+    "id": "con-038",
+    "origem": "gabriela-hardt",
+    "destino": "lula",
+    "rotulo": "juíza que o condenou no caso Atibaia",
+    "tipo": "processual",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2019-02-06",
+      "fim": "2021-03-08"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "uol-2019-02-06-atibaia",
+      "g1-2021-03-08-fachin"
+    ],
+    "data_referencia": "2019-02-06"
+  },
+  {
+    "id": "con-039",
+    "origem": "edson-fachin",
+    "destino": "lula",
+    "rotulo": "relator que anulou as condenações",
+    "tipo": "processual",
+    "status": "condenacao_anulada",
+    "periodo": {
+      "inicio": "2021-03-08",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-triplex",
+      "esc-atibaia",
+      "esc-instituto-lula"
+    ],
+    "fontes": [
+      "stf-2021-03-08-fachin"
+    ],
+    "data_referencia": "2021-03-08"
+  },
+  {
+    "id": "con-040",
+    "origem": "gilmar-mendes",
+    "destino": "sergio-moro",
+    "rotulo": "votou pela suspeição de",
+    "tipo": "processual",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2021-03-23",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-triplex"
+    ],
+    "fontes": [
+      "lexml-hc164493"
+    ],
+    "data_referencia": "2021-03-23"
+  },
+  {
+    "id": "con-041",
+    "origem": "ricardo-lewandowski",
+    "destino": "lula",
+    "rotulo": "trancou três ações; depois ministro da Justiça de Lula",
+    "tipo": "processual",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2023-02",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-instituto-lula",
+      "esc-zelotes-gripen"
+    ],
+    "fontes": [
+      "stf-2023-02-tres-acoes",
+      "poder360-2023-lewandowski"
+    ],
+    "data_referencia": "2023-02"
+  },
+  {
+    "id": "con-042",
+    "origem": "dias-toffoli",
+    "destino": "lula",
+    "rotulo": "invalidou provas da Odebrecht; chamou a prisão de erro judiciário",
+    "tipo": "processual",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2023-09-06",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-instituto-lula"
+    ],
+    "fontes": [
+      "g1-2023-09-06-toffoli"
+    ],
+    "data_referencia": "2023-09-06"
+  },
+  {
+    "id": "con-043",
+    "origem": "andre-mendonca",
+    "destino": "lulinha",
+    "rotulo": "autorizou inquéritos da PF sobre",
+    "tipo": "processual",
+    "status": "investigacao_em_curso",
+    "periodo": {
+      "inicio": "2026-07-30",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-044",
+    "origem": "andre-mendonca",
+    "destino": "milton-cavalo",
+    "rotulo": "bloqueou bens de",
+    "tipo": "processual",
+    "status": "investigacao_em_curso",
+    "periodo": {
+      "inicio": "2025-10-15",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-inss-sindnapi"
+    ],
+    "fontes": [
+      "agbr-2025-10-15-bloqueio"
+    ],
+    "data_referencia": "2025-10-15"
+  },
+  {
+    "id": "con-045",
+    "origem": "pollyanna-alves",
+    "destino": "lula",
+    "rotulo": "juíza que encerrou triplex e Atibaia no DF",
+    "tipo": "processual",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2021-08-21",
+      "fim": "2022-01-27"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-triplex",
+      "esc-atibaia"
+    ],
+    "fontes": [
+      "conjur-2022-01-28-triplex",
+      "folha-2021-08-22-atibaia"
+    ],
+    "data_referencia": "2022-01-28"
+  },
+  {
+    "id": "con-046",
+    "origem": "frederico-viana",
+    "destino": "lula",
+    "rotulo": "juiz que o absolveu (MP 471)",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2021-06-21",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-zelotes-mp471"
+    ],
+    "fontes": [
+      "g1-2021-06-21-zelotes"
+    ],
+    "data_referencia": "2021-06-21"
+  },
+  {
+    "id": "con-047",
+    "origem": "marcus-bastos",
+    "destino": "lula",
+    "rotulo": "juiz que o absolveu (quadrilhão)",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2019-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-quadrilhao"
+    ],
+    "fontes": [
+      "g1-2019-12-04-quadrilhao"
+    ],
+    "data_referencia": "2019-12-04"
+  },
+  {
+    "id": "con-048",
+    "origem": "ricardo-leite",
+    "destino": "lula",
+    "rotulo": "juiz que o absolveu (obstrução)",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2018-07-12",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-obstrucao-cervero"
+    ],
+    "fontes": [
+      "g1-2018-07-12-obstrucao"
+    ],
+    "data_referencia": "2018-07-12"
+  },
+  {
+    "id": "con-049",
+    "origem": "delcidio-amaral",
+    "destino": "lula",
+    "rotulo": "ex-líder do governo; corréu absolvido",
+    "tipo": "politico",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2018-07-12",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-obstrucao-cervero"
+    ],
+    "fontes": [
+      "g1-2018-07-12-obstrucao",
+      "agbr-2018-07-obstrucao"
+    ],
+    "data_referencia": "2018-07-12"
+  },
+  {
+    "id": "con-050",
+    "origem": "delcidio-amaral",
+    "destino": "nestor-cervero",
+    "rotulo": "acusado de tentar comprar o silêncio de (absolvido)",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2018-07-12",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-obstrucao-cervero"
+    ],
+    "fontes": [
+      "g1-2018-07-12-obstrucao"
+    ],
+    "data_referencia": "2018-07-12"
+  },
+  {
+    "id": "con-051",
+    "origem": "andre-esteves",
+    "destino": "lula",
+    "rotulo": "corréu absolvido",
+    "tipo": "processual",
+    "status": "absolvido",
+    "periodo": {
+      "inicio": "2018-07-12",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-obstrucao-cervero"
+    ],
+    "fontes": [
+      "g1-2018-07-12-obstrucao"
+    ],
+    "data_referencia": "2018-07-12"
+  },
+  {
+    "id": "con-052",
+    "origem": "taiguara-santos",
+    "destino": "lula",
+    "rotulo": "corréu no caso Angola/BNDES",
+    "tipo": "processual",
+    "status": "arquivado",
+    "periodo": {
+      "inicio": "2016-10",
+      "fim": "2020-09-01"
+    },
+    "descricao": "Ação trancada para Lula pelo TRF1.",
+    "escandalos": [
+      "esc-angola-bndes"
+    ],
+    "fontes": [
+      "folha-2019-07-24-angola",
+      "g1-2020-09-01-trf1"
+    ],
+    "data_referencia": "2019-07-24"
+  },
+  {
+    "id": "con-053",
+    "origem": "careca-do-inss",
+    "destino": "lulinha",
+    "rotulo": "viajou com; suspeita de favorecimento investigada pela PF",
+    "tipo": "negocios",
+    "status": "investigacao_em_curso",
+    "periodo": {
+      "inicio": "2024-06",
+      "fim": "2026-07-31"
+    },
+    "descricao": "Defesa admite viagem a Portugal paga pelo lobista; nega irregularidades.",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito",
+      "cnn-2026-03-27-cpmi"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-054",
+    "origem": "careca-do-inss",
+    "destino": "lulinha",
+    "rotulo": "teria pago mesada de R$ 300 mil (relato de uma testemunha)",
+    "tipo": "financeiro",
+    "status": "alegacao_nao_comprovada",
+    "periodo": {
+      "inicio": "2026-03-27",
+      "fim": null
+    },
+    "descricao": "Relato de Edson Claro citado pela CPMI; sem confirmação, segundo o presidente da comissão; defesa nega.",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "oglobo-2026-03-27-cpmi",
+      "cnn-2026-03-27-cpmi",
+      "cnn-2026-advogado-lulinha"
+    ],
+    "data_referencia": "2026-03-27"
+  },
+  {
+    "id": "con-055",
+    "origem": "roberta-luchsinger",
+    "destino": "lulinha",
+    "rotulo": "amiga; apresentou o Careca do INSS",
+    "tipo": "pessoal",
+    "status": "investigacao_em_curso",
+    "periodo": {
+      "inicio": "2024",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-056",
+    "origem": "roberta-luchsinger",
+    "destino": "careca-do-inss",
+    "rotulo": "contratada para prospectar negócios por",
+    "tipo": "negocios",
+    "status": "investigacao_em_curso",
+    "periodo": {
+      "inicio": "2024",
+      "fim": "2025"
+    },
+    "descricao": "Recebeu R$ 1,4 milhão, segundo o relator da CPMI; defesa nega irregularidades.",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "poder360-2026-03-27-cpmi",
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-03-27"
+  },
+  {
+    "id": "con-057",
+    "origem": "edson-claro",
+    "destino": "careca-do-inss",
+    "rotulo": "ex-funcionário; testemunha",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2026-03-27",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "oglobo-2026-03-27-cpmi"
+    ],
+    "data_referencia": "2026-03-27"
+  },
+  {
+    "id": "con-058",
+    "origem": "alfredo-gaspar",
+    "destino": "lulinha",
+    "rotulo": "relator que sugeriu seu indiciamento",
+    "tipo": "processual",
+    "status": "alegacao_nao_comprovada",
+    "periodo": {
+      "inicio": "2026-03-27",
+      "fim": null
+    },
+    "descricao": "CPI não pode indiciar; é sugestão às autoridades.",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-03-27-cpmi",
+      "oglobo-2026-03-27-cpmi"
+    ],
+    "data_referencia": "2026-03-27"
+  },
+  {
+    "id": "con-059",
+    "origem": "carlos-viana",
+    "destino": "alfredo-gaspar",
+    "rotulo": "presidente da CPMI em que relata",
+    "tipo": "politico",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2026-03",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "cnn-2026-03-27-cpmi"
+    ],
+    "data_referencia": "2026-03-27"
+  },
+  {
+    "id": "con-060",
+    "origem": "swedenberger-barbosa",
+    "destino": "careca-do-inss",
+    "rotulo": "recebeu em reunião no Ministério da Saúde",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2025-01",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-061",
+    "origem": "swedenberger-barbosa",
+    "destino": "lula",
+    "rotulo": "secretário-executivo da Saúde no governo",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2025-01",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-062",
+    "origem": "carlos-lupi",
+    "destino": "lula",
+    "rotulo": "ministro da Previdência",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2023",
+      "fim": "2025"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-inss-sindnapi"
+    ],
+    "fontes": [
+      "camara-2025-10-16-frei-chico"
+    ],
+    "data_referencia": "2025-10-16"
+  },
+  {
+    "id": "con-063",
+    "origem": "marco-aurelio-carvalho",
+    "destino": "lulinha",
+    "rotulo": "advogado de defesa",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2026",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-cpmi-lulinha"
+    ],
+    "fontes": [
+      "g1-2026-07-31-inquerito"
+    ],
+    "data_referencia": "2026-07-31"
+  },
+  {
+    "id": "con-064",
+    "origem": "andre-janones",
+    "destino": "lula",
+    "rotulo": "integrante da campanha digital de 2022",
+    "tipo": "politico",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2022",
+      "fim": null
+    },
+    "descricao": "TSE o descreveu como \"coordenador digital\" da campanha Lula-Alckmin.",
+    "escandalos": [
+      "esc-janones-rachadinha"
+    ],
+    "fontes": [
+      "tse-2022-10-janones",
+      "folha-2024-09-12-janones"
+    ],
+    "data_referencia": "2022-10"
+  },
+  {
+    "id": "con-065",
+    "origem": "renan-calheiros",
+    "destino": "lula",
+    "rotulo": "aliado no Senado; apoiou Lula em 2022",
+    "tipo": "politico",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2003",
+      "fim": "2026"
+    },
+    "descricao": "Afastamento em 2016 (impeachment de Dilma) e reaproximação em 2017, segundo O Globo.",
+    "escandalos": [
+      "esc-renan-inqueritos"
+    ],
+    "fontes": [
+      "oglobo-2022-renan-lula",
+      "uol-2022-07-18-mdb"
+    ],
+    "data_referencia": "2022"
+  },
+  {
+    "id": "con-066",
+    "origem": "renan-filho",
+    "destino": "renan-calheiros",
+    "rotulo": "filho",
+    "tipo": "familiar",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": null,
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-renan-inqueritos"
+    ],
+    "fontes": [
+      "oglobo-2022-12-renan-filho"
+    ],
+    "data_referencia": "2022-12"
+  },
+  {
+    "id": "con-067",
+    "origem": "renan-filho",
+    "destino": "lula",
+    "rotulo": "ministro dos Transportes",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2023",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-renan-inqueritos"
+    ],
+    "fontes": [
+      "oglobo-2022-12-renan-filho"
+    ],
+    "data_referencia": "2022-12"
+  },
+  {
+    "id": "con-068",
+    "origem": "daniel-vorcaro",
+    "destino": "lula",
+    "rotulo": "recebido em reunião fora da agenda no Planalto",
+    "tipo": "pessoal",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "descricao": "Lula confirmou o encontro e disse ter afirmado que o caso seria tratado tecnicamente pelo BC.",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "poder360-2026-vorcaro-lula",
+      "folha-2026-01-26-vorcaro",
+      "oglobo-2026-02-05-lula-vorcaro"
+    ],
+    "data_referencia": "2026-01"
+  },
+  {
+    "id": "con-069",
+    "origem": "guido-mantega",
+    "destino": "daniel-vorcaro",
+    "rotulo": "consultor do Banco Master",
+    "tipo": "negocios",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024",
+      "fim": "2025-08"
+    },
+    "descricao": "R$ 14 milhões declarados pelo Master; Mantega diz desconhecer irregularidades.",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "oglobo-2026-04-08-master-pagamentos",
+      "metropoles-2026-master-pagamentos"
+    ],
+    "data_referencia": "2026-04-08"
+  },
+  {
+    "id": "con-070",
+    "origem": "guido-mantega",
+    "destino": "lula",
+    "rotulo": "levou Vorcaro a reunião com",
+    "tipo": "politico",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "poder360-2026-vorcaro-lula",
+      "oglobo-2026-02-05-lula-vorcaro"
+    ],
+    "data_referencia": "2026-01"
+  },
+  {
+    "id": "con-071",
+    "origem": "guido-mantega",
+    "destino": "gabriel-galipolo",
+    "rotulo": "fez lobby no BC pela venda do Master ao BRB, segundo Lauro Jardim",
+    "tipo": "negocios",
+    "status": "alegacao_nao_comprovada",
+    "periodo": {
+      "inicio": "2025-08",
+      "fim": null
+    },
+    "descricao": "Relato de coluna; sem confirmação oficial.",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "oglobo-2025-08-mantega-lobby"
+    ],
+    "data_referencia": "2025-08"
+  },
+  {
+    "id": "con-072",
+    "origem": "gabriel-galipolo",
+    "destino": "daniel-vorcaro",
+    "rotulo": "participou da reunião; BC depois liquidou o Master",
+    "tipo": "processual",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": "2025-11-18"
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "poder360-2026-vorcaro-lula",
+      "metropoles-2026-master-pagamentos"
+    ],
+    "data_referencia": "2026-01"
+  },
+  {
+    "id": "con-073",
+    "origem": "rui-costa",
+    "destino": "daniel-vorcaro",
+    "rotulo": "participou da reunião; conhecia o banqueiro, segundo Lula",
+    "tipo": "pessoal",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "oglobo-2026-02-05-lula-vorcaro"
+    ],
+    "data_referencia": "2026-02-05"
+  },
+  {
+    "id": "con-074",
+    "origem": "alexandre-silveira",
+    "destino": "daniel-vorcaro",
+    "rotulo": "participou da reunião no Planalto",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "valor-2026-01-26-vorcaro"
+    ],
+    "data_referencia": "2026-01-26"
+  },
+  {
+    "id": "con-075",
+    "origem": "augusto-lima",
+    "destino": "daniel-vorcaro",
+    "rotulo": "ex-CEO do banco de",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "poder360-2026-vorcaro-lula"
+    ],
+    "data_referencia": "2026-01"
+  },
+  {
+    "id": "con-076",
+    "origem": "marcola",
+    "destino": "guido-mantega",
+    "rotulo": "recebeu em audiência no Planalto",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2024-12-04",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "poder360-2026-vorcaro-lula"
+    ],
+    "data_referencia": "2026-01"
+  },
+  {
+    "id": "con-077",
+    "origem": "marcola",
+    "destino": "lula",
+    "rotulo": "chefe do gabinete pessoal",
+    "tipo": "profissional",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2023",
+      "fim": null
+    },
+    "descricao": "",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "poder360-2026-vorcaro-lula"
+    ],
+    "data_referencia": "2026-01"
+  },
+  {
+    "id": "con-078",
+    "origem": "ricardo-lewandowski",
+    "destino": "daniel-vorcaro",
+    "rotulo": "prestou consultoria jurídica ao Master",
+    "tipo": "negocios",
+    "status": "fato_documentado",
+    "periodo": {
+      "inicio": "2023",
+      "fim": "2024"
+    },
+    "descricao": "Antes de assumir o Ministério da Justiça, segundo O Globo.",
+    "escandalos": [
+      "esc-banco-master"
+    ],
+    "fontes": [
+      "oglobo-2026-04-10-master-servicos"
+    ],
+    "data_referencia": "2026-04-10"
+  }
+]
