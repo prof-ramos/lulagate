@@ -1,0 +1,608 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lulagate.local/data/schema.json",
+  "title": "Coleções do projeto; campos jurídicos opcionais estruturalmente, exigidos pelas regras quando aplicável",
+  "type": "object",
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/nodes"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edges"
+      }
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/cases"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/sources"
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/groups"
+      }
+    },
+    "dataset": {
+      "$ref": "#/$defs/dataset"
+    },
+    "revisoes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/revisoes"
+      }
+    },
+    "retificacoes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/retificacoes"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "nodes": {
+      "type": "object",
+      "properties": {
+        "classificacao": {
+          "type": "string"
+        },
+        "conexoes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "escandalos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "faixa_proximidade": {
+          "type": "string"
+        },
+        "fontes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "grupos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "grupo_id": {
+                "type": "string"
+              },
+              "papel": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "nivel_juridico": {
+          "type": "number"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "ocupacao": {
+          "type": "string"
+        },
+        "proximidade_lula": {
+          "type": "number"
+        },
+        "relacao_com_lula": {
+          "type": "string"
+        },
+        "resumo": {
+          "type": "string"
+        },
+        "situacao_juridica": {
+          "type": "string"
+        },
+        "tipo": {
+          "type": "string"
+        },
+        "classe_pessoa": {
+          "enum": [
+            "agente_publico",
+            "pessoa_publica",
+            "pessoa_exposta",
+            "privada"
+          ]
+        },
+        "relevancia_publica_direta": {
+          "type": "string"
+        },
+        "revisao_humana": {
+          "type": [
+            "string",
+            "object",
+            "boolean"
+          ]
+        },
+        "status": {
+          "enum": [
+            "condenacao_anulada",
+            "arquivado",
+            "absolvido",
+            "investigacao_em_curso",
+            "fato_documentado",
+            "associacao_indireta",
+            "alegacao_nao_comprovada"
+          ]
+        },
+        "categoria_juridica": {
+          "type": "string"
+        },
+        "idade": {
+          "type": "number"
+        },
+        "menor_de_idade": {
+          "type": "boolean"
+        },
+        "atualizado_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "data_referencia": {
+          "type": "string",
+          "format": "date"
+        },
+        "retrato": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "url_origem": {
+              "type": "string",
+              "format": "uri"
+            },
+            "licenca": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "edges": {
+      "type": "object",
+      "properties": {
+        "data_referencia": {
+          "type": "string"
+        },
+        "descricao": {
+          "type": "string"
+        },
+        "destino": {
+          "type": "string"
+        },
+        "escandalos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fontes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "origem": {
+          "type": "string"
+        },
+        "periodo": {
+          "type": "object",
+          "properties": {
+            "fim": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "inicio": {
+              "anyOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "rotulo": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "tipo": {
+          "type": "string"
+        },
+        "versao_do_citado": {
+          "type": "string"
+        },
+        "versao_nao_localizada": {
+          "type": "boolean"
+        },
+        "fontes_herdadas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inferida_por_transitividade": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "cases": {
+      "type": "object",
+      "properties": {
+        "conexoes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "escandalos_relacionados": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fontes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "papel_de_lula": {
+          "type": "string"
+        },
+        "periodo": {
+          "type": "object",
+          "properties": {
+            "fim": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "inicio": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "personagens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "resumo": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "status_detalhe": {
+          "type": "string"
+        },
+        "titulo": {
+          "type": "string"
+        },
+        "valores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "descricao": {
+                "type": "string"
+              },
+              "moeda": {
+                "type": "string"
+              },
+              "valor": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "anyOf": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "versao_de_lula": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "tipo": {
+          "type": "string"
+        },
+        "tipo_veiculo": {
+          "type": "string"
+        },
+        "titulo": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "veiculo": {
+          "type": "string"
+        },
+        "url_arquivo": {
+          "type": "string",
+          "format": "uri"
+        },
+        "acesso_em": {
+          "type": "string",
+          "format": "date"
+        },
+        "menciona_ambos": {
+          "type": "boolean",
+          "description": "Declaração editorial de menção conjunta dos extremos da conexão; ver REGRAS_JURIDICAS.md."
+        },
+        "sigilo": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "groups": {
+      "type": "object",
+      "properties": {
+        "descricao": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "tipo": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "dataset": {
+      "type": "object",
+      "properties": {
+        "meta": {
+          "type": "object",
+          "properties": {
+            "titulo": {
+              "type": "string"
+            },
+            "idioma": {
+              "type": "string"
+            },
+            "data_corte": {
+              "type": "string"
+            },
+            "versao": {
+              "type": "string"
+            },
+            "personagem_central": {
+              "type": "string"
+            },
+            "legenda_status": {
+              "type": "object",
+              "properties": {
+                "condenacao_anulada": {
+                  "type": "string"
+                },
+                "arquivado": {
+                  "type": "string"
+                },
+                "absolvido": {
+                  "type": "string"
+                },
+                "investigacao_em_curso": {
+                  "type": "string"
+                },
+                "fato_documentado": {
+                  "type": "string"
+                },
+                "associacao_indireta": {
+                  "type": "string"
+                },
+                "alegacao_nao_comprovada": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": true
+            },
+            "proximidades": {
+              "type": "object",
+              "properties": {
+                "campo": {
+                  "type": "string"
+                },
+                "escala": {
+                  "type": "object",
+                  "properties": {
+                    "0.90–1.00": {
+                      "type": "string"
+                    },
+                    "0.70–0.89": {
+                      "type": "string"
+                    },
+                    "0.50–0.69": {
+                      "type": "string"
+                    },
+                    "0.30–0.49": {
+                      "type": "string"
+                    },
+                    "0.10–0.29": {
+                      "type": "string"
+                    },
+                    "0.01–0.09": {
+                      "type": "string"
+                    },
+                    "0": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "additionalProperties": true
+            },
+            "leitura_conexoes": {
+              "type": "string"
+            },
+            "metodologia": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        },
+        "personagens": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nodes"
+          }
+        },
+        "conexoes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/edges"
+          }
+        },
+        "escandalos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/cases"
+          }
+        },
+        "grupos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/groups"
+          }
+        },
+        "fontes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/sources"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "revisoes": {
+      "type": "object",
+      "required": [
+        "id",
+        "revisor",
+        "data",
+        "decisao",
+        "motivo"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "revisor": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string",
+          "format": "date"
+        },
+        "decisao": {
+          "type": "string"
+        },
+        "motivo": {
+          "type": "string"
+        }
+      }
+    },
+    "retificacoes": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "data": {
+          "type": "string"
+        },
+        "recebido_em": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
