@@ -17,10 +17,16 @@ Parâmetros de URL: `visualizacao=rede|proximidade`, `personagem=<id>`, `escanda
 
 ## Organização do mapa
 
-`src.jsx` mantém controles, navegação e conteúdo documental; `Graph.jsx` renderiza a rede; `graph-model.js` concentra recortes, curvas paralelas, padrões de status e faixas editoriais.
+`src.jsx` mantém controles, navegação e conteúdo documental; `Graph.jsx` integra o Cytoscape.js ao ciclo de vida do React; `cytoscape-model.js` adapta os elementos, layouts, seleção e estilos; `graph-model.js` concentra recortes, padrões de status, nomes de exibição e faixas editoriais.
 
-Em Rede, as conexões orientam o posicionamento. A distância entre pontos nessa visualização não mede proximidade editorial nem responsabilidade jurídica. Proximidade mantém os sete anéis da metodologia, com legenda recolhível externa ao desenho.
+Em Rede, o layout CoSE do Cytoscape.js organiza os personagens pelas conexões. A distância entre pontos nessa visualização não mede proximidade editorial nem responsabilidade jurídica. Proximidade usa posições predefinidas em sete faixas da metodologia, com anéis decorativos e legenda recolhível externa ao desenho.
 
 Filtros removem elementos fora do recorte, atualizam contadores e reenquadram o mapa. O painel mostra as conexões do recorte e conserva acesso às fontes do personagem. Trocar o personagem com painel já aberto preserva a câmera; abrir ou fechar o painel pode reenquadrar a área útil. Use as setas com foco no mapa para deslocá-lo e os botões para zoom e restauração.
 
-Os testes em `tests/graph-model.test.js` verificam filtros e recorte vazio, separação estável de relações paralelas, limites das faixas e distinção dos padrões de status. Eles não substituem a revisão visual e de interação no navegador.
+O canvas tem uma lista HTML alternativa de personagens, acessível por teclado, além da busca e do painel de detalhes. Na Rede, arraste os nós para ajustar o mapa; nos dois modos, arraste o fundo para deslocar a câmera. Em Proximidade, as posições dos personagens permanecem fixas para preservar a classificação editorial.
+
+Os testes em `tests/` verificam filtros e recorte vazio, separação estável de relações paralelas, limites das faixas e distinção dos padrões de status. Os testes do adaptador usam uma instância real de Cytoscape em modo headless para verificar elementos, seleção e câmera. Eles não substituem a revisão visual e de interação no navegador.
+
+## Dependência de visualização
+
+Cytoscape.js 3.34.4 substitui as dependências diretas de D3. O pacote fica incorporado ao HTML produzido pelo Vite, sem carregar CDN em execução. A versão está fixada no manifesto e no lockfile. Licença MIT em `licenses/cytoscape-LICENSE.txt`, também incluída como comentário no HTML de entrada para acompanhar a distribuição.

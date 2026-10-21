@@ -1,6 +1,6 @@
 # lulagate
 
-Site interativo (Vite + React + d3) que visualiza a rede de pessoas, casos e fontes do dataset deste repositório.
+Site interativo (Vite + React + Cytoscape.js) que visualiza a rede de pessoas, casos e fontes do dataset deste repositório.
 
 - Site publicado: https://prof-ramos.github.io/lulagate/
 - Metodologia: [data/metodologia.md](data/metodologia.md)

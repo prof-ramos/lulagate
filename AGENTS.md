@@ -2,7 +2,7 @@
 
 ## Contexto e escopo
 
-Este projeto é um mapa interativo de pessoas, casos e fontes, em React, Vite e D3. Leia `README.md`, `app/README.md` e `data/metodologia.md` antes de trabalhar na interface. O código principal está em `app/src.jsx` e `app/style.css`.
+Este projeto é um mapa interativo de pessoas, casos e fontes, em React, Vite e Cytoscape.js. Leia `README.md`, `app/README.md` e `data/metodologia.md` antes de trabalhar na interface. O código principal está em `app/src.jsx`, `app/Graph.jsx` e `app/style.css`.
 
 Preserve a arquitetura e o funcionamento sem requisições de rede em execução. Skills são instruções de desenvolvimento; não devem ser importadas pelo aplicativo, incluídas no bundle ou exigir dependências de produção.
 

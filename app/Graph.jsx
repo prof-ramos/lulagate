@@ -1,105 +1,96 @@
-import React,{useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react';
-import {forceSimulation,forceManyBody,forceCollide,forceLink,forceCenter,forceX,forceY} from 'd3-force';
-import {select} from 'd3-selection';
-import {zoom,zoomIdentity} from 'd3-zoom';
-import {edgePath,parallelSlots,proximityBand,PROXIMITY_BANDS,STATUS_CONFIG,compactLabel,wrapLabel} from './graph-model.js';
+import React,{useEffect,useMemo,useRef,useState} from 'react';
+import cytoscape from 'cytoscape';
+import {parallelSlots,PROXIMITY_BANDS,STATUS_CONFIG} from './graph-model.js';
+import {BAND_STEP,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles} from './cytoscape-model.js';
 
 export default function Graph({data,view,selected,onSelect,visibleNodes,visibleEdges,graphRef,matches}){
- const svg=useRef(),layer=useRef(),zoomRef=useRef();
- const [camera,setCamera]=useState(zoomIdentity),[hovered,setHovered]=useState(null),[bandsOpen,setBandsOpen]=useState(()=>!matchMedia('(max-width:640px)').matches);
- const scale=camera.k;
- const slots=useMemo(()=>parallelSlots(data.conexoes),[data]);
- // Both layouts are stable across filters. Only the relation layout uses links;
- // editorial proximity determines the seven bands exclusively in Proximidade.
- const nodes=useMemo(()=>{
-  const ns=data.personagens.map(p=>({...p}));
-  PROXIMITY_BANDS.forEach((_,b)=>{
-   const list=ns.filter(p=>p.id!=='lula'&&proximityBand(p.proximidade_lula)===b).sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR'));
-   list.forEach((p,i)=>{const angle=i/list.length*Math.PI*2-Math.PI/2;p.x=Math.cos(angle)*(b+1)*108;p.y=Math.sin(angle)*(b+1)*108;if(view==='proximidade'){p.fx=p.x;p.fy=p.y}});
-  });
-  const lula=ns.find(p=>p.id==='lula');if(lula){lula.x=0;lula.y=0;if(view==='proximidade'){lula.fx=0;lula.fy=0}}
-  if(view==='rede'){
-   // Equal initial spacing avoids using editorial proximity as a network force.
-   ns.forEach((p,i)=>{const angle=i*Math.PI*(3-Math.sqrt(5)),r=75*Math.sqrt(i);p.x=Math.cos(angle)*r;p.y=Math.sin(angle)*r});
-   const links=data.conexoes.map(e=>({source:e.origem,target:e.destino}));
-   const sim=forceSimulation(ns).force('links',forceLink(links).id(p=>p.id).distance(135).strength(.65)).force('charge',forceManyBody().strength(-160)).force('collide',forceCollide(62).iterations(3)).force('center',forceCenter(0,0)).force('x',forceX(0).strength(.035)).force('y',forceY(0).strength(.035)).stop();
-   for(let i=0;i<360;i++)sim.tick();
-  }
-  return ns;
- },[data,view]);
- const byId=useMemo(()=>Object.fromEntries(nodes.map(p=>[p.id,p])),[nodes]);
- const shown=useMemo(()=>visibleNodes.map(p=>byId[p.id]),[visibleNodes,byId]);
- const neighbors=useMemo(()=>new Set(visibleEdges.filter(e=>e.origem===selected||e.destino===selected).flatMap(e=>[e.origem,e.destino])),[visibleEdges,selected]);
- const panelOpen=Boolean(selected);
+ const container=useRef(null),cyRef=useRef(null),fitRef=useRef(()=>{}),onSelectRef=useRef(onSelect),stateRef=useRef({});
+ const [camera,setCamera]=useState({zoom:1,pan:{x:0,y:0}}),[focused,setFocused]=useState(null),[peopleOpen,setPeopleOpen]=useState(false),[bandsOpen,setBandsOpen]=useState(()=>!matchMedia('(max-width:640px)').matches);
+ const slots=useMemo(()=>parallelSlots(data.conexoes),[data]),positions=useMemo(()=>proximityPositions(data.personagens),[data]);
+ const panelOpen=Boolean(selected),people=useMemo(()=>[...visibleNodes].sort((a,b)=>a.nome.localeCompare(b.nome,'pt-BR')),[visibleNodes]);
+ const focusPerson=visibleNodes.find(p=>p.id===(focused||selected));
+ onSelectRef.current=onSelect;
+ stateRef.current={view,selected,matches,focused};
+
  useEffect(()=>{
-  const z=zoom().scaleExtent([.05,4]).on('zoom',e=>{select(layer.current).attr('transform',e.transform);setCamera(e.transform)});
-  zoomRef.current=z;select(svg.current).call(z);return()=>select(svg.current).on('.zoom',null);
- },[]);
- useEffect(()=>{
-  const element=svg.current;
-  const fit=()=>{
-   const rect=element.getBoundingClientRect();if(!rect.width||!rect.height)return;
-   let width=rect.width,height=rect.height;
-   const panel=document.querySelector('.person-panel');
-   if(panel){const box=panel.getBoundingClientRect();if(box.left<rect.right&&box.right>rect.left&&box.top<rect.bottom){if(matchMedia('(max-width:640px)').matches)height=Math.max(1,box.top-rect.top);else width=Math.max(1,box.left-rect.left)}}
-   element.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`);
-   if(!shown.length){select(element).call(zoomRef.current.transform,zoomIdentity.translate(width/2,height/2));return}
-   // Include the editorial bands so their order remains inspectable when filtered.
-   const radius=view==='proximidade'?756:0;
-   const minX=Math.min(...shown.map(p=>p.x-90),...(radius?[-radius]:[])),maxX=Math.max(...shown.map(p=>p.x+90),...(radius?[radius]:[]));
-   const minY=Math.min(...shown.map(p=>p.y-40),...(radius?[-radius]:[])),maxY=Math.max(...shown.map(p=>p.y+50),...(radius?[radius]:[]));
-   const paddingX=Math.min(52,width*.1),paddingY=Math.min(76,height*.15);
-   const k=Math.max(.05,Math.min((width-2*paddingX)/(maxX-minX),(height-2*paddingY)/(maxY-minY)));
-   select(element).call(zoomRef.current.transform,zoomIdentity.translate(width/2-(minX+maxX)*k/2,height/2-(minY+maxY)*k/2).scale(k));
+  const element=container.current;
+  const cy=cytoscape({container:element,elements:[],layout:{name:'preset'},minZoom:.06,maxZoom:3.5,wheelSensitivity:.25,selectionType:'single',autounselectify:true,boxSelectionEnabled:false});
+  cyRef.current=cy;
+  const theme=()=>{
+   const css=getComputedStyle(element),token=name=>css.getPropertyValue(`--${name}`).trim();
+   const statuses=Object.fromEntries(Object.keys(STATUS_CONFIG).map(status=>[status,getComputedStyle(element.parentElement.querySelector(`.graph-theme-probe.status-${status}`)).getPropertyValue('--status-color').trim()]));
+   cy.style(graphStyles({ink:token('ink'),paper:token('paper'),bg:token('bg'),muted:token('muted'),node:token('node'),accent:token('accent'),statuses}));
+   readableLabels(true);
   };
-  const observer=new ResizeObserver(fit);observer.observe(element);window.addEventListener('resize',fit);
-  const frame=requestAnimationFrame(fit);
-  graphRef.current={reset:fit,zoomBy:k=>select(element).call(zoomRef.current.scaleBy,k)};
-  return()=>{observer.disconnect();window.removeEventListener('resize',fit);cancelAnimationFrame(frame)};
- // Opening or closing a panel may fit; switching between people preserves camera.
- },[shown,view,panelOpen]);
- useLayoutEffect(()=>{
-  const occupied=[];
-  const overlaps=(a,b)=>a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top;
-  const priority=p=>selected===p.id?5:hovered===p.id?4:matches.has(p.id)?3:neighbors.has(p.id)?2:1;
-  const labels=new Map([...svg.current.querySelectorAll('.node')].map(el=>[el.dataset.id,el.querySelector('text')]));
-  // Reset together before measuring; priority names stay within the usable viewport.
-  for(const el of labels.values()){el.style.display='';el.removeAttribute('transform')}
-  const viewport=svg.current.getBoundingClientRect();let right=viewport.right,bottom=viewport.bottom;
-  const panel=document.querySelector('.person-panel')?.getBoundingClientRect();
-  if(panel&&panel.left<viewport.right&&panel.right>viewport.left&&panel.top<viewport.bottom){if(matchMedia('(max-width:640px)').matches)bottom=Math.max(viewport.top,panel.top);else right=Math.max(viewport.left,panel.left)}
-  const context=document.createElement('canvas').getContext('2d');
-  for(const p of shown){
-   const el=labels.get(p.id),full=selected===p.id||hovered===p.id;
-   const font=getComputedStyle(el);context.font=`${font.fontStyle} ${font.fontWeight} ${selected===p.id?14:13}px ${font.fontFamily}`;
-   const lines=full?wrapLabel(p.nome,Math.max(30,right-viewport.left-24),text=>context.measureText(text).width):[compactLabel(p)];
-   el.replaceChildren(...lines.map((line,i)=>{const span=document.createElementNS('http://www.w3.org/2000/svg','tspan');span.setAttribute('x','0');span.setAttribute('dy',i?`${17/scale}`:'0');span.textContent=line;return span}));
-  }
-  const measured=new Map([...labels].map(([id,el])=>[id,el.getBoundingClientRect()]));
-  [...shown].sort((a,b)=>priority(b)-priority(a)||a.nome.localeCompare(b.nome,'pt-BR')).forEach(p=>{
-   const el=labels.get(p.id),r=measured.get(p.id);let dx=0,dy=0;
-   if(selected===p.id||hovered===p.id){
-    dx=Math.max(viewport.left+8-r.left,Math.min(0,right-8-r.right));
-    dy=Math.max(viewport.top+64-r.top,Math.min(0,bottom-28-r.bottom));
-    el.setAttribute('transform',`translate(${dx/scale},${dy/scale})`);
+  let labelZoom=null;
+  const readableLabels=(force=false)=>{
+   // Canvas text follows native zoom, with a floor for context names in the overview.
+   const zoom=cy.zoom();if(!force&&labelZoom===zoom)return;labelZoom=zoom;
+   cy.nodes().style({'font-size':Math.max(12,10.5/zoom),'text-max-width':Math.max(185,135/zoom),padding:Math.max(8,5/zoom)});
+  };
+  const cameraChanged=()=>{readableLabels();setCamera({zoom:cy.zoom(),pan:{...cy.pan()}})};
+  cy.on('viewport',cameraChanged);
+  cy.on('tap','node',e=>onSelectRef.current(e.target.id()));
+  cy.on('mouseover','node',e=>setFocused(e.target.id()));
+  cy.on('mouseout','node',()=>setFocused(null));
+  const fit=()=>{
+   if(cy.destroyed())return;
+   cy.resize();const rect=element.getBoundingClientRect();if(!rect.width||!rect.height)return;
+   let left=18,top=68,right=rect.width-18,bottom=rect.height-52;
+   let rightInset=0,bottomInset=0;
+   const panel=document.querySelector('.person-panel')?.getBoundingClientRect();
+   if(panel&&panel.left<rect.right&&panel.right>rect.left&&panel.top<rect.bottom&&panel.bottom>rect.top){
+    if(panel.width>rect.width*.75){bottomInset=Math.max(0,rect.bottom-panel.top);bottom=Math.min(bottom,panel.top-rect.top-16)}
+    else {rightInset=Math.max(0,rect.right-panel.left);right=Math.min(right,panel.left-rect.left-18)}
    }
-   const box={left:r.left+dx-4,right:r.right+dx+4,top:r.top+dy-3,bottom:r.bottom+dy+3};
-   if(selected!==p.id&&hovered!==p.id&&occupied.some(other=>overlaps(box,other)))el.style.display='none';else occupied.push(box);
-  });
- },[shown,selected,hovered,matches,neighbors,camera]);
+   element.parentElement.style.setProperty('--graph-right-inset',`${rightInset}px`);
+   element.parentElement.style.setProperty('--graph-bottom-inset',`${bottomInset}px`);
+   const band=element.parentElement.querySelector('.band-legend')?.getBoundingClientRect();
+   if(band){if(rect.width>700)right=Math.min(right,band.left-rect.left-16);else top=Math.max(top,band.bottom-rect.top+14)}
+   const list=element.parentElement.querySelector('.graph-people')?.getBoundingClientRect();
+   if(list&&list.top<rect.top+bottom){if(rect.width>700&&list.height>80)left=Math.max(left,list.right-rect.left+16);else bottom=Math.min(bottom,list.top-rect.top-16)}
+   // Expanded overlays can leave only a small viewport; keep a useful camera at its centre.
+   const width=Math.max(100,right-left),height=Math.max(100,bottom-top),center={x:left+width/2,y:top+height/2};
+   if(!cy.nodes().length){cy.pan(center);return}
+   const box=cy.elements().boundingBox({includeLabels:true,includeOverlays:false});
+   if(stateRef.current.view==='proximidade'){const radius=PROXIMITY_BANDS.length*BAND_STEP;box.x1=Math.min(box.x1,-radius);box.y1=Math.min(box.y1,-radius);box.x2=Math.max(box.x2,radius);box.y2=Math.max(box.y2,radius);box.w=box.x2-box.x1;box.h=box.y2-box.y1}
+   const zoom=Math.max(cy.minZoom(),Math.min(1.35,(width-36)/Math.max(1,box.w),(height-36)/Math.max(1,box.h)));
+   cy.viewport({zoom,pan:{x:center.x-(box.x1+box.x2)/2*zoom,y:center.y-(box.y1+box.y2)/2*zoom}});
+  };
+  fitRef.current=fit;
+  graphRef.current={reset:fit,zoomBy:factor=>{const rect=element.getBoundingClientRect();cy.zoom({level:Math.max(cy.minZoom(),Math.min(cy.maxZoom(),cy.zoom()*factor)),renderedPosition:{x:rect.width/2,y:rect.height/2}})}};
+  theme();const observer=new MutationObserver(theme);observer.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  const resize=new ResizeObserver(fit);resize.observe(element);window.addEventListener('resize',fit);
+  return()=>{observer.disconnect();resize.disconnect();window.removeEventListener('resize',fit);cy.destroy();cyRef.current=null;graphRef.current=null};
+ },[graphRef]);
+
+ useEffect(()=>{
+  const cy=cyRef.current;if(!cy)return;
+  syncSlice(cy,visibleNodes,visibleEdges,slots);
+  const zoom=cy.zoom();cy.nodes().style({'font-size':Math.max(12,10.5/zoom),'text-max-width':Math.max(185,135/zoom),padding:Math.max(8,5/zoom)});
+  if(view==='proximidade')cy.nodes().ungrabify();else cy.nodes().grabify();
+  layoutGraph(cy,view,positions);
+  const state=stateRef.current;applySelection(cy,state.selected,state.matches,state.focused);
+  const frame=requestAnimationFrame(()=>fitRef.current());return()=>cancelAnimationFrame(frame);
+ },[visibleNodes,visibleEdges,view,slots,positions]);
+ useEffect(()=>{const cy=cyRef.current;if(cy)applySelection(cy,selected,matches,focused)},[selected,matches,focused]);
+ // Only changes in available viewport trigger fitting; switching an open person's identity does not.
+ useEffect(()=>{const frame=requestAnimationFrame(()=>fitRef.current());return()=>cancelAnimationFrame(frame)},[panelOpen,bandsOpen,peopleOpen]);
  const pan=e=>{
-  const directions={ArrowLeft:[48,0],ArrowRight:[-48,0],ArrowUp:[0,48],ArrowDown:[0,-48]};
-  if(!directions[e.key])return;e.preventDefault();
-  const [x,y]=directions[e.key];select(svg.current).call(zoomRef.current.translateBy,x/scale,y/scale);
+  const cy=cyRef.current;if(!cy)return;
+  const directions={ArrowLeft:{x:48,y:0},ArrowRight:{x:-48,y:0},ArrowUp:{x:0,y:48},ArrowDown:{x:0,y:-48}};
+  if(directions[e.key]){e.preventDefault();cy.panBy(directions[e.key])}
+  else if(e.key==='+'||e.key==='='){e.preventDefault();graphRef.current.zoomBy(1.3)}
+  else if(e.key==='-'){e.preventDefault();graphRef.current.zoomBy(1/1.3)}
+  else if(e.key==='0'){e.preventDefault();fitRef.current()}
  };
- return <><svg ref={svg} className="graph" viewBox="0 0 1000 700" tabIndex={0} onKeyDown={pan} aria-describedby="graph-keyboard-help" aria-label={`Mapa interativo: ${shown.length} personagens e ${visibleEdges.length} conexões no recorte`}><g ref={layer}>
-  {view==='proximidade'&&shown.length>0&&PROXIMITY_BANDS.map((b,i)=><g key={b.min} className="ring"><circle r={(i+1)*108}/><title>{b.range}: {b.label}</title></g>)}
-  <g className="edges">{visibleEdges.map(e=>{const relevant=!selected||e.origem===selected||e.destino===selected;return <path key={e.id} className={`edge status-${e.status} ${relevant?'neighbor':'context'}`} d={edgePath(e,byId,slots)} fill="none" vectorEffect="non-scaling-stroke" strokeWidth={selected&&relevant?2.8:1.5} strokeDasharray={STATUS_CONFIG[e.status]?.dash} opacity={relevant?1:.18}><title>{byId[e.origem]?.nome} → {byId[e.destino]?.nome}: {e.rotulo} · {data.meta.legenda_status[e.status]}</title></path>})}</g>
-  {[...shown].sort((a,b)=>Number(a.id===selected)-Number(b.id===selected)).map(p=>{
-   const radius=(p.id==='lula'?13:selected===p.id?9:6.5)/scale,context=selected&&p.id!==selected&&!neighbors.has(p.id)&&hovered!==p.id;
-   return <g key={p.id} data-id={p.id} className={`node ${selected===p.id?'selected':''} ${neighbors.has(p.id)?'neighbor':''} ${context?'context':''} ${p.id==='lula'?'central':''}`} transform={`translate(${p.x},${p.y})`} opacity={context?.22:1} onMouseEnter={()=>setHovered(p.id)} onMouseLeave={()=>setHovered(null)} onFocus={()=>setHovered(p.id)} onBlur={()=>setHovered(null)} role="button" tabIndex={0} aria-label={`${p.nome}${selected===p.id?', selecionado':''}`} aria-pressed={selected===p.id} onClick={()=>onSelect(p.id)} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onSelect(p.id)}}}>
-    <circle className="node-hit" r={Math.max(radius,22/scale)} fill="transparent" style={{pointerEvents:'all',stroke:'none'}}/><circle r={radius}/><text y={radius+17/scale} textAnchor="middle" style={{fontSize:(selected===p.id?14:13)/scale,strokeWidth:3/scale,pointerEvents:'all'}}></text><title>{p.nome} · {p.faixa_proximidade}</title>
-   </g>
-  })}
- </g></svg><span id="graph-keyboard-help" className="sr-only">Use as setas com foco no mapa ou em um personagem para mover o mapa. Tab percorre os personagens; Enter ou espaço abre seus detalhes. Os botões de zoom ampliam, reduzem e restauram o enquadramento.</span>{view==='proximidade'&&<details className="band-legend" open={bandsOpen} onToggle={e=>setBandsOpen(e.currentTarget.open)}><summary>Faixas de proximidade editorial</summary><ol>{PROXIMITY_BANDS.map((b,i)=><li key={b.min}><span className="band-number">{i+1}</span><strong>{b.range}</strong><span>{b.label}</span></li>)}</ol><p>Do anel interno ao externo. Atribuição editorial, não medida de culpa.</p></details>}</>;
+ return <>
+  {view==='proximidade'&&visibleNodes.length>0&&<svg className="graph-rings" aria-hidden="true"><g transform={`translate(${camera.pan.x},${camera.pan.y}) scale(${camera.zoom})`}>{PROXIMITY_BANDS.map((band,i)=><circle key={band.min} r={(i+1)*BAND_STEP}/>)}</g></svg>}
+  <div ref={container} className="graph" tabIndex={0} onKeyDown={pan} role="region" aria-label={`Mapa interativo: ${visibleNodes.length} personagens e ${visibleEdges.length} conexões no recorte`} aria-describedby="graph-keyboard-help"/>
+  <span id="graph-keyboard-help" className="sr-only">Na Rede, arraste personagens para reorganizar. Na Proximidade, os personagens permanecem em sua faixa editorial. Arraste o fundo para mover o mapa. Com foco no mapa, use as setas para mover, mais e menos para ampliar ou reduzir e zero para restaurar. A lista Personagens do recorte permite consultar todos os nomes com Tab e abrir detalhes com Enter ou espaço.</span>
+  {focusPerson&&focused&&focused!==selected&&<div className="graph-focus-name" aria-live="polite">{focusPerson.nome}</div>}
+  <details className="graph-people" open={peopleOpen} onToggle={e=>setPeopleOpen(e.currentTarget.open)}><summary>Personagens do recorte ({people.length})</summary><p>Tab percorre os nomes; Enter abre os detalhes. No mapa, use as setas para mover e + / − para zoom.</p><ul>{people.map(person=><li key={person.id}><button aria-pressed={selected===person.id} onFocus={()=>setFocused(person.id)} onBlur={()=>setFocused(null)} onClick={()=>onSelect(person.id)}>{person.nome}{selected===person.id&&<span className="sr-only">, selecionado</span>}</button></li>)}</ul>{!people.length&&<p>Nenhum personagem no recorte atual.</p>}</details>
+  {view==='proximidade'&&<details className="band-legend" open={bandsOpen} onToggle={e=>setBandsOpen(e.currentTarget.open)}><summary>Faixas de proximidade editorial</summary><ol>{PROXIMITY_BANDS.map((band,i)=><li key={band.min}><span className="band-number">{i+1}</span><strong>{band.range}</strong><span>{band.label}</span></li>)}</ol><p>Do anel interno ao externo. Atribuição editorial, não medida de culpa.</p></details>}
+  <span className="graph-theme-probes" aria-hidden="true">{Object.keys(STATUS_CONFIG).map(status=><span key={status} className={`graph-theme-probe status-${status}`}/>)}</span>
+ </>;
 }
