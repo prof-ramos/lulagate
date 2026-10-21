@@ -107,22 +107,23 @@
     "id": "con-006",
     "origem": "jose-dirceu",
     "destino": "lula",
-    "rotulo": "ministro da Casa Civil; condenado no mensalão",
+    "rotulo": "ministro da Casa Civil; pena da AP 470 extinta por indulto; Lula não foi denunciado",
     "tipo": "politico",
     "status": "associacao_indireta",
     "periodo": {
       "inicio": "2003",
       "fim": "2005"
     },
-    "descricao": "Dirceu condenado na AP 470; Lula não foi denunciado.",
+    "descricao": "Ministro da Casa Civil; pena da AP 470 extinta por indulto; Lula não foi denunciado.",
     "escandalos": [
       "esc-mensalao"
     ],
     "fontes": [
+      "pr-a-factcheck-01",
       "g1-2012-10-dirceu",
       "gazeta-stf-lula-mensalao"
     ],
-    "data_referencia": "2012-10-09"
+    "data_referencia": "2016-10-17"
   },
   {
     "id": "con-007",
@@ -618,7 +619,7 @@
       "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2022-01"
+    "data_referencia": "2022-01-18"
   },
   {
     "id": "con-031",
@@ -639,7 +640,7 @@
       "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2022-01"
+    "data_referencia": "2022-01-18"
   },
   {
     "id": "con-032",
@@ -659,7 +660,7 @@
     "fontes": [
       "poder360-2022-01-mapa"
     ],
-    "data_referencia": "2022-01"
+    "data_referencia": "2022-01-18"
   },
   {
     "id": "con-033",
@@ -680,7 +681,7 @@
       "poder360-2022-01-mapa",
       "folha-2022-01-17-mapa"
     ],
-    "data_referencia": "2022-01"
+    "data_referencia": "2022-01-18"
   },
   {
     "id": "con-034",

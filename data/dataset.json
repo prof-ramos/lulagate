@@ -62,7 +62,7 @@
         }
       ],
       "relacao_com_lula": "personagem central",
-      "resumo": "Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
+      "resumo": "Condenações anuladas pelo STF em 2021; casos depois arquivados por prescrição ou trancados. Historicamente, condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
       "situacao_juridica": "Sem condenação vigente até 20/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição.",
       "fontes": [
         "stf-2021-03-08-fachin",
@@ -725,7 +725,7 @@
       "nivel_juridico": 2,
       "grupos": [],
       "relacao_com_lula": "amigo",
-      "resumo": "Descrito pelo TRF4 como amigo próximo de Lula. Condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
+      "resumo": "Condenação do caso Schahin anulada pelo STJ em 2021. Descrito pelo TRF4 como amigo próximo de Lula. Historicamente, condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
       "situacao_juridica": "Condenação do caso Schahin anulada (STJ, 2021); absolvido no TRF4 (Atibaia, 2019).",
       "fontes": [
         "oglobo-2016-bumlai",
@@ -2453,22 +2453,23 @@
       "id": "con-006",
       "origem": "jose-dirceu",
       "destino": "lula",
-      "rotulo": "ministro da Casa Civil; condenado no mensalão",
+      "rotulo": "ministro da Casa Civil; pena da AP 470 extinta por indulto; Lula não foi denunciado",
       "tipo": "politico",
       "status": "associacao_indireta",
       "periodo": {
         "inicio": "2003",
         "fim": "2005"
       },
-      "descricao": "Dirceu condenado na AP 470; Lula não foi denunciado.",
+      "descricao": "Ministro da Casa Civil; pena da AP 470 extinta por indulto; Lula não foi denunciado.",
       "escandalos": [
         "esc-mensalao"
       ],
       "fontes": [
+        "pr-a-factcheck-01",
         "g1-2012-10-dirceu",
         "gazeta-stf-lula-mensalao"
       ],
-      "data_referencia": "2012-10-09"
+      "data_referencia": "2016-10-17"
     },
     {
       "id": "con-007",
@@ -2964,7 +2965,7 @@
         "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2022-01"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-031",
@@ -2985,7 +2986,7 @@
         "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2022-01"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-032",
@@ -3005,7 +3006,7 @@
       "fontes": [
         "poder360-2022-01-mapa"
       ],
-      "data_referencia": "2022-01"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-033",
@@ -3026,7 +3027,7 @@
         "poder360-2022-01-mapa",
         "folha-2022-01-17-mapa"
       ],
-      "data_referencia": "2022-01"
+      "data_referencia": "2022-01-18"
     },
     {
       "id": "con-034",
@@ -3857,8 +3858,8 @@
         "fim": "2012-12"
       },
       "status": "associacao_indireta",
-      "status_detalhe": "Lula nunca foi denunciado. O STF rejeitou pedidos de Roberto Jefferson para incluí-lo como réu. José Dirceu foi condenado em 2012 por corrupção ativa.",
-      "resumo": "Esquema de compra de apoio parlamentar no primeiro governo Lula, julgado pelo STF na AP 470. O ex-ministro da Casa Civil José Dirceu foi condenado. Lula não figurou como réu.",
+      "status_detalhe": "Pena da AP 470 de José Dirceu extinta por indulto em 2016; Lula nunca foi denunciado. O STF rejeitou pedidos de Roberto Jefferson para incluí-lo como réu. Dirceu havia sido condenado em 2012 por corrupção ativa.",
+      "resumo": "Pena da AP 470 de José Dirceu extinta por indulto em 2016; Lula não figurou como réu. A AP 470 julgou o esquema de compra de apoio parlamentar no primeiro governo Lula.",
       "papel_de_lula": "Presidente da República à época; não denunciado.",
       "versao_de_lula": "No Roda Viva (07/11/2005), disse sentir-se traído por petistas que \"terceirizaram\" a arrecadação de campanha e admitiu responsabilidade política na crise (Folha, 08/11/2005).",
       "personagens": [
@@ -3870,6 +3871,7 @@
       "valores": [],
       "escandalos_relacionados": [],
       "fontes": [
+        "pr-a-factcheck-01",
         "g1-2012-10-dirceu",
         "gazeta-stf-lula-mensalao",
         "planalto-2005-11-07-rodaviva",
@@ -3891,8 +3893,8 @@
       },
       "status": "condenacao_anulada",
       "status_detalhe": "Condenação anulada pelo STF: em 08/03/2021 Fachin declarou a incompetência da 13ª Vara de Curitiba (HC 193.726); em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Em 27/01/2022 a 12ª Vara Federal do DF arquivou a ação por prescrição, a pedido do MPF.",
-      "resumo": "Lula foi condenado por Sergio Moro em 12/07/2017 a 9 anos e 6 meses por corrupção passiva e lavagem, sob acusação de receber da OAS o apartamento 164-A do Solaris e reformas. O TRF4 elevou a pena para 12 anos e 1 mês em 24/01/2018. Preso em 07/04/2018, foi solto em 08/11/2019 após 580 dias. A condenação foi anulada em 2021 e o caso, arquivado em 2022. Na mesma sentença, Lula e Okamotto foram absolvidos da acusação ligada ao armazenamento do acervo presidencial.",
-      "papel_de_lula": "Réu; condenado em 1ª e 2ª instâncias, condenação anulada.",
+      "resumo": "Condenação anulada em 2021; caso arquivado por prescrição em 2022. Historicamente, Lula foi condenado por Sergio Moro em 12/07/2017 a 9 anos e 6 meses por corrupção passiva e lavagem, sob acusação de receber da OAS o apartamento 164-A do Solaris e reformas. O TRF4 elevou a pena para 12 anos e 1 mês em 24/01/2018. Preso em 07/04/2018, foi solto em 08/11/2019 após 580 dias. A condenação foi anulada em 2021 e o caso, arquivado em 2022. Na mesma sentença, Lula e Okamotto foram absolvidos da acusação ligada ao armazenamento do acervo presidencial.",
+      "papel_de_lula": "Condenação anulada; foi réu e condenado em 1ª e 2ª instâncias.",
       "versao_de_lula": "Em depoimento a Moro (10/05/2017), negou ser dono do triplex e disse nunca ter tido intenção de comprá-lo. Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
       "personagens": [
         "lula",
@@ -3951,8 +3953,8 @@
       },
       "status": "condenacao_anulada",
       "status_detalhe": "Condenação anulada pelo STF: em 08/03/2021 Fachin declarou a incompetência da 13ª Vara de Curitiba (HC 193.726); em 23/06/2021 o Plenário confirmou a suspeição de Sergio Moro (HC 164.493). Em 21/08/2021 a Justiça Federal do DF rejeitou a nova denúncia e declarou extinta a punibilidade por prescrição.",
-      "resumo": "Gabriela Hardt condenou Lula em 06/02/2019 a 12 anos e 11 meses por corrupção e lavagem, por reformas no sítio (proprietário formal: Fernando Bittar) custeadas por Odebrecht, OAS e Bumlai, segundo a acusação. O TRF4 elevou a pena para 17 anos, 1 mês e 10 dias em 27/11/2019 e absolveu Bumlai, Roberto Teixeira, Emyr Costa e Paulo Gordilho. A condenação de Lula foi anulada em 2021.",
-      "papel_de_lula": "Réu; condenado em 1ª e 2ª instâncias, condenação anulada.",
+      "resumo": "Condenação de Lula anulada em 2021; nova denúncia rejeitada e punibilidade extinta por prescrição no DF em agosto de 2021. Historicamente, Gabriela Hardt condenou Lula em 06/02/2019 a 12 anos e 11 meses por corrupção e lavagem, por reformas no sítio (proprietário formal: Fernando Bittar) custeadas por Odebrecht, OAS e Bumlai, segundo a acusação. O TRF4 elevou a pena para 17 anos, 1 mês e 10 dias em 27/11/2019 e absolveu Bumlai, Roberto Teixeira, Emyr Costa e Paulo Gordilho. A condenação de Lula foi anulada em 2021.",
+      "papel_de_lula": "Condenação anulada; foi réu e condenado em 1ª e 2ª instâncias.",
       "versao_de_lula": "A defesa (Cristiano Zanin) alegou no TRF4 parcialidade de Moro e Hardt e ausência de prova de vantagem indevida. Lula sempre negou as acusações. Após a anulação, disse ter sido \"vítima da maior mentira jurídica contada em 500 anos de história\" (CNN Brasil, 10/03/2021).",
       "personagens": [
         "lula",
@@ -5238,7 +5240,7 @@
       "veiculo": "Poder360",
       "tipo_veiculo": "grande_imprensa",
       "titulo": "Juíza arquiva investigação da Lava Jato contra Lulinha",
-      "data": "2022-01",
+      "data": "2022-01-18",
       "url": "https://www.poder360.com.br/lava-jato/juiza-arquiva-investigacao-da-lava-jato-contra-filho-de-lula/"
     },
     {

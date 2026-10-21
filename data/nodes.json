@@ -23,7 +23,7 @@
       }
     ],
     "relacao_com_lula": "personagem central",
-    "resumo": "Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
+    "resumo": "Condenações anuladas pelo STF em 2021; casos depois arquivados por prescrição ou trancados. Historicamente, condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).",
     "situacao_juridica": "Sem condenação vigente até 20/10/2026. Condenações do triplex e de Atibaia anuladas pelo STF em 2021; demais ações arquivadas, trancadas ou com absolvição.",
     "fontes": [
       "stf-2021-03-08-fachin",
@@ -686,7 +686,7 @@
     "nivel_juridico": 2,
     "grupos": [],
     "relacao_com_lula": "amigo",
-    "resumo": "Descrito pelo TRF4 como amigo próximo de Lula. Condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
+    "resumo": "Condenação do caso Schahin anulada pelo STJ em 2021. Descrito pelo TRF4 como amigo próximo de Lula. Historicamente, condenado por Moro em 2016 no caso do empréstimo do Banco Schahin para o PT (processo anulado pelo STJ em 2021). No caso Atibaia, foi absolvido pelo TRF4 em 2019.",
     "situacao_juridica": "Condenação do caso Schahin anulada (STJ, 2021); absolvido no TRF4 (Atibaia, 2019).",
     "fontes": [
       "oglobo-2016-bumlai",

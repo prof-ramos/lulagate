@@ -7,10 +7,11 @@ import {filterGraph,STATUS_CONFIG,LEGAL_COLORS} from './graph-model.js';
 import{marked}from'marked';
 import rawData from '../data/dataset.json';
 import './style.css';
+import {formatDate} from './date-model.js';
 // Normalize display text once; preserve source URLs and partial dates (years).
 const displayText=s=>s.replace(/—/g,'–').replace(/\b(\d{4})-(\d{2})-(\d{2})\b/g,'$3/$2/$1');
 function displayData(value,key){
-  if(typeof value==='string')return ['url','url_origem','licenca_url','autor','arquivo_commons','arquivo','base64'].includes(key)?value:displayText(value);
+  if(typeof value==='string')return key==='data'?formatDate(value):['url','url_origem','licenca_url','autor','arquivo_commons','arquivo','base64'].includes(key)?value:displayText(value);
   if(Array.isArray(value))return value.map(item=>displayData(item));
   if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,displayData(v,k)]));
   return value;
@@ -18,7 +19,7 @@ function displayData(value,key){
 const data=displayData(rawData);
 const people=Object.fromEntries(data.personagens.map(p=>[p.id,p])), sources=Object.fromEntries(data.fontes.map(s=>[s.id,s]));
 const statuses=Object.entries(data.meta.legenda_status);
-const date=s=>s?displayText(s):'não informada';
+const date=formatDate;
 const period=p=>typeof p==='object'?[p?.inicio||'Início não informado',p?.fim||'em aberto'].join(' – '):p;
 function readURL(){const q=new URLSearchParams(location.search);return {visualizacao:(q.get('v')||q.get('visualizacao'))==='proximidade'?'proximidade':'rede',personagem:personFromSearch(location.search,data.personagens),escandalo:data.escandalos.some(c=>c.id===q.get('escandalo'))?q.get('escandalo'):null,modal:['escandalos','metodologia'].includes(q.get('modal'))?q.get('modal'):(q.has('escandalo')?'escandalos':null)}}
 function Badge({status}){return <span className={`badge status-${status}`}>{data.meta.legenda_status[status]||status}</span>}
