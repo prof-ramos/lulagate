@@ -1,0 +1,79 @@
+{
+  "target": "local build",
+  "productionVerified": false,
+  "results": [
+    {
+      "id": "AC-01",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-02",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-03",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-04",
+      "level": "BLOCK",
+      "status": "PASS",
+      "detail": {
+        "visible": 10,
+        "lulaVisible": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "AC-05",
+      "level": "BLOCK",
+      "status": "PASS",
+      "detail": {
+        "visible": 10,
+        "lulaVisible": true,
+        "failures": []
+      }
+    },
+    {
+      "id": "AC-06",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-07",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-08",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-09",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-10",
+      "level": "WARN",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-11",
+      "level": "BLOCK",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-12",
+      "level": "BLOCK",
+      "status": "PASS",
+      "detail": {
+        "bytes": 342083
+      }
+    }
+  ]
+}

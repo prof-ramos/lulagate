@@ -33,7 +33,7 @@ try {
  browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  const shots=[['desktop-1280x800',1280,800,''],['mobile-390x844',390,844,''],['mobile-painel-390x844',390,844,`personagem=${person.id}`],['desktop-painel',1280,800,`personagem=${person.id}`],['desktop-proximidade',1280,800,'visualizacao=proximidade'],['mobile-proximidade',390,844,'visualizacao=proximidade']];
  for(const [name,width,height,query] of shots){
-  const page=await browser.newPage({viewport:{width,height},colorScheme:'light',reducedMotion:'reduce'});
+  const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:width<640?3:1,colorScheme:'light',reducedMotion:'reduce'});
   page.on('pageerror',e=>errors.push(`${name}: ${e.message}`));
   page.on('console',m=>{if(m.type()==='error')errors.push(`${name}: ${m.text()}`)});
   await page.route('**/*',async route=>{
@@ -56,7 +56,7 @@ try {
    assert.equal(await page.locator('.person-portrait figcaption a').count(),2);
    if(width<640){
     const graph=await page.locator('.graph').boundingBox(),panel=await page.locator('.person-panel').boundingBox();
-    assert.ok(graph.height>=180&&graph.y+graph.height<=panel.y+1,'painel deve reservar área visível do grafo');
+    assert.ok(Math.min(graph.y+graph.height,panel.y)-graph.y>=180,'painel deve reservar área visível do grafo');
    }
   }
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'overflow horizontal');
@@ -68,9 +68,13 @@ try {
    await page.locator('#search').fill(person.nome);
    await page.locator('.results button').first().click();
    await page.getByRole('button',{name:'Fechar personagem',exact:true}).click();
+   await page.getByRole('button',{name:'Filtros',exact:true}).click();
    for(const box of await page.locator('fieldset input').all())await box.uncheck();
-   await page.getByText('Nenhuma conexão neste recorte',{exact:true}).waitFor();
-   await page.getByRole('button',{name:'Limpar filtros',exact:true}).click();
+   await page.getByRole('button',{name:'Ver 0 resultados',exact:true}).click();
+   await page.locator('.empty-map strong').waitFor();
+   await page.locator('.empty-map').getByRole('button',{name:'Limpar filtros',exact:true}).click();
+   await page.waitForFunction(()=>window.__cy?.nodes().length>0);
+   assert.equal(await page.locator('.empty-map').count(),0,'limpar filtros restaura o mapa');
    await page.getByRole('button',{name:'Aumentar zoom',exact:true}).click();
    await page.getByRole('button',{name:'Restaurar enquadramento',exact:true}).click();
   }

@@ -60,12 +60,12 @@ export function applyFocus(cy,focused){
 }
 export function graphStyles(t){
  return [
-  {selector:'node',style:{shape:'data(legalShape)',width:'data(size)',height:'data(size)',padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'wrap','text-max-width':100,'text-overflow-wrap':'anywhere','min-zoomed-font-size':11,'text-valign':'bottom','text-margin-y':6,'text-background-color':t.paper,'text-background-opacity':.9,'text-background-padding':2,'text-halign':'center','background-color':'data(legalColor)','border-color':t.paper,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
+  {selector:'node',style:{shape:'data(legalShape)',width:'data(size)',height:'data(size)',padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'ellipsis','text-max-width':100,'text-overflow-wrap':'whitespace','min-zoomed-font-size':11,'text-valign':'bottom','text-margin-y':6,'text-background-color':t.paper,'text-background-opacity':.9,'text-background-padding':2,'text-halign':'center','background-color':'data(legalColor)','border-color':t.paper,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
   {selector:'node.central',style:{'min-zoomed-font-size':0,'font-size':17,color:t.ink,'border-color':t.accent,'border-width':2,'font-weight':'bold'}},
   {selector:'node[size >= 50]',style:{'min-zoomed-font-size':0,'font-size':14}},
   {selector:'edge',style:{width:1.5,'curve-style':'unbundled-bezier','control-point-distances':'data(curve)','control-point-weights':.5,'line-color':t.node,'overlay-opacity':0}},
   ...Object.entries(STATUS_CONFIG).map(([status,{dash}])=>({selector:`edge.status-${status}`,style:{'line-color':t.statuses[status],'line-style':dash?'dashed':'solid',...(dash?{'line-dash-pattern':dash.split(' ').map(Number)}:{})}})),
-  {selector:'.context',style:{opacity:.18}},
+  {selector:'.context',style:{opacity:.06,'underlay-opacity':0}},
   {selector:'edge.neighbor',style:{width:3}},
   {selector:'node.neighbor',style:{'border-color':t.accent,'border-width':2}},
   {selector:'node.search-match',style:{'min-zoomed-font-size':0,'border-color':t.accent,'border-width':3,'font-weight':'bold',opacity:1}},

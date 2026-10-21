@@ -40,3 +40,11 @@ Para regenerar e conferir: `python3 scripts/build.py` e `python3 scripts/validat
 Os testes também verificam iniciais, incorporação binária dos retratos, créditos, tamanhos por número de casos, seleção e layout. `python3 scripts/test_legal_category.py` verifica a classificação conservadora e a exigência de fontes. No mobile, a Rede abre com Lula e as nove pessoas com mais conexões, em posições iniciais organizadas para leitura. Rótulos são renderizados com 12 px, com supressão de colisões; os demais aparecem ao ampliar. Os nós mantêm alvo de pelo menos 44 px. Cor e forma indicam a categoria jurídica; tamanho representa quantidade de casos. A promessa e a busca ficam acima do canvas. Filtros abrem numa folha inferior sobreposta com botão de resultados. No mobile, o painel abre em meia altura, pode ser arrastado entre 35% e 72% ou alternado por botão. A lista de nomes oferece navegação com Tab/Enter; Esc fecha folhas e painel.
 
 Compartilhamento usa `navigator.share`, com cópia como fallback; exige suporte e contexto seguro do navegador. A imagem social própria de 1200 × 630 é reproduzível com `python3 scripts/build_og.py` (Pillow). O tour de três passos é opcional, com dispensa lembrada em localStorage. Tela cheia e exportação PNG são acionadas pelos controles do mapa.
+
+Para conferir os critérios de aceitação localmente: `node scripts/ac-check.mjs`.
+O script reconstrói a aplicação, usa uma porta livre do Vite preview e grava
+`shots/preview/ac-report.json`, com PASS/FAIL por AC e saída 1 se algum BLOCK
+falhar. Testa desktop 1280 × 800 e mobile 390 × 844 com DPR 3. Falhas de
+infraestrutura são registradas como FAIL, sem aprovação presumida. O relatório
+identifica o alvo como build local; não certifica o SHA publicado em produção.
+`window.__cy` expõe a instância do mapa para inspeção das caixas e da câmera.
