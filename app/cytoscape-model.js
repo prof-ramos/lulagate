@@ -1,6 +1,6 @@
 import cytoscape from 'cytoscape';
 import fcose from 'cytoscape-fcose';
-import {compactLabel,parallelSlots,proximityBand,STATUS_CONFIG} from './graph-model.js';
+import {compactLabel,parallelSlots,proximityBand,STATUS_CONFIG,LEGAL_COLORS,nodeSize} from './graph-model.js';
 
 cytoscape.use(fcose);
 
@@ -29,7 +29,7 @@ export function proximityPositions(people){
  return positions;
 }
 export function graphElements(people,edges,slots=parallelSlots(edges)){
- return [...people.map(p=>({group:'nodes',data:{...p,label:compactLabel(p),compact:compactLabel(p)},classes:p.id==='lula'?'central':''})),...edges.map(e=>({group:'edges',data:{...e,source:e.origem,target:e.destino,slot:slots.get(e.id)||0,curve:(slots.get(e.id)||0)*65*(e.origem<e.destino?1:-1)},classes:`status-${e.status}`}))];
+ return [...people.map(p=>({group:'nodes',data:{...p,label:compactLabel(p),compact:compactLabel(p),size:nodeSize(p),legalColor:LEGAL_COLORS[p.categoria_juridica]||LEGAL_COLORS.sem_informacao,legalShape:({condenado:'diamond',condenacao_anulada:'hexagon',investigado:'triangle',absolvido_arquivado:'round-rectangle'})[p.categoria_juridica]||'ellipse'},classes:p.id==='lula'?'central':''})),...edges.map(e=>({group:'edges',data:{...e,source:e.origem,target:e.destino,slot:slots.get(e.id)||0,curve:(slots.get(e.id)||0)*65*(e.origem<e.destino?1:-1)},classes:`status-${e.status}`}))];
 }
 // Reconcile the actual graph; retained nodes keep their identity and dragged positions.
 export function syncSlice(cy,people,edges,slots){
@@ -60,14 +60,15 @@ export function applyFocus(cy,focused){
 }
 export function graphStyles(t){
  return [
-  {selector:'node',style:{shape:'round-rectangle',width:104,height:32,padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'wrap','text-max-width':100,'text-overflow-wrap':'anywhere','min-zoomed-font-size':9,'text-valign':'center','text-halign':'center','background-color':t.paper,'border-color':t.node,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
-  {selector:'node.central',style:{'min-zoomed-font-size':0,'background-color':t.ink,color:t.paper,'border-color':t.accent,'border-width':2,'font-weight':'bold'}},
+  {selector:'node',style:{shape:'data(legalShape)',width:'data(size)',height:'data(size)',padding:4,label:'data(label)','font-family':'Arial, Helvetica, sans-serif','font-size':12,'text-wrap':'wrap','text-max-width':100,'text-overflow-wrap':'anywhere','min-zoomed-font-size':11,'text-valign':'bottom','text-margin-y':6,'text-background-color':t.paper,'text-background-opacity':.9,'text-background-padding':2,'text-halign':'center','background-color':'data(legalColor)','border-color':t.paper,'border-width':1.5,color:t.ink,'overlay-opacity':0}},
+  {selector:'node.central',style:{'min-zoomed-font-size':0,'font-size':17,color:t.ink,'border-color':t.accent,'border-width':2,'font-weight':'bold'}},
+  {selector:'node[size >= 50]',style:{'min-zoomed-font-size':0,'font-size':14}},
   {selector:'edge',style:{width:1.5,'curve-style':'unbundled-bezier','control-point-distances':'data(curve)','control-point-weights':.5,'line-color':t.node,'overlay-opacity':0}},
   ...Object.entries(STATUS_CONFIG).map(([status,{dash}])=>({selector:`edge.status-${status}`,style:{'line-color':t.statuses[status],'line-style':dash?'dashed':'solid',...(dash?{'line-dash-pattern':dash.split(' ').map(Number)}:{})}})),
   {selector:'.context',style:{opacity:.18}},
   {selector:'edge.neighbor',style:{width:3}},
   {selector:'node.neighbor',style:{'border-color':t.accent,'border-width':2}},
   {selector:'node.search-match',style:{'min-zoomed-font-size':0,'border-color':t.accent,'border-width':3,'font-weight':'bold',opacity:1}},
-  {selector:'node.selected, node.focused',style:{'min-zoomed-font-size':0,'background-color':t.accent,color:t.paper,'border-color':t.ink,'border-width':3,'font-weight':'bold','z-index':10,opacity:1}},
+  {selector:'node.selected, node.focused',style:{'min-zoomed-font-size':0,color:t.ink,'border-color':t.ink,'border-width':3,'font-weight':'bold','z-index':10,opacity:1}},
  ];
 }

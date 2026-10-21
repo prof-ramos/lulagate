@@ -28,7 +28,7 @@ test('every supplied portrait maps to its person, local file and unchanged attri
  for(const credit of credits){
   const person=data.personagens.find(p=>p.id===credit.pessoa_id);
   assert.equal(person.wikidata_qid,credit.qid);
-  assert.equal(portraitSource(person),`./retratos/${credit.arquivo_local}`);
+  assert.match(portraitSource(person),/^data:image\/webp;base64,/);
   assert.ok(existsSync(new URL(`../public/${person.retrato.arquivo}`,import.meta.url)));
   for(const key of ['autor','licenca','licenca_url','url_origem','arquivo_commons'])assert.equal(person.retrato[key],credit[key]);
  }

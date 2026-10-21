@@ -36,7 +36,7 @@ test('all seven legend patterns map to distinct native edge styles',()=>{
  assert.equal(new Set(statuses.map(s=>JSON.stringify([s.style['line-style'],s.style['line-dash-pattern']]))).size,7);
 });
 
-test('real dataset layout has fixed capsule dimensions, finite positions and no overlapping node boxes',async()=>{
+test('real dataset layout has case-based dimensions, finite positions and no overlapping node boxes',async()=>{
  const {readFile}=await import('node:fs/promises');
  const data=JSON.parse(await readFile(new URL('../../data/dataset.json',import.meta.url),'utf8'));
  const statuses=Object.fromEntries(Object.keys(STATUS_CONFIG).map(k=>[k,'#666']));
@@ -45,7 +45,7 @@ test('real dataset layout has fixed capsule dimensions, finite positions and no 
  assert.equal(cy.nodes().length,63);
  try {
  const nodes=cy.nodes().toArray();
- for(const node of nodes){assert.ok(Number.isFinite(node.position('x'))&&Number.isFinite(node.position('y')));assert.equal(node.width(),104);assert.equal(node.height(),32)}
+ for(const node of nodes){assert.ok(Number.isFinite(node.position('x'))&&Number.isFinite(node.position('y')));assert.equal(node.width(),node.data('size'));assert.equal(node.height(),node.data('size'))}
  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
   const a=nodes[i].boundingBox({includeLabels:false,includeOverlays:false}),b=nodes[j].boundingBox({includeLabels:false,includeOverlays:false});
   assert.ok(!(a.x1<b.x2&&a.x2>b.x1&&a.y1<b.y2&&a.y2>b.y1),`overlap: ${nodes[i].id()} / ${nodes[j].id()}`);

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Validate the published data using only the Python standard library."""
 
+from legal_category import legal_category, CATEGORIES
+import base64
 import csv
 import re
 import json
@@ -130,6 +132,8 @@ def main():
 
     for node in records("nodes"):
         label = f"node {node.get('id')!r}"
+        category = node.get("categoria_juridica")
+        check("Legal category", category in CATEGORIES and category == legal_category(node, indexes["sources"]), f"{label}: invalid category or missing valid person source")
         value = node.get("proximidade_lula")
         check("Proximity", type(value) in (int, float) and math.isfinite(value) and 0 <= value <= 1,
               f"{label}.proximidade_lula must be a number in [0, 1]")
@@ -201,6 +205,8 @@ def main():
               f"{ident}: invalid or inconsistent QID")
         credit = credit_index.get(ident)
         expected = dict(arquivo="retratos/" + credit["arquivo_local"], **{k: credit.get(k) for k in ("autor", "licenca", "licenca_url", "url_origem", "arquivo_commons")}) if credit and isinstance(credit.get("arquivo_local"), str) else None
+        if expected:
+            expected["base64"] = "data:image/webp;base64," + base64.b64encode((DATA.parent / "app/public/retratos" / credit["arquivo_local"]).read_bytes()).decode()
         check("Portrait mapping", "retrato" in node and node.get("retrato") == expected,
               f"{ident}: portrait differs from credits or has no credits")
 

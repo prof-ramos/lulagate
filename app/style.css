@@ -239,3 +239,40 @@ summary { cursor: pointer; min-height: 44px; padding: 11px 0; font-size: 13px; l
 .person-portrait figcaption { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 18px; overflow-wrap: anywhere; }
 .person-portrait a { display: inline-block; padding-block: 4px; }
 .person-initials { display: grid; place-items: center; width: 80px; height: 80px; margin: 20px 0; border: 1px solid var(--border); border-radius: 50%; background: var(--soft); color: var(--ink); font-size: 26px; font-weight: 600; }
+/* The network is the primary surface; controls sit below it on phones. */
+.dataset-counts { display:block; max-width:65ch; }
+.legal-legend {display:flex; flex-wrap:wrap; gap:6px; margin:14px 0;}
+.legal-legend button {text-align:left; font-size:12px; padding:7px;}
+.legal-legend button[aria-pressed='true'] {outline:2px solid var(--accent); background:var(--soft);}
+.legal-legend i {display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;border:1px solid var(--ink);}
+.legal-status {border-left:4px solid var(--accent);background:var(--soft);padding:14px;margin-top:16px;}
+.legal-status p {margin-bottom:0;}
+.sources {list-style:decimal;padding-left:24px!important;}
+.mini-timeline {border-left:2px solid var(--border);padding-left:22px;}
+.mini-timeline li {margin:14px 0;}
+.mini-timeline p {margin:0;}
+.feedback:not(:empty) {position:fixed;bottom:100px;left:16px;max-width:calc(100% - 32px);z-index:20;background:var(--ink);color:var(--paper);padding:12px;}
+.graph-people {top:auto;bottom:12px;max-width:230px;}
+@media(max-width:640px){
+ #root {min-height:0;height:100dvh;overflow:hidden;}
+ .masthead {position:absolute;left:0;right:0;top:0;z-index:4;min-height:0;padding:8px 12px;align-items:flex-start;background:var(--paper);}
+ .brand h1 {font-size:24px;}.brand p{max-width:190px;font-size:11px;line-height:14px;}
+ .dataset-counts{font-size:10px;line-height:13px;max-width:210px;}
+ .masthead nav {max-width:150px;gap:0;}.masthead nav button {font-size:11px;min-height:36px;padding:4px 6px;}
+ main, main:has(.person-panel) {display:block;height:calc(100dvh - 116px - env(safe-area-inset-bottom));flex:none;margin-top:0;}
+ .canvas {height:100%;width:100%;}
+ .controls {position:fixed;bottom:0;left:0;right:0;z-index:6;padding:8px 12px calc(8px + env(safe-area-inset-bottom));border-top:1px solid var(--border);}
+ .controls-top {min-height:36px;}.controls h2{font-size:16px;}.mobile-toggle{min-height:36px;padding:4px 8px;}
+ .controls .search {margin:4px 0 0;}.search label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+ .results {top:auto;bottom:100%;max-height:40dvh;}
+ .expanded .control-body {max-height:45dvh;padding-top:10px;}
+ .control-body .intro{margin-bottom:12px;}
+ .map-caption{top:104px;font-size:11px;}.map-caption span{display:none;}
+ .graph-people {top:auto;bottom:56px;left:12px;max-width:190px;padding:0 8px;}
+ .graph-people summary {font-size:11px;}
+ .person-panel {position:absolute;bottom:0;left:0;right:0;z-index:5;max-height:50%;height:50%;width:100%;}
+ .band-legend{top:140px;}.zoom-controls{display:flex;flex-wrap:wrap;max-width:220px;gap:4px;bottom:10px;}.zoom-controls button{min-width:36px;min-height:40px;padding:5px;}
+ .map-note,footer {display:none;}
+}
+
+.skip-link{position:fixed;top:-100px;left:12px;z-index:30;background:var(--paper);padding:10px}.skip-link:focus{top:10px}

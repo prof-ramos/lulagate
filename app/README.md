@@ -1,6 +1,6 @@
 # Lula Gate
 
-Aplicação React + Vite, com dados importados de `../data/dataset.json` no build. Não carrega recursos externos em execução. Os retratos são servidos localmente; links para fontes e créditos são abertos somente por ação do usuário.
+Aplicação React + Vite, com dados importados de `../data/dataset.json` no build. Não carrega recursos externos em execução. Os retratos WebP de até 96 px são incorporados em base64; links para fontes e créditos são abertos somente por ação do usuário.
 
 ```sh
 cd app
@@ -9,11 +9,11 @@ npm test
 npm run build
 ```
 
-O `vite-plugin-singlefile` incorpora JavaScript e CSS em `../dist/index.html`. Os retratos de `public/retratos/` são copiados para `../dist/retratos/`; publique esse diretório junto com o HTML. O `base` relativo (`./`) permite servir em subdiretórios do GitHub Pages. O diretório de saída é limpo em cada build.
+O `vite-plugin-singlefile` incorpora JavaScript e CSS em `../dist/index.html`. Os retratos de `public/retratos/` são entradas do build de dados e não são duplicados na distribuição. Publique `og.png` junto com o HTML. O `base` relativo (`./`) permite servir em subdiretórios do GitHub Pages. O diretório de saída é limpo em cada build.
 
 Para desenvolvimento: `npm run dev`.
 
-Parâmetros de URL: `visualizacao=rede|proximidade`, `personagem=<id>`, `escandalo=<id>` e `modal=escandalos|metodologia`. Abrir uma URL com `escandalo` sem `modal` abre a cronologia no caso indicado. Selecionar um caso nos controles filtra o mapa.
+Links curtos: `?p=<id>&v=rede|proximidade`, sincronizados por `history.replaceState`. Os parâmetros antigos continuam aceitos. Parâmetros de URL: `visualizacao=rede|proximidade`, `personagem=<id>`, `escandalo=<id>` e `modal=escandalos|metodologia`. Abrir uma URL com `escandalo` sem `modal` abre a cronologia no caso indicado. Selecionar um caso nos controles filtra o mapa.
 
 ## Organização do mapa
 
@@ -37,4 +37,6 @@ Cytoscape.js 3.34.4 e cytoscape-fcose 2.2.0 substituem as dependências diretas 
 
 Para regenerar e conferir: `python3 scripts/build.py` e `python3 scripts/validate.py`, a partir da raiz. Ao atualizar créditos, mantenha JSON e CSV sincronizados. URLs de licença vazias são aceitas somente para CC0/domínio público; nesse caso, o painel vincula a licença à página de origem, preservando os metadados recebidos. As imagens ficam somente no painel, com iniciais na ausência de retrato ou em erro de carregamento.
 
-Os testes também verificam iniciais, caminhos relativos, correspondência entre retratos e créditos e espaço entre cápsulas em todos os anéis. O zoom mínimo de 0,75 conserva nomes com pelo menos 9 px; o enquadramento inicial prioriza leitura e pode exigir deslocamento para explorar o mapa completo. Nomes comuns são ocultados abaixo de 9 px; o personagem central, a seleção, o foco e os resultados da busca conservam os rótulos. Os raios continuam representando as mesmas sete faixas editoriais. No mobile, o painel ocupa uma linha própria com cerca de 52% da área disponível abaixo dos controles; o grafo permanece visível acima dele.
+Os testes também verificam iniciais, incorporação binária dos retratos, créditos, tamanhos por número de casos, seleção e layout. `python3 scripts/test_legal_category.py` verifica a classificação conservadora e a exigência de fontes. O zoom permite enquadrar o conjunto; nomes de nós pequenos aparecem ao ampliar, selecionar ou focar. Cor e forma indicam a categoria jurídica; tamanho representa quantidade de casos. No mobile, o canvas ocupa a altura da janela menos a barra inferior fixa de busca e filtros. O painel ocupa a metade inferior da área do mapa.
+
+Compartilhamento usa `navigator.share`, com cópia como fallback; exige suporte e contexto seguro do navegador. A imagem social própria de 1200 × 630 é reproduzível com `python3 scripts/build_og.py` (Pillow). O tour de três passos é opcional, com dispensa lembrada em localStorage. Tela cheia e exportação PNG são acionadas pelos controles do mapa.

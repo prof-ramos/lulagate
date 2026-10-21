@@ -15,7 +15,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
 
  useEffect(()=>{
   const element=container.current;
-  const cy=cytoscape({container:element,elements:[],layout:{name:'preset'},minZoom:.75,maxZoom:3.5,wheelSensitivity:.25,selectionType:'single',autounselectify:true,boxSelectionEnabled:false});
+  const cy=cytoscape({container:element,elements:[],layout:{name:'preset'},minZoom:.18,maxZoom:3.5,wheelSensitivity:.25,selectionType:'single',autounselectify:true,boxSelectionEnabled:false});
   cyRef.current=cy;
   const theme=()=>{
    const css=getComputedStyle(element),token=name=>css.getPropertyValue(`--${name}`).trim();
@@ -52,7 +52,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    cy.viewport({zoom,pan:{x:center.x-(box.x1+box.x2)/2*zoom,y:center.y-(box.y1+box.y2)/2*zoom}});
   };
   fitRef.current=()=>{cancelAnimationFrame(fitFrame.current);fitFrame.current=requestAnimationFrame(fit)};
-  graphRef.current={reset:fit,zoomBy:factor=>{const rect=element.getBoundingClientRect();cy.zoom({level:Math.max(cy.minZoom(),Math.min(cy.maxZoom(),cy.zoom()*factor)),renderedPosition:{x:rect.width/2,y:rect.height/2}})}};
+  graphRef.current={exportPNG:()=>{const a=document.createElement('a');a.href=cy.png({full:true,scale:2,bg:getComputedStyle(element).getPropertyValue('--bg').trim()});a.download='lula-gate.png';a.click()},reset:fit,zoomBy:factor=>{const rect=element.getBoundingClientRect();cy.zoom({level:Math.max(cy.minZoom(),Math.min(cy.maxZoom(),cy.zoom()*factor)),renderedPosition:{x:rect.width/2,y:rect.height/2}})}};
   theme();const observer=new MutationObserver(theme);observer.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
   const requestFit=()=>fitRef.current();
   const resize=new ResizeObserver(requestFit);resize.observe(element);window.addEventListener('resize',requestFit);

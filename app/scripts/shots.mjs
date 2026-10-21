@@ -30,7 +30,7 @@ try {
   if(i===99)throw new Error('Vite preview não iniciou');
   await new Promise(resolve=>setTimeout(resolve,100));
  }
- browser=await chromium.launch({headless:true});
+ browser=await chromium.launch({headless:true,args:['--no-sandbox']});
  const shots=[['desktop-1280x800',1280,800,''],['mobile-390x844',390,844,''],['mobile-painel-390x844',390,844,`personagem=${person.id}`],['desktop-painel',1280,800,`personagem=${person.id}`],['desktop-proximidade',1280,800,'visualizacao=proximidade'],['mobile-proximidade',390,844,'visualizacao=proximidade']];
  for(const [name,width,height,query] of shots){
   const page=await browser.newPage({viewport:{width,height},colorScheme:'light',reducedMotion:'reduce'});

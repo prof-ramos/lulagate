@@ -15,19 +15,25 @@ As skills de design do projeto estão versionadas em `.agents/skills/`. Consulte
 ```bash
 cd app && npm ci && npm run build
 cp ../dist/index.html ../docs/index.html
-cp -R ../dist/retratos ../docs/
+cp ../dist/og.png ../docs/
 ```
 
 ## Tamanho da distribuição
 
 Após `cd app && npm run build` (bytes, sem compressão de transporte):
 
-- `dist/index.html`: 1.011.180 bytes (987,5 KiB), incluindo JavaScript, CSS e dataset; 294.908 bytes com gzip.
-- `dist/retratos/`: 32 fotos WebP, 225.876 bytes (220,6 KiB).
-- `dist/` completo: 1.237.056 bytes (1.208,1 KiB).
+- `dist/index.html`: 1,073,800 bytes; 338,114 bytes com gzip.
+- `dist/og.png`: 30,359 bytes (1200 × 630).
+- `dist/` completo: **1,104,159 bytes**, abaixo de 1,5 MB.
+
+A saída configurada pelo Vite é `dist/` na raiz, não `app/dist/`.
+
+O build contém apenas `index.html` (JavaScript, CSS, dataset e retratos incorporados) e `og.png`. Não requer chamadas externas durante a exploração. Os links de fontes e créditos só abrem por ação do usuário.
+
+Categorias jurídicas derivadas: 3 condenado, 2 condenação anulada, 4 investigado, 17 absolvido / arquivado e 37 sem informação. Regra conservadora e suas limitações em [metodologia](data/metodologia.md#categorias-jurídicas-dos-nós). Nenhum texto factual foi alterado.
 
 ## Prévias locais
 
 Execute `cd app && node scripts/shots.mjs`. O script reconstrói `dist`, inicia Vite preview e usa Playwright headless para salvar as quatro prévias solicitadas e duas vistas de Proximidade em `shots/preview/`. Verifica erros de navegador, recursos externos, ausência de resultados, filtros, zoom e reserva de espaço do grafo no mobile. Se o ambiente bloquear portas locais, serve os mesmos arquivos de `dist` pela interceptação de requisições do Playwright. Requer Chromium instalado e permissão do ambiente para iniciar o navegador.
 
-Nesta execução, `npm ci` (cache local), `npm test`, `npm run build` e `python3 scripts/validate.py` passaram. A geração das prévias foi tentada, mas o sandbox bloqueou a inicialização do Chromium (`Operation not permitted`); os PNGs e a revisão visual continuam pendentes.
+Nesta execução, `npm ci`, `npm test`, `npm run build` e `python3 scripts/validate.py` passaram. A geração das prévias foi tentada, mas o ambiente bloqueou a inicialização do Chromium mesmo com `--no-sandbox` (`Operation not permitted`); os PNGs e a revisão visual continuam pendentes.

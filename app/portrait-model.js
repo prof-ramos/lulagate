@@ -7,6 +7,8 @@ export function initials(person){
 
 // Only local filenames from the bundled dataset may become image requests.
 export function portraitSource(person,base='./'){
+ const embedded=person.retrato?.base64;
+ if(typeof embedded==='string'&&/^data:image\/webp;base64,[A-Za-z0-9+/]+=*$/.test(embedded))return embedded;
  const file=person.retrato?.arquivo;
  return typeof file==='string'&&/^retratos\/[a-z0-9-]+\.webp$/.test(file)?`${base.replace(/\/?$/,'/')}${file}`:null;
 }
