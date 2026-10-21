@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "installed_on": "2026-10-21",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "repository": "https://github.com/anthropics/skills",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "upstream_path": "skills/frontend-design",
+      "local_path": ".agents/skills/frontend-design",
+      "license": "Apache-2.0",
+      "files": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+      }
+    },
+    {
+      "name": "web-design-guidelines",
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "upstream_path": "skills/web-design-guidelines",
+      "local_path": ".agents/skills/web-design-guidelines",
+      "license": "MIT (declared in upstream README)",
+      "files": {
+        "SKILL.md": "f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+      }
+    }
+  ]
+}
