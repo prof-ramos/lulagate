@@ -1,7 +1,14 @@
 import json,os
-B='/workspace/lulagate/scripts/'
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+B = str(ROOT / 'scripts') + '/'
 for f in ['build_sources.py','build_nodes.py','build_edges.py','build_cases.py','build_extra.py']: exec(open(B+f).read())
-D='/workspace/lulagate/data'
+D = str(ROOT / 'data')
+creditos = json.loads((ROOT / 'data/creditos-imagens.json').read_text(encoding='utf-8'))
+por_pessoa = {c['pessoa_id']: c for c in creditos}
+for n in N:
+    c = por_pessoa.get(n['id'])
+    n['retrato'] = dict(arquivo='retratos/' + c['arquivo_local'], **{k: c[k] for k in ('autor', 'licenca', 'licenca_url', 'url_origem', 'arquivo_commons')}) if c else None
 SD={k:v['data'] for k,v in S.items()}
 for e in E:
     if e['periodo'] is None: e['periodo']=dict(inicio=None,fim=None)

@@ -1,3 +1,7 @@
+import json
+from pathlib import Path
+QIDS = json.loads((Path(__file__).resolve().parents[1] / 'data/wikidata-qids.json').read_text(encoding='utf-8'))
+
 groups=[
  ('grp-familia-lula','Família Lula da Silva','familia','Núcleo familiar de Luiz Inácio Lula da Silva.'),
  ('grp-pt','Partido dos Trabalhadores (PT)','partido','Partido de Lula e de vários personagens do mapa.'),
@@ -17,7 +21,7 @@ groups=[
 groups=[dict(id=a,nome=b,tipo=c,descricao=d) for a,b,c,d in groups]
 N=[]
 def node(id,nome,ocup,prox,cl,nj,grp,resumo,sit,fontes,relacao):
-    N.append(dict(id=id,nome=nome,tipo='pessoa',ocupacao=ocup,proximidade_lula=prox,classificacao=cl,nivel_juridico=nj,
+    N.append(dict(id=id,wikidata_qid=QIDS.get(id),nome=nome,tipo='pessoa',ocupacao=ocup,proximidade_lula=prox,classificacao=cl,nivel_juridico=nj,
       grupos=[dict(grupo_id=g,papel=p) for g,p in grp],relacao_com_lula=relacao,resumo=resumo,situacao_juridica=sit,fontes=fontes))
 node('lula','Luiz Inácio Lula da Silva','Presidente da República (2003-2010 e desde 2023)',1.0,'central',0,[('grp-pt','fundador'),('grp-governo-lula-1-2','presidente'),('grp-governo-lula-3','presidente')],
  'Condenado em 2017 (triplex) e 2019 (sítio de Atibaia) pela 13ª Vara de Curitiba, ficou preso 580 dias. Em 2021 o STF anulou as condenações por incompetência de Curitiba e declarou a suspeição de Sergio Moro; os casos foram depois arquivados por prescrição ou trancados. Foi absolvido em outras ações (quadrilhão do PT, obstrução de Justiça, Zelotes MP 471).',

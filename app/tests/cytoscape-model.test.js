@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import cytoscape from 'cytoscape';
-import {graphElements,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles} from '../cytoscape-model.js';
+import {graphElements,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles,applyFocus} from '../cytoscape-model.js';
 import {parallelSlots,STATUS_CONFIG} from '../graph-model.js';
 const nodes=[{id:'lula',nome:'Luiz Inácio Lula da Silva',proximidade_lula:1},...Array.from({length:7},(_,i)=>({id:`p${i}`,nome:`Personagem ${i}`,proximidade_lula:[.9,.7,.5,.3,.1,.01,0][i]}))];
 const edges=[{id:'e1',origem:'lula',destino:'p0',status:'arquivado',rotulo:'um'},{id:'e2',origem:'p0',destino:'lula',status:'fato_documentado',rotulo:'dois'}];
@@ -45,7 +45,7 @@ test('real dataset layout has fixed capsule dimensions, finite positions and no 
  assert.equal(cy.nodes().length,63);
  try {
  const nodes=cy.nodes().toArray();
- for(const node of nodes){assert.ok(Number.isFinite(node.position('x'))&&Number.isFinite(node.position('y')));assert.equal(node.width(),118);assert.equal(node.height(),36)}
+ for(const node of nodes){assert.ok(Number.isFinite(node.position('x'))&&Number.isFinite(node.position('y')));assert.equal(node.width(),104);assert.equal(node.height(),32)}
  for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){
   const a=nodes[i].boundingBox({includeLabels:false,includeOverlays:false}),b=nodes[j].boundingBox({includeLabels:false,includeOverlays:false});
   assert.ok(!(a.x1<b.x2&&a.x2>b.x1&&a.y1<b.y2&&a.y2>b.y1),`overlap: ${nodes[i].id()} / ${nodes[j].id()}`);
@@ -55,4 +55,40 @@ test('real dataset layout has fixed capsule dimensions, finite positions and no 
  const first=nodes[0],before={width:first.width(),height:first.height()};applySelection(cy,first.id());cy.zoom(.2);
  assert.deepEqual({width:first.width(),height:first.height()},before);assert.equal(first.data('label'),first.data('compact'));
  } finally {cy.destroy()}
+});
+
+test('all proximity capsules including the 0.30–0.49 ring have space for labels',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const data=JSON.parse(await readFile(new URL('../../data/dataset.json',import.meta.url),'utf8'));
+ const positions=proximityPositions(data.personagens);
+ assert.deepEqual(positions,proximityPositions([...data.personagens].reverse()));
+ const people=data.personagens;
+ for(let i=0;i<people.length;i++)for(let j=i+1;j<people.length;j++){
+  const a=positions[people[i].id],b=positions[people[j].id];
+  assert.ok(Math.abs(a.x-b.x)>=150||Math.abs(a.y-b.y)>=68,`label overlap: ${people[i].id} / ${people[j].id}`);
+ }
+});
+
+test('network layout is repeatable for the same dataset and input order',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const data=JSON.parse(await readFile(new URL('../../data/dataset.json',import.meta.url),'utf8'));
+ const run=()=>{
+  const cy=cytoscape({headless:true,elements:graphElements(data.personagens,data.conexoes)});
+  layoutGraph(cy,'rede');
+  const positions=Object.fromEntries(cy.nodes().map(n=>[n.id(),{...n.position()}]));cy.destroy();return positions;
+ };
+ assert.deepEqual(run(),run());
+});
+
+
+test('hover focus preserves selection, search classes, labels and camera',()=>{
+ const cy=cytoscape({headless:true,elements:graphElements(nodes,edges)});
+ applySelection(cy,'lula',new Set(['p5']));
+ const before=cy.elements().map(e=>({id:e.id(),classes:e.classes(),data:{...e.data()}}));
+ const camera={zoom:cy.zoom(),pan:{...cy.pan()}};
+ applyFocus(cy,'p6');assert.ok(cy.$id('p6').hasClass('focused'));
+ assert.ok(cy.$id('lula').hasClass('selected'));assert.ok(cy.$id('p5').hasClass('search-match'));
+ applyFocus(cy,null);
+ assert.deepEqual(cy.elements().map(e=>({id:e.id(),classes:e.classes(),data:{...e.data()}})),before);
+ assert.deepEqual({zoom:cy.zoom(),pan:{...cy.pan()}},camera);cy.destroy();
 });

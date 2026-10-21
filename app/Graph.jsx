@@ -1,9 +1,10 @@
 import React,{useEffect,useMemo,useRef,useState} from 'react';
 import cytoscape from 'cytoscape';
 import {parallelSlots,PROXIMITY_BANDS,STATUS_CONFIG} from './graph-model.js';
-import {BAND_STEP,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles} from './cytoscape-model.js';
+import {BAND_STEP,proximityPositions,syncSlice,applySelection,layoutGraph,graphStyles,applyFocus} from './cytoscape-model.js';
 
 export default function Graph({data,view,selected,onSelect,visibleNodes,visibleEdges,graphRef,matches}){
+ const networkPositions=useRef(null),previousView=useRef(null),fitFrame=useRef(null);
  const container=useRef(null),cyRef=useRef(null),fitRef=useRef(()=>{}),onSelectRef=useRef(onSelect),stateRef=useRef({});
  const [camera,setCamera]=useState({zoom:1,pan:{x:0,y:0}}),[focused,setFocused]=useState(null),[peopleOpen,setPeopleOpen]=useState(false),[bandsOpen,setBandsOpen]=useState(()=>!matchMedia('(max-width:640px)').matches);
  const slots=useMemo(()=>parallelSlots(data.conexoes),[data]),positions=useMemo(()=>proximityPositions(data.personagens),[data]);
@@ -14,7 +15,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
 
  useEffect(()=>{
   const element=container.current;
-  const cy=cytoscape({container:element,elements:[],layout:{name:'preset'},minZoom:.06,maxZoom:3.5,wheelSensitivity:.25,selectionType:'single',autounselectify:true,boxSelectionEnabled:false});
+  const cy=cytoscape({container:element,elements:[],layout:{name:'preset'},minZoom:.75,maxZoom:3.5,wheelSensitivity:.25,selectionType:'single',autounselectify:true,boxSelectionEnabled:false});
   cyRef.current=cy;
   const theme=()=>{
    const css=getComputedStyle(element),token=name=>css.getPropertyValue(`--${name}`).trim();
@@ -50,24 +51,32 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    const zoom=Math.max(cy.minZoom(),Math.min(1.35,(width-36)/Math.max(1,box.w),(height-36)/Math.max(1,box.h)));
    cy.viewport({zoom,pan:{x:center.x-(box.x1+box.x2)/2*zoom,y:center.y-(box.y1+box.y2)/2*zoom}});
   };
-  fitRef.current=fit;
+  fitRef.current=()=>{cancelAnimationFrame(fitFrame.current);fitFrame.current=requestAnimationFrame(fit)};
   graphRef.current={reset:fit,zoomBy:factor=>{const rect=element.getBoundingClientRect();cy.zoom({level:Math.max(cy.minZoom(),Math.min(cy.maxZoom(),cy.zoom()*factor)),renderedPosition:{x:rect.width/2,y:rect.height/2}})}};
   theme();const observer=new MutationObserver(theme);observer.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
-  const resize=new ResizeObserver(fit);resize.observe(element);window.addEventListener('resize',fit);
-  return()=>{observer.disconnect();resize.disconnect();window.removeEventListener('resize',fit);cy.destroy();cyRef.current=null;graphRef.current=null};
+  const requestFit=()=>fitRef.current();
+  const resize=new ResizeObserver(requestFit);resize.observe(element);window.addEventListener('resize',requestFit);
+  return()=>{observer.disconnect();resize.disconnect();window.removeEventListener('resize',requestFit);cancelAnimationFrame(fitFrame.current);cy.destroy();cyRef.current=null;graphRef.current=null};
  },[graphRef]);
 
  useEffect(()=>{
   const cy=cyRef.current;if(!cy)return;
+  if(previousView.current==='rede'&&networkPositions.current)cy.nodes().forEach(n=>{networkPositions.current[n.id()]={...n.position()}});
+  if(view==='rede'&&!networkPositions.current){
+   syncSlice(cy,data.personagens,data.conexoes,slots);layoutGraph(cy,view);
+   networkPositions.current=Object.fromEntries(cy.nodes().map(n=>[n.id(),{...n.position()}]));
+  }
   syncSlice(cy,visibleNodes,visibleEdges,slots);
   if(view==='proximidade')cy.nodes().ungrabify();else cy.nodes().grabify();
-  layoutGraph(cy,view,positions);
+  layoutGraph(cy,'proximidade',view==='rede'?networkPositions.current:positions);
+  previousView.current=view;
   const state=stateRef.current;applySelection(cy,state.selected,state.matches,state.focused);
-  const frame=requestAnimationFrame(()=>fitRef.current());return()=>cancelAnimationFrame(frame);
+  fitRef.current();return()=>cancelAnimationFrame(fitFrame.current);
  },[visibleNodes,visibleEdges,view,slots,positions]);
- useEffect(()=>{const cy=cyRef.current;if(cy)applySelection(cy,selected,matches,focused)},[selected,matches,focused]);
+ useEffect(()=>{const cy=cyRef.current;if(cy)applySelection(cy,selected,matches,stateRef.current.focused)},[selected,matches]);
+ useEffect(()=>{if(cyRef.current)applyFocus(cyRef.current,focused)},[focused]);
  // Only changes in available viewport trigger fitting; switching an open person's identity does not.
- useEffect(()=>{const frame=requestAnimationFrame(()=>fitRef.current());return()=>cancelAnimationFrame(frame)},[panelOpen,bandsOpen,peopleOpen]);
+ useEffect(()=>{fitRef.current()},[panelOpen,bandsOpen,peopleOpen]);
  const pan=e=>{
   const cy=cyRef.current;if(!cy)return;
   const directions={ArrowLeft:{x:48,y:0},ArrowRight:{x:-48,y:0},ArrowUp:{x:0,y:48},ArrowDown:{x:0,y:-48}};
