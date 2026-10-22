@@ -126,7 +126,7 @@ legend { margin-bottom: 8px; }
 .map-caption { position: absolute; top: 20px; left: 24px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; line-height: 19px; pointer-events: auto; z-index: 2; }
 .map-caption strong { font-weight: 600; }
 .map-caption span { color: var(--muted); font-size: 12px; line-height: 18px; }
-.caption-dismiss { min-height: 28px; padding: 3px 8px; font-size: 11px; line-height: 14px; border-radius: 4px; background: var(--paper); border: 1px solid var(--border); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; }
+.caption-dismiss { min-height: 28px; padding: 3px 8px; font-size: 11px; line-height: 14px; border-radius: 4px; background: var(--paper); border: 1px solid var(--border); color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; pointer-events: auto; }
 .caption-dismiss:hover { background: var(--soft); border-color: var(--accent); }
 .zoom-controls { z-index: 2; position: absolute; right: calc(20px + var(--graph-right-inset, 0px)); bottom: calc(20px + var(--graph-bottom-inset, 0px)); display: flex; border: 1px solid var(--border); border-radius: 5px; overflow: hidden; background: var(--paper); box-shadow: 0 2px 8px var(--shadow); }
 .zoom-controls button { width: 44px; min-height: 44px; padding: 7px; border: 0; border-right: 1px solid var(--border); border-radius: 0; font-size: 21px; }
@@ -308,7 +308,7 @@ main,main:has(.person-panel) {display:flex;flex-direction:column;position:relati
 .apply-filters {position:sticky;bottom:0;background:var(--accent);color:var(--paper);width:100%;font-weight:600;}
 [data-theme='dark'] .apply-filters {color:var(--bg);}
 .canvas {position:relative;flex:1;min-height:0;width:100%;}
-.map-caption {top:12px;left:16px;background:var(--paper);padding:4px 8px;pointer-events:none;}
+.map-caption {top:12px;left:16px;background:var(--paper);padding:4px 8px;border-radius:4px;border:1px solid var(--border);z-index:4;pointer-events:auto;}
 .graph-people {position:absolute;top:auto;bottom:12px;left:12px;max-width:260px;max-height:calc(100% - 90px);padding:0;background:var(--paper);z-index:3;overflow:auto;}
 .graph-people>button {width:100%;}
 .graph-people section {padding:12px;}
