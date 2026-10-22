@@ -8,7 +8,7 @@ import {BAND_STEP,proximityPositions,syncSlice,applySelection,layoutGraph,graphS
 export default function Graph({data,view,selected,onSelect,visibleNodes,visibleEdges,graphRef,matches,sheetHeight}){
  const networkPositions=useRef(null),previousView=useRef(null),fitFrame=useRef(null);
  const container=useRef(null),cyRef=useRef(null),fitRef=useRef(()=>{}),labelsRef=useRef(()=>{}),onSelectRef=useRef(onSelect),stateRef=useRef({});
- const [camera,setCamera]=useState({zoom:1,pan:{x:0,y:0}}),[focused,setFocused]=useState(null),[peopleOpen,setPeopleOpen]=useState(false),[bandsOpen,setBandsOpen]=useState(()=>!matchMedia('(max-width:640px)').matches);
+ const [camera,setCamera]=useState({zoom:1,pan:{x:0,y:0}}),[focused,setFocused]=useState(null),[peopleOpen,setPeopleOpen]=useState(false),[bandsOpen,setBandsOpen]=useState(()=>matchMedia('(min-width:768px)').matches);
  const [mobile,setMobile]=useState(()=>matchMedia('(max-width:640px)').matches);
  useEffect(()=>{const media=matchMedia('(max-width:640px)'),change=()=>setMobile(media.matches);media.addEventListener('change',change);return()=>media.removeEventListener('change',change)},[]);
  const slots=useMemo(()=>parallelSlots(data.conexoes),[data]),positions=useMemo(()=>proximityPositions(data.personagens),[data]);
@@ -37,16 +37,21 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    const rect=element.getBoundingClientRect(),panel=document.querySelector('.person-panel')?.getBoundingClientRect();
    const visibleBottom=panel&&panel.width>rect.width*.75?Math.min(cy.height(),panel.top-rect.top):cy.height();
    {
-    cy.nodes().forEach(n=>n.style({'font-size':12/zoom,'text-max-width':1000/zoom,'text-margin-y':6/zoom,'text-opacity':0,width:Math.max(n.data('size'),44/zoom),height:Math.max(n.data('size'),44/zoom)}));
+    cy.nodes().forEach(n=>n.style({'font-size':12/zoom,'text-max-width':1000/zoom,'text-margin-y':6/zoom,'text-opacity':0,width:n.data('size'),height:n.data('size')}));
     const bodies=cy.nodes().map(n=>({id:n.id(),...n.renderedBoundingBox({includeLabels:false,includeOverlays:false,useCache:false})}));
     ordered.forEach(n=>{
-     if(!priorities.has(n.id())&&n.id()!=='lula'&&n.id()!==stateRef.current.selected&&zoom<.85)return;
+     if(!priorities.has(n.id())&&n.id()!=='lula'&&n.id()!==stateRef.current.selected&&n.degree()===0&&zoom<.85)return;
      n.style('text-opacity',1);
      n.recalculateRenderedStyle(false);
      const raw=n.boundingBox({includeLabels:true,includeOverlays:false,useCache:false});
      const box={x1:raw.x1*zoom+pan.x-3,y1:raw.y1*zoom+pan.y-3,x2:raw.x2*zoom+pan.x+3,y2:raw.y2*zoom+pan.y+3};
-     if(n.id()!=='lula'&&(box.x1<8||box.y1<8||box.x2>cy.width()-8||box.y2>visibleBottom-8||bodies.some(b=>b.id!==n.id()&&box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)||boxes.some(b=>box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)))n.style('text-opacity',0);
-     else boxes.push(box);
+     if(n.id()===stateRef.current.selected||n.id()==='lula'){
+      if(box.x1<8||box.y1<8||box.x2>cy.width()-8||box.y2>visibleBottom-8)n.style('text-opacity',0);
+      else boxes.push(box);
+     }else{
+      if(box.x1<8||box.y1<8||box.x2>cy.width()-8||box.y2>visibleBottom-8||bodies.some(b=>b.id!==n.id()&&box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1)||boxes.some(b=>box.x1<b.x2&&box.x2>b.x1&&box.y1<b.y2&&box.y2>b.y1))n.style('text-opacity',0);
+      else boxes.push(box);
+     }
     });
     cy.edges().forEach(e=>e.style('width',Math.max(e.hasClass('neighbor')?3:1.5,1.5/zoom)));
    }
@@ -61,7 +66,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
   // instead of whichever overlapping target Cytoscape happens to paint last.
   cy.on('tap','node',e=>{
    const point=e.renderedPosition;
-   const nearest=cy.nodes().filter(n=>n.visible()&&Math.abs(n.renderedPosition().x-point.x)<=n.renderedWidth()/2&&Math.abs(n.renderedPosition().y-point.y)<=n.renderedHeight()/2)
+   const nearest=cy.nodes().filter(n=>n.visible()&&Math.abs(n.renderedPosition().x-point.x)<=Math.max(22,n.renderedWidth()/2)&&Math.abs(n.renderedPosition().y-point.y)<=Math.max(22,n.renderedHeight()/2))
     .sort((a,b)=>{const distance=n=>{const p=n.renderedPosition();return (p.x-point.x)**2+(p.y-point.y)**2};return distance(a)-distance(b)})[0];
    onSelectRef.current((nearest||e.target).id());
   });
@@ -74,7 +79,7 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    let rightInset=0,bottomInset=0;
    const panel=document.querySelector('.person-panel')?.getBoundingClientRect();
    if(panel&&panel.left<rect.right&&panel.right>rect.left&&panel.top<rect.bottom&&panel.bottom>rect.top){
-    if(panel.width>rect.width*.75){bottomInset=Math.max(0,rect.bottom-panel.top);bottom=Math.min(bottom,panel.top-rect.top-16)}
+    if(panel.width>rect.width*.75){bottomInset=Math.max(0,rect.bottom-panel.top);bottom=Math.min(bottom,panel.top-rect.top-36)}
     else {rightInset=Math.max(0,rect.right-panel.left);right=Math.min(right,panel.left-rect.left-18)}
    }
    element.parentElement.style.setProperty('--graph-right-inset',`${rightInset}px`);
@@ -83,11 +88,11 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    // there before framing: reserving only the sheet leaves tappable nodes
    // behind the zoom buttons (especially after collision-driven enlargement).
    const controls=element.parentElement.querySelector('.zoom-controls')?.getBoundingClientRect();
-   if(controls&&controls.left<rect.right&&controls.right>rect.left&&controls.top<rect.bottom&&controls.bottom>rect.top){
+   if(!panel&&controls&&controls.left<rect.right&&controls.right>rect.left&&controls.top<rect.bottom&&controls.bottom>rect.top){
     bottom=Math.min(bottom,controls.top-rect.top-16);
    }
-   const band=element.parentElement.querySelector('.band-legend')?.getBoundingClientRect();
-   if(band){if(rect.width>700)right=Math.min(right,band.left-rect.left-16);else top=Math.max(top,band.bottom-rect.top+14)}
+   const band=element.parentElement.querySelector('.band-legend');
+   if(band&&band.open){const br=band.getBoundingClientRect();if(rect.width>700)right=Math.min(right,br.left-rect.left-16);else top=Math.max(top,br.bottom-rect.top+14)}
    const listElement=element.parentElement.querySelector('.graph-people');
    const list=listElement?.getBoundingClientRect();
    if(listElement?.querySelector('section')&&list.top<rect.top+bottom){if(rect.width>700&&list.height>80)left=Math.max(left,list.right-rect.left+16);else bottom=Math.min(bottom,list.top-rect.top-16)}
@@ -98,15 +103,20 @@ export default function Graph({data,view,selected,onSelect,visibleNodes,visibleE
    const target=stateRef.current.view==='rede'&&openingNodes.length?openingNodes:cy.nodes();
    const points=target.nodes().map(n=>n.position());
    const xs=points.map(p=>p.x),ys=points.map(p=>p.y);
-   const box={x1:Math.min(...xs),x2:Math.max(...xs),y1:Math.min(...ys),y2:Math.max(...ys)};box.w=box.x2-box.x1;box.h=box.y2-box.y1;
-   if(stateRef.current.view==='proximidade'){const radius=PROXIMITY_BANDS.length*BAND_STEP;box.x1=Math.min(box.x1,-radius);box.y1=Math.min(box.y1,-radius);box.x2=Math.max(box.x2,radius);box.y2=Math.max(box.y2,radius);box.w=box.x2-box.x1;box.h=box.y2-box.y1}
+   let box={x1:Math.min(...xs),x2:Math.max(...xs),y1:Math.min(...ys),y2:Math.max(...ys)};box.w=box.x2-box.x1;box.h=box.y2-box.y1;
+   if(stateRef.current.view==='proximidade'){
+    const narrow=rect.width<768;
+    const radius=(stateRef.current.selected?(narrow?1.8:2.2):(narrow?2.2:2.5))*BAND_STEP;
+    box={x1:-radius,x2:radius,y1:-radius,y2:radius,w:2*radius,h:2*radius};
+   }
    // Reserve screen-space room for a 160 px label and the fixed-size tap targets.
-   let zoom=Math.max(cy.minZoom(),Math.min(1.35,Math.max(20,width-170)/Math.max(1,box.w),Math.max(20,height-90)/Math.max(1,box.h)));
+   const narrow=rect.width<768;
+   let zoom=Math.max(cy.minZoom(),Math.min(1.35,Math.max(20,width-(narrow?40:170))/Math.max(1,box.w),Math.max(20,height-(narrow?40:90))/Math.max(1,box.h)));
    const selectedNode=cy.getElementById(stateRef.current.selected||'');
    const point=selectedNode.length?selectedNode.position():{x:(box.x1+box.x2)/2,y:(box.y1+box.y2)/2};
    const frame=()=>{cy.viewport({zoom,pan:{x:center.x-point.x*zoom,y:center.y-point.y*zoom}});cameraChanged()};
    frame();
-   if(rect.width<=640&&panel&&selectedNode.length&&stateRef.current.view==='rede'){
+   if(rect.width<=640&&panel&&selectedNode.length){
     // Keep network positions intact; enlarge until every visible target clears
     // its neighbours, checking again as the set of visible nodes changes.
     for(let attempt=0;attempt<60&&zoom<cy.maxZoom();attempt++){
